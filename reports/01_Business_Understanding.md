@@ -18,6 +18,10 @@ The environment has great flexibility and it's possible to design quite difficul
 <!--- Understand the metric used on the challenge, write it here and study
 the characteristics of the metric --->
 
+There are [300](https://mdcrosby.com/blog/animalailaunch.html) tests with a pass/no pass structure. There are 10 categories of tests with increasing difficulty.
+
+**TODO:** Currently is not known if there is going to be a private and public liderboard. According to the [rules](http://animalaiolympics.com/rules.html) it may be possible to do variations on the tests after the competition has ended.
+
 
 ## Assess situation
 <!---This task involves more detailed fact-finding about all of the resources,
@@ -29,6 +33,9 @@ the data analysis goal and project plan
 * other projects. May I have other more interesting projects in the horizon?
  --->
 
+**Timeline.** There are four months for the challenge. Even when we have to learn many things it seems like a reasonable timeline.
+
+**Resources.** I will devote myself to this project because I don't expect to find another challenge that it is more lined with the goal of general intelligence. Creating a team could be very interesting because this is a very big challenge.
 
 ### Terminology
 <!--- Sometimes the field of the challenge has specific terms, if that is the
