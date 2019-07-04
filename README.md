@@ -46,8 +46,12 @@ from Kaggle.
 8. Update the environment yml
 
 ## Methodology
-I'm following CRISP-DM 1.0 methodology for the reports.
-
-https://www.the-modeling-agency.com/crisp-dm.pdf
+I'm following [CRISP-DM 1.0](https://www.the-modeling-agency.com/crisp-dm.pdf) methodology for the reports.
 
 I have skipped Evaluation and Deployment steps because they are not usually done on Kaggle.
+
+1. [Business understanding](reports/01_Business_Understanding.md)
+1. [Data understanding](reports/02_Data_Understanding.md)
+1. [Data preparation](reports/03_Data_Preparation.md)
+1. [Modeling](reports/04_Modeling.md)
+1. [Solution summary](reports/05_Solution_Summary.md)
