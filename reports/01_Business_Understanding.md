@@ -4,6 +4,15 @@
 <!--- Look at the challenge description, understand the goal of the challenge
 and write it here with your own words. Use images if they improve the explanation--->
 
+The goal of the challenge is to gather the food as fast as possible while avoiding predator or traps.  
+The environment has great flexibility and it's possible to design quite difficult tests.
+
+> We are proposing a new kind of AI competition. Instead of providing a specific task, we will provide a well-defined arena (available at the end of April) and a list of cognitive abilities that we will test for in that arena. The tests will all use the same agent with the same inputs and actions. The goal will always be to retrieve the same food items by interacting with previously seen objects. However, the exact layout and variations of the tests will not be released until after the competition.
+
+> We expect this to be hard challenge. Winning this competition will require an AI system that can behave robustly and generalise to unseen cases. A perfect score will require a breakthrough in AI, well beyond current capabilities. However, even small successes will show that it is possible, not just to find useful patterns in data, but to extrapolate from these to an understanding of how the world works.
+
+<img src="http://animalaiolympics.com/figs/environment.png" alt="drawing" width="500"/>
+
 
 ## Evaluation
 <!--- Understand the metric used on the challenge, write it here and study
