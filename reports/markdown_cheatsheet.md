@@ -22,3 +22,11 @@ http://www.tablesgenerator.com/markdown_tables#
 | 64                  	| 0.31     	| 0.29         	|
 | 32                  	| 0.26     	| 0.26         	|
 | 16                  	| 0.214    	| 0.216        	|
+
+Example of code snippet.
+```bash
+conda create -n repo_name pytest rope pylint tqdm numpy pandas sklearn
+source activate repo_name
+conda install -c conda-forge jupyter_contrib_nbextensions
+conda env export > environment.yml
+```

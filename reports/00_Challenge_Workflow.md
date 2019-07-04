@@ -8,11 +8,12 @@
 3. Download the challenge data
 4. Create a conda environment for the challenge
 
-    conda create -n repo_name pytest rope pylint tqdm numpy pandas sklearn
-    source activate repo_name
-    conda install -c conda-forge jupyter_contrib_nbextensions
-    conda env export > environment.yml
-
+```bash
+conda create -n repo_name pytest rope pylint tqdm numpy pandas sklearn
+source activate repo_name
+conda install -c conda-forge jupyter_contrib_nbextensions
+conda env export > environment.yml
+```
 
 4. Work on the challenge
 5. Use TDD methodology whenever possible, this will save time because errors
