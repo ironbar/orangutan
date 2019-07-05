@@ -22,6 +22,8 @@ There are [300](https://mdcrosby.com/blog/animalailaunch.html) tests with a pass
 
 **TODO:** Currently is not known if there is going to be a private and public liderboard. According to the [rules](http://animalaiolympics.com/rules.html) it may be possible to do variations on the tests after the competition has ended.
 
+It seems that the evaluation will be hosted on [EvalAI](https://evalai.cloudcv.org/), an open source platform for evaluating and comparing machine learning (ML) and artificial intelligence algorithms (AI) at scale.
+
 
 ## Assess situation
 <!---This task involves more detailed fact-finding about all of the resources,
