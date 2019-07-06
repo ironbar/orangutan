@@ -57,8 +57,27 @@ Sometimes we have to avoid harm zones and other times we have to cross them to g
 ### 5. Spatial Reasoning
 >This category tests an agent's ability to understand the spatial affordances of its environment. It tests for more complex navigational abilities and also knowledge of some of the simple physics by which the environment operates.
 
+I guess this could be refering to mazes. We can think of different mazes on the arena:
+* typical
+* elevated maze, that requires to stay in the top of the maze to reach the food
+* dead maze, the borders are dead zones
+* harm maze, it's possible to get to the goal with harm but also without it
+
+All this mazes can get more complicated if some of the paths get harm zones.
+
+Let's think of other arenas that could require spatial reasoning:
+* Elevated food
+* Hidden food that requires to move boxes to find it
+
 ### 6. Generalization
->This category includes variations of the environment that may look superficially different to the agent even though the properties and solutions to problems remain the same. These are still all specified by the standard configuration files.
+>This category includes variations of the environment that may look **superficially different** to the agent even though the properties and solutions to problems remain the same. These are still all specified by the standard configuration files.
+
+This could be referring to changing the color of the objects. In the description of the objects it says:
+>For simplicity, walls in most test problems will be grey
+>For simplicity, ramps in most test problems will be pink
+>...
+
+I guess that in generalization tests the colors will be different.
 
 ### 7. Internal Models
 >This category tests the agent's ability to store internal models of the environment. In these tests, the lights may turn off after a while and the agent must remember the layout of the environment to navigate it in the dark. Many animals are capable of this behaviour, but have access to more sensory input than our agents. Hence, the tests here are fairly simple in nature, designed for agents that must rely on visual input alone.
@@ -71,6 +90,15 @@ To solve this tests **memory** is needed, but it also was needed previously. I t
 
 ### 8. Object Permanence
 > Many animals seem to understand that when an object goes out of sight it still exists. This is a property of our world, and of our environment, but is not necessarily respected by many AI systems. There are many simple interactions that aren't possible without understanding object permanence and it will be interesting to see how this can be encoded into AI systems.
+
+[Video](https://www.youtube.com/watch?v=uPGTr2NOXCI) of object permanence teset on dog. Another [test](https://www.youtube.com/watch?v=-gWJrZ7MHpY) on a baby.
+
+If I understand correctly to test object permanence we have first see the food and next it has to be hidden. One way to do this is to use transparent walls as window. This way the agent can see that the object is inside and needs to navigate inside the building to gather it even when it does not see the goal anymore.
+
+Maybe a moving goal could push and hide another goal, I have to test if this is possible.
+
+However I'm not sure if in the context of the arena this is different to doing a complete exploration of the arena.
+And doing a complete exploration is necessary to ensure that the maximum goal is achieved.
 
 ### 9. Advanced Preferences
 >This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward. Expect tests with choices that lead to different achievable rewards.
