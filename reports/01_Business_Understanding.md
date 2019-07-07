@@ -48,3 +48,10 @@ case write them here, otherwise delete this section.--->
 <!--- Write initial ideas for the project. This is just initial thoughts,
 during the challenge I will have a better understanding of the project and
 with better information I could decide other actions not considered here.--->
+
+1. Understand the challenge
+2. Design levels
+3. Validation strategy
+4. Design agent
+5. Train
+6. Evaluate
