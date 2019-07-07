@@ -68,6 +68,7 @@ All this mazes can get more complicated if some of the paths get harm zones.
 Let's think of other arenas that could require spatial reasoning:
 * Elevated food
 * Hidden food that requires to move boxes to find it
+* Arena with traps. There could be holes without escape that the agent needs to avoid
 
 ### 6. Generalization
 >This category includes variations of the environment that may look **superficially different** to the agent even though the properties and solutions to problems remain the same. These are still all specified by the standard configuration files.
@@ -77,7 +78,8 @@ This could be referring to changing the color of the objects. In the description
 >For simplicity, ramps in most test problems will be pink
 >...
 
-I guess that in generalization tests the colors will be different.
+I guess that in generalization tests the colors will be different. So probably we can train for this category just by
+taking the problems for the previous categories and change the color of the objects.
 
 ### 7. Internal Models
 >This category tests the agent's ability to store internal models of the environment. In these tests, the lights may turn off after a while and the agent must remember the layout of the environment to navigate it in the dark. Many animals are capable of this behaviour, but have access to more sensory input than our agents. Hence, the tests here are fairly simple in nature, designed for agents that must rely on visual input alone.
@@ -91,6 +93,11 @@ To solve this tests **memory** is needed, but it also was needed previously. I t
 ### 8. Object Permanence
 > Many animals seem to understand that when an object goes out of sight it still exists. This is a property of our world, and of our environment, but is not necessarily respected by many AI systems. There are many simple interactions that aren't possible without understanding object permanence and it will be interesting to see how this can be encoded into AI systems.
 
+<p align="center">
+  <img src="https://www.wikihow.com/images/thumb/2/22/Test-Object-Permanence-in-Your-Cat-Step-8.jpg/aid3798086-v4-728px-Test-Object-Permanence-in-Your-Cat-Step-8.jpg" height=300>
+</p>
+
+
 [Video](https://www.youtube.com/watch?v=uPGTr2NOXCI) of object permanence teset on dog. Another [test](https://www.youtube.com/watch?v=-gWJrZ7MHpY) on a baby.
 
 If I understand correctly to test object permanence we have first see the food and next it has to be hidden. One way to do this is to use transparent walls as window. This way the agent can see that the object is inside and needs to navigate inside the building to gather it even when it does not see the goal anymore.
@@ -103,8 +110,23 @@ And doing a complete exploration is necessary to ensure that the maximum goal is
 ### 9. Advanced Preferences
 >This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward. Expect tests with choices that lead to different achievable rewards.
 
+This could test some sort of calculation of the possible highest reward when there are many options. For example crossing a harm area to reach a higher reward.
+
+Other option is to have an arena divided in two by a wall and the agent is at the top of the wall. It has to decide to
+which side to jump.
+
 ### 10. Causal Reasoning
 >Finally we test causal reasoning, which includes the ability to plan ahead so that the consequences of actions are considered before they are undertaken. All the tests in this category have been passed by some non-human animals, and these include some of the more striking examples of intelligence from across the animal kingdom.
+
+<p align="center">
+  <img src="http://www.themanitoban.com/wp-content/uploads/2012/10/Crow-359x250.jpg">
+</p>
+
+
+This [video](https://www.youtube.com/watch?v=ZerUbHmuY04) shows how crows are able to use rocks to reach food.
+
+I guess this tests involve moving objects to achieve goals. The more the steps of the plan the more the difficulty.
+In the arena there are boxes and wood pieces that can 
 
 <!--
 ## Select Data
