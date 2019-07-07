@@ -107,6 +107,8 @@ Maybe a moving goal could push and hide another goal, I have to test if this is 
 However I'm not sure if in the context of the arena this is different to doing a complete exploration of the arena.
 And doing a complete exploration is necessary to ensure that the maximum goal is achieved.
 
+Maybe creating a hole with very high walls makes impossible to see the goal from above and it is only seen from a window on the bottom.
+
 ### 9. Advanced Preferences
 >This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward. Expect tests with choices that lead to different achievable rewards.
 
