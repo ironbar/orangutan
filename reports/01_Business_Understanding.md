@@ -58,9 +58,21 @@ case write them here, otherwise delete this section.--->
 during the challenge I will have a better understanding of the project and
 with better information I could decide other actions not considered here.--->
 
+### Initial Plan
+
 1. Understand the challenge
 2. Design levels
+3. Baseline agent and submission
 3. Validation strategy
 4. Design agent
 5. Train
 6. Evaluate
+
+### Iterative plan
+
+Another option could be to approach the challenge as an iterative process. The syllabus could be approached
+category by category. Once we have train a model that is able to solve one category we can proceed to the next one.
+
+This could be a better choice than solving the challenge at once because there are many things to learn. If I had more
+experience I could try to design a ultimate model from scratch, but my experience with reinforcement learning is not
+that big.
