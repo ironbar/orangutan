@@ -128,7 +128,19 @@ which side to jump.
 This [video](https://www.youtube.com/watch?v=ZerUbHmuY04) shows how crows are able to use rocks to reach food.
 
 I guess this tests involve moving objects to achieve goals. The more the steps of the plan the more the difficulty.
-In the arena there are boxes and wood pieces that can 
+In the arena there are boxes and wood pieces that can be used for testing this ability.
+
+
+## Designing the models
+
+I'm going to desing models for each category of the syllabus. Hopefully this will give more ideas and
+better understanding of the challenge.
+
+* Illumination could provide an absolute reference to the environment. It is always the same.
+* On Ramps is difficult to see where is the orientation of the ramp
+* Generalization is the same as spatial navigation but using different colors for walls and ramps
+* forcedChoice level is one of the ideas that I had.
+* Boxes can be tilted or rotated
 
 <!--
 ## Select Data

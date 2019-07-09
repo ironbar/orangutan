@@ -20,9 +20,18 @@ the characteristics of the metric --->
 
 There are [300](https://mdcrosby.com/blog/animalailaunch.html) tests with a pass/no pass structure. There are 10 categories of tests with increasing difficulty.
 
-**TODO:** Currently is not known if there is going to be a private and public liderboard. According to the [rules](http://animalaiolympics.com/rules.html) it may be possible to do variations on the tests after the competition has ended.
+>The evaluation runs your agent on all 300 tests and returns the total score for each category. All tests are pass-fail (based on achieving a score above a threshold) so the maximum score possible is 300.
 
-It seems that the evaluation will be hosted on [EvalAI](https://evalai.cloudcv.org/), an open source platform for evaluating and comparing machine learning (ML) and artificial intelligence algorithms (AI) at scale.
+All the categories have the same number of tests: 30.
+
+>For the mid-way evaluation (for those opting in for a share of the $10,000 AWS prizes) and final evaluation we will (resources permitting) run more extensive testing with 3 variations per test (so 900 tests total). The variations will include minor perturbations to the configurations. The agent will have to pass all 3 variations to pass each individual test, still giving a total score out of 300, but with more strict requirements. This means that your final test score will probably be lower than the score achieved in normal feedback and that the competition leaderboard on EvalAI may not exactly match the final results.
+
+The evaluation will be hosted on [EvalAI](https://evalai.cloudcv.org/web/challenges/challenge-page/396/leaderboard/1107), an open source platform for evaluating and comparing machine learning (ML) and artificial intelligence algorithms (AI) at scale.
+
+>All the tests will have one of the following lengths (in steps): 250, 500, 1000
+This information is passed to the agent by the reset function.
+
+A docker is required for creating the evaluation.
 
 
 ## Assess situation
