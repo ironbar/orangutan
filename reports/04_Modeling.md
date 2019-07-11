@@ -65,14 +65,36 @@ to make a lot of submissions. Sometimes is not easy to have a good correlation b
 validation score and LB score
 --->
 
-## Iteration 1. Iteration_title
+**TODO:**
+
+## Iteration 1. Imitation learning
 <!---
 The work is done using short iterations. Each iteration needs to have a very
 clear goal. This allows to gain greater knowledge of the problem on each iteration.
 --->
+On the first iteration I want to train an agent by imitating human play. This will allow to create a
+baseline that will allow to compare the efficiency of supervised training versus reinforcement learning.
+
+Hopefully this agent will be able to solve many of the challenges that do not require too much intelligence
+and that will also give us hints about the difficulty of the tests.
+
+### Goal
+
+* Learn how to train an agent, how to interact with the arena
+* Train a baseline agent using imitation learning
+* Learn how to make a submission
+* Visualize how the agent plays
+
+### Development
+
+### Results
+
+<!---
+## Iteration n. Iteration_title
 
 ### Goal
 
 ### Development
 
 ### Results
+--->
