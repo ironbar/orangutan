@@ -19,6 +19,8 @@ The syllabus is described on the challenge [blog](https://mdcrosby.com/blog/anim
 I think this category is very simple. A model without memory could solve it. It will just have to learn to move towards the food.
 If it does not see the food at first sight just rotate and the model will find it.
 
+However at the start of the challenge (15/07/2019) no agent gets the maximum score on this category. Maybe the food is moving too fast?
+
 ### 2. Preferences
 > This category tests an agent's ability to choose the most rewarding course of action. Almost all animals will display preferences for more food or easier to obtain food, although the exact details differ between species. Some animals possess the ability to make complex decisions about the most rewarding long-term course of action.
 

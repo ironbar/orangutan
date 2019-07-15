@@ -87,6 +87,24 @@ and that will also give us hints about the difficulty of the tests.
 
 ### Development
 
+#### First submission
+
+I have followed the [instructions](https://github.com/beyretb/AnimalAI-Olympics/blob/master/documentation/submission.md) to make a first submission using the provided agent. The submission involves
+creating a docker image with all the dependencies and copying the agent inside it. There is a python script for testing the docker that I believe is very similar to the one used on the challenge.
+
+There is python package called evalai that can be used to upload the docker image to the challenge. The upload speed is about 5 MB/s. It's possible to use that package to get the results of the submission.
+
+I should probably adapt the docker file so I can parametrize the agent script and the data needed.
+
+```bash
+cd examples/submission/
+docker build --tag=submission .
+docker run -v "$PWD"/test_submission:/aaio/test submission python /aaio/test/testDocker.py
+evalai push submission:latest --phase animalai-main-396
+evalai submission 29473
+evalai submission 29473 result
+```
+
 ### Results
 
 <!---
