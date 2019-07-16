@@ -11,3 +11,6 @@ clean-pyc:
 
 test: clean-pyc
 	python setup.py test
+
+env-export:
+	conda env export > environment.yml
