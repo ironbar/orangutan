@@ -53,9 +53,15 @@ def record_games(args):
         n_steps += 1
         is_level_ended = info.max_reached[0] or info.local_done[0]
         if is_level_ended:
-            level_storage.save(os.path.join(output_folder, '%05d.npz' % level_idx))
+            reward = _unpack_info(info)[-1]
+            if reward > 0:
+                level_storage.save(os.path.join(output_folder, '%05d.npz' % level_idx))
+                level_idx += 1
+            else:
+                msg = 'Not saving level because of negative reward'
+                print(msg)
+                cv2.displayOverlay('img', msg)
             level_storage = LevelStorage()
-            level_idx += 1
             n_steps = 0
             _transition_between_levels()
 
