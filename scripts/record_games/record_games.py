@@ -35,11 +35,21 @@ def record_games(args):
     while 1:
         _update_window(info, level_idx, n_steps)
         action = _get_action_from_keyboard()
-        if action is None: break
+        if isinstance(action, str):
+            if action == 'break':
+                break
+            elif action == 'reset':
+                info = env.reset()['Learner']
+                level_storage = LevelStorage()
+                n_steps = 0
+                _transition_between_levels()
+                continue
 
-        level_storage.add(info, action)
 
-        info = env.step(vector_action=action)['Learner']
+        info_next = env.step(vector_action=action)['Learner']
+        level_storage.add(info, info_next, action)
+        info = info_next
+
         n_steps += 1
         is_level_ended = info.max_reached[0] or info.local_done[0]
         if is_level_ended:
@@ -81,7 +91,8 @@ def _get_action_from_keyboard():
         ord('a'): [0, 2],
         ord('w'): [1, 0],
         ord('s'): [2, 0],
-        ord('o'): None,
+        ord('o'): 'break',
+        ord('l'): 'reset',
     }
     while 1:
         key = cv2.waitKey()
@@ -98,16 +109,19 @@ class LevelStorage():
         self.speed = []
         self.previous_action = []
         self.action = []
+        self.reward = []
 
-    def add(self, info, action):
-        frame, speed, previous_action = _unpack_info(info)
+    def add(self, info, info_next, action):
+        frame, speed, previous_action, _ = _unpack_info(info)
+        _, _, _, reward = _unpack_info(info_next)
         self.frame.append(frame)
         self.speed.append(speed)
         self.previous_action.append(previous_action)
         self.action.append(action)
+        self.reward.append(reward)
 
     def save(self, path):
-        np.savez(path, frame=self.frame, speed=self.speed,
+        np.savez(path, frame=self.frame, speed=self.speed, reward=self.reward,
                  previous_action=self.previous_action, action=self.action)
 
 def _prepare_output_folder(config_filepath, output_path):
@@ -118,13 +132,13 @@ def _prepare_output_folder(config_filepath, output_path):
     return output_folder
 
 def _update_window(info, level_idx, n_steps):
-    frame, speed, previous_action = _unpack_info(info)
+    frame, speed, previous_action, reward = _unpack_info(info)
 
     cv2.imshow('img', frame[:, :, [2, 1, 0]])
     msg = 'Games played: %i     n_steps: %i   Reward: %.2f   Speed: %s Text observations: %s' % (
         level_idx,
         n_steps,
-        info.rewards[0],
+        reward,
         speed,
         info.text_observations[0])
     cv2.displayOverlay('img', msg)
@@ -133,7 +147,8 @@ def _unpack_info(info):
     frame = info.visual_observations[0][0]
     speed = info.vector_observations.round(2)
     previous_action = info.previous_vector_actions
-    return frame, speed, previous_action
+    reward = info.rewards[0]
+    return frame, speed, previous_action, reward
 
 def _get_initial_level_idx(output_folder):
     saved_games = sorted(glob.glob(os.path.join(output_folder, '*.npz')))
@@ -155,7 +170,9 @@ def parse_args(args):
     """
     description = """
     Record games
-    Use keys (w,a,s,d) to move. Press "o" to end the application.
+    Use keys (w,a,s,d) to move.
+    Press "o" to end the application.
+    Press "l" to reset the level without saving the current game.
     """
     parser = argparse.ArgumentParser(
         description='Record games',
