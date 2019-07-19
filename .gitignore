@@ -7,3 +7,4 @@ notebooks/.ipynb_checkpoints/*
 .pytest_cache/*
 */UnitySDK.log
 */*/UnitySDK.log
+notebooks/*.hdf
