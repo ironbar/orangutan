@@ -1,21 +1,31 @@
 
 TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/AnimalAI-Olympics/examples/submission/test_submission
 
-help:
-	@echo "test - run tests quickly with the default Python"
-	@echo "clean-pyc - remove Python file artifacts"
+define PRINT_HELP_PYSCRIPT
+import re, sys
 
-clean-pyc:
+for line in sys.stdin:
+	match = re.match(r'^([a-zA-Z_-]+):.*?## (.*)$$', line)
+	if match:
+		target, help = match.groups()
+		print("%-20s %s" % (target, help))
+endef
+export PRINT_HELP_PYSCRIPT
+
+help:
+	@python -c "$$PRINT_HELP_PYSCRIPT" < $(MAKEFILE_LIST)
+
+clean-pyc: ## remove Python file artifacts
 	find . -name '*.pyc' -exec rm -f {} +
 	find . -name '*.pyo' -exec rm -f {} +
 	find . -name '*~' -exec rm -f {} +
 	find . -name '__pycache__' -exec rm -fr {} +
 
-test: clean-pyc
+test: clean-pyc ## run tests quickly with the default Python
 	python setup.py test
 
-env-export:
+env-export: ## export conda environment to file
 	conda env export > environment.yml
 
-test-submission:
+test-submission: ## test that submission works: DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
 	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py
