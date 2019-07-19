@@ -1,5 +1,6 @@
 
 TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/AnimalAI-Olympics/examples/submission/test_submission
+SAVED_GAMES_PATH=/media/guillermo/Data/Kaggle/animalai/gameplay
 
 define PRINT_HELP_PYSCRIPT
 import re, sys
@@ -32,4 +33,7 @@ test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple
 
 push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_food_SL make push-submission
 	evalai push $(DOCKER_IMAGE) --phase animalai-main-396
+
+record-games: ## play games with keyboard and saved them to file. CONFIG_FILEPATH=data/env_configs/1-Food_multi.yaml make record-games
+	python scripts/record_games/record_games.py "$(CONFIG_FILEPATH)" $(SAVED_GAMES_PATH)
 
