@@ -22,7 +22,6 @@ def main(args=None):
     record_games(args)
 
 def record_games(args):
-    # TODO: improve transition between levels
     env = _create_environment(args.config_filepath)
     output_folder = _prepare_output_folder(args.config_filepath, args.output_path)
 
