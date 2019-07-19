@@ -1,4 +1,6 @@
 
+TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/AnimalAI-Olympics/examples/submission/test_submission
+
 help:
 	@echo "test - run tests quickly with the default Python"
 	@echo "clean-pyc - remove Python file artifacts"
@@ -14,3 +16,6 @@ test: clean-pyc
 
 env-export:
 	conda env export > environment.yml
+
+test-submission:
+	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py
