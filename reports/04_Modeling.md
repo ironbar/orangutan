@@ -105,7 +105,49 @@ evalai submission 29473
 evalai submission 29473 result
 ```
 
+#### Recording games
+
+I have created a script that allows to play games using the keyboard and save the information of
+the game to disk. This allows to do later supervised learning. The script is located at "scripts/record_games/record_games.py"
+and I have prepared a simple instruction on make to record games.
+
+#### Training
+
+I have trained a simple model that uses as input the frame, speed and previous action to predict the next action.
+The number of parameters is very small ~ 6k and trains very fast.
+
+I have realized that the games have horizontal simetry so I can duplicate the games by doing an horizontal flip to the images
+and inverting the rotations.
+
+#### Visualizing agent play
+
+I also created a quick visualization of the agent play. It needs to be improved in the next iteration.
+
 ### Results
+
+I will be saving the results of all the models on a [google sheet](https://docs.google.com/spreadsheets/d/15FEKXNcCCVq_YiGFdcpcruGhfKx2oJwzvRT94l4KOUY/edit#gid=0).
+
+I have trained two models:
+
+1. Just with games with a single static food. At the start of the games I rotated always to the same side until I saw food,
+then I moved towards the food. The small food is harder to see so I played more games with small food.
+2. With lot of games of different categories. I rotated to both sides because I was using mirroring of the games.
+
+The results were surprisingly similar even when the second model was trained with much more data. I get a score of 20.67 and 19 respectively.
+
+My guess is that the "algorithm" that I used for playing was not good for the other categories.
+I think that rotating only has sense if the field is empty, otherwise exploration is a better option. If there
+are obstacles is better to go to see what's behind them instead of doing a 360 rotation to finally start exploring.
+Moreover moving forward at the start of the level may allow to escape from a bouncing bad goal.
+
+### Next steps
+
+* Try playing with a better "algorithm" that explores instead of rotating when there are obstacles
+* Prepare a battery of tests that measure how well an agent plays internally
+* Create a better visualization algorithm for the agent for better diagnose
+* Improve the model architecture and check if better metrics are available
+* Create a script for visualizing saved games
+
 
 <!---
 ## Iteration n. Iteration_title
