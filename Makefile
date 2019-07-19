@@ -27,5 +27,9 @@ test: clean-pyc ## run tests quickly with the default Python
 env-export: ## export conda environment to file
 	conda env export > environment.yml
 
-test-submission: ## test that submission works: DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
+test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
 	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py
+
+push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_food_SL make push-submission
+	evalai push $(DOCKER_IMAGE) --phase animalai-main-396
+
