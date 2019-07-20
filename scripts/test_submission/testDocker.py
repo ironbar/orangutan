@@ -3,6 +3,7 @@ Script for testing and evaluating the docker
 """
 import glob
 import os
+import sys
 import importlib.util
 import numpy as np
 
@@ -32,7 +33,7 @@ def main():
         docker_training=True,
     )
 
-    config_filepaths = glob.glob('/aaio/test/configs/*.yaml')
+    config_filepaths = sorted(glob.glob('/aaio/test/configs/*.yaml'))
     rewards = []
     for config_filepath in config_filepaths:
         rewards.append(evaluate_config(config_filepath, env, submitted_agent))
@@ -62,6 +63,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=10):
             raise e
         print('Episode %i: %.2f' % (k, cumulated_reward))
         rewards.append(cumulated_reward)
+        sys.stdout.flush()
     return rewards
 
 def _reset_agent(agent, arena):
