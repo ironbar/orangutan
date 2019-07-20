@@ -9,3 +9,4 @@ notebooks/.ipynb_checkpoints/*
 */*/UnitySDK.log
 notebooks/*.hdf
 UnitySDK.log
+scripts/test_submission/summary.json

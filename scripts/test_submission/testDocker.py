@@ -4,6 +4,8 @@ Script for testing and evaluating the docker
 import glob
 import os
 import sys
+import json
+import time
 import importlib.util
 import numpy as np
 
@@ -35,12 +37,14 @@ def main():
 
     config_filepaths = sorted(glob.glob('/aaio/test/configs/*.yaml'))
     rewards = []
+    elapsed_time = time.time()
     for config_filepath in config_filepaths:
         rewards.append(evaluate_config(config_filepath, env, submitted_agent))
-    _summarize_rewards(rewards, config_filepaths)
+    elapsed_time = time.time() - elapsed_time
+    _summarize_rewards(rewards, config_filepaths, elapsed_time)
     print('SUCCESS')
 
-def evaluate_config(config_filepath, env, submitted_agent, n_episodes=10):
+def evaluate_config(config_filepath, env, submitted_agent, n_episodes=30):
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
@@ -73,11 +77,18 @@ def _reset_agent(agent, arena):
         print('Your agent could not be reset:')
         raise e
 
-def _summarize_rewards(rewards, config_filepaths):
+def _summarize_rewards(rewards, config_filepaths, elapsed_time):
     print('\nRewards summary')
+    data = {'elapsed_time': elapsed_time, 'levels': {}}
     for reward, config_filepath in zip(rewards, config_filepaths):
-        print('%.2f\t %s' % (np.mean(reward), os.path.basename(config_filepath)))
+        key = os.path.splitext(os.path.basename(config_filepath))[0]
+        score = np.mean(reward)
+        data['levels'][key] = score
+        print('%.2f\t %s' % (score, key))
+    data['mean_score'] = np.mean(rewards)
     print('Mean reward: %.2f' % np.mean(rewards))
+    with open('/aaio/test/summary.json', 'w') as f:
+        json.dump(data, f)
 
 if __name__ == '__main__':
     main()
