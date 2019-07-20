@@ -75,7 +75,7 @@ def _create_environment(config_filepath):
             env = UnityEnvironment(
                 file_name=ENVIRONMENT_FILEPATH,   # Path to the environment
                 worker_id=worker_id,                # Unique ID for running the environment (used for connection)
-                seed=0,                     # The random seed
+                seed=int(os.getenv('ENV_SEED', 0)),                     # The random seed
                 docker_training=False,      # Whether or not you are training inside a docker
                 n_arenas=1,                 # Number of arenas in your environment
                 play=False,                 # Set to False for training
@@ -178,6 +178,7 @@ def parse_args(args):
     Use keys (w,a,s,d) to move.
     Press "o" to end the application.
     Press "l" to reset the level without saving the current game.
+    The environment variable ENV_SEED can be used to modify the random seed that is 0 by default
     """
     parser = argparse.ArgumentParser(
         description='Record games',

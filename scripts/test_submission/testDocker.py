@@ -25,7 +25,7 @@ def main():
 
     env = AnimalAIEnv(
         environment_filename='/aaio/test/env/AnimalAI',
-        seed=7,
+        seed=7777,
         retro=False,
         n_arenas=1,
         worker_id=1,
