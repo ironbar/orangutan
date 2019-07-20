@@ -79,11 +79,11 @@ def _reset_agent(agent, arena):
 
 def _summarize_rewards(rewards, config_filepaths, elapsed_time):
     print('\nRewards summary')
-    data = {'elapsed_time': elapsed_time, 'levels': {}}
+    data = {'elapsed_time': elapsed_time}
     for reward, config_filepath in zip(rewards, config_filepaths):
         key = os.path.splitext(os.path.basename(config_filepath))[0]
         score = np.mean(reward)
-        data['levels'][key] = score
+        data['level_%s' % key] = score
         print('%.2f\t %s' % (score, key))
     data['mean_score'] = np.mean(rewards)
     print('Mean reward: %.2f' % np.mean(rewards))

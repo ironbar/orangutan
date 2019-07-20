@@ -30,6 +30,9 @@ env-export: ## export conda environment to file
 
 test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
 	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py
+	# copy the file to the results folder
+	python -c "import shutil; import os;shutil.copyfile('scripts/test_submission/summary.json', 'scripts/test_submission/results/%s.json' % os.getenv('DOCKER_IMAGE').split(':')[-1])"
+	python scripts/test_submission/summaryze_results.py
 
 push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_food_SL make push-submission
 	evalai push $(DOCKER_IMAGE) --phase animalai-main-396
