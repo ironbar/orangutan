@@ -1,5 +1,5 @@
 
-TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/AnimalAI-Olympics/examples/submission/test_submission
+TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/orangutan/scripts/test_submission
 SAVED_GAMES_PATH=/media/guillermo/Data/Kaggle/animalai/gameplay
 
 define PRINT_HELP_PYSCRIPT
