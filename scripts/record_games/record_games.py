@@ -139,7 +139,7 @@ def _prepare_output_folder(config_filepath, output_path):
 def _update_window(info, level_idx, n_steps):
     frame, speed, previous_action, reward = _unpack_info(info)
 
-    cv2.imshow('img', frame[:, :, [2, 1, 0]])
+    cv2.imshow('img', _add_hud(frame[:, :, [2, 1, 0]]))
     msg = 'Games played: %i     n_steps: %i   Reward: %.2f   Speed: %s Text observations: %s' % (
         level_idx,
         n_steps,
@@ -147,6 +147,11 @@ def _update_window(info, level_idx, n_steps):
         speed,
         info.text_observations[0])
     cv2.displayOverlay('img', msg)
+
+def _add_hud(frame):
+    frame = frame.copy()
+    frame[:, 41:43] += 10/255
+    return frame
 
 def _unpack_info(info):
     frame = info.visual_observations[0][0]

@@ -199,6 +199,25 @@ at goals is not very good, sometimes it misses them.
 * 4_Avoidence. It does not know to navigate
 * 5_Spatial Reasoning. Get's stuck in the borders or walls.
 
+#### New agent
+
+To improve the current agent I want to focus on the following aspects:
+* Better aiming at goals. I have seen that current models are not very precise, I want to improve this
+* Navigation. To improve the score the model needs to be able to navigate until it sees a clear goal.
+* Avoid dead goals and dead zones.
+
+I find interesting that even when it seems a simple game and I'm able to solve it defining the strategy
+is not clear. So probably reinforcement learning would be the right choice to find the optimal strategy.
+
+To achieve those goals I have to carefully design scenarios that help the agent to learn those concepts.
+For example I have the hypothesis that if I start with the dead zones slightly elevated there will be collisions
+with the good goals and thus the goals will never be on top of dead zones (Althought it will be interesting to learn
+to ignore those goals.)
+
+Another improvement could be to add a HUD overlay over the game that will help to aim correctly at the goal. Also a button to stop the game and save could help to give more weight to certain aspects of the game.
+
+I will solve those problems iteratively, checking that solving one of them does not hurt the others.
+
 ### Results
 
 
