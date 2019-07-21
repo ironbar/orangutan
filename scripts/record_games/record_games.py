@@ -181,7 +181,7 @@ def parse_args(args):
     The environment variable ENV_SEED can be used to modify the random seed that is 0 by default
     """
     parser = argparse.ArgumentParser(
-        description='Record games',
+        description=description,
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
         epilog=epilog)
     parser.add_argument('config_filepath', help='Path to the file with configuratino for playing')

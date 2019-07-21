@@ -24,6 +24,8 @@ def main(args=None):
         create_video(saved_games_filepath, video_filepath)
 
 def create_video(npz_filepath, video_filepath):
+    if not os.path.exists(os.path.dirname(video_filepath)):
+        os.makedirs(os.path.dirname(video_filepath))
     data = np.load(npz_filepath)
     frames = data['frame'][:, :, :, [2, 1, 0]]
     """
