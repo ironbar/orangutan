@@ -205,6 +205,7 @@ To improve the current agent I want to focus on the following aspects:
 * Better aiming at goals. I have seen that current models are not very precise, I want to improve this
 * Navigation. To improve the score the model needs to be able to navigate until it sees a clear goal.
 * Avoid dead goals and dead zones.
+* Improve lightsOff.
 
 I find interesting that even when it seems a simple game and I'm able to solve it defining the strategy
 is not clear. So probably reinforcement learning would be the right choice to find the optimal strategy.
@@ -217,6 +218,10 @@ to ignore those goals.)
 Another improvement could be to add a HUD overlay over the game that will help to aim correctly at the goal. Also a button to stop the game and save could help to give more weight to certain aspects of the game.
 
 I will solve those problems iteratively, checking that solving one of them does not hurt the others.
+
+##### Better aiming at goals
+
+By using the hud I have played around 57 games and the model seems to be much accurate than previously.
 
 ### Results
 
