@@ -43,6 +43,14 @@ def record_games(args):
                 n_steps = 0
                 _transition_between_levels()
                 continue
+            elif action == 'save':
+                info = env.reset()['Learner']
+                level_storage.save(os.path.join(output_folder, '%05d.npz' % level_idx))
+                level_storage = LevelStorage()
+                level_idx += 1
+                n_steps = 0
+                _transition_between_levels()
+                continue
 
 
         info_next = env.step(vector_action=action)['Learner']
@@ -97,7 +105,8 @@ def _get_action_from_keyboard():
         ord('w'): [1, 0],
         ord('s'): [2, 0],
         ord('o'): 'break',
-        ord('l'): 'reset',
+        ord('k'): 'reset',
+        ord('n'): 'save',
     }
     while 1:
         key = cv2.waitKey()
