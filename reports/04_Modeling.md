@@ -148,6 +148,59 @@ Moreover moving forward at the start of the level may allow to escape from a bou
 * Improve the model architecture and check if better metrics are available
 * Create a script for visualizing saved games
 
+## Iteration 2. Improving Imitation Learning results
+
+### Goal
+
+On this iteration I want to lay the foundations for future work.
+
+* Create an script for evaluating the agents
+* Create an script for visualizing agents play
+* Think of ways of improving the current score by analyzing the already submitted agents
+
+### Development
+
+#### Studying submission test code
+
+The submission test outputs some scores, I want to study the code to see if I can use it as my
+evaluation for the agents.
+
+The code is quite simple and I believe I can easily modify it so it will run as many levels as config files it founds.
+The scores are reproducible if the number of episodes does not change.
+
+I have prepared a pipeline using the makefile that allows to evaluate a docker and create a summary of all evaluations.
+
+This script could be used to create videos of the games if the agent had opencv. I could create a very similar
+script to save the videos, but I don't like the idea of duplicating code and also duplicating the computing
+of evaluations. Another alternative would be to save the frames using numpy and later use opencv. I think this
+later one is preferable, and I have implemented it.
+
+#### Analyzing previous agents games
+
+Now that I have videos of the agent playing I can analyze them and think ways of improving the model.
+
+##### Best model yet: 003_less_games
+
+* 1_Food. It does not always aim correctly to the food but it is always able to get it.
+Sometimes it reaches the borders and rotates to escape from them.
+* 2_Preferences. I don't think the preference for yellow balls is clear. Sometimes it collides with red balls.
+* 3_Obstacles. Only reaches the food when is visible from the start point. It does not now how to navigate the environment. Many times it gets stuck against the borders of the arena or against walls.
+* 4_Avoidance. It has not learn to avoid red zones.
+* 5_Spatial Reasoning. It dones not know how to navigate, sometimes it does but not very well. Again aiming
+at goals is not very good, sometimes it misses them.
+* 6_Generalization. It goes towards green walls, it does not know that only green balls are appealing.
+* 7_Internal memory. It seems to keep moving even when the light is off, maybe I have to create an auxiliary function for the agent to stay still when lights are off.
+* all_objects_random. It goes towards green walls and wood, collides with a lot of red zones.
+* moving_food. Aiming is very bad
+
+##### Model trained with more data: 002_more_games
+
+* 2_Preferences. I don't think the preference for yellow balls is clear
+* 4_Avoidence. It does not know to navigate
+* 5_Spatial Reasoning. Get's stuck in the borders or walls.
+
+### Results
+
 
 <!---
 ## Iteration n. Iteration_title
