@@ -15,4 +15,5 @@ for result_filepath in result_filepaths:
 
 df = pandas.DataFrame(results)
 df.set_index('name', inplace=True)
+df = df.round(4)
 df.to_csv(os.path.join(SCRIPT_DIR, 'summary.csv'))
