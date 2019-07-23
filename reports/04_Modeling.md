@@ -232,6 +232,25 @@ had some degenerations like going to the border of the arena and staying there.
 I think that the solution has to come from Reinforcement learning. That way the model could escape those
 degenerations by itself.
 
+## Iteration 3. Reinforcement learning
+
+### Goal
+
+The goal of the iteration is to take the first steps with reinforcement learning.
+
+On previous iterations we have seen
+that it's possible to get a good score by showing a few examples of games played on simple scenarios. It should
+be possible to do the same with RL. Moreover by playing on more complex scenarios abilities such as navigation and dead
+avoiding should be developed.
+
+### Development
+
+#### Sample training script
+
+On a first step I want to understand and use the sample training script provided on animalai.
+
+### Results
+
 <!---
 ## Iteration n. Iteration_title
 
