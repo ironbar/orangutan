@@ -36,6 +36,7 @@ test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple
 	python scripts/test_submission/summaryze_results.py
 	python scripts/visualize_recorded_games/visualize_recorded_games.py scripts/test_submission/frames $(VIDEOS_PATH)/$(shell python -c "import os;print(os.getenv('DOCKER_IMAGE').split(':')[-1])")
 	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/clean.py
+	spd-say End
 
 push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_food_SL make push-submission
 	evalai push $(DOCKER_IMAGE) --phase animalai-main-396

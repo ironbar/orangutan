@@ -225,6 +225,12 @@ By using the hud I have played around 57 games and the model seems to be much ac
 
 ### Results
 
+I have not been able to succesfully train a better agent using supervised learning(or imitation learning).
+When I played some levels of one category the score on some other category get worse. Moreover the agent
+had some degenerations like going to the border of the arena and staying there.
+
+I think that the solution has to come from Reinforcement learning. That way the model could escape those
+degenerations by itself.
 
 <!---
 ## Iteration n. Iteration_title
