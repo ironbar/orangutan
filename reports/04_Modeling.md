@@ -229,6 +229,10 @@ I have not been able to succesfully train a better agent using supervised learni
 When I played some levels of one category the score on some other category get worse. Moreover the agent
 had some degenerations like going to the border of the arena and staying there.
 
+<p align="center">
+  <img src="https://www.meetingsnet.com/sites/meetingsnet.com/files/styles/article_featured_standard/public/plate_juggler_crop.gif?itok=7LU_opyZ">
+</p>
+
 I think that the solution has to come from Reinforcement learning. That way the model could escape those
 degenerations by itself.
 
