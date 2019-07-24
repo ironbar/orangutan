@@ -247,11 +247,44 @@ that it's possible to get a good score by showing a few examples of games played
 be possible to do the same with RL. Moreover by playing on more complex scenarios abilities such as navigation and dead
 avoiding should be developed.
 
+
 ### Development
 
 #### Sample training script
 
 On a first step I want to understand and use the sample training script provided on animalai.
+I run the script "trainMLAgents.py" as it is and I can see that the usage of cpu and gpu is very small, so I can probably
+use more arenas than 4 for training. Moreover the model is using 23 MB of disk space while my first models were only 150-300 kB.
+
+I have trained for 400k steps in 1:40 hours. The model has learned to reach green balls but not small ones. I have to use more data on training.
+
+If I use 16 arenas those which are not configured are loaded randomly. However it seems to be running on a single core so there is no speedup.
+I have trained a model with 36 arenas for almost a day and the model is not able to learn anything.
+
+I'm going to try to train a model on very simple arenas with just goals, to try to reach a similar score to the one I get with supervised learning.
+The model is able to learn to reach big goals but not small ones. I have been digging into animalai_train code and I have found where the model
+is defined and I have modified the architecture.
+
+Let's try to summarize the learnings:
+* Training uses only 1 core and the gpu is almost idle. Being able to speedup this would give a great advantage over competitors.
+* The animalai_train repo seems to be a copy from ml-agents. There is a lot of code but probably most of it is just copied.
+* The model used by the train script is hardcoded on the library and defined on tensorflow. Is defined on LearningModel class
+* Looking at the source code it seems that it only uses visual input, there are some functions about vector observations but I think
+they are not being used.
+* It's possible to resume the training
+* Tensorboard is useful to analize the train evolution.
+
+#### Multicore training
+
+https://github.com/Unity-Technologies/ml-agents/issues/828
+https://github.com/Unity-Technologies/ml-agents/issues/1441
+https://github.com/Unity-Technologies/ml-agents/issues/209
+
+https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-ML-Agents.md
+--num-envs=<n> - Specifies the number of concurrent Unity environment instances to collect experiences from when training. Defaults to 1.
+
+https://github.com/Unity-Technologies/ml-agents/blob/master/ml-agents/mlagents/trainers/learn.py
+env = SubprocessUnityEnvironment(env_factory, num_envs)  This seems to hold the key to do multicore training.
 
 ### Results
 
