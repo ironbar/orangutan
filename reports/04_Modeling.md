@@ -288,6 +288,13 @@ env = SubprocessUnityEnvironment(env_factory, num_envs)  This seems to hold the 
 
 ### Results
 
+I have trained the agent 006_ml_agents_first_steps with a simplified architecture and simple arenas. It has reached
+a score of 24 which is slightly better than my best model with supervised learning.
+
+I have trained a second agent 007_ml_agents_first_steps that has 16 arenas for playing. It has been trained with "data/env_configs/training_002.yaml".
+It achieves a score of 23, improving on some categories and worsening on others. I have the intuition that the model needs more inputs and that will
+simplify the game so it can focus on learning new behaviours.
+
 <!---
 ## Iteration n. Iteration_title
 

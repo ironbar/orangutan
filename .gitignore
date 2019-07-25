@@ -11,3 +11,4 @@ notebooks/*.hdf
 UnitySDK.log
 scripts/test_submission/summary.json
 scripts/test_submission/frames/*.npz
+scripts/test_submission/.~lock.summary.csv#
