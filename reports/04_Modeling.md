@@ -123,6 +123,23 @@ and inverting the rotations.
 
 I also created a quick visualization of the agent play. It needs to be improved in the next iteration.
 
+#### Problems with conda environment
+
+There are inconsistencies between opencv, tensorflow-gpu and the environment requirements (numpy 1.14.5). Maybe I should create an environment for playing an another for training. However if I want to do reinforcement learning I need both in the environment.
+
+Which are my requirements:
+* python 3.6, this is required by animalai
+* opencv 4.1.0 or higher, previous versions do not show the window
+* tensorflow-gpu, needed to train
+* numpy 1.14.5, is this really necessary?
+
+I have solved the problme this way:
+
+  conda create -n animal -c conda-forge python=3.6 jupyter ipywidgets pytest rope pylint tqdm pandas scikit-learn ipython ipykernel autopep8 matplotlib tensorflow-gpu opencv==4.1.0 cudatoolkit==10.0.130 numpy==1.14.5 -y
+  conda activate animal
+  #Install animalai and animalai_train with develop mode: "python setup.py develop"
+  python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python ($CONDA_DEFAULT_ENV)"
+
 ### Results
 
 I will be saving the results of all the models on a [google sheet](https://docs.google.com/spreadsheets/d/15FEKXNcCCVq_YiGFdcpcruGhfKx2oJwzvRT94l4KOUY/edit#gid=0).
@@ -285,6 +302,18 @@ https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-ML-Age
 
 https://github.com/Unity-Technologies/ml-agents/blob/master/ml-agents/mlagents/trainers/learn.py
 env = SubprocessUnityEnvironment(env_factory, num_envs)  This seems to hold the key to do multicore training.
+
+I have tried importing "from mlagents.envs.subprocess_environment import SubprocessUnityEnvironment" but there are conflicts with animalai.
+Maybe I should copy that into animalai.
+
+  TypeError: Couldn't build proto file into descriptor pool!
+  Invalid proto descriptor for file "mlagents/envs/communicator_objects/agent_action_proto.proto":
+  communicator_objects.AgentActionProto.vector_actions: "communicator_objects.AgentActionProto.vector_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+  communicator_objects.AgentActionProto.text_actions: "communicator_objects.AgentActionProto.text_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+  communicator_objects.AgentActionProto.memories: "communicator_objects.AgentActionProto.memories" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+  communicator_objects.AgentActionProto.value: "communicator_objects.AgentActionProto.value" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+  communicator_objects.AgentActionProto: "communicator_objects.AgentActionProto" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+
 
 ### Results
 
