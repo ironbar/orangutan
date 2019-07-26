@@ -314,6 +314,11 @@ Maybe I should copy that into animalai.
   communicator_objects.AgentActionProto.value: "communicator_objects.AgentActionProto.value" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
   communicator_objects.AgentActionProto: "communicator_objects.AgentActionProto" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
 
+I'm trying to implement the SubprocessUnityEnvironment on Animalai. At this moment I'm able to create n environments, reset them and send actions.
+It runs on multicore but it is not moving and the actions have a strange format. So I have to fix that, but it seems to be at reach. I should look
+at animalai/animalai/envs/subprocess_environment.py and animalai/animalai/envs/environment.py because they must share the same interface to be able to use them.
+Also check external_brain_names because that might be a problem also because of poor implementation.
+
 
 ### Results
 
