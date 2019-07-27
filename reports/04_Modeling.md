@@ -319,6 +319,21 @@ It runs on multicore but it is not moving and the actions have a strange format.
 at animalai/animalai/envs/subprocess_environment.py and animalai/animalai/envs/environment.py because they must share the same interface to be able to use them.
 Also check external_brain_names because that might be a problem also because of poor implementation.
 
+I have solved the problem of input to the environment, however now I need some parameters for training and the process hangs when requesting them.
+I should try to simplify the problem as maximum as possible and think how to solve. Autoreload on python could help.
+
+I'm almost there, I think I have to modify the brain parameters to match the number of observations and it should be done.
+
+I have made 4 short trainings with 1, 2, 4 and 8 environments. The results clearly show that the training has speedup. The first one has the number of steps in the horizontal axis and cumulative reward in the vertical axis.
+The second one has training time in hours on horizontal axis.
+
+<p align="center">
+  <img src="media/multicore_speedup_step.png">
+</p>
+
+<p align="center">
+  <img src="media/multicore_speedup_relative.png">
+</p>
 
 ### Results
 
@@ -328,6 +343,8 @@ a score of 24 which is slightly better than my best model with supervised learni
 I have trained a second agent 007_ml_agents_first_steps that has 16 arenas for playing. It has been trained with "data/env_configs/training_002.yaml".
 It achieves a score of 23, improving on some categories and worsening on others. I have the intuition that the model needs more inputs and that will
 simplify the game so it can focus on learning new behaviours.
+
+
 
 <!---
 ## Iteration n. Iteration_title
