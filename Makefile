@@ -43,3 +43,6 @@ push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_
 
 record-games: ## play games with keyboard and saved them to file. CONFIG_FILEPATH=data/env_configs/1-Food_multi.yaml make record-games |   ENV_SEED=1 CONFIG_FILEPATH=data/env_configs/1-Food_multi.yaml make record-games
 	python scripts/record_games/record_games.py "$(CONFIG_FILEPATH)" $(SAVED_GAMES_PATH)
+
+tensorboard:
+	tensorboard --logdir=../AnimalAI-Olympics/examples/summaries
