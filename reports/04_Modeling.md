@@ -139,6 +139,7 @@ I have solved the problme this way:
   conda activate animal
   #Install animalai and animalai_train with develop mode: "python setup.py develop"
   python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python ($CONDA_DEFAULT_ENV)"
+  pip install evalai
 
 ### Results
 
@@ -335,6 +336,42 @@ The second one has training time in hours on horizontal axis.
   <img src="media/multicore_speedup_relative.png">
 </p>
 
+#### Better models and input
+
+Now that I have optimized the training speed I want to check which input is being used currently for the model.
+I want to feed the speed and previous action just like I did on my supervised learning trainings.
+I also want to have an easy way of modifying the model.
+
+To do this I can read the animalai_train code, also ml-agents might help and I can add prints to get more information
+of the current model. From the fast read of the past days I believe that the current model only uses pixels.
+
+The animalai_train library is a copy of [ml-agents](https://github.com/Unity-Technologies/ml-agents/tree/master/ml-agents/mlagents/trainers).
+It has exactly the same structure. Below there is an scheme of the classes used for training.
+
+```plantuml
+@startuml
+
+PPOModel <|-- LearningModel
+PPOPolicy *-- PPOModel
+PPOTrainer *-- PPOPolicy
+
+LearningModel : create_dc_actor_critic(h_size, num_layers)
+LearningModel : create_observation_streams(num_streams, h_size, num_layers)
+LearningModel : create_visual_observation_encoder()
+LearningModel : create_vector_observation_encoder()
+LearningModel : create_recurrent_encoder()
+
+PPOPolicy : PPOModel
+PPOTrainer : PPOPolicy
+
+@enduml
+```
+
+So the model is defined on the class LearningModel. I have seen that if setting the parameter use_recurrent=True then the previous
+action is used as input. Thus I have decided to use that option with a small memory.
+
+I have a problem when trying to make predictions with the model.
+
 ### Results
 
 I have trained the agent 006_ml_agents_first_steps with a simplified architecture and simple arenas. It has reached
@@ -344,10 +381,13 @@ I have trained a second agent 007_ml_agents_first_steps that has 16 arenas for p
 It achieves a score of 23, improving on some categories and worsening on others. I have the intuition that the model needs more inputs and that will
 simplify the game so it can focus on learning new behaviours.
 
-
+I have trained a new model 008_multicore using the the multicore environment. I have double the batch size and also increased the buffer size more than x10.
+(batch_size: 128, buffer_size: 32768), hopefully this will allow to better capture the game dynamics. The agent looks good, the best until now but I don't like that
+it moves backwards many times when that is dangerous.
 
 <!---
 ## Iteration n. Iteration_title
+### Results
 
 ### Goal
 
