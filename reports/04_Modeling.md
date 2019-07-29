@@ -377,6 +377,10 @@ When trying to understand the bad score I have realised that the models trained 
 the models trained with supervised learning are. I have found a bug in the test script that did not end the levels and was causing problems.
 After this fix the score raises to 0.93 but it is still not deterministic, on forcedChoice the scores change when the level is the same. So this
 seems to be a problem of the agent.
+I have dig to the code and I have found that the action is computed by sampling over logprobabilities predicted by the agent. This explains why
+some of the agents like 006 are not repetitive on forcedChoice level. One option is to take the action with max value instead of sampling.
+I have tried with that and the score improves to 1.13 from 0.93 so that is a good improvement. The agent is quite good except that sometimes enters
+in a stuck mode. But it has learnt to avoid red goals. More important the score on forcedChoice is constant.
 
 ### Results
 
