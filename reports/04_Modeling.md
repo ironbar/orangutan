@@ -370,7 +370,13 @@ PPOTrainer : PPOPolicy
 So the model is defined on the class LearningModel. I have seen that if setting the parameter use_recurrent=True then the previous
 action is used as input. Thus I have decided to use that option with a small memory.
 
-I have a problem when trying to make predictions with the model.
+When using the model for prediction the behaviour is not very good. The score is 0.68, but I think
+this may be caused by not resetting the memory of the agent. However I cannot find information so I'm not sure about that.
+
+When trying to understand the bad score I have realised that the models trained with ml-agents are not deterministic while
+the models trained with supervised learning are. I have found a bug in the test script that did not end the levels and was causing problems.
+After this fix the score raises to 0.93 but it is still not deterministic, on forcedChoice the scores change when the level is the same. So this
+seems to be a problem of the agent.
 
 ### Results
 

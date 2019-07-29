@@ -74,6 +74,8 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
         except Exception as e:
             print('Episode {} failed'.format(k))
             raise e
+        if not done:
+            print('Warning level not done.')
         print('Episode %i: %.2f' % (k, cumulated_reward))
         rewards.append(cumulated_reward)
         sys.stdout.flush()
