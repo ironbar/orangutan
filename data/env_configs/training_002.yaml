@@ -96,7 +96,7 @@ arenas:
       - !Vector3 {x: 0.5, y: 0.5, z: 0.5}
       - !Vector3 {x: 0.5, y: 0.5, z: 0.5}
   # Now come levels with avoid and navigation, train first on the 9 first levels
-  9: !Arena
+  9: !Arena #4-Avoidance
     t: 250
     items:
     - !Item
@@ -105,7 +105,7 @@ arenas:
       - !Vector3 {x: 1, y: 1, z: 1}
     - !Item
       name: DeathZone
-  10: !Arena
+  10: !Arena #3-Obstacles
     t: 250
     items:
     - !Item
@@ -120,7 +120,7 @@ arenas:
       name: Wall
       colors:
       - !RGB {r: 153, g: 153, b: 153}
-  11: !Arena
+  11: !Arena #5-SpatialReasoning
     t: 250
     items:
     - !Item
@@ -140,7 +140,7 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
-  12: !Arena
+  12: !Arena #6-Generalization
     t: 250
     items:
     - !Item
@@ -160,7 +160,7 @@ arenas:
       name: Wall
     - !Item
       name: Wall
-  13: !Arena
+  13: !Arena #4-Avoidance
     t: 250
     items:
     - !Item
@@ -169,7 +169,7 @@ arenas:
       - !Vector3 {x: 1, y: 1, z: 1}
     - !Item
       name: DeathZone
-  14: !Arena
+  14: !Arena #3-Obstacles
     t: 250
     items:
     - !Item
@@ -184,7 +184,7 @@ arenas:
       name: Wall
       colors:
       - !RGB {r: 153, g: 153, b: 153}
-  15: !Arena
+  15: !Arena #5-SpatialReasoning
     t: 250
     items:
     - !Item
