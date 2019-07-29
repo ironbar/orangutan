@@ -54,18 +54,19 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
     print('\t%s' % os.path.basename(config_filepath))
     rewards = []
     episode_frames = []
+    initial_frame = None
     for k in range(n_episodes):
         _reset_agent(submitted_agent, arena_config_in)
         cumulated_reward = 0
         #episode_frames = []
         try:
-            for i in range(arena_config_in.arenas[0].t):
+            for i in range(arena_config_in.arenas[0].t+1):
                 action = submitted_agent.step(obs, reward, done, info)
                 episode_frames.append(info['brain_info'].visual_observations[0][0])
                 obs, reward, done, info = env.step(action)
                 cumulated_reward += reward
                 if done:
-                    # _save_frames(episode_frames, config_filepath, k)
+                    # # _save_frames(episode_frames, config_filepath, k)
                     for _ in range(3):
                         episode_frames.append(np.ones((84, 84, 3), dtype=np.float32)*0.5)
                     _reset_agent(submitted_agent, arena_config_in)

@@ -44,10 +44,16 @@ def create_video(npz_filepath, video_filepath):
     out = cv2.VideoWriter(video_filepath, fourcc, 100.0, (84, 84), True)
     [_write_n_frames(frame, out, n=5) for frame in frames]
     out.release()
+    # _save_all_frames_as_images(frames, video_filepath)
 
 def _write_n_frames(frame, out, n):
     for _ in range(n):
         out.write(frame)
+
+def _save_all_frames_as_images(frames, video_filepath):
+    for idx, frame in enumerate(frames):
+        img_path = '%s_%07d.png' % (os.path.splitext(video_filepath)[0], idx)
+        cv2.imwrite(img_path, frame)
 
 
 def parse_args(args):
