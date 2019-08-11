@@ -382,6 +382,31 @@ some of the agents like 006 are not repetitive on forcedChoice level. One option
 I have tried with that and the score improves to 1.13 from 0.93 so that is a good improvement. The agent is quite good except that sometimes enters
 in a stuck mode. But it has learnt to avoid red goals. More important the score on forcedChoice is constant.
 
+#### Better navigation
+
+It seems that the training_002 configuration is already learned. Now I want to expand that configuration to better learn to navigate
+while don't forgetting the basic things. So I have added 16 additional arenas up to 32 to try to learn navigation and avoiding. The results are on
+the agent 010_avoid_and_navigation_max_action. Even with this better configuration the model does not learn to navigate.
+
+To try to improve the navigation I'm going to increase the memory of the agent from 4 to 32 frames.
+The training metrics are very similar to previous trainings. When testing the results are better but it moves backwards sometimes
+without any sense and gets stuck and bounces from left to right. However 011_more_memory_max_action achieves the best test score until now.
+
+I'm going to try using 128 frames to see if those bounces dissapear. Also duplicate memory size from 64 to 128.
+The metrics are quite similar so I have decided to drop beta from 1e-2 to 1e-3 (step=36.5k)
+
+#### Ideas for improving
+
+I'm reading MLAgents documentation and below there is a list of ideas for improving the agents:
+
+* Decrease learning rate
+* Decrease beta, which controls how random the actions are
+* Increase the time horizon just in case
+* Increase the model capacity
+* Modify the visual encoder, it would be nice to be able to parametrize it
+* Analyze the tensorboard plots and adjust the parameters
+* Increase episode duration to give time to a random object to reach the target
+
 ### Results
 
 I have trained the agent 006_ml_agents_first_steps with a simplified architecture and simple arenas. It has reached
@@ -394,6 +419,14 @@ simplify the game so it can focus on learning new behaviours.
 I have trained a new model 008_multicore using the the multicore environment. I have double the batch size and also increased the buffer size more than x10.
 (batch_size: 128, buffer_size: 32768), hopefully this will allow to better capture the game dynamics. The agent looks good, the best until now but I don't like that
 it moves backwards many times when that is dangerous.
+
+The model 009_recurrent_max_action achieves a score of 25.33
+The model 010_avoid_and_navigation_max_action achieves 25.67. However even that its name says that it does not know how to navigate.
+Many times it falls in loops bouncing looking right and left without doing anything, maybe it needs more memory. 
+Neither it knows how to navigate avoiding the dead zones.
+
+The model 011_more_memory_max_action achieves a score of 29 and surpases the hand-coded baseline. However it does not navigate
+correctly yet.
 
 <!---
 ## Iteration n. Iteration_title
