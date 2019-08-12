@@ -393,7 +393,12 @@ The training metrics are very similar to previous trainings. When testing the re
 without any sense and gets stuck and bounces from left to right. However 011_more_memory_max_action achieves the best test score until now.
 
 I'm going to try using 128 frames to see if those bounces dissapear. Also duplicate memory size from 64 to 128.
-The metrics are quite similar so I have decided to drop beta from 1e-2 to 1e-3 (step=36.5k)
+The metrics are quite similar so I have decided to drop beta from 1e-2 to 1e-3 (step=36.5k). After doing this I can see a clearly drop on entropy.
+On epoch 53k I decrease beta even more to 1e-4. With this changes entropy decreases to 0.5 while on the previous trainings the smaller value was close
+to one. However the cumulative reward does not improve.
+Decreasing the learning rate does not improve the cumulative reward either.
+This agent keeps also bouncing and does not seem to navigate well, it moves backwards without any sense.
+So increasing the memory, the number of frames, decreasing beta and decreasing learning rate did not improve the agent.
 
 #### Ideas for improving
 
@@ -406,6 +411,7 @@ I'm reading MLAgents documentation and below there is a list of ideas for improv
 * Modify the visual encoder, it would be nice to be able to parametrize it
 * Analyze the tensorboard plots and adjust the parameters
 * Increase episode duration to give time to a random object to reach the target
+* Remove the option to go backwards.
 
 ### Results
 
