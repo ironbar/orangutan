@@ -541,7 +541,45 @@ For doing that I will record the logging times and compute differences.
 The results have been saved in this [google sheet](https://docs.google.com/spreadsheets/d/15FEKXNcCCVq_YiGFdcpcruGhfKx2oJwzvRT94l4KOUY/edit#gid=454246532).
 
 The conclusion is that using multiple environments increments the throughput, but the max gain is x2.
-Moreover it seems that using between 16 and 32 arenas is the best option.
+Moreover it seems that using between 16 and 32 arenas is the best option. However the differences are small.
+So probably RAM requirements would be more important.
+
+#### Increasing model capacity
+
+I'm going to increase the capacity of the visual encoding, and hopefully made that customizable. Maybe that could allow
+to improve the agent scores. Below there is a list of the dependencies from lower to higher level. I can use it to
+pass new parameters to the model.
+
+```
+trainers.LearningModel.create_visual_observation_encoder
+trainers.LearningModel.create_observation_streams
+trainers.ppo.PPOModel.create_dc_actor_critic, create_curiosity_encoders
+trainers.ppo.PPOPolicy(trainer_params)
+trainers.ppo.PPOTrainer(trainer_params)
+trainers.TrainerController.start_learning(trainer_config)
+```
+
+My first idea is to pass a list with the number of kernels for each convolution. I will encapsulate this
+into a dictionary called visual_encoding so I can later extend this.
+Previously I was using kernels [8, 8, 16, 16] and the model weighted 9 MB. If I use [8, 16, 32, 64] the model uses now 380 MB
+
+#### Multiple configuration files
+
+Using different configuration files on the different environments could allow to reduce the number of arenas or 
+to make a more diverse training. I have been looking at the code and I think it could be as easy as passing a list of
+ArenaConfigs and modifying the broadcast on reset function on subprocess_environment.
+
+```python
+self._broadcast_message("reset", (config, train_mode))
+```
+
+```python
+if isinstance(config, list):
+  for idx, env in enumerate(self.envs):
+    env.send("reset", (config[idx % len(config)], train_mode))
+else:
+  self._broadcast_message("reset", (config, train_mode))
+```
 
 ### Results
 
