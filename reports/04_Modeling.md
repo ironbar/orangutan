@@ -413,6 +413,34 @@ I'm reading MLAgents documentation and below there is a list of ideas for improv
 * Increase episode duration to give time to a random object to reach the target
 * Remove the option to go backwards.
 
+#### More length and going backwards
+
+After trying with learning rate and memory without much success I have two ways of improving. The first one
+is to extend the length of the episodes so the agent has more time to reach the targets.
+The second one is to modify the code so the agent can never go backwards, which is an undesired behaviour at
+this step of the game.
+
+On a first step I increase the duration of the episodes to 500
+
+On a second step I have found that the variable vector_action_space_size inside the brain has a size of [3, 3].
+If I modify it to be [2, 3] that would be enough. Another option is make the agent ignore the moving backwards. I have tried to modify
+the agent to ignore moving backwards and it improves slighlty but not too much. Probably it needs to be trained that way.
+
+By looking at the code one option is to modify the create_discrete_action_masking_layer function on models.py.
+Another is to modify the update function of the policy that creates tha t: 500. I can use that mask to avoid moving backwards or even stop.
+Let's try to train an agent that always moves forward, that will reduce the search space by 1/3.
+
+The agent that always moves forward has problems with the borders and sometimes gets stuck on them. It also has some problems when catching
+the goals because of moving too fast.
+
+I have trained two new models that never go backwards. However it does not seem that they have learned to navigate correctly.
+It seems that adding more capacity to the network helped but not too much.
+
+#### RAM Usage
+
+I have found that certain trainings use a lot of RAM memory. I want to understand which parameters affect to RAM usage.
+
+
 ### Results
 
 I have trained the agent 006_ml_agents_first_steps with a simplified architecture and simple arenas. It has reached
@@ -428,11 +456,19 @@ it moves backwards many times when that is dangerous.
 
 The model 009_recurrent_max_action achieves a score of 25.33
 The model 010_avoid_and_navigation_max_action achieves 25.67. However even that its name says that it does not know how to navigate.
-Many times it falls in loops bouncing looking right and left without doing anything, maybe it needs more memory. 
+Many times it falls in loops bouncing looking right and left without doing anything, maybe it needs more memory.
 Neither it knows how to navigate avoiding the dead zones.
 
 The model 011_more_memory_max_action achieves a score of 29 and surpases the hand-coded baseline. However it does not navigate
 correctly yet.
+
+The model 012_even_more_memory_max_action achieves a score of 31.33
+
+The model 014_always_forward achieves a score of 24
+
+The model 016_never_backward_more_capacity_max_action achieves a score of 28.67
+
+I have the feeling that the scores of the current agents are somehow random.
 
 <!---
 ## Iteration n. Iteration_title
