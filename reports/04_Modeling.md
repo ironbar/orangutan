@@ -440,6 +440,108 @@ It seems that adding more capacity to the network helped but not too much.
 
 I have found that certain trainings use a lot of RAM memory. I want to understand which parameters affect to RAM usage.
 
+* The RAM usage is proportional to the number of environments running.
+* The RAM usage is proportional to the length of the episode
+* The buffer size has also a great influence in the RAM usage. But sometimes more data
+than the buffer size can get accumulated, for example at the start of the training. I think it is
+related to the number of environments, number of arenas and training of the model.
+* memory_size and sequence_length have small influence on RAM usage
+* Using a pretrained model modifies the RAM usage at the start of the training because not a lot of episodes acumulate when the time runs out. But the RAM eventuallyl increases.
+
+| n_env 	| buffer_size 	| episode_t 	| memory_size 	| sequence_length 	| mask 	| retrain 	| RAM (GB) 	| RAM 2(GB) 	| RAM 3(GB) 	|
+|-------	|-------------	|-----------	|-------------	|-----------------	|------	|---------	|----------	|-----------	|-----------	|
+| 4     	| 1024        	| 500       	| 64          	| 32              	| 2    	| N       	| 28       	| 26.5      	| 25.5      	|
+| 2     	| 1024        	| 500       	| 64          	| 32              	| 2    	| N       	| 15.2     	| 13.9      	|           	|
+| 1     	| 1024        	| 500       	| 64          	| 32              	| 2    	| N       	| 8.4      	|           	|           	|
+| 6     	| 1024        	| 500       	| 64          	| 32              	| 2    	| N       	| 41       	|           	|           	|
+|       	|             	|           	|             	|                 	|      	|         	|          	|           	|           	|
+| 2     	| 1024        	| 250       	| 64          	| 32              	| 2    	| N       	| 8        	|           	|           	|
+| 4     	| 1024        	| 250       	| 64          	| 32              	| 2    	| N       	| 15       	|           	|           	|
+|       	|             	|           	|             	|                 	|      	|         	|          	|           	|           	|
+| 2     	| 2048        	| 250       	| 64          	| 32              	| 2    	| N       	| 8        	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 32              	| 2    	| N       	| 8.5      	|           	|           	|
+| 2     	| 16384       	| 250       	| 64          	| 32              	| 2    	| N       	| 15.6     	|           	|           	|
+| 2     	| 32768       	| 250       	| 64          	| 32              	| 2    	| N       	| 16.9     	|           	|           	|
+| 2     	| 65536       	| 250       	| 64          	| 32              	| 2    	| N       	| 26.9     	|           	|           	|
+|       	|             	|           	|             	|                 	|      	|         	|          	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 32              	| 2    	| N       	| 8.5      	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 4               	| 2    	| N       	| 8.5      	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 128             	| 2    	| N       	| 8.6      	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 256             	| 2    	| N       	| 8.8      	|           	|           	|
+| 2     	| 8192        	| 250       	| 128         	| 256             	| 2    	| N       	| 9.1      	|           	|           	|
+| 2     	| 8192        	| 250       	| 256         	| 256             	| 2    	| N       	| 9.1      	|           	|           	|
+| 2     	| 8192        	| 250       	| 512         	| 256             	| 2    	| N       	| 9.1      	|           	|           	|
+|       	|             	|           	|             	|                 	|      	|         	|          	|           	|           	|
+| 2     	| 8192        	| 250       	| 64          	| 32              	| 2    	| N       	| 8.3      	|           	|           	|
+| 4     	| 8192        	| 250       	| 64          	| 32              	| 2    	| N       	| 15.7     	|           	|           	|
+| 4     	| 8192        	| 250       	| 64          	| 32              	| 2    	| Y       	| 7.6      	| 9.3       	| 10.8      	|
+| 8     	| 8192        	| 250       	| 64          	| 32              	| 2    	| N       	| 29.3     	|           	|           	|
+| 8     	| 8192        	| 250       	| 64          	| 32              	| 2    	| Y       	| 9        	| 10.7      	| 12.3      	|
+
+#### Relation between n_envs, n_arenas, t and buffer_size
+
+After the experiments of RAM usage I come to the conclusion that there is a relation between the following parameters.
+
+'''
+n_envs * n_arenas * t = buffer_size * alpha
+'''
+
+It does not have sense to increase the n_envs if the buffer size remains constant. I believe that alpha should be bigger than 1, probably two is a good choice.
+
+| n_envs 	| n_arenas 	| t   	| product 	| buffer_size 	| RAM (GB)                         	|
+|--------	|----------	|-----	|---------	|-------------	|----------------------------------	|
+| 2      	| 32       	| 250 	| 16000   	| 32768       	| 17.2, 17.1, 15.2                 	|
+| 2      	| 32       	| 250 	| 16000   	| 8192        	| 8.3, 9.7, 12.1, 7.8, 11.6, 8.7   	|
+| 8      	| 16       	| 250 	| 32000   	| 65536       	| 27.2                             	|
+| 4      	| 32       	| 250 	| 32000   	| 65536       	| 33                               	|
+| 6      	| 32       	| 250 	|         	| 65536       	| 38                               	|
+
+#### CPU Usage
+
+I have found that the cpu is never fully used. Let's try to understand why.
+
+The bigger the number of envs the more the cpu usage but it peaks around 5 envs.
+
+| n_envs 	| n_arenas 	| n_trains 	| cpu (%) 	|
+|--------	|----------	|----------	|---------	|
+| 1      	| 32       	| 1        	| 20      	|
+| 2      	| 32       	| 1        	| 33      	|
+| 3      	| 32       	| 1        	| 40      	|
+| 4      	| 32       	| 1        	| 48      	|
+| 5      	| 32       	| 1        	| 55      	|
+| 6      	| 32       	| 1        	| 56      	|
+| 8      	| 32       	| 1        	| 58      	|
+| 16     	| 32       	| 1        	| ~50     	|
+
+It seems that the number of arenas does not affect cpu usage. However it affects to
+game speed.
+
+| n_envs 	| n_arenas 	| n_trains 	| cpu (%) 	|
+|--------	|----------	|----------	|---------	|
+| 4      	| 32       	| 1        	| 48      	|
+| 4      	| 16       	| 1        	| 48      	|
+| 4      	| 8        	| 1        	| 48      	|
+| 4      	| 4        	| 1        	| 48      	|
+| 4      	| 2        	| 1        	| 44      	|
+| 4      	| 1        	| 1        	| 44      	|
+| 8      	| 1        	| 1        	| 58      	|
+
+Running more than one train at ta time can increase the cpu usage.
+
+| n_envs 	| n_arenas 	| n_trains 	| cpu (%) 	|
+|--------	|----------	|----------	|---------	|
+| 4      	| 1        	| 1        	| 44      	|
+| 4      	| 1        	| 2        	| 68      	|
+| 4      	| 1        	| 3        	| 80      	|
+
+#### Simulation speed
+
+I want to measure how the simulation speeds varies with the number of environments and the number of arenas.
+For doing that I will record the logging times and compute differences.
+The results have been saved in this [google sheet](https://docs.google.com/spreadsheets/d/15FEKXNcCCVq_YiGFdcpcruGhfKx2oJwzvRT94l4KOUY/edit#gid=454246532).
+
+The conclusion is that using multiple environments increments the throughput, but the max gain is x2.
+Moreover it seems that using between 16 and 32 arenas is the best option.
 
 ### Results
 
@@ -469,6 +571,10 @@ The model 014_always_forward achieves a score of 24
 The model 016_never_backward_more_capacity_max_action achieves a score of 28.67
 
 I have the feeling that the scores of the current agents are somehow random.
+
+The agent 017_never_backward_more_capacity_max_action achieves the best score of 31.68 just by
+training for more time the 016 agent with a bigger buffer size. This probes that not moving backward
+can be a good choice. However good navigations is still not achieved.
 
 <!---
 ## Iteration n. Iteration_title
