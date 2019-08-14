@@ -616,9 +616,33 @@ can be a good choice. However good navigations is still not achieved.
 
 I have trained two models 018 and 019 with more capacity on the visual encoder but they get bad scores.
 
+### Conclusions
+
+* We have been able to improve the LB score from 23.67 to 31.67 by using RL instead of supervised learning
+* We have implemented a multicore arena training
+* We have made experiments to understand RAM and CPU usage
+* The model visual encoding architecture has been parametrized
+* Multiple arena configurations are allowed for training
+* I have more knowledge about the model and the game after this iteration
+* Navigation and avoiding red zones is not a solved problem yet
+* There seems to be a limit in the score when training with the current arenas configuration
+
+## Iteration 4. Focus on navigation
+
+### Goal
+
+On this iteration we are going to train a model using RL focusing on navigation. I will train
+on the level 5-SpatialReasoning and see which results I get.
+We have not seen yet an agent with good navigation skills, hopefully this simplified experiment
+will give useful information about training parameters and model architecture.
+
+### Development
+
+### Results
+
+
 <!---
 ## Iteration n. Iteration_title
-### Results
 
 ### Goal
 
