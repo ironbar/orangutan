@@ -561,7 +561,9 @@ trainers.TrainerController.start_learning(trainer_config)
 
 My first idea is to pass a list with the number of kernels for each convolution. I will encapsulate this
 into a dictionary called visual_encoding so I can later extend this.
-Previously I was using kernels [8, 8, 16, 16] and the model weighted 9 MB. If I use [8, 16, 32, 64] the model uses now 380 MB
+Previously I was using kernels [8, 8, 16, 16] and the model weighted 9 MB.
+If I use [8, 16, 32, 64] the model uses now TODO:
+If using [16, 16, 32, 32] the weight is 
 
 #### Multiple configuration files
 
@@ -614,7 +616,7 @@ The agent 017_never_backward_more_capacity_max_action achieves the best score of
 training for more time the 016 agent with a bigger buffer size. This probes that not moving backward
 can be a good choice. However good navigations is still not achieved.
 
-I have trained two models 018 and 019 with more capacity on the visual encoder but they get bad scores.
+TODO: models with more capacity results
 
 ### Conclusions
 
@@ -637,6 +639,10 @@ We have not seen yet an agent with good navigation skills, hopefully this simpli
 will give useful information about training parameters and model architecture.
 
 ### Development
+
+The configuration for SpatialReasoning has two GoodGoalMulti of size 1, so the max reward for that
+level is 2. However considering that navigation should be done to gather them we can consider a good result
+when the reward is above 1, that means that the two goals were collected.
 
 ### Results
 
