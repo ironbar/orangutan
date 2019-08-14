@@ -614,6 +614,8 @@ The agent 017_never_backward_more_capacity_max_action achieves the best score of
 training for more time the 016 agent with a bigger buffer size. This probes that not moving backward
 can be a good choice. However good navigations is still not achieved.
 
+I have trained two models 018 and 019 with more capacity on the visual encoder but they get bad scores.
+
 <!---
 ## Iteration n. Iteration_title
 ### Results
