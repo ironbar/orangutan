@@ -633,7 +633,7 @@ TODO: models with more capacity results
 
 ### Goal
 
-On this iteration we are going to train a model using RL focusing on navigation. I will train
+On this iteration we are going to train a model using RL **focusing on navigation**. I will train
 on the level 5-SpatialReasoning and see which results I get.
 We have not seen yet an agent with good navigation skills, hopefully this simplified experiment
 will give useful information about training parameters and model architecture.
@@ -645,6 +645,8 @@ level is 2. However considering that navigation should be done to gather them we
 when the reward is above 1, that means that the two goals were collected. The closer to 2 the value the better.
 Moreover the training metrics should correlate with test metrics, if a model has higher training metrics then it should
 have higher test metrics.
+
+#### First experiments
 
 I have trained a baseline and another model without memory and is very surprising to see that they achieve very similar
 results. I have extended the duration of the episode to 500 for testing also, otherwise on 250 solves only a few arenas.
@@ -668,9 +670,51 @@ does not affect the model size.
 The model 026_navigation_32sequence_256memory even when achieves the best score does not navigate well. Sometimes it misses the target, in a level spins around all the time...
 Using the same model with max_action improves but still not perfect, I think it needs more memory and probably more capacity on the visual encoder.
 
+#### How to improve
+
+There seems to be a ceiling around 1.375 on training score. What can be causing this ceiling?
+
+* Arena configuration. Sometimes it could be impossible to gather the two goals and thus that is lowering
+the reward
+* Model capacity. Maybe the model does not have enough capacity to break that ceiling
+* More training time. Maybe more training time is needed
+* Not enough powerful algorithm. Maybe PPO cannot learn to behave at the desired level.
+
+I'm going to train 029_navigation_32sequence_256memory_buffer8k with a buffer 1/4 than the normal one and 1 environment
+instead of 4. Also 030_navigation_32sequence_256memory_buffer4k with a buffer 1/8.
+
 ### Results
 
 It is quite surprising that a model trained just on a single configuration is achieving a score of 29.
+
+### Conclusions
+
+* I have seen that evaluating SpatialReasoning with just 250 steps is not enough, I should review the current
+tests for a better evaluation.
+* It's very interesting to see that a model trained on just one arena configuration achieves such a good LB score of 29
+
+## Iteration 5. Better arena configuration and testing
+
+### Goal
+
+The goal of this iteration is to improve arena configuration and also to have better tests.
+
+I think that currently there are some problems regarding arena configuration:
+* The rewards of different levels may be different and this may cause problems with learning algorithm
+* Some levels are impossible to solve
+* Some levels are very easy to solve
+
+The current tests have the following problems:
+* They currently measure mean reward. They should be pass/no pass. Reward is not interesting for two reasons:
+first we are not interested in agent speed, we are only interested on reaching the goal; second different
+tests have different rewards and thus if we focus on reward we are giving more weight to some tests
+* The duration of the tests is shorter than needed on some tests
+* I'm not sure about reproducibility: are all agents evaluated on the same tests? If I add new tests
+then this changes?
+
+### Development
+
+### Results
 
 <!---
 Arenas config
