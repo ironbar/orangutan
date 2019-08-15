@@ -642,12 +642,42 @@ will give useful information about training parameters and model architecture.
 
 The configuration for SpatialReasoning has two GoodGoalMulti of size 1, so the max reward for that
 level is 2. However considering that navigation should be done to gather them we can consider a good result
-when the reward is above 1, that means that the two goals were collected.
+when the reward is above 1, that means that the two goals were collected. The closer to 2 the value the better.
+Moreover the training metrics should correlate with test metrics, if a model has higher training metrics then it should
+have higher test metrics.
+
+I have trained a baseline and another model without memory and is very surprising to see that they achieve very similar
+results. I have extended the duration of the episode to 500 for testing also, otherwise on 250 solves only a few arenas.
+I'm going to retrain the baseline on shorter episodes to see if it is able to improve its speed.
+
+| name                                                     	| reward 	| steps 	| model size (MB) 	|
+|----------------------------------------------------------	|--------	|-------	|-----------------	|
+| 020_navigation_baseline                                  	| 1.15   	| 291   	| 9.9             	|
+| 021_navigation_no_memory                                 	| 1.14   	| 295   	| 9.7             	|
+| 022_navigation_256sequence_64memory                      	| 1.25   	| 254.7 	| 9.9             	|
+| 024_navigation_baseline_80k_max_steps                    	| 1.2    	| 283   	| 9.9             	|
+| 025_navigation_32sequence_128memory                      	| 1.19   	| 284   	| 10.3            	|
+| 026_navigation_32sequence_256memory                      	| 1.33   	| 250.6 	| 11.3            	|
+| 026_navigation_32sequence_256memory_max_action           	| 1.4    	| 230   	| 11.3            	|
+| 027_navigation_64sequence_256memory                      	|        	|       	| 11.3            	|
+| 028_navigation_64sequence_256memory_more_visual_encoding 	|        	|       	| 18.4            	|
+
+Memory is not adding much weight to the model: the model without memory 9.7 and with memoery 9.9 MB. The lenght of the sequence
+does not affect the model size.
+
+The model 026_navigation_32sequence_256memory even when achieves the best score does not navigate well. Sometimes it misses the target, in a level spins around all the time...
+Using the same model with max_action improves but still not perfect, I think it needs more memory and probably more capacity on the visual encoder.
 
 ### Results
 
+It is quite surprising that a model trained just on a single configuration is achieving a score of 29.
 
 <!---
+Arenas config
+Modifying the code seems difficult, probably is better to think of better ways of creating conf files.
+
+
+
 ## Iteration n. Iteration_title
 
 ### Goal
