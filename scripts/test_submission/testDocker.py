@@ -50,9 +50,9 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
-
+    print('█'*120)
     print('\t%s' % os.path.basename(config_filepath))
-    rewards = []
+    rewards, steps = [], []
     episode_frames = []
     initial_frame = None
     for k in range(n_episodes):
@@ -60,7 +60,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
         cumulated_reward = 0
         #episode_frames = []
         try:
-            for i in range(arena_config_in.arenas[0].t+1):
+            for t in range(arena_config_in.arenas[0].t+1):
                 action = submitted_agent.step(obs, reward, done, info)
                 episode_frames.append(info['brain_info'].visual_observations[0][0])
                 obs, reward, done, info = env.step(action)
@@ -76,11 +76,17 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
             raise e
         if not done:
             print('Warning level not done.')
-        print('Episode %i: %.2f' % (k, cumulated_reward))
+        print('Episode %i reward: %.2f\tsteps: %i' % (k, cumulated_reward, t))
         rewards.append(cumulated_reward)
+        steps.append(t)
         sys.stdout.flush()
+    _print_config_summary(rewards, steps)
     _save_frames(episode_frames, config_filepath, None)
     return rewards
+
+def _print_config_summary(rewards, steps):
+    print('\tMean reward: %.2f (std: %.2f)' % (np.mean(rewards), np.std(rewards)))
+    print('\tMean steps: %.2f (std: %.2f)' % (np.mean(steps), np.std(steps)))
 
 def _reset_agent(agent, arena):
     try:
