@@ -46,3 +46,6 @@ record-games: ## play games with keyboard and saved them to file. CONFIG_FILEPAT
 
 tensorboard:
 	tensorboard --logdir=../AnimalAI-Olympics/examples/summaries
+
+visualize-arena: ## Visualize arena with animalai script. CONFIG_FILEPATH=data/env_configs/1-Food_multi.yaml make visualize-arena
+	cd ../AnimalAI-Olympics/examples/; python visualizeArena.py "$(CONFIG_FILEPATH)"
