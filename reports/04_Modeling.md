@@ -661,14 +661,19 @@ I'm going to retrain the baseline on shorter episodes to see if it is able to im
 | 025_navigation_32sequence_128memory                      	| 1.19   	| 284   	| 10.3            	|
 | 026_navigation_32sequence_256memory                      	| 1.33   	| 250.6 	| 11.3            	|
 | 026_navigation_32sequence_256memory_max_action           	| 1.4    	| 230   	| 11.3            	|
-| 027_navigation_64sequence_256memory                      	|        	|       	| 11.3            	|
-| 028_navigation_64sequence_256memory_more_visual_encoding 	|        	|       	| 18.4            	|
+| 027_navigation_64sequence_256memory                      	| 1.21   	| 259   	| 11.3            	|
+| 028_navigation_64sequence_256memory_more_visual_encoding 	| 1.13   	| 297   	| 18.4            	|
+| 029_navigation_32sequence_256memory_buffer8k              | 1.26    | 269     | 11.3              |
+| 030_navigation_32sequence_256memory_buffer4k              | 0.62    | 342     | 11.3              |
 
 Memory is not adding much weight to the model: the model without memory 9.7 and with memoery 9.9 MB. The lenght of the sequence
 does not affect the model size.
 
 The model 026_navigation_32sequence_256memory even when achieves the best score does not navigate well. Sometimes it misses the target, in a level spins around all the time...
 Using the same model with max_action improves but still not perfect, I think it needs more memory and probably more capacity on the visual encoder.
+
+Even if the model with more visual encoding has a worse mean reward I think it navigates quite well. Probably is the best navigation model I have seen so far.
+This motivates me to train again the 018 model with same configuration with the hope of improving results.
 
 #### How to improve
 
@@ -682,16 +687,29 @@ the reward
 
 I'm going to train 029_navigation_32sequence_256memory_buffer8k with a buffer 1/4 than the normal one and 1 environment
 instead of 4. Also 030_navigation_32sequence_256memory_buffer4k with a buffer 1/8.
+The results of using an smaller buffer size are worse.
 
 ### Results
 
 It is quite surprising that a model trained just on a single configuration is achieving a score of 29.
+
+By using a visual encoding of [8, 16, 32, 64], 256 of memory size and 64 steps the model I have been able to train
+a model to score 37.67 on LB being the best model so far and first position on LB. This was a result of retraining and already good model with bigger buffer size and for longer time.
+
+<p align="center">
+  <img src="media/first_position_20190818.png">
+</p>
+
 
 ### Conclusions
 
 * I have seen that evaluating SpatialReasoning with just 250 steps is not enough, I should review the current
 tests for a better evaluation.
 * It's very interesting to see that a model trained on just one arena configuration achieves such a good LB score of 29
+* I have discovered that setting max_steps to a reasonable value decreases the learning rate during training.
+* It seems that a big buffer size allows to achieve better results.
+* It seems that training for longer time improves results. The best model has been training for 70 hours
+* Navigation of the models trained is good enough
 
 ## Iteration 5. Better arena configuration and testing
 
@@ -712,9 +730,84 @@ tests have different rewards and thus if we focus on reward we are giving more w
 * I'm not sure about reproducibility: are all agents evaluated on the same tests? If I add new tests
 then this changes?
 
-### Development
+### Development Arena Configuration
+
+The arena is configured by writing a yaml file. It is possible to control all the parameters of the
+objects or to leave some of them random. Having random configurations is appealing because reduces
+the probability of overfitting. However that comes with some drawbacks:
+* Some levels can become impossible. For example the goal can be on the top of a dead zone, or the
+walls may impede to reach a goal. Or the agent can spawn in the top of the red zone.
+* Some levels can become very easy, for example if we want to train a model to avoid red zones and the goal
+appears next to the agent then it won't learn anything.
+* Building complex levels with random objects is quite difficult with the provided configuration files
+
+So with the current configuration variability comes at the cost of complexity and uncontrolled difficulty.
+
+I have been looking at the source code of the simulation and it does not seem easy to bypass the configuration
+files. My initial idea was to create a new ArenaConfig class with more advanced resetting. However this does not seem possible.
+I identify two possible options:
+1. Better design of configuration files. I could set the x position of the agent, goal and dead zone so there is always a path.
+I can improve some of the arenas this way but it has some limits.
+2. Create a python script that creates arena configuration files with fixed sizes and positions that ensure that the levels
+are solvable and difficult enough. To avoid overfitting the training should be relaunched with new configurations many times.
+
+### Development testing
 
 ### Results
+
+## Iteration 6. Solving each category iteratively
+
+### Goal
+
+At this point of the challenge I have seen that using PPO is possible to develop a strong agent.
+I don't think PPO is the solution to the most difficult categories but I believe a very good score
+on the challenge is possible (at least much better than the current ones).
+
+The way to achieve this is to provide better configuration for the models to learn. The configurations
+should have a fixed reward, be solvable and small variability in difficulty. If that is true then the 
+training metrics are a reliable metric that allows to improve model architecture if necessary.
+
+I think we should focus on each category at a time and create arena configurations that solve nearly all
+the episodes of that category on the test set. On a first step we will create configurations for solving
+category 1, once we solve that category we will focus on category 2 and so on. Finally we can mix all the configurations
+together and create a very strong agent.
+One interesting thing is that this behaviour could go unnoticed because I can solve each category alone without getting
+a good score. 
+
+This work of creating arena configurations will be useful later when I switch to a more promising approach for
+the final categories such as PlaNet.
+
+### Development
+
+The idea is to take each category, read carefully the description and design arena configurations or scripts
+that create arena configurations that represent the objective of the category.
+
+#### 1. Food
+
+> 1. Navigation in an empty arena.
+> 2. Green and yellow food is good.
+> 3. Red food is bad.
+> 4. The difference between green and yellow food.
+
+> For example, in the initial tests when we just want to see if the agent can get food at all, then the agent will always pass if it gets the food within the time limit, even if it takes until the last second. In the preferences category, if there is a test with a large green food (high reward) and a small green food (low reward), then the agent will always pass if it gets the large food within the time limit, but fail if it gets the small food (even though this has positive reward).
+
+> For example, if there is a large food and a small food in the environment then both will be visible at the same time, otherwise the agent might only see the small food and justifiably go and get it.
+
+I identify the following challenges when designing the levels:
+* To learn the difference between yellow and green the agent needs to see both foods at the same time. This implies that the relative start position between the yellow goal, green goal and the agent should be fixed. This is difficult to achieve with variability with the current configuration files.
+* Avoid being killed randomly at the start of the game by a moving red goal. This will introduce volatility in the agent scores.
+* Different size of goals. This is difficult to achieve when using a fixed reward.
+
+Let's enumerate some ideas for creating arenas:
+* I think that red goals should almost be present always. The agent needs to learn to avoid them
+* Maybe I need to recover moving backwards to avoid moving red goals, it would be nice to be able to parametrize it for easier enabling/disabling
+* Red goals may hide green or yellow goals, this can happen randomly but I could force that behaviour 
+* I could place the agent and goal in the other side of the arena and multiple red goals between them to force navigation
+
+# TODO: post here pictures of the levels
+
+### Results
+
 
 <!---
 Arenas config
