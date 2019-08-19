@@ -41,17 +41,17 @@ def main():
     _remove_previous_frames()
     with open('/aaio/test/test_config.yaml', 'r') as stream:
         test_config = yaml.safe_load(stream)
-    rewards, config_filepaths = [], []
+    results = {}
     elapsed_time = time.time()
     for category, category_conf in test_config.items():
+        results[category] = {}
         for test_name, test_params in category_conf.items():
             config_filepath = os.path.join('/aaio/test/configs', category, test_name)
-            config_filepaths.append(config_filepath)
-            rewards.append(evaluate_config(config_filepath, env, submitted_agent,
-                                           n_episodes=test_params['n_tests'],
-                                           threshold=test_params['threshold']))
+            results[category][test_name] = evaluate_config(
+                config_filepath, env, submitted_agent, n_episodes=test_params['n_tests'],
+                threshold=test_params['threshold'])
     elapsed_time = time.time() - elapsed_time
-    _summarize_rewards(rewards, config_filepaths, elapsed_time)
+    _summarize_results(results, elapsed_time)
     print('SUCCESS')
 
 def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold):
@@ -60,7 +60,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
     obs, reward, done, info = env.step([0, 0])
     print('█'*120)
     print('\t%s' % os.path.basename(config_filepath))
-    rewards, steps = [], []
+    rewards, steps, results = [], [], []
     episode_frames = []
     initial_frame = None
     for k in range(n_episodes):
@@ -87,14 +87,16 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
         msg = 'Episode %i reward: %.2f\tsteps: %i' % (k, cumulated_reward, t)
         if cumulated_reward >= threshold:
             _print_green(msg)
+            results.append(1)
         else:
             _print_red(msg)
+            results.append(0)
         rewards.append(cumulated_reward)
         steps.append(t)
         sys.stdout.flush()
     _print_config_summary(rewards, steps)
     _save_frames(episode_frames, config_filepath, None)
-    return rewards
+    return dict(rewards=rewards, steps=steps, results=results)
 
 def _print_config_summary(rewards, steps):
     print('\tMean reward: %.2f (std: %.2f)' % (np.mean(rewards), np.std(rewards)))
@@ -107,15 +109,14 @@ def _reset_agent(agent, arena):
         print('Your agent could not be reset:')
         raise e
 
-def _summarize_rewards(rewards, config_filepaths, elapsed_time):
+def _summarize_results(results, elapsed_time):
     print('\nRewards summary')
-    data = {'elapsed_time': elapsed_time}
-    for reward, config_filepath in zip(rewards, config_filepaths):
-        key = os.path.splitext(os.path.basename(config_filepath))[0]
-        score = np.mean(reward)
-        data['level_%s' % key] = score
-        print('%.2f\t %s' % (score, key))
-    data['mean_score'] = np.mean([np.mean(reward) for reward in rewards])
+    data = {'elapsed_time': elapsed_time, 'results': results}
+    for category, category_results in results.items():
+        category_score = np.mean([np.mean(result['results']) for result in category_results.values()])
+        print('%.2f\t %s' % (category_score, category))
+        data['level_%s' % category] = category_score
+    data['mean_score'] = np.mean([data[key] for key in data if key.startswith('level_')])
     print('Mean reward: %.2f' % data['mean_score'])
     with open('/aaio/test/summary.json', 'w') as f:
         json.dump(data, f)

@@ -11,6 +11,10 @@ for result_filepath in result_filepaths:
     with open(result_filepath, 'r') as f:
         data = json.load(f)
         data['name'] = os.path.splitext(os.path.basename(result_filepath))[0]
+        try:
+            data.pop('results')
+        except KeyError:
+            pass
         results.append(data)
 
 df = pandas.DataFrame(results)
