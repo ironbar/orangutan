@@ -8,11 +8,13 @@ import json
 import time
 import importlib.util
 import numpy as np
+import yaml
 
 from animalai.envs.gym.environment import AnimalAIEnv
 from animalai.envs.arena_config import ArenaConfig
 
 N_EPISODES = 30
+GRAY_FRAMES = 5
 
 def main():
     # Load the agent from the submission
@@ -37,16 +39,20 @@ def main():
     )
 
     _remove_previous_frames()
-    config_filepaths = sorted(glob.glob('/aaio/test/configs/*.yaml'))
+    with open('/aaio/test/test_config.yaml', 'r') as stream:
+        test_config = yaml.safe_load(stream)
     rewards = []
     elapsed_time = time.time()
-    for config_filepath in config_filepaths:
-        rewards.append(evaluate_config(config_filepath, env, submitted_agent))
+    for key in test_config:
+        config_filepath = os.path.join('/aaio/test/configs', key)
+        rewards.append(evaluate_config(config_filepath, env, submitted_agent,
+                                       n_episodes=test_config[key]['n_tests'],
+                                       threshold=test_config[key]['threshold']))
     elapsed_time = time.time() - elapsed_time
-    _summarize_rewards(rewards, config_filepaths, elapsed_time)
+    _summarize_rewards(rewards, test_config.keys(), elapsed_time)
     print('SUCCESS')
 
-def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES):
+def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold):
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
@@ -67,7 +73,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
                 cumulated_reward += reward
                 if done:
                     # # _save_frames(episode_frames, config_filepath, k)
-                    for _ in range(3):
+                    for _ in range(GRAY_FRAMES):
                         episode_frames.append(np.ones((84, 84, 3), dtype=np.float32)*0.5)
                     _reset_agent(submitted_agent, arena_config_in)
                     break
@@ -76,7 +82,11 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes=N_EPISODES
             raise e
         if not done:
             print('Warning level not done.')
-        print('Episode %i reward: %.2f\tsteps: %i' % (k, cumulated_reward, t))
+        msg = 'Episode %i reward: %.2f\tsteps: %i' % (k, cumulated_reward, t)
+        if cumulated_reward >= threshold:
+            _print_green(msg)
+        else:
+            _print_red(msg)
         rewards.append(cumulated_reward)
         steps.append(t)
         sys.stdout.flush()
@@ -103,8 +113,8 @@ def _summarize_rewards(rewards, config_filepaths, elapsed_time):
         score = np.mean(reward)
         data['level_%s' % key] = score
         print('%.2f\t %s' % (score, key))
-    data['mean_score'] = np.mean(rewards)
-    print('Mean reward: %.2f' % np.mean(rewards))
+    data['mean_score'] = np.mean([np.mean(reward) for reward in rewards])
+    print('Mean reward: %.2f' % data['mean_score'])
     with open('/aaio/test/summary.json', 'w') as f:
         json.dump(data, f)
 
@@ -123,6 +133,14 @@ def _remove_previous_frames():
     filepaths = glob.glob('/aaio/test/frames/*.npz')
     [os.remove(filepath) for filepath in filepaths]
 
+def _print_red(text):
+    print("\x1b[31m" + text + "\x1b[0m")
+
+def _print_green(text):
+    print("\x1b[32m" + text + "\x1b[0m")
+
+def _print_yellow(text):
+    print("\x1b[33m" + text + "\x1b[0m")
 
 if __name__ == '__main__':
     main()

@@ -1,0 +1,40 @@
+food/GoodGoal_size05.yaml:
+  threshold: -0.5
+  n_tests: 5
+food/GoodGoal_size1.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoal_size2.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoal_size3.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoal_size4.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoal_size5.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoalMulti_size05.yaml:
+  threshold: -0.5
+  n_tests: 5
+food/GoodGoalMulti_size1.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoalMulti_size2.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoalMulti_size3.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoalMulti_size4.yaml:
+  threshold: 0
+  n_tests: 5
+food/GoodGoalMulti_size5.yaml:
+  threshold: 0
+  n_tests: 5
+forcedChoice.yaml:
+  threshold: 0.
+  n_tests: 1
+

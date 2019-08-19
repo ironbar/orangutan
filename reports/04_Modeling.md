@@ -753,6 +753,10 @@ are solvable and difficult enough. To avoid overfitting the training should be r
 
 ### Development testing
 
+The current test script takes all arena configurations from a folder and evaluates them 30 times to get the average reward.
+The new test script will take a yaml file with the configuration for the tests. This includes the path to the test files, the
+threshold to pass the test and the number of repetitions.
+
 ### Results
 
 ## Iteration 6. Solving each category iteratively
