@@ -41,15 +41,17 @@ def main():
     _remove_previous_frames()
     with open('/aaio/test/test_config.yaml', 'r') as stream:
         test_config = yaml.safe_load(stream)
-    rewards = []
+    rewards, config_filepaths = [], []
     elapsed_time = time.time()
-    for key in test_config:
-        config_filepath = os.path.join('/aaio/test/configs', key)
-        rewards.append(evaluate_config(config_filepath, env, submitted_agent,
-                                       n_episodes=test_config[key]['n_tests'],
-                                       threshold=test_config[key]['threshold']))
+    for category, category_conf in test_config.items():
+        for test_name, test_params in category_conf.items():
+            config_filepath = os.path.join('/aaio/test/configs', category, test_name)
+            config_filepaths.append(config_filepath)
+            rewards.append(evaluate_config(config_filepath, env, submitted_agent,
+                                           n_episodes=test_params['n_tests'],
+                                           threshold=test_params['threshold']))
     elapsed_time = time.time() - elapsed_time
-    _summarize_rewards(rewards, test_config.keys(), elapsed_time)
+    _summarize_rewards(rewards, config_filepaths, elapsed_time)
     print('SUCCESS')
 
 def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold):
