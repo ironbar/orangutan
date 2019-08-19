@@ -14,7 +14,7 @@ arenas:
       sizes:
       - !Vector3 {x: 1, y: 1, z: 1}
       positions:
-      - !Vector3 {x: 30, y: 0, z: 20}
+      - !Vector3 {x: 28, y: 0, z: 20}
     - !Item
       name: Agent
       positions:

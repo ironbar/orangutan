@@ -44,6 +44,8 @@ def main():
     results = {}
     elapsed_time = time.time()
     for category, category_conf in test_config.items():
+        print('█'*120)
+        print('\t%s' % category)
         results[category] = {}
         for test_name, test_params in category_conf.items():
             config_filepath = os.path.join('/aaio/test/configs', category, test_name)
@@ -60,8 +62,6 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
-    print('█'*120)
-    print('\t%s' % os.path.basename(config_filepath))
     rewards, steps, results = [], [], []
     episode_frames = []
     initial_frame = None
@@ -86,7 +86,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
             raise e
         if not done:
             print('Warning level not done.')
-        msg = 'Episode %i reward: %.2f\tsteps: %i' % (k, cumulated_reward, t)
+        msg = 'Episode %i reward: %.2f\tsteps: %i\t%s' % (k, cumulated_reward, t, os.path.basename(config_filepath))
         if cumulated_reward >= threshold:
             _print_green(msg)
             results.append(1)
@@ -99,7 +99,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
         rewards.append(cumulated_reward)
         steps.append(t)
         sys.stdout.flush()
-    _print_config_summary(rewards, steps)
+    #_print_config_summary(rewards, steps)
     _save_frames(episode_frames, config_filepath, None)
     return dict(rewards=rewards, steps=steps, results=results)
 
