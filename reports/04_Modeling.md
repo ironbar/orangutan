@@ -808,6 +808,11 @@ Let's enumerate some ideas for creating arenas:
 * Red goals may hide green or yellow goals, this can happen randomly but I could force that behaviour 
 * I could place the agent and goal in the other side of the arena and multiple red goals between them to force navigation
 
+I have trained two models with some initial configurations that are able to get scores of 24 and 23 on LB. Moreover I have
+created better tests for the models. It is surprising that the model has learned preferences of yellow over green
+without any explicit level, I think it could be caused by the levels with more than one yellow goal. There are some
+problems with small goals and I believe that moving backwards could be useful sometimes.
+
 # TODO: post here pictures of the levels
 
 ### Results
