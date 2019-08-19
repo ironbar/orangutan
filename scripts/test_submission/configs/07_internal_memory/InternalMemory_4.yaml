@@ -1,0 +1,12 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 100
+    blackouts: [25, 30, 50, 55, 75]
+    items:
+    - !Item
+      name: CylinderTunnel
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}

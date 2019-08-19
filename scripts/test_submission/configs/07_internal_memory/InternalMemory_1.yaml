@@ -2,6 +2,9 @@
 arenas:
   0: !Arena
     t: 250
+    blackouts: [-20]
     items:
     - !Item
       name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
