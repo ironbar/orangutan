@@ -13,6 +13,8 @@ arenas:
       name: Agent
       positions:
       - !Vector3 {x: 38, y: 0, z: -1}
+      rotations:
+      - 270
     - !Item
       name: BadGoalBounce
       sizes:
