@@ -1,0 +1,2 @@
+name,elapsed_time,level_01_food,level_03_obstacles,level_04_avoidance,level_05_spatial_reasoning,level_06_generalization,level_07_internal_memory,level_09_advanced_preferences,mean_score
+018_more_visual_capacity_retrain,429.9754,0.6952,0.9,0.25,0.8,0.6,0.65,0.4,0.6136
