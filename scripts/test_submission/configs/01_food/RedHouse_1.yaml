@@ -1,0 +1,59 @@
+!ArenaConfig
+arenas:
+  0: !Arena # One GoodGoal of size 1 at the other side of arena and 16 badgoals inbetween
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 38, y: 0, z: 20}
+      rotations:
+      - 270
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 17.0, y: 0, z: 16}
+      - !Vector3 {x: 18.5, y: 0, z: 16}
+      - !Vector3 {x: 20.0, y: 0, z: 16}
+      - !Vector3 {x: 21.5, y: 0, z: 16}
+      - !Vector3 {x: 23.0, y: 0, z: 16}
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 17.0, y: 0, z: 24}
+      - !Vector3 {x: 18.5, y: 0, z: 24}
+      - !Vector3 {x: 20.0, y: 0, z: 24}
+      - !Vector3 {x: 21.5, y: 0, z: 24}
+      - !Vector3 {x: 23.0, y: 0, z: 24}
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 24, y: 0, z: 17}
+      - !Vector3 {x: 24, y: 0, z: 18.5}
+      - !Vector3 {x: 24, y: 0, z: 20}
+      - !Vector3 {x: 24, y: 0, z: 21.5}
+      - !Vector3 {x: 24, y: 0, z: 23}
