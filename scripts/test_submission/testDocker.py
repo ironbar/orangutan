@@ -47,14 +47,16 @@ def main():
         results[category] = {}
         for test_name, test_params in category_conf.items():
             config_filepath = os.path.join('/aaio/test/configs', category, test_name)
+            if not 'partial_threshold' in test_params:
+                test_params['partial_threshold'] = None
             results[category][test_name] = evaluate_config(
                 config_filepath, env, submitted_agent, n_episodes=test_params['n_tests'],
-                threshold=test_params['threshold'])
+                threshold=test_params['threshold'], partial_threshold=test_params['partial_threshold'])
     elapsed_time = time.time() - elapsed_time
     _summarize_results(results, elapsed_time)
     print('SUCCESS')
 
-def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold):
+def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold, partial_threshold):
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
@@ -88,6 +90,9 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
         if cumulated_reward >= threshold:
             _print_green(msg)
             results.append(1)
+        elif partial_threshold is not None and cumulated_reward >= partial_threshold:
+            _print_yellow(msg)
+            results.append(0.5)
         else:
             _print_red(msg)
             results.append(0)

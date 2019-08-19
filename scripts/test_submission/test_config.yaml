@@ -71,3 +71,4 @@ food:
   Labyrinth30_GoodGoalMulti4.yaml:
     threshold: 3
     n_tests: 5
+    partial_threshold: 1
