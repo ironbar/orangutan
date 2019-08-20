@@ -2,6 +2,7 @@
 TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/orangutan/scripts/test_submission
 SAVED_GAMES_PATH=/media/guillermo/Data/Kaggle/animalai/gameplay
 VIDEOS_PATH=/media/guillermo/Data/Kaggle/animalai/videos
+DOCKER_TAG=$(shell python -c "import os;print(os.getenv('DOCKER_IMAGE').split(':')[-1])")
 
 define PRINT_HELP_PYSCRIPT
 import re, sys
@@ -30,12 +31,11 @@ env-export: ## export conda environment to file
 	conda env export > environment.yml
 
 test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
-	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py
-	# copy the file to the results folder
-	python -c "import shutil; import os;shutil.copyfile('scripts/test_submission/summary.json', 'scripts/test_submission/results/%s.json' % os.getenv('DOCKER_IMAGE').split(':')[-1])"
+	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py $(DOCKER_TAG)
+	cp scripts/test_submission/_temp/$(DOCKER_TAG)/summary.json scripts/test_submission/results/$(DOCKER_TAG).json
 	python scripts/test_submission/summaryze_results.py
-	python scripts/visualize_recorded_games/visualize_recorded_games.py scripts/test_submission/frames $(VIDEOS_PATH)/$(shell python -c "import os;print(os.getenv('DOCKER_IMAGE').split(':')[-1])")
-	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/clean.py
+	python scripts/visualize_recorded_games/visualize_recorded_games.py scripts/test_submission/_temp/$(DOCKER_TAG) $(VIDEOS_PATH)/$(DOCKER_TAG)
+	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) rm -r /aaio/test/_temp/$(DOCKER_TAG)
 	spd-say End
 
 push-submission: ## push submission to evalai. DOCKER_IMAGE=animalai:001_simple_food_SL make push-submission

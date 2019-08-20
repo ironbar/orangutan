@@ -9,12 +9,14 @@ import time
 import importlib.util
 import numpy as np
 import yaml
+import shutil
 
 from animalai.envs.gym.environment import AnimalAIEnv
 from animalai.envs.arena_config import ArenaConfig
 
 N_EPISODES = 30
 GRAY_FRAMES = 5
+SAVE_FOLDER = '/aaio/test/_temp/%s' % sys.argv[1]
 
 def main():
     # Load the agent from the submission
@@ -38,7 +40,7 @@ def main():
         docker_training=True,
     )
 
-    _remove_previous_frames()
+    _prepare_saving_folder()
     with open('/aaio/test/test_config.yaml', 'r') as stream:
         test_config = yaml.safe_load(stream)
     results = {}
@@ -123,23 +125,24 @@ def _summarize_results(results, elapsed_time):
         data['level_%s' % category] = category_score
     data['mean_score'] = np.mean([data[key] for key in data if key.startswith('level_')])
     print('Mean reward: %.2f' % data['mean_score'])
-    with open('/aaio/test/summary.json', 'w') as f:
+    with open('%s/summary.json' % SAVE_FOLDER, 'w') as f:
         json.dump(data, f)
 
 def _save_frames(episode_frames, config_filepath, episode_idx):
     episode_frames = np.array(episode_frames)
     episode_frames = (episode_frames*255).astype(np.uint8)
     if episode_idx is not None:
-        filepath = os.path.join('/aaio/test/frames', '%s_%03d.npz' % (
+        filepath = os.path.join(SAVE_FOLDER, '%s_%03d.npz' % (
             os.path.splitext(os.path.basename(config_filepath))[0], episode_idx))
     else:
-        filepath = os.path.join('/aaio/test/frames', '%s.npz' % (
+        filepath = os.path.join(SAVE_FOLDER, '%s.npz' % (
             os.path.splitext(os.path.basename(config_filepath))[0]))
     np.savez(filepath, frame=episode_frames)
 
-def _remove_previous_frames():
-    filepaths = glob.glob('/aaio/test/frames/*.npz')
-    [os.remove(filepath) for filepath in filepaths]
+def _prepare_saving_folder():
+    if os.path.exists(SAVE_FOLDER):
+        shutil.rmtree(SAVE_FOLDER)
+    os.makedirs(SAVE_FOLDER)
 
 def _print_red(text):
     print("\x1b[31m" + text + "\x1b[0m")
