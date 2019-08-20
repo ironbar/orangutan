@@ -1,299 +1,299 @@
-01_food:
-  # # ### just one goal
-  GoodGoal_size05.yaml:
-    threshold: -0.5
-    n_tests: 5
-  GoodGoal_size1.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoal_size2.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoal_size3.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoal_size4.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoal_size5.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMulti_size05.yaml:
-    threshold: -0.5
-    n_tests: 5
-  GoodGoalMulti_size1.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMulti_size2.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMulti_size3.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMulti_size4.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMulti_size5.yaml:
-    threshold: 0
-    n_tests: 5
-  ### bouncing goals
-  GoodGoalBounce_size05.yaml:
-    threshold: -0.5
-    n_tests: 5
-  GoodGoalBounce_size1.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalBounce_size5.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMultiBounce_size05.yaml:
-    threshold: -0.5
-    n_tests: 5
-  GoodGoalMultiBounce_size1.yaml:
-    threshold: 0
-    n_tests: 5
-  GoodGoalMultiBounce_size5.yaml:
-    threshold: 0
-    n_tests: 5
-  ### bad goals labyrinths
-  Labyrinth15_GoodGoal.yaml:
-    threshold: 0
-    n_tests: 5
-  Labyrinth15_GoodGoalMulti.yaml:
-    threshold: 0
-    n_tests: 5
-  Labyrinth30_GoodGoal.yaml:
-    threshold: 0
-    n_tests: 5
-  Labyrinth30_GoodGoalMulti.yaml:
-    threshold: 0
-    n_tests: 5
-  Labyrinth30_GoodGoalMulti4.yaml:
-    threshold: 3
-    n_tests: 5
-    partial_threshold: 1
-  ### moving labyrinth
-  MovingLabyrinth5_GoodGoal.yaml:
-    threshold: 0
-    n_tests: 5
-  MovingLabyrinth10_GoodGoal.yaml:
-    threshold: 0
-    n_tests: 5
-  MovingLabyrinth15_GoodGoal.yaml:
-    threshold: 0
-    n_tests: 5
-  MovingLabyrinth5_GoodGoalMulti.yaml:
-    threshold: 0
-    n_tests: 5
-  MovingLabyrinth10_GoodGoalMulti.yaml:
-    threshold: 0
-    n_tests: 5
-  MovingLabyrinth15_GoodGoalMulti.yaml:
-    threshold: 0
-    n_tests: 5
-  ### Red house
-  RedHouse_1.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_2.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_3.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_4.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_5.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_6.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_7.yaml:
-    threshold: 0
-    n_tests: 1
-  RedHouse_8.yaml:
-    threshold: 0
-    n_tests: 1
-  ### Dead coming
-  DeadComing_1.yaml:
-    threshold: 0
-    n_tests: 1
-  DeadComing_2.yaml:
-    threshold: 0
-    n_tests: 1
-  DeadComing_3.yaml:
-    threshold: 0
-    n_tests: 1
-  DeadComing_4.yaml:
-    threshold: 0
-    n_tests: 1
-  ### Hiding goal
-  HidingGoal_1.yaml:
-    threshold: 0
-    n_tests: 1
-  HidingGoal_2.yaml:
-    threshold: 0
-    n_tests: 1
-  HidingGoal_3.yaml:
-    threshold: 0
-    n_tests: 1
-  ### Red wall
-  RedWall_1.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_2.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_3.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_4.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_5.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_6.yaml:
-    threshold: 0
-    n_tests: 1
-  RedWall_7.yaml:
-    threshold: 0
-    n_tests: 1
-  RedRandomWall.yaml:
-    threshold: 0
-    n_tests: 5
-  ### Yellow over green
-  YellowOverGreen_1.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_2.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_3.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_4.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_5.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_6.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_7.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_8.yaml:
-    threshold: 2
-    n_tests: 1
-  YellowOverGreen_9.yaml:
-    threshold: 1
-    n_tests: 1
-  YellowOverGreen_10.yaml:
-    threshold: 2
-    n_tests: 1
-  YellowOverGreen_11.yaml:
-    threshold: 1
-    n_tests: 1
-03_obstacles:
-  Obstacles.yaml:
-    threshold: 0
-    n_tests: 10
-  objectManipulation.yaml:
-    threshold: 0
-    n_tests: 10
-04_avoidance:
-  ### CenterMoat
-  CenterMoat_1.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoat_2.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoat_3.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoat_4.yaml:
-    threshold: 0
-    n_tests: 1
-  ### Ring
-  Ring_1.yaml:
-    threshold: 0
-    n_tests: 1
-  Ring_2.yaml:
-    threshold: 0
-    n_tests: 1
-  Ring_3.yaml:
-    threshold: 0
-    n_tests: 1
-  Ring_4.yaml:
-    threshold: 0
-    n_tests: 1
-  ### RingBlocked
-  RingBlocked_1.yaml:
-    threshold: 0
-    n_tests: 1
-  RingBlocked_2.yaml:
-    threshold: 0
-    n_tests: 1
-  RingBlocked_3.yaml:
-    threshold: 0
-    n_tests: 1
-  RingBlocked_4.yaml:
-    threshold: 0
-    n_tests: 1
-  ### CenterMoat
-  CenterMoatBlocked_1.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoatBlocked_2.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoatBlocked_3.yaml:
-    threshold: 0
-    n_tests: 1
-  CenterMoatBlocked_4.yaml:
-    threshold: 0
-    n_tests: 1
-  ### Chessboards
-  ChessBoard_1.yaml:
-    threshold: 0
-    n_tests: 5
-  ChessBoard_2.yaml:
-    threshold: 0
-    n_tests: 5
-  ChessBoard_3.yaml:
-    threshold: 0
-    n_tests: 5
-  ChessBoard_4.yaml:
-    threshold: 0
-    n_tests: 5
-05_spatial_reasoning:
-  SpatialReasoning.yaml:
-    threshold: 1
-    n_tests: 10
-    partial_threshold: -0.5
-06_generalization:
-  Generalization.yaml:
-    threshold: 1
-    n_tests: 10
-    partial_threshold: -0.5
-07_internal_memory:
-  InternalMemory_1.yaml:
-    threshold: 0
-    n_tests: 10
-  InternalMemory_2.yaml:
-    threshold: 0
-    n_tests: 10
-  InternalMemory_3.yaml:
-    threshold: 0
-    n_tests: 10
-  InternalMemory_4.yaml:
-    threshold: 0
-    n_tests: 10
+# 01_food:
+#   # # ### just one goal
+#   GoodGoal_size05.yaml:
+#     threshold: -0.5
+#     n_tests: 5
+#   GoodGoal_size1.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoal_size2.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoal_size3.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoal_size4.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoal_size5.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMulti_size05.yaml:
+#     threshold: -0.5
+#     n_tests: 5
+#   GoodGoalMulti_size1.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMulti_size2.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMulti_size3.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMulti_size4.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMulti_size5.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ### bouncing goals
+#   GoodGoalBounce_size05.yaml:
+#     threshold: -0.5
+#     n_tests: 5
+#   GoodGoalBounce_size1.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalBounce_size5.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMultiBounce_size05.yaml:
+#     threshold: -0.5
+#     n_tests: 5
+#   GoodGoalMultiBounce_size1.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   GoodGoalMultiBounce_size5.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ### bad goals labyrinths
+#   Labyrinth15_GoodGoal.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   Labyrinth15_GoodGoalMulti.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   Labyrinth30_GoodGoal.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   Labyrinth30_GoodGoalMulti.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   Labyrinth30_GoodGoalMulti4.yaml:
+#     threshold: 3
+#     n_tests: 5
+#     partial_threshold: 1
+#   ### moving labyrinth
+#   MovingLabyrinth5_GoodGoal.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   MovingLabyrinth10_GoodGoal.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   MovingLabyrinth15_GoodGoal.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   MovingLabyrinth5_GoodGoalMulti.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   MovingLabyrinth10_GoodGoalMulti.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   MovingLabyrinth15_GoodGoalMulti.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ### Red house
+#   RedHouse_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_5.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_6.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_7.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedHouse_8.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### Dead coming
+#   DeadComing_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   DeadComing_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   DeadComing_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   DeadComing_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### Hiding goal
+#   HidingGoal_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   HidingGoal_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   HidingGoal_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### Red wall
+#   RedWall_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_5.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_6.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedWall_7.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RedRandomWall.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ### Yellow over green
+#   YellowOverGreen_1.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_2.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_3.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_4.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_5.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_6.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_7.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_8.yaml:
+#     threshold: 2
+#     n_tests: 1
+#   YellowOverGreen_9.yaml:
+#     threshold: 1
+#     n_tests: 1
+#   YellowOverGreen_10.yaml:
+#     threshold: 2
+#     n_tests: 1
+#   YellowOverGreen_11.yaml:
+#     threshold: 1
+#     n_tests: 1
+# 03_obstacles:
+#   Obstacles.yaml:
+#     threshold: 0
+#     n_tests: 10
+#   objectManipulation.yaml:
+#     threshold: 0
+#     n_tests: 10
+# 04_avoidance:
+#   ### CenterMoat
+#   CenterMoat_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoat_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoat_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoat_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### Ring
+#   Ring_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   Ring_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   Ring_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   Ring_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### RingBlocked
+#   RingBlocked_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RingBlocked_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RingBlocked_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   RingBlocked_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### CenterMoat
+#   CenterMoatBlocked_1.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoatBlocked_2.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoatBlocked_3.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   CenterMoatBlocked_4.yaml:
+#     threshold: 0
+#     n_tests: 1
+#   ### Chessboards
+#   ChessBoard_1.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ChessBoard_2.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ChessBoard_3.yaml:
+#     threshold: 0
+#     n_tests: 5
+#   ChessBoard_4.yaml:
+#     threshold: 0
+#     n_tests: 5
+# 05_spatial_reasoning:
+#   SpatialReasoning.yaml:
+#     threshold: 1
+#     n_tests: 10
+#     partial_threshold: -0.5
+# 06_generalization:
+#   Generalization.yaml:
+#     threshold: 1
+#     n_tests: 10
+#     partial_threshold: -0.5
+# 07_internal_memory:
+#   InternalMemory_1.yaml:
+#     threshold: 0
+#     n_tests: 10
+#   InternalMemory_2.yaml:
+#     threshold: 0
+#     n_tests: 10
+#   InternalMemory_3.yaml:
+#     threshold: 0
+#     n_tests: 10
+#   InternalMemory_4.yaml:
+#     threshold: 0
+#     n_tests: 10
 09_advanced_preferences:
   forcedChoice_1.yaml:
     threshold: 0

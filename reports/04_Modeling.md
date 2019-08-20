@@ -759,6 +759,10 @@ threshold to pass the test and the number of repetitions.
 
 ### Results
 
+I have upgraded the test script:
+* to be pass/no pass
+* allow to evaluate multiple models at the same time
+
 ## Iteration 6. Solving each category iteratively
 
 ### Goal
@@ -860,6 +864,10 @@ This are some levels that I have created for this category.
 </p>
 
 I have noticed that sometimes the deathzones are not visible until we are close to them. It's clear that this is a partially observable environment.
+
+I have trained two models and they improve the scores on avoidance: from previous 0.25 to 0.64 however the navigation is not perfect, sometimes
+it gets stuck in the border or in the middle of the arena. I think this is related to memory. It oscilates between left and right without
+any result for long periods.
 
 ### Results
 
