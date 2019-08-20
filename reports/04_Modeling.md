@@ -813,7 +813,7 @@ created better tests for the models. It is surprising that the model has learned
 without any explicit level, I think it could be caused by the levels with more than one yellow goal. There are some
 problems with small goals and I believe that moving backwards could be useful sometimes.
 
-I'm a little bit lost because the new models that I have been training with more data are getting worse results.
+I'm a little bit lost because the new models that I have been training with more data are getting worse results. Moreover I have not been able yet to improve the score on food category of the best models.
 
 | name                       	| level_01_food 	| train levels 	|
 |----------------------------	|---------------	|--------------	|
@@ -837,7 +837,29 @@ This are some examples of tests for food category.
   <img src="media/test_levels_food_yellow_over_green.png">
 </p>
 
-# TODO: post here pictures of the levels
+One interesting experiment was to train the same model on the same data allowing backwards and disabling backwards.
+The model with backwards disabled learned faster but achieved a smaller mean reward.
+
+#### 4. Avoidance
+
+> Completely avoiding red zones.
+> Minimizing time spent on orange zones.
+
+> Being on a hotzone costs 10 times as being on a not hot zone.
+
+This are some levels that I have created for this category.
+
+<p align="center">
+  <img src="media/test_levels_avoidance_centermoat.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_avoidance_chessboard.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_avoidance_ringblocked.png">
+</p>
+
+I have noticed that sometimes the deathzones are not visible until we are close to them. It's clear that this is a partially observable environment.
 
 ### Results
 

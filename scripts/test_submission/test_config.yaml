@@ -258,6 +258,19 @@
   CenterMoatBlocked_4.yaml:
     threshold: 0
     n_tests: 1
+  ### Chessboards
+  ChessBoard_1.yaml:
+    threshold: 0
+    n_tests: 5
+  ChessBoard_2.yaml:
+    threshold: 0
+    n_tests: 5
+  ChessBoard_3.yaml:
+    threshold: 0
+    n_tests: 5
+  ChessBoard_4.yaml:
+    threshold: 0
+    n_tests: 5
 05_spatial_reasoning:
   SpatialReasoning.yaml:
     threshold: 1
