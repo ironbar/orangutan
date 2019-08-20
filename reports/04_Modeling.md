@@ -844,6 +844,10 @@ This are some examples of tests for food category.
 One interesting experiment was to train the same model on the same data allowing backwards and disabling backwards.
 The model with backwards disabled learned faster but achieved a smaller mean reward.
 
+#### 2. Preferences
+
+
+
 #### 4. Avoidance
 
 > Completely avoiding red zones.

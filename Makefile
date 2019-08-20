@@ -31,6 +31,7 @@ env-export: ## export conda environment to file
 	conda env export > environment.yml
 
 test-submission: ## test that submission works. DOCKER_IMAGE=animalai:001_simple_food_SL make test-submission
+	#docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test --gpus 0 $(DOCKER_IMAGE) python /aaio/test/testDocker.py $(DOCKER_TAG)
 	docker run -v "$(TEST_SUBMISSION_PATH)":/aaio/test $(DOCKER_IMAGE) python /aaio/test/testDocker.py $(DOCKER_TAG)
 	cp scripts/test_submission/_temp/$(DOCKER_TAG)/summary.json scripts/test_submission/results/$(DOCKER_TAG).json
 	python scripts/test_submission/summaryze_results.py

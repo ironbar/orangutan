@@ -126,6 +126,7 @@ def _summarize_results(results, elapsed_time):
         data['level_%s' % category] = category_score
     data['mean_score'] = np.mean([data[key] for key in data if key.startswith('level_')])
     print('Mean reward: %.2f' % data['mean_score'])
+    print('Elapsed time: %i seconds' % elapsed_time)
     with open('%s/summary.json' % SAVE_FOLDER, 'w') as f:
         json.dump(data, f)
 
