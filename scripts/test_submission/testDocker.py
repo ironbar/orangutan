@@ -55,12 +55,13 @@ def main():
                 test_params['partial_threshold'] = None
             results[category][test_name] = evaluate_config(
                 config_filepath, env, submitted_agent, n_episodes=test_params['n_tests'],
-                threshold=test_params['threshold'], partial_threshold=test_params['partial_threshold'])
+                threshold=test_params['threshold'], partial_threshold=test_params['partial_threshold'],
+                category=category)
     elapsed_time = time.time() - elapsed_time
     _summarize_results(results, elapsed_time)
     print('SUCCESS')
 
-def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold, partial_threshold):
+def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold, partial_threshold, category):
     arena_config_in = ArenaConfig(config_filepath)
     env.reset(arenas_configurations=arena_config_in)
     obs, reward, done, info = env.step([0, 0])
@@ -102,7 +103,7 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
         steps.append(t)
         sys.stdout.flush()
     #_print_config_summary(rewards, steps)
-    _save_frames(episode_frames, config_filepath, None)
+    _save_frames(episode_frames, config_filepath, None, category=category)
     return dict(rewards=rewards, steps=steps, results=results)
 
 def _print_config_summary(rewards, steps):
@@ -128,16 +129,20 @@ def _summarize_results(results, elapsed_time):
     with open('%s/summary.json' % SAVE_FOLDER, 'w') as f:
         json.dump(data, f)
 
-def _save_frames(episode_frames, config_filepath, episode_idx):
+def _save_frames(episode_frames, config_filepath, episode_idx, category):
     episode_frames = np.array(episode_frames)
     episode_frames = (episode_frames*255).astype(np.uint8)
     if episode_idx is not None:
-        filepath = os.path.join(SAVE_FOLDER, '%s_%03d.npz' % (
+        filepath = os.path.join(SAVE_FOLDER, category, '%s_%03d.npz' % (
             os.path.splitext(os.path.basename(config_filepath))[0], episode_idx))
     else:
-        filepath = os.path.join(SAVE_FOLDER, '%s.npz' % (
+        filepath = os.path.join(SAVE_FOLDER, category, '%s.npz' % (
             os.path.splitext(os.path.basename(config_filepath))[0]))
-    np.savez(filepath, frame=episode_frames)
+    try:
+        np.savez(filepath, frame=episode_frames)
+    except FileNotFoundError:
+        os.makedirs(os.path.dirname(filepath))
+        np.savez(filepath, frame=episode_frames)
 
 def _prepare_saving_folder():
     if os.path.exists(SAVE_FOLDER):

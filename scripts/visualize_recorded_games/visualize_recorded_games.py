@@ -17,10 +17,10 @@ def main(args=None):
         args = sys.argv[1:]
     args = parse_args(args)
     saved_games_filepaths = glob.glob(os.path.join(args.games_path, '*.npz'))
+    saved_games_filepaths += glob.glob(os.path.join(args.games_path, '*', '*.npz'))
     for saved_games_filepath in tqdm(saved_games_filepaths):
-        video_filepath = os.path.join(
-            args.output_path,
-            '%s.avi' % os.path.splitext(os.path.basename(saved_games_filepath))[0])
+        video_filepath = saved_games_filepath.replace(args.games_path, args.output_path)
+        video_filepath = os.path.splitext(video_filepath)[0] + '.avi'
         create_video(saved_games_filepath, video_filepath)
 
 def create_video(npz_filepath, video_filepath):
