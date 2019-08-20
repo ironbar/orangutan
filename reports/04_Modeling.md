@@ -822,6 +822,21 @@ I'm a little bit lost because the new models that I have been training with more
 | 034_food_wall              	| 0.6532        	|              	|
 | 035_food_wall_no_backwards 	| 0.6403        	|              	|
 
+This are some examples of tests for food category.
+
+<p align="center">
+  <img src="media/test_levels_food_labyrinth.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_food_redhouse.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_food_redwall.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_food_yellow_over_green.png">
+</p>
+
 # TODO: post here pictures of the levels
 
 ### Results
