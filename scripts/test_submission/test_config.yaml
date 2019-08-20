@@ -161,6 +161,9 @@
   RedWall_7.yaml:
     threshold: 0
     n_tests: 1
+  RedRandomWall.yaml:
+    threshold: 0
+    n_tests: 5
   ### Yellow over green
   YellowOverGreen_1.yaml:
     threshold: 1

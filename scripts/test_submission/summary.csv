@@ -1,2 +1,6 @@
 name,elapsed_time,level_01_food,level_03_obstacles,level_04_avoidance,level_05_spatial_reasoning,level_06_generalization,level_07_internal_memory,level_09_advanced_preferences,mean_score
 018_more_visual_capacity_retrain,429.9754,0.6952,0.9,0.25,0.8,0.6,0.65,0.4,0.6136
+031_food_baseline,327.7564,0.7516,0.85,0.5625,0.55,0.55,0.75,0.4,0.6306
+032_food_moving,415.7112,0.727,0.85,0.375,0.5,0.5,0.7,0.2,0.5503
+034_food_wall,358.9568,0.6532,0.95,0.0625,0.2,0.15,0.65,0.0,0.3808
+035_food_wall_no_backwards,425.5051,0.6403,0.75,0.1875,0.2,0.5,0.6,0.8,0.5254

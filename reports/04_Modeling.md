@@ -813,6 +813,15 @@ created better tests for the models. It is surprising that the model has learned
 without any explicit level, I think it could be caused by the levels with more than one yellow goal. There are some
 problems with small goals and I believe that moving backwards could be useful sometimes.
 
+I'm a little bit lost because the new models that I have been training with more data are getting worse results.
+
+| name                       	| level_01_food 	| train levels 	|
+|----------------------------	|---------------	|--------------	|
+| 031_food_baseline          	| 0.7516        	|              	|
+| 032_food_moving            	| 0.727         	|              	|
+| 034_food_wall              	| 0.6532        	|              	|
+| 035_food_wall_no_backwards 	| 0.6403        	|              	|
+
 # TODO: post here pictures of the levels
 
 ### Results
