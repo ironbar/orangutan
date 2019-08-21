@@ -13,3 +13,4 @@ scripts/test_submission/summary.json
 scripts/test_submission/frames/*.npz
 scripts/test_submission/.~lock.summary.csv#
 scripts/test_submission/configs/bak/*
+scripts/test_submission/test_config.1.yaml
