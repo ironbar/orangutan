@@ -870,6 +870,25 @@ The thing that bothers me is that all objects except zones are allowed.
 * Pushing movable objects means that it should be blocking the way.
 * I should use all the objects
 
+<p align="center">
+  <img src="media/test_levels_obstacles_goal_on_platform_2.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_obstacles_goal_on_platform.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_obstacles_navigation_on_platform.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_obstacles_navigation.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_obstacles_wall_with_obstacle.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_obstacles_wall_with_ramp.png">
+</p>
+
 #### 4. Avoidance
 
 > Completely avoiding red zones.
