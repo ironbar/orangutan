@@ -790,6 +790,11 @@ the final categories such as PlaNet.
 The idea is to take each category, read carefully the description and design arena configurations or scripts
 that create arena configurations that represent the objective of the category.
 
+Information of the different categories can be found in the links below:
+* https://www.mdcrosby.com/blog/animalaiprizes1.html
+* https://mdcrosby.com/blog/animalailaunch.html
+* https://mdcrosby.com/blog/animalaieval.html
+
 #### 1. Food
 
 > 1. Navigation in an empty arena.
@@ -848,8 +853,22 @@ The model with backwards disabled learned faster but achieved a smaller mean rew
 
 > Different sized food gives different rewards.
 > Getting lots of food soon can be better than getting a small amount of food immediately.
+> All objects allowed except zones
 
 I can prepare similar tests to those between yellow and green but with goals of the same type.
+
+The thing that bothers me is that all objects except zones are allowed.
+
+#### 3. Obstacles
+
+> All objects allowed except zones
+> Navigation around the different types of obstacles that exist in the environment.
+> Navigation up ramps
+> Pushing movable objects out of the way.
+
+* Navigation up ramps means that the goal should be on top or at the other side.
+* Pushing movable objects means that it should be blocking the way.
+* I should use all the objects
 
 #### 4. Avoidance
 

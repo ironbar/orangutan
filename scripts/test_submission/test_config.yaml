@@ -239,6 +239,86 @@
   objectManipulation.yaml:
     threshold: 0
     n_tests: 10
+  ### goal on platform
+  Goal_on_platform_1.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_2.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_3.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_4.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_5.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_6.yaml:
+    threshold: 0
+    n_tests: 5
+  ### wall with ramp
+  Wall_with_ramp_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_ramp_2.yaml:
+    threshold: 0
+    n_tests: 1
+  ### wall with obstacle
+  Wall_with_obstacle_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_2.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_3.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_4.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_5.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_6.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_obstacle_7.yaml:
+    threshold: 0
+    n_tests: 1
+  ### wall with tunnel
+  Wall_with_tunnel_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_tunnel_2.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_tunnel_3.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_tunnel_4.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_tunnel_5.yaml:
+    threshold: 0
+    n_tests: 1
+  Wall_with_tunnel_6.yaml:
+    threshold: 0
+    n_tests: 1
+  ## wall in the middle
+  Wall_middle.yaml:
+    threshold: 0
+    n_tests: 1
+  WallTransparent_middle_1.yaml:
+    threshold: 0
+    n_tests: 1
+  WallTransparent_middle_2.yaml:
+    threshold: 0
+    n_tests: 1
+  WallTransparent_middle_3.yaml:
+    threshold: 0
+    n_tests: 1
 04_avoidance:
   ### CenterMoat
   CenterMoat_1.yaml:
