@@ -198,6 +198,40 @@
   YellowOverGreen_11.yaml:
     threshold: 1
     n_tests: 1
+02_preferences:
+  Green_sizes12_1.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_2.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_3.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_4.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_5.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_6.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_7.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_8.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_9.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_10.yaml:
+    threshold: 1
+    n_tests: 1
+  Green_sizes12_11.yaml:
+    threshold: 1
+    n_tests: 1
 03_obstacles:
   Obstacles.yaml:
     threshold: 0

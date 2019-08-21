@@ -846,7 +846,10 @@ The model with backwards disabled learned faster but achieved a smaller mean rew
 
 #### 2. Preferences
 
+> Different sized food gives different rewards.
+> Getting lots of food soon can be better than getting a small amount of food immediately.
 
+I can prepare similar tests to those between yellow and green but with goals of the same type.
 
 #### 4. Avoidance
 
