@@ -305,6 +305,19 @@
   ChessBoard_4.yaml:
     threshold: 0
     n_tests: 5
+  ### Labyrinth
+  Labyrinth_1.yaml:
+    threshold: 0
+    n_tests: 5
+  Labyrinth_2.yaml:
+    threshold: 0
+    n_tests: 5
+  Labyrinth_3.yaml:
+    threshold: 0
+    n_tests: 5
+  Labyrinth_4.yaml:
+    threshold: 0
+    n_tests: 5
 05_spatial_reasoning:
   SpatialReasoning.yaml:
     threshold: 1
