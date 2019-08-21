@@ -876,6 +876,9 @@ I have trained two models and they improve the scores on avoidance: from previou
 it gets stuck in the border or in the middle of the arena. I think this is related to memory. It oscilates between left and right without
 any result for long periods.
 
+Over the night I have trained a model for many more epochs, around 450k instead of just 100k. In the avoidance tests the score is similar to the previous one
+but the model achieves better scores on other tests and also on leaderboard. So maybe training for longer is necessary.
+
 ### Results
 
 

@@ -318,6 +318,51 @@
   Labyrinth_4.yaml:
     threshold: 0
     n_tests: 5
+  ### Goal_in_HotZone
+  Goal_in_HotZone_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Goal_in_HotZone_2.yaml:
+    threshold: 0
+    n_tests: 1
+  Goal_in_HotZone_3.yaml:
+    threshold: 0
+    n_tests: 1
+  ### Goal_in_DeathZone
+  Goal_in_DeathZone_1.yaml:
+    threshold: -1
+    n_tests: 1
+  Goal_in_DeathZone_2.yaml:
+    threshold: -1
+    n_tests: 1
+  Goal_in_DeathZone_3.yaml:
+    threshold: -1
+    n_tests: 1
+  Goal_in_DeathZone_4.yaml:
+    threshold: 0
+    n_tests: 1
+  Goal_in_DeathZone_5.yaml:
+    threshold: 0
+    n_tests: 1
+  Goal_in_DeathZone_6.yaml:
+    threshold: 0
+    n_tests: 1
+  ### Goal_behind_HotZone
+  Goal_behind_HotZone_1.yaml:
+    threshold: -0.9
+    n_tests: 1
+  Goal_behind_HotZone_2.yaml:
+    threshold: -0.9
+    n_tests: 1
+  Goal_behind_HotZone_3.yaml:
+    threshold: -0.9
+    n_tests: 1
+  Goal_behind_HotZone_4.yaml:
+    threshold: -0.9
+    n_tests: 1
+  Goal_behind_HotZone_5.yaml:
+    threshold: -0.9
+    n_tests: 1
 05_spatial_reasoning:
   SpatialReasoning.yaml:
     threshold: 1
