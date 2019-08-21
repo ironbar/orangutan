@@ -17,6 +17,7 @@ from animalai.envs.arena_config import ArenaConfig
 N_EPISODES = 30
 GRAY_FRAMES = 5
 SAVE_FOLDER = '/aaio/test/_temp/%s' % sys.argv[1]
+EPSILON = 1.e-1
 
 def main():
     # Load the agent from the submission
@@ -90,10 +91,10 @@ def evaluate_config(config_filepath, env, submitted_agent, n_episodes, threshold
         if not done:
             print('Warning level not done.')
         msg = 'Episode %i reward: %.2f\tsteps: %i\t%s' % (k, cumulated_reward, t, os.path.basename(config_filepath))
-        if cumulated_reward >= threshold:
+        if cumulated_reward + EPSILON >= threshold:
             _print_green(msg)
             results.append(1)
-        elif partial_threshold is not None and cumulated_reward >= partial_threshold:
+        elif partial_threshold is not None and cumulated_reward + EPSILON >= partial_threshold:
             _print_yellow(msg)
             results.append(0.5)
         else:

@@ -1,0 +1,34 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+    - !Item
+      name: Cardbox2
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}
+    - !Item
+      name: Cardbox1
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 3, z: 5}

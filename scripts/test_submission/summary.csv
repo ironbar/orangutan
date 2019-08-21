@@ -9,4 +9,4 @@ name,elapsed_time,level_01_food,level_02_preferences,level_03_obstacles,level_04
 037_avoidance_baseline_no_backwards,681.0007,0.273,0.5455,0.75,0.6,0.25,0.25,0.3,0.4,0.4211
 037_avoidance_baseline_no_backwards_max_action,609.5032,0.3524,0.6364,0.75,0.62,0.35,0.35,0.525,0.2,0.473
 038_avoidance_baseline_no_backwards,440.9893,0.3651,0.5455,0.85,0.59,0.65,0.35,0.475,0.2,0.5032
-debug,2.6281,,,1.0,,,,,,1.0
+debug,123.1929,,,0.9125,,,,,,0.9125

@@ -319,6 +319,39 @@
   WallTransparent_middle_3.yaml:
     threshold: 0
     n_tests: 1
+  ### Navigation
+  Navigation_1.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_2.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_3.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_4.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_5.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_6.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_7.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_8.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
 04_avoidance:
   ### CenterMoat
   CenterMoat_1.yaml:
@@ -447,12 +480,12 @@
   SpatialReasoning.yaml:
     threshold: 1
     n_tests: 10
-    partial_threshold: -0.5
+    partial_threshold: 0
 06_generalization:
   Generalization.yaml:
     threshold: 1
     n_tests: 10
-    partial_threshold: -0.5
+    partial_threshold: 0
 07_internal_memory:
   InternalMemory_1.yaml:
     threshold: 0
