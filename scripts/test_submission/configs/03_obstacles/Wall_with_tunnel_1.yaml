@@ -34,7 +34,7 @@ arenas:
       colors:
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: 5, z: 5}
       rotations:
       - 180
       positions:

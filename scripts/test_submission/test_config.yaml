@@ -369,6 +369,27 @@
     threshold: 1
     n_tests: 5
     partial_threshold: 0
+  ### Navigation on splitted arena
+  Navigation_on_splitted_arena_1.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_splitted_arena_2.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_splitted_arena_3.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_splitted_arena_4.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_splitted_arena_5.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
 04_avoidance:
   ### CenterMoat
   CenterMoat_1.yaml:

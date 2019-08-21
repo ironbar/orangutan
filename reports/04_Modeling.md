@@ -824,12 +824,12 @@ problems with small goals and I believe that moving backwards could be useful so
 
 I'm a little bit lost because the new models that I have been training with more data are getting worse results. Moreover I have not been able yet to improve the score on food category of the best models.
 
-| name                       	| level_01_food 	| train levels 	|
-|----------------------------	|---------------	|--------------	|
-| 031_food_baseline          	| 0.7516        	|              	|
-| 032_food_moving            	| 0.727         	|              	|
-| 034_food_wall              	| 0.6532        	|              	|
-| 035_food_wall_no_backwards 	| 0.6403        	|              	|
+| name                       	| level_01_food 	| train levels      	|
+|----------------------------	|---------------	|-------------------	|
+| 031_food_baseline          	| 0.7516        	| baseline          	|
+| 032_food_moving            	| 0.727         	| + moving badgoals 	|
+| 034_food_wall              	| 0.6532        	| + wall badgoals   	|
+| 035_food_wall_no_backwards 	| 0.6403        	| + wall badgoals   	|
 
 This are some examples of tests for food category.
 
