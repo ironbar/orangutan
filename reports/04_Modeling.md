@@ -869,6 +869,15 @@ This are some levels that I have created for this category.
 <p align="center">
   <img src="media/test_levels_avoidance_ringblocked.png">
 </p>
+<p align="center">
+  <img src="media/test_levels_avoidance_goal_behind_hotzone.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_avoidance_goal_in_deathzone.png">
+</p>
+<p align="center">
+  <img src="media/test_levels_avoidance_labyrinth.png">
+</p>
 
 I have noticed that sometimes the deathzones are not visible until we are close to them. It's clear that this is a partially observable environment.
 
