@@ -1,0 +1,33 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 1, z: -1}
+    - !Item
+      name: Wall
+      sizes:
+      - !Vector3 {x: 40, y: 1, z: 20}
+      rotations:
+      - 0
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 30}
+    - !Item
+      name: Ramp
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      rotations:
+      - 180
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 17.5}

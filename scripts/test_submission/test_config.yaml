@@ -524,6 +524,50 @@
     threshold: 1
     n_tests: 10
     partial_threshold: 0
+  ### navigation
+  Navigation_1.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_2.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_3.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_4.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  ### goal on platform
+  Goal_on_platform_1.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_2.yaml:
+    threshold: 0
+    n_tests: 5
+  Goal_on_platform_3.yaml:
+    threshold: 0
+    n_tests: 5
+  ### navigation on platform
+  Navigation_on_platform_1.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_platform_2.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_platform_3.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
+  Navigation_on_platform_4.yaml:
+    threshold: 1
+    n_tests: 5
+    partial_threshold: 0
 07_internal_memory:
   InternalMemory_1.yaml:
     threshold: 0
