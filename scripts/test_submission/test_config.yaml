@@ -199,6 +199,7 @@
     threshold: 1
     n_tests: 1
 02_preferences:
+  ## Green sizes
   Green_sizes12_1.yaml:
     threshold: 1
     n_tests: 1
@@ -230,6 +231,19 @@
     threshold: 1
     n_tests: 1
   Green_sizes12_11.yaml:
+    threshold: 1
+    n_tests: 1
+  ## Yellow over green behind the window
+  YellowOverGreen_1.yaml:
+    threshold: 2
+    n_tests: 1
+  YellowOverGreen_2.yaml:
+    threshold: 1
+    n_tests: 1
+  YellowOverGreen_3.yaml:
+    threshold: 2
+    n_tests: 1
+  YellowOverGreen_4.yaml:
     threshold: 1
     n_tests: 1
 03_obstacles:
