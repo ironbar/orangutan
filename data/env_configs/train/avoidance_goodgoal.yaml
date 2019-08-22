@@ -1,0 +1,932 @@
+!ArenaConfig
+arenas:
+  # Agent, GoodGoal, GoodGoalMulti, DeathZone, HotZone
+  0: !Arena # DeathZone in the center
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 2}
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 24, y: 0, z: 24}
+  1: !Arena # HotZone in the center
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 2}
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 24, y: 0, z: 24}
+  2: !Arena # DeathZone in the center, ring of DeathZone in the border
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  3: !Arena # HotZone in the center, ring of HotZone in the border
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  4: !Arena # Random DeathZones squares, ring of DeathZone in the border
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  5: !Arena # Random HotZone squares, ring of HotZone in the border
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  6: !Arena # Random DeathZones squares, ring of DeathZones in the border, more variability on start and end
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 2}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 2, y: 0, z: 34}
+      - !Vector3 {x: 2, y: 0, z: 34}
+      rotations:
+      - 0
+      - 0
+  7: !Arena # Random HotZone squares, ring of HotZone in the border, more variability on start and end
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 2}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 10}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 2, y: 0, z: 34}
+      - !Vector3 {x: 2, y: 0, z: 34}
+      rotations:
+      - 0
+      - 0
+  8: !Arena # Random DeathZones squares, ring of DeathZones in the border, more variability on start and end
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 2}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 2, y: 0, z: 34}
+      - !Vector3 {x: 2, y: 0, z: 34}
+      rotations:
+      - 0
+      - 0
+  9: !Arena # Random DeathZones squares, ring of DeathZones in the border, more variability on start and end
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 38}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 2}
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      - !Vector3 {x: -1, y: 0, z: 16}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      - !Vector3 {x: -1, y: 0, z: 24}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      - !Vector3 {x: -1, y: 0, z: 34}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      - !Vector3 {x: -1, y: 0, z: 6}
+      sizes:
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      - !Vector3 {x: 5, y: 0, z: 5}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 2, y: 0, z: 34}
+      - !Vector3 {x: 2, y: 0, z: 34}
+      rotations:
+      - 0
+      - 0
+  10: !Arena # Labyrinth with 5 central DeathZones
+    t: 750
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+      rotations:
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 7}
+      - !Vector3 {x: -1, y: 0, z: 13}
+      - !Vector3 {x: -1, y: 0, z: 19}
+      - !Vector3 {x: -1, y: 0, z: 25}
+      - !Vector3 {x: -1, y: 0, z: 31}
+      sizes:
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  11: !Arena # Labyrinth with 5 central HotZones
+    t: 750
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 36}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 4}
+      rotations:
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 7}
+      - !Vector3 {x: -1, y: 0, z: 13}
+      - !Vector3 {x: -1, y: 0, z: 19}
+      - !Vector3 {x: -1, y: 0, z: 25}
+      - !Vector3 {x: -1, y: 0, z: 31}
+      sizes:
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      - !Vector3 {x: 32, y: 0, z: 3}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1}
+      - !Vector3 {x: 20, y: 0, z: 39}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 40, y: 0, z: 2}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  12: !Arena # Labyrinth with 3 central DeathZones
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 35}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 5}
+      rotations:
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 32, y: 0, z: 6}
+      - !Vector3 {x: 32, y: 0, z: 6}
+      - !Vector3 {x: 32, y: 0, z: 6}
+      rotations:
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: DeathZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1.5}
+      - !Vector3 {x: 20, y: 0, z: 38.5}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 3}
+      - !Vector3 {x: 40, y: 0, z: 3}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+  13: !Arena # Labyrinth with 3 central HotZones
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 35}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 5}
+      rotations:
+      - 0
+    # 6 squares of size 5 at random x positions
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 20}
+      - !Vector3 {x: -1, y: 0, z: 30}
+      sizes:
+      - !Vector3 {x: 32, y: 0, z: 6}
+      - !Vector3 {x: 32, y: 0, z: 6}
+      - !Vector3 {x: 32, y: 0, z: 6}
+      rotations:
+      - 0
+      - 0
+      - 0
+    - !Item
+      name: HotZone
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 1.5}
+      - !Vector3 {x: 20, y: 0, z: 38.5}
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+      sizes:
+      - !Vector3 {x: 40, y: 0, z: 3}
+      - !Vector3 {x: 40, y: 0, z: 3}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      - !Vector3 {x: 2, y: 0, z: 40}
+      rotations:
+      - 0
+      - 0
+      - 0
+      - 0
