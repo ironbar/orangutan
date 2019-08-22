@@ -889,6 +889,8 @@ The thing that bothers me is that all objects except zones are allowed.
   <img src="media/test_levels_obstacles_wall_with_ramp.png">
 </p>
 
+The navigation of the agent is very good, quite incredible.
+
 #### 4. Avoidance
 
 > Completely avoiding red zones.
@@ -935,6 +937,9 @@ Until the moment I have not been able to improve the best agent score by trainin
 After fixing the bug in the memory of the agent I reach a score of 38.33 just by submitting the same agent without the bug.
 
 Taking the max on each category a perfect agent will score more than 44 on LB.
+
+It is surprinsing that a model trained for category obstacles achieves better scores on food category than
+models trained for food.
 
 <!---
 Arenas config
