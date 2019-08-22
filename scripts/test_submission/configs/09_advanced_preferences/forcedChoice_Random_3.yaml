@@ -28,7 +28,6 @@ arenas:
       name: Agent
       positions:
       - !Vector3 {x: 20, y: .5, z: 20}
-      rotations: [0]
     - !Item
       name: GoodGoalMulti
       sizes:

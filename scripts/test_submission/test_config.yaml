@@ -624,6 +624,18 @@
   forcedChoice_Random_4.yaml:
     threshold: 3
     n_tests: 5
+  forcedChoice_Random_5.yaml:
+    threshold: 0
+    n_tests: 5
+  forcedChoice_Random_6.yaml:
+    threshold: 0
+    n_tests: 5
+  forcedChoice_Random_7.yaml:
+    threshold: 1
+    n_tests: 5
+  forcedChoice_Random_8.yaml:
+    threshold: 3
+    n_tests: 5
 10_causal_reasoning:
   Bridge_1.yaml:
     threshold: 0
