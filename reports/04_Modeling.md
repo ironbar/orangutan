@@ -932,6 +932,11 @@ Until the moment I have not been able to improve the best agent score by trainin
 
 **I have fixed a bug in the memory of the model on the test and now the bouncing has dissapear and it navigates better.**
 
+#### Megatrain
+
+After some experiments it has been difficult to improve in a single category only. Instead of that I'm going to to train
+a model using all the new arena configurations.
+
 ### Results
 
 After fixing the bug in the memory of the agent I reach a score of 38.33 just by submitting the same agent without the bug.
