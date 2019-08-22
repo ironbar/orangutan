@@ -926,8 +926,13 @@ any result for long periods.
 Over the night I have trained a model for many more epochs, around 450k instead of just 100k. In the avoidance tests the score is similar to the previous one
 but the model achieves better scores on other tests and also on leaderboard. So maybe training for longer is necessary.
 
+Until the moment I have not been able to improve the best agent score by training just on avoidance.
+
+**I have fixed a bug in the memory of the model on the test and now the bouncing has dissapear and it navigates better.**
+
 ### Results
 
+After fixing the bug in the memory of the agent I reach a score of 38.33 just by submitting the same agent without the bug.
 
 <!---
 Arenas config
