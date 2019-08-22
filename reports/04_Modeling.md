@@ -934,6 +934,8 @@ Until the moment I have not been able to improve the best agent score by trainin
 
 After fixing the bug in the memory of the agent I reach a score of 38.33 just by submitting the same agent without the bug.
 
+Taking the max on each category a perfect agent will score more than 44 on LB.
+
 <!---
 Arenas config
 Modifying the code seems difficult, probably is better to think of better ways of creating conf files.

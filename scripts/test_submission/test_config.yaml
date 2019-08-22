@@ -553,3 +553,38 @@
   forcedChoice_5.yaml:
     threshold: 1
     n_tests: 1
+10_causal_reasoning:
+  Bridge_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Bridge_2.yaml:
+    threshold: 0
+    n_tests: 1
+  Bridge_3.yaml:
+    threshold: 0
+    n_tests: 1
+  DoubleBridge_1.yaml:
+    threshold: 0
+    n_tests: 1
+  DoubleBridge_2.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  Jump_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Push_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Push_2.yaml:
+    threshold: 0
+    n_tests: 1
+  SuperBridge_1.yaml:
+    threshold: 0
+    n_tests: 1
+  SuperBridge_2.yaml:
+    threshold: 0
+    n_tests: 1
+  SuperBridge_3.yaml:
+    threshold: 0
+    n_tests: 1

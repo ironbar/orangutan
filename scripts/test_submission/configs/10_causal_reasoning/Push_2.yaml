@@ -1,0 +1,38 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 0.95, y: 0.95, z: 0.95}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item
+      name: WallTransparent
+      sizes:
+      - !Vector3 {x: 5, y: 5, z: 1}
+      - !Vector3 {x: 5, y: 5, z: 1}
+      rotations:
+      - 0
+      - 0
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 22.5}
+      - !Vector3 {x: 20, y: 0, z: 17.5}
+    - !Item
+      name: CylinderTunnelTransparent
+      sizes:
+      - !Vector3 {x: 4, y: 2.4, z: 2.5}
+      rotations:
+      - 90
+      positions:
+      - !Vector3 {x: 22.5, y: 0, z: 20}
+    - !Item
+      name: Cardbox2
+      sizes:
+      - !Vector3 {x: 4, y: 2, z: 4}
+      rotations:
+      - 90
+      positions:
+      - !Vector3 {x: 17.5, y: 0, z: 20}
