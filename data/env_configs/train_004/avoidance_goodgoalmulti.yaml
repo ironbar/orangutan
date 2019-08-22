@@ -930,3 +930,134 @@ arenas:
       - 0
       - 0
       - 0
+  ### This levels are from obstacles category
+  14: !Arena # navigation on splitted arena
+    t: 500
+    items:
+    - !Item
+      name: Wall
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 17, y: 5, z: 5}
+      - !Vector3 {x: 17, y: 5, z: 5}
+      rotations:
+      - 0
+      - 0
+      positions:
+      - !Vector3 {x: 8.5, y: 0, z: 20}
+      - !Vector3 {x: 31.5, y: 0, z: 20}
+    - !Item
+      name: CylinderTunnel
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 5, y: 5, z: 5}
+      rotations:
+      - 180
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: Cardbox1
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      sizes:
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
+  15: !Arena # navigation on splitted arena
+    t: 500
+    items:
+    - !Item
+      name: Wall
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 17, y: 5, z: 5}
+      - !Vector3 {x: 17, y: 5, z: 5}
+      rotations:
+      - 0
+      - 0
+      positions:
+      - !Vector3 {x: 8.5, y: 0, z: 20}
+      - !Vector3 {x: 31.5, y: 0, z: 20}
+    - !Item
+      name: Ramp
+      colors:
+      - !RGB {r: 255, g: 0, b: 255}
+      - !RGB {r: 255, g: 0, b: 255}
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 3}
+      - !Vector3 {x: 5, y: 1, z: 3}
+      rotations:
+      - 0
+      - 180
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 21.5}
+      - !Vector3 {x: 20, y: 0, z: 18.5}
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+    - !Item
+      name: Cardbox1
+      positions:
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: -1}
+      sizes:
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
+      - !Vector3 {x: 4, y: 2, z: 4}
