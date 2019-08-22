@@ -26,19 +26,14 @@ arenas:
       - !RGB {r: 200, g: 200, b: 200}
     - !Item
       name: Agent
-      positions: 
+      positions:
       - !Vector3 {x: 20, y: .5, z: 20}
       rotations: [0]
-      # Goals, should be placed on positions [10, 10], [10, 30], [30, 10], [30, 30]
     - !Item
       name: GoodGoal
-      positions: 
-      - !Vector3 {x: 10, y: 0, z: 10}
       sizes:
       - !Vector3 {x: 1, y: 1, z: 1}
     - !Item
       name: BadGoal
-      positions: 
-      - !Vector3 {x: 30, y: 0, z: 10}
       sizes:
       - !Vector3 {x: 1, y: 1, z: 1}
