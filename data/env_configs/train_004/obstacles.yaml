@@ -181,10 +181,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
   4: !Arena # navigation 2
     t: 500
     items:
@@ -201,10 +201,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
     - !Item
       name: Ramp
       colors:
@@ -213,10 +213,10 @@ arenas:
       - !RGB {r: 255, g: 0, b: 255}
       - !RGB {r: 255, g: 0, b: 255}
       sizes:
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   5: !Arena # navigation 3
     t: 500
     items:
@@ -233,10 +233,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
     - !Item
       name: Ramp
       colors:
@@ -245,10 +245,10 @@ arenas:
       - !RGB {r: 255, g: 0, b: 255}
       - !RGB {r: 255, g: 0, b: 255}
       sizes:
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   6: !Arena # navigation 4
     t: 500
     items:
@@ -265,10 +265,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
     - !Item
       name: CylinderTunnelTransparent
       colors:
@@ -292,10 +292,10 @@ arenas:
     - !Item
       name: Cardbox1
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
     - !Item
       name: CylinderTunnel
       colors:
@@ -324,10 +324,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
     - !Item
       name: Cardbox1
       colors:
@@ -336,10 +336,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   9: !Arena # navigation 7
     t: 500
     items:
@@ -356,10 +356,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
     - !Item
       name: Cardbox1
       colors:
@@ -368,10 +368,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   10: !Arena # navigation 8
     t: 500
     items:
@@ -388,10 +388,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
     - !Item
       name: UObject
       colors:
@@ -400,10 +400,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   11: !Arena # navigation on platform 1
     t: 500
     items:
@@ -533,10 +533,10 @@ arenas:
       - !Vector3 {x: -1, y: 1, z: -1}
       - !Vector3 {x: -1, y: 1, z: -1}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   14: !Arena # navigation on platform 4
     t: 500
     items:
@@ -596,10 +596,10 @@ arenas:
       - !Vector3 {x: -1, y: 1, z: -1}
       - !Vector3 {x: -1, y: 1, z: -1}
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
   15: !Arena # navigation on splitted arena
     t: 500
     items:
