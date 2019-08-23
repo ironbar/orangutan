@@ -966,7 +966,7 @@ Taking the max on each category a perfect agent will score more than 44 on LB.
 It is surprinsing that a model trained for category obstacles achieves better scores on food category than
 models trained for food.
 
-Using a number of epochs of 6 is worse than 3, both in speed and reward.
+The number of epochs 3 seems to be optimal, at least at the beginning of the train.
 
 Experiments take a long time and that makes harder the iterative improvement process.
 
