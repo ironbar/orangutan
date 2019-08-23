@@ -932,6 +932,26 @@ Until the moment I have not been able to improve the best agent score by trainin
 
 **I have fixed a bug in the memory of the model on the test and now the bouncing has dissapear and it navigates better.**
 
+
+#### 5. Spatial reasoning
+
+> Navigation in restricted environments.
+> Memory of exploration.
+> Understanding gravity.
+
+I think that restricted environments could be referring to labyrinths. Gravity
+could be a mention to navigation on top of platforms or to push objects to fall.
+However pushing objects to get food seems like a feature for category 10 causal reasoning.
+Gravity could also be referring to jumping between platforms.
+
+#### 9. Advanced choices
+
+> Compare different paths of rewards and choose the best one.
+> This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward. 
+Expect tests with choices that lead to different achievable rewards.
+
+I have prepared some random tests that use the scenario from forcedchoice and could be used for training.
+
 #### Megatrain
 
 After some experiments it has been difficult to improve in a single category only. Instead of that I'm going to to train
@@ -945,6 +965,12 @@ Taking the max on each category a perfect agent will score more than 44 on LB.
 
 It is surprinsing that a model trained for category obstacles achieves better scores on food category than
 models trained for food.
+
+Using a number of epochs of 6 is worse than 3, both in speed and reward.
+
+Experiments take a long time and that makes harder the iterative improvement process.
+
+Using a bigger batch size such as 512 seems to improve results.
 
 <!---
 Arenas config
