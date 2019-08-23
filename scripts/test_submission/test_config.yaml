@@ -671,3 +671,21 @@
   SuperBridge_3.yaml:
     threshold: 0
     n_tests: 1
+  Burning_food_1.yaml:
+    threshold: 0
+    n_tests: 1
+  Burning_food_2.yaml:
+    threshold: 0
+    n_tests: 1
+  Burning_food_3.yaml:
+    threshold: 0
+    n_tests: 1
+  Burning_food_4.yaml:
+    threshold: 0
+    n_tests: 1
+  Burning_food_5.yaml:
+    threshold: 0
+    n_tests: 5
+  Burning_food_6.yaml:
+    threshold: 0
+    n_tests: 5

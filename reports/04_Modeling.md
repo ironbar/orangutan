@@ -944,6 +944,41 @@ could be a mention to navigation on top of platforms or to push objects to fall.
 However pushing objects to get food seems like a feature for category 10 causal reasoning.
 Gravity could also be referring to jumping between platforms.
 
+Moreover I want to think how I can create levels that encourage navigation using all the objects.
+I will only use GoodGoalMulti to encourage navigation. Two to four goals would be nice.
+Let's remember the available objects:
+* Wall/Transparent wall
+* Ramp
+* Tunnel/transparent tunnel. This can be random because the max size is 10
+* boxes. Can also be random
+* objects
+* bad goals
+* death zones
+* hot zones
+
+We already have navigation levels without death or hot zones so we must include them. Using objects of random size could
+result in very big objects which I don't think is desirable. I think we should have a set of objects with different
+sizes and random heigth and use them randomly.
+The problem is that designing random tests with death zones could result in impossible tests. So instead of doing tests I'm going 
+to create 16 arenas for training with all these elements focusing on having death and hot zones and variability of the other elements.
+
+| element \ arena      	| 0 	| 1 	| 2 	| 3 	| 4 	| 5 	| 6 	| 7 	| 8 	| 9 	| 10 	| 11 	| 12 	| 13 	| 14 	| 15 	|
+|----------------------	|---	|---	|---	|---	|---	|---	|---	|---	|---	|---	|----	|----	|----	|----	|----	|----	|
+| DeathZone            	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x  	| x  	| x  	| x  	| x  	| x  	|
+| HotZone              	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x  	| x  	| x  	| x  	| x  	| x  	|
+| BadGoal              	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x  	| x  	| x  	| x  	| x  	| x  	|
+| BadGoalBounce        	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x 	| x  	| x  	| x  	| x  	| x  	| x  	|
+| Wall                 	| x 	|   	|   	|   	| x 	|   	|   	|   	| x 	|   	|    	|    	|    	|    	|    	| x  	|
+| WallTransparent      	|   	| x 	|   	|   	|   	|   	| x 	|   	|   	| x 	|    	| x  	|    	|    	|    	| x  	|
+| Ramp                 	|   	|   	| x 	|   	|   	|   	|   	| x 	|   	|   	| x  	|    	|    	|    	|    	|    	|
+| Cillinder            	| x 	|   	|   	|   	|   	| x 	|   	|   	|   	|   	|    	|    	| x  	|    	|    	|    	|
+| CillinderTransparent 	|   	| x 	|   	|   	|   	|   	|   	| x 	|   	|   	|    	|    	| x  	|    	|    	|    	|
+| CardBox1             	|   	|   	| x 	|   	|   	|   	| x 	|   	|   	|   	|    	|    	|    	| x  	|    	|    	|
+| CardBox2             	|   	|   	|   	| x 	|   	|   	|   	|   	| x 	|   	|    	|    	|    	| x  	|    	|    	|
+| UObject              	|   	|   	|   	| x 	|   	|   	|   	|   	|   	| x 	|    	|    	|    	|    	| x  	|    	|
+| LObject              	|   	|   	|   	|   	| x 	|   	|   	|   	|   	|   	| x  	|    	|    	|    	| x  	|    	|
+| LObject2             	|   	|   	|   	|   	|   	| x 	|   	|   	|   	|   	|    	| x  	|    	|    	| x  	|    	|
+
 #### 9. Advanced choices
 
 > Compare different paths of rewards and choose the best one.
@@ -951,6 +986,16 @@ Gravity could also be referring to jumping between platforms.
 Expect tests with choices that lead to different achievable rewards.
 
 I have prepared some random tests that use the scenario from forcedchoice and could be used for training.
+
+#### 10. Causal reasoning
+
+> Apply one step reasoning to use objects to obtain food.
+
+I think this is related to using tools to get the food. Tests such as:
+* Making bridges with boxes to arrive at the food platform
+* Pushing objects to get the food
+* Moving the food out of the deathzone using tools
+* Moving bad goals to make way to the food
 
 #### Megatrain
 

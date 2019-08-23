@@ -1,0 +1,30 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 1000
+    items:
+    - !Item
+      name: GoodGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 20}
+    - !Item # 4 DeathZone
+      name: DeathZone
+      sizes:
+      - !Vector3 {x: 5, y: -1, z: 5}
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 20}
+      rotations: [0]
+    - !Item
+      name: Agent
+      positions:
+      - !Vector3 {x: 20, y: 0, z: 5}
+      rotations: [0]
+    - !Item # 4 Cardbox1
+      name: LObject
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 10}
+      positions:
+      - !Vector3 {x: 10, y: 0, z: 20}
+      rotations: [0]
