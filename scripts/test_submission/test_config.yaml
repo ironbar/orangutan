@@ -698,3 +698,12 @@
   Break_the_RedWall_3.yaml:
     threshold: 1
     n_tests: 5
+  Food_on_top_of_movable_1.yaml:
+    threshold: 0
+    n_tests: 2
+  Food_on_top_of_movable_2.yaml:
+    threshold: 0
+    n_tests: 2
+  Food_on_top_of_movable_3.yaml:
+    threshold: 0
+    n_tests: 2
