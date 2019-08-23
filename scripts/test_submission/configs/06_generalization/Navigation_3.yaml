@@ -11,14 +11,14 @@ arenas:
     - !Item
       name: WallTransparent
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
     - !Item
       name: Ramp
       sizes:
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}

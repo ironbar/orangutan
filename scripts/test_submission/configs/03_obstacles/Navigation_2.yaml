@@ -16,10 +16,10 @@ arenas:
       - !RGB {r: 153, g: 153, b: 153}
       - !RGB {r: 153, g: 153, b: 153}
       sizes:
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
-      - !Vector3 {x: 10, y: 1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
     - !Item
       name: Ramp
       colors:
@@ -28,7 +28,7 @@ arenas:
       - !RGB {r: 255, g: 0, b: 255}
       - !RGB {r: 255, g: 0, b: 255}
       sizes:
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
-      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}

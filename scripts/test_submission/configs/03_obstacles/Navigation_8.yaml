@@ -11,14 +11,14 @@ arenas:
     - !Item
       name: LObject
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
     - !Item
       name: UObject
       sizes:
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
-      - !Vector3 {x: 5, y: 3, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 5}
