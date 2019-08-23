@@ -1,0 +1,94 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 500
+    items:
+    - !Item # 2 GoodGoalMulti
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+    - !Item # 4 DeathZone
+      name: DeathZone
+      sizes:
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 7}
+      - !Vector3 {x: 7, y: -1, z: 7}
+      - !Vector3 {x: 5, y: -1, z: 10}
+    - !Item # 4 HotZone
+      name: HotZone
+      sizes:
+      - !Vector3 {x: 5, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 7}
+      - !Vector3 {x: 7, y: -1, z: 7}
+      - !Vector3 {x: 5, y: -1, z: 10}
+    - !Item # 4 walls
+      name: Wall
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      sizes:
+      - !Vector3 {x: 12, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 7, y: -1, z: 1}
+      - !Vector3 {x: 5, y: -1, z: 1}
+    - !Item # 4 walls transparent
+      name: WallTransparent
+      sizes:
+      - !Vector3 {x: 12, y: -1, z: 1}
+      - !Vector3 {x: 10, y: -1, z: 1}
+      - !Vector3 {x: 7, y: -1, z: 1}
+      - !Vector3 {x: 5, y: -1, z: 1}
+    - !Item # 4 ramps
+      name: Ramp
+      colors:
+      - !RGB {r: 255, g: 0, b: 255}
+      - !RGB {r: 255, g: 0, b: 255}
+      - !RGB {r: 255, g: 0, b: 255}
+      - !RGB {r: 255, g: 0, b: 255}
+      sizes:
+      - !Vector3 {x: 10, y: -1, z: 5}
+      - !Vector3 {x: 7, y: -1, z: 5}
+      - !Vector3 {x: 5, y: -1, z: 7}
+      - !Vector3 {x: 5, y: -1, z: 5}
+    - !Item # 4 CylinderTunnelTransparent
+      name: CylinderTunnelTransparent
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 CylinderTunnel
+      name: CylinderTunnel
+      colors:
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+      - !RGB {r: 153, g: 153, b: 153}
+    - !Item # 4 Cardbox1
+      name: Cardbox1
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 Cardbox2
+      name: Cardbox2
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 UObject
+      name: UObject
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 LObject
+      name: LObject
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 LObject2
+      name: LObject2
+      rotations: [-1, -1, -1, -1]
+    - !Item # 4 BadGoal
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+    - !Item # 4 BadGoalBounce
+      name: BadGoalBounce
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
