@@ -1017,6 +1017,8 @@ Experiments take a long time and that makes harder the iterative improvement pro
 
 Using a bigger batch size such as 512 seems to improve results.
 
+The megatrain achieves the best LB score yet 39.67 just in 66k epochs.
+
 <!---
 Arenas config
 Modifying the code seems difficult, probably is better to think of better ways of creating conf files.

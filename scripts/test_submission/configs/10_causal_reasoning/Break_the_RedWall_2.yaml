@@ -1,0 +1,65 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 38}
+      - !Vector3 {x: -1, y: 0, z: 2}
+    - !Item
+      name: BadGoal
+      sizes:
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      - !Vector3 {x: 2, y: 2, z: 2}
+      positions:
+      - !Vector3 {x: 1, y: 0, z: 20}
+      - !Vector3 {x: 3, y: 0, z: 20}
+      - !Vector3 {x: 5, y: 0, z: 20}
+      - !Vector3 {x: 7, y: 0, z: 20}
+      - !Vector3 {x: 9, y: 0, z: 20}
+      - !Vector3 {x: 11, y: 0, z: 20}
+      - !Vector3 {x: 13, y: 0, z: 20}
+      - !Vector3 {x: 15, y: 0, z: 20}
+      - !Vector3 {x: 17, y: 0, z: 20}
+      - !Vector3 {x: 19, y: 0, z: 20}
+      - !Vector3 {x: 21, y: 0, z: 20}
+      - !Vector3 {x: 23, y: 0, z: 20}
+      - !Vector3 {x: 25, y: 0, z: 20}
+      - !Vector3 {x: 27, y: 0, z: 20}
+      - !Vector3 {x: 29, y: 0, z: 20}
+      - !Vector3 {x: 31, y: 0, z: 20}
+      - !Vector3 {x: 33, y: 0, z: 20}
+      - !Vector3 {x: 35, y: 0, z: 20}
+      - !Vector3 {x: 37, y: 0, z: 20}
+      - !Vector3 {x: 39, y: 0, z: 20}
+    - !Item
+      name: UObject
+      sizes:
+      - !Vector3 {x: 4, y: 1, z: 4}
+      - !Vector3 {x: 4, y: 1, z: 4}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 10}
+      - !Vector3 {x: -1, y: 0, z: 30}

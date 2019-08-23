@@ -689,3 +689,12 @@
   Burning_food_6.yaml:
     threshold: 0
     n_tests: 5
+  Break_the_RedWall_1.yaml:
+    threshold: 1
+    n_tests: 5
+  Break_the_RedWall_2.yaml:
+    threshold: 1
+    n_tests: 5
+  Break_the_RedWall_3.yaml:
+    threshold: 1
+    n_tests: 5
