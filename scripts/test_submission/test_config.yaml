@@ -404,6 +404,26 @@
     threshold: 1
     n_tests: 5
     partial_threshold: 0
+  ## Center blocked
+  Center_Blocked_1.yaml:
+    threshold: 1
+    n_tests: 5
+  Center_Blocked_2.yaml:
+    threshold: 1
+    n_tests: 5
+  Center_Blocked_3.yaml:
+    threshold: 1
+    n_tests: 5
+  Center_Blocked_4.yaml:
+    threshold: 1
+    n_tests: 5
+  ## Borders blocked
+  Borders_Blocked_1.yaml:
+    threshold: 1
+    n_tests: 5
+  Borders_Blocked_2.yaml:
+    threshold: 1
+    n_tests: 5
 04_avoidance:
   ### CenterMoat
   CenterMoat_1.yaml:
