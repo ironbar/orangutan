@@ -585,16 +585,34 @@
 07_internal_memory:
   InternalMemory_1.yaml:
     threshold: 0
-    n_tests: 10
+    n_tests: 5
   InternalMemory_2.yaml:
     threshold: 0
-    n_tests: 10
+    n_tests: 5
   InternalMemory_3.yaml:
     threshold: 0
-    n_tests: 10
+    n_tests: 5
   InternalMemory_4.yaml:
     threshold: 0
-    n_tests: 10
+    n_tests: 5
+  InternalMemory_5.yaml:
+    threshold: 0
+    n_tests: 5
+  InternalMemory_6.yaml:
+    threshold: 0
+    n_tests: 5
+  InternalMemory_7.yaml:
+    threshold: 1
+    n_tests: 5
+  InternalMemory_8.yaml:
+    threshold: 1
+    n_tests: 5
+  InternalMemory_9.yaml:
+    threshold: 1
+    n_tests: 5
+  InternalMemory_10.yaml:
+    threshold: 1
+    n_tests: 5
 09_advanced_preferences:
   forcedChoice_1.yaml:
     threshold: 0

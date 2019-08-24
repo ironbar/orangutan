@@ -979,6 +979,15 @@ to create 16 arenas for training with all these elements focusing on having deat
 | LObject              	|   	|   	|   	|   	| x 	|   	|   	|   	|   	|   	| x  	|    	|    	|    	| x  	|    	|
 | LObject2             	|   	|   	|   	|   	|   	| x 	|   	|   	|   	|   	|    	| x  	|    	|    	| x  	|    	|
 
+
+#### 7. Internal model
+
+> Maintain an internal model (even with no useful inputs).
+> Predict future states.
+> In these tests, the lights may turn off after a while and the agent must remember the layout of the environment to navigate it in the dark
+
+I have prepared 16 levels for training with lighst off.
+
 #### 9. Advanced choices
 
 > Compare different paths of rewards and choose the best one.
