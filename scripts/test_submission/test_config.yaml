@@ -748,3 +748,9 @@
   Goal_on_platform_1.yaml:
     threshold: 0
     n_tests: 2
+  Food_on_top_of_movable_random_1.yaml:
+    threshold: 3
+    n_tests: 5
+  Food_on_top_of_movable_random_2.yaml:
+    threshold: 3
+    n_tests: 5

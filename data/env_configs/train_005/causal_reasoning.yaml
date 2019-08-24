@@ -323,8 +323,115 @@ arenas:
       - !Vector3 {x: 4, y: 1, z: 4}
       - !Vector3 {x: 4, y: 1, z: 4}
       - !Vector3 {x: 4, y: 1, z: 4}
-  ## center blocked
+  ## food on top of movable
   6: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+    - !Item
+      name: Cardbox1
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+  7: !Arena
+    t: 500
+    items:
+    - !Item
+      name: GoodGoalMulti
+      sizes:
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      - !Vector3 {x: 1, y: 1, z: 1}
+      positions:
+      - !Vector3 {x: -1, y: 1, z: 4}
+      - !Vector3 {x: -1, y: 1, z: 36}
+      - !Vector3 {x: 4, y: 1, z: -1}
+      - !Vector3 {x: 36, y: 1, z: -1}
+    - !Item
+      name: Cardbox1
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 4}
+      - !Vector3 {x: -1, y: 0, z: 4}
+      - !Vector3 {x: -1, y: 0, z: 4}
+      - !Vector3 {x: -1, y: 0, z: 4}
+      - !Vector3 {x: -1, y: 0, z: 4}
+    - !Item
+      name: Cardbox1
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      positions:
+      - !Vector3 {x: -1, y: 0, z: 36}
+      - !Vector3 {x: -1, y: 0, z: 36}
+      - !Vector3 {x: -1, y: 0, z: 36}
+      - !Vector3 {x: -1, y: 0, z: 36}
+      - !Vector3 {x: -1, y: 0, z: 36}
+    - !Item
+      name: Cardbox1
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      positions:
+      - !Vector3 {x: 4, y: 0, z: -1}
+      - !Vector3 {x: 4, y: 0, z: -1}
+      - !Vector3 {x: 4, y: 0, z: -1}
+      - !Vector3 {x: 4, y: 0, z: -1}
+      - !Vector3 {x: 4, y: 0, z: -1}
+    - !Item
+      name: Cardbox1
+      sizes:
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      - !Vector3 {x: 5, y: 1, z: 5}
+      positions:
+      - !Vector3 {x: 36, y: 0, z: -1}
+      - !Vector3 {x: 36, y: 0, z: -1}
+      - !Vector3 {x: 36, y: 0, z: -1}
+      - !Vector3 {x: 36, y: 0, z: -1}
+      - !Vector3 {x: 36, y: 0, z: -1}
+  ## This is obstacles category
+  ## center blocked
+  8: !Arena
     t: 500
     items:
     - !Item
@@ -347,7 +454,7 @@ arenas:
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
-  7: !Arena
+  9: !Arena
     t: 500
     items:
     - !Item
@@ -370,7 +477,7 @@ arenas:
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
-  8: !Arena
+  10: !Arena
     t: 500
     items:
     - !Item
@@ -396,7 +503,7 @@ arenas:
     - !Item # 4 Cardbox1
       name: Cardbox1
       rotations: [-1, -1, -1, -1]
-  9: !Arena
+  11: !Arena
     t: 500
     items:
     - !Item
@@ -423,7 +530,7 @@ arenas:
       name: Cardbox1
       rotations: [-1, -1, -1, -1]
   ## border blocked
-  10: !Arena
+  12: !Arena
     t: 500
     items:
     - !Item
@@ -456,7 +563,7 @@ arenas:
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
       - !Vector3 {x: 1, y: 1, z: 1}
-  11: !Arena
+  13: !Arena
     t: 500
     items:
     - !Item
