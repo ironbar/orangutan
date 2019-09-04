@@ -1009,7 +1009,28 @@ I think this is related to using tools to get the food. Tests such as:
 #### Megatrain
 
 After some experiments it has been difficult to improve in a single category only. Instead of that I'm going to to train
-a model using all the new arena configurations.
+a model using all the new arena configurations. Just by using more data I have been able to improve from 38.33 to 42.
+However there seems to be some overvitting to the train data because while the training scores improve all the time
+the leaderboard scores don't.
+
+I'm goint to run more megatrain experiments. Let's think ways of improvement.
+* Using even more training configurations
+* Allowing to move backwards
+* Increasing capacity of the model
+* Increase sequence length
+
+On 050 I added more configurations and allowed to move backwards.
+
+On 051 I have increased the sequence length from 64 to 256 with the aim of giving more weight to memory. However the LB results are quite bad and they get worse over time.
+
+On 052 I'm reducing memory size to 128, maybe I have to reduce the size even more because when I was trying that I was not using memory correctly for submission. It seems like overfitting.
+
+The thing is that the model is able to achieve a mean reward of 1 on training in about 50k steps and after that the reward does not change too much, only the duration of the episodes decreases. Maybe it's better to do a kind of curriculum training instead of using all configurations at the same time at the risk of forgetting something. Currently we are training with 176 different arenas so improvement in one of them is difficult to notice, moreover shorter levels have more weight in the mean reward.
+
+On 053 I have reduced memory size to 64.
+
+The agent that gets the best score on the internal tests is 049_megatrain_913k, however on LB it scores poorly than 049_megatrain_438k.
+I have the feeling that the LB scores are quite random.
 
 ### Results
 
@@ -1026,13 +1047,86 @@ Experiments take a long time and that makes harder the iterative improvement pro
 
 Using a bigger batch size such as 512 seems to improve results.
 
-The megatrain achieves the best LB score yet 39.67 just in 66k epochs.
+The megatrain achieves the best LB score yet 39.67 just in 66k epochs. On epoch 438k achieves the maximum score
+of 42.
 
+However after that I have tried training with even more configurations and I have not been able to improve the score.
+I also enabled going backwards and increased the length of the sequence used for training.
+
+I believe one important problem is that the training score reaches a peak in about 50k steps and after that
+is difficult to see improvement. Moreover I believe this effect is amplified by training in multiple configurations.
+
+I believe I have to try with curriculum learning.
+
+## Iteration 7. Ensembling agents
+
+### Goal
+
+The goal of this iteration is to prepare an easy to use agent that allows to create ensembles simply
+by copying the files into a folder.
+
+Hopefully this will allow to improve the current score and to combine better models in the future.
+
+### Development
+
+Current models are taking around 1000 seconds to evaluate all 300 tests.
+The allowed time is 2 hours, so that is 7200 seconds. That means that we could ensemble up to 7 models.
+
+On a first step I will ensemble the following models:
+* 049_megatrain_438k
+* 053_memory64_120k
+* 042_obstacles_baseline
+* 050_megatrain_492k
+* 052_memory128_177k
+* 050_megatrain_75k
+* 018_more_visual_capacity_retrain_memory
+
+Moreover I will try 3 different ways of aggregating the probabilities:
+* max
+* random
+* random with threshold for setting to zero small probabilities
+
+The max aggregation achieves a much better score on LB than random but similar on the internal tests. This is quite surprising.
+However I have verified that the aggregation methods work well by using a single agent and comparing the score to the agent alone.
+
+I'm going to create a new ensemble using models from 049 only.
+
+### Results
+
+I have submitted a ensemble of 7 agents and the evaluating time was 2500 seconds instead of 7000, so we can see
+that many time is not used for creating the predictions. The score on LB was 40 so there is no improvement.
+
+## Iteration 8. Curriculum learning
+
+### Goal
+
+The goal of this iteration is to try to train with a few configurations and once
+the model has learned on them proceed to the next set of configurations.
+
+Hopefully this will provide more meaningful metrics.
+
+### Development
+
+As a standard practice I will be using 4 environments for training with 16 arenas.
+Maximum two configuration files at the same time.
+One advantage of this approach is that I can do 2 trainings at the same time.
+
+Agent 054_curriculum_learning will start from 053 and agent 055_curriculum_learning_from_zero
+will start from scratch.
+
+I need to create a script that it is able to automate the curriculum learning process. It needs to:
+* Start the train on the first category. Loading from another model could be optional
+* Once the train has ended copy the model to allow retraining on the next category
+* Start a new train an so on.
+
+I have seen that training on food category is much slower than the others. It may be because of
+having too many red goals. It is more than 3 times slower.
+I have also seen that on burning food level is possible to take the food
+by moving forward and backward, or at least to get the reward. I have to modify that level thus.
+I also saw an agent cheating on the bridge level by jumping and climbing later.
+
+### Results
 <!---
-Arenas config
-Modifying the code seems difficult, probably is better to think of better ways of creating conf files.
-
-
 
 ## Iteration n. Iteration_title
 
