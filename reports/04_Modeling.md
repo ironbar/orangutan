@@ -1119,8 +1119,6 @@ I need to create a script that it is able to automate the curriculum learning pr
 * Once the train has ended copy the model to allow retraining on the next category
 * Start a new train an so on.
 
-I have seen that training on food category is much slower than the others. It may be because of
-having too many red goals. It is more than 3 times slower.
 I have also seen that on burning food level is possible to take the food
 by moving forward and backward, or at least to get the reward. I have to modify that level thus.
 I also saw an agent cheating on the bridge level by jumping and climbing later.
@@ -1131,7 +1129,7 @@ were faster.
 
 ### Results
 
-The first submissions achieve a poor score of 35 on LB, however it may be caused by using just 4 arenas.
+The first submissions achieve a poor score of 35 on LB, however it may be caused by using just 4 arenas by a mistake.
 
 <!---
 
