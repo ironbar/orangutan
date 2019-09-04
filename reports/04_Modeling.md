@@ -1125,7 +1125,12 @@ I have also seen that on burning food level is possible to take the food
 by moving forward and backward, or at least to get the reward. I have to modify that level thus.
 I also saw an agent cheating on the bridge level by jumping and climbing later.
 
+There could be an error with the number of arenas used for training.
+
 ### Results
+
+The first submissions achieve a poor score of 35 on LB, however it may be caused by using just 4 arenas.
+
 <!---
 
 ## Iteration n. Iteration_title
