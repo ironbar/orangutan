@@ -1127,9 +1127,49 @@ There could be an error with the number of arenas used for training. I have veri
 started with 16 arenas but suddenly the number was modified to just 4, this is why the following trainings
 were faster.
 
+The train metrics show that training with 16*4 arenas for 100k epochs is considerable better than training
+for 8*4 arenas for 100k epochs. So patience seems to be necessary for this trainings.
+
+The scores on navigation are bad, probably because sometimes the goal falls into the death zone. That should be allowed
+because the model needs to ignore that but in that case another goal needs to be added.
+
+The training has not finished yet but it seems that curriculum training category by category is not a better way of training.
+Moreover considering that I was able to achieve 39 on LB just on 66k epochs with a megatrain.
+
 ### Results
 
 The first submissions achieve a poor score of 35 on LB, however it may be caused by using just 4 arenas by a mistake.
+
+The second submission is a model trained from zero and the best score it gets is 30 while the same model trained on all
+the data scored 36.
+
+So clearly this kind of curriculum learning category by category is worse than using all the data at once. It may
+be possible that learning first on easy arenas and later on more difficult could be helpful if learning on the difficult
+levels does not imply forgetting the first learnings.
+
+### Next steps
+
+* We achieved the maximum score 13 days ago. Since then we have not been able to improve the score. However we have learned that:
+  * The training data is relevant, the more the better is not true, quality is important.
+  * Curriculum learning category by category does not improve over training with all the data
+* I propose to go back to the best training and try with a model such as the used on last trainings. Make small iterations on model
+and data and see if improves.
+* I could create higher quality levels and that will probably improve the agent score, however I prefer to leave that for the last
+part of the challenge.
+* On the meanwhile I want to start experimenting with Planet approach. One thing that encourages me is that today I have searched in
+youtube for videos explaining that paper and there are zero.
+
+
+## Iteration 9. Back to best submission and small iterations
+
+### Goal
+
+### Development
+
+059_megatrain: reduce memory size but increase sequence length, allow moving backwards
+060_megatrain: same but allowing moving backwards
+
+### Results
 
 <!---
 
