@@ -1164,14 +1164,199 @@ youtube for videos explaining that paper and there are zero.
 
 ### Goal
 
+The goal of this iteration is to go back to the parameters of the best training and take
+small steps to try to improve it.
+Hopefully with low effort I could improve my current LB score.
+
 ### Development
 
-059_megatrain: reduce memory size but increase sequence length, allow moving backwards
-060_megatrain: same but allowing moving backwards
+059_megatrain: reduce memory size but increase sequence length, allow moving backwards, LB 35
+060_megatrain: reduce sequence length and batch size to match 049, LB 34. The dynamic is very similar to previous train.
+061_megatrain: same as 060 but setting infinite time for the episodes
+062_megatrain: same as 061 but increasing memory from 64 to 128, training metrics do not improve 061
+063_megatrain: same as 063 but setting time to 5000 instead of infinite, probably having a small negative reward is good, and all the levels should have the same.
+
+* same as 049 but allowing moving backwards
+* try increasing episode duration to allow diferentiating between kills and episodes without reward
+* Add more memory, it seems that reducing the memory hurt the scores.
+
+
+To allow for better architecture search I have modified the code so the graph is saved
+and can be visualized with tensorboard. However I should improve naming of the layers
+for better visualization.
+
+It may be possible that for solving simple levels is not necessary to train with big sequence length.
+And having a smaller sequence_length results on a richer batch. I think that the model plays the levels
+with all the memory but learns latter with the desired sequence length.
+
+By setting the time of the episodes to infinite there are no negative rewards except the ones from
+the dead zones or hot zones. The idea is that this change may allow to have better training metrics.
 
 ### Results
 
+
+## Iteration 10. First steps with PlaNet
+
+### Goal
+
+The goal of this iteration is to experiment with the [PlaNet](https://github.com/google-research/planet) approach.
+
+I find this approach more appealing than PPO from a conceptual view. Moreover I think this approach could opt for the
+biological inspired prize because I believe that is the way humans learn. People say that humans learn from unlabeled data,
+and that is true but the data is sorted, there is a continuity on time and that is what allows to learn.
+
+Another reason for trying this approach is that I think that the complex tests need planning and PPO does not plan, we could
+say that PPO simply has intuition of which move is better, but it does not do explicit planning.
+
+### Development
+
+I have been reading the paper and one thing I have noticed is that the actions are continuous in the examples of the paper.
+The arena of AnimalAI has discrete actions. I think there are two options of solving this:
+1. Go to the code and implement discrete actions in planet
+2. Use continuous actions and discretize them. For example between -0.5, 0.5 do not move, less than -0.5 move backwards
+and more than 0.5 move forward.
+
+There is an interesting [issue](https://github.com/google-research/planet/issues/21) where people discuss
+about applying planet to Atari (which has discrete actions). Moreover this is a [fork](https://github.com/piojanu/planet)
+of that so I should definetely check that because it will help me.
+Moreover in the issue they talk about hyperparameters so that would probably be helpful in the future.
+
+So I think I have all the tools needed, it's going to be a difficult road but with hard work it will be done.
+
+#### Running the default example
+
+I want to run the default example to verify that it works, and later I will check at tasks.py to understand
+how they are defined because I should define my own for AnimalAI.
+
+I have been able to start training for the [gym_racecar](https://gym.openai.com/envs/CarRacing-v0/) task. Many of the others required to install Mujoco which I'm not interested
+because I just want to try the algorithm.
+
+I have seen that at the start of the training it has played randomly and thus no graphic card was used. However after that
+it starts to use the gpu all the time, very heavy usage. It could be possible to do 2 trains at the same time because only
+one gpu is used.
+To make it work I had to insall many libraries: ruamel.yaml, scikit-image, box2d inside gym.
+It seems to be saving the episodes on npz format. This may open the door to recording my own episodes.
+Tensorboard saves also cool images that allow to visualize the game and the model learning.
+
+I have been training the model all the night and it does not seem to be learning well.
+
+The model has been saved on the same log folder every 500k steps.
+
+#### PlaNet parameters
+
+This are the general train parameters.
+
+| Parameter     	| Help                                                                        	|
+|---------------	|-----------------------------------------------------------------------------	|
+| --logdir      	| /path/to/logdir                                                             	|
+| --num_runs    	| I guess this is used to do more than one train. default=1                   	|
+| --config      	| Select a configuration function from scripts/configs.py. default='default'  	|
+| --params      	| YAML formatted dictionary to be used by the config.                         	|
+| --ping_every  	| Used to prevent conflicts between multiple workers; 0 to disable. default=0 	|
+| --resume_runs 	| Whether to resume unfinished runs in the log directory. default=True        	|
+
+Now let's dig into params parameter. It's seems that the parameters are being processed on configs.py
+
+| Parameter              	| Default         	| Help 	|
+|------------------------	|-----------------	|------	|
+| planner                	| cem             	|      	|
+| planner_amount         	| 1000            	|      	|
+| planner_iterations     	| 10              	|      	|
+| planner_topk           	| 100             	|      	|
+|                        	|                 	|      	|
+| network                	| conv_ha         	|      	|
+| num_layers             	| 3               	|      	|
+| num_units              	| 300             	|      	|
+| model                  	| rssm            	|      	|
+| model_size             	| 200             	|      	|
+| state_size             	| 30              	|      	|
+|                        	|                 	|      	|
+| tasks                  	| ['cheetah_run'] 	|      	|
+|                        	|                 	|      	|
+| divergence_scale       	| 1               	|      	|
+| global_div_scale       	| 0               	|      	|
+| overshooting_scale     	| 0               	|      	|
+| free_nats              	| 3               	|      	|
+| overshooting_distance  	| 0               	|      	|
+| main_learning_rate     	| 1e-3            	|      	|
+| main_gradient_clipping 	| 1000            	|      	|
+|                        	|                 	|      	|
+| train_steps            	| 50000           	|      	|
+| test_steps             	| 50              	|      	|
+| max_steps              	| 5e7             	|      	|
+| checkpoint_every       	| 50000           	|      	|
+|                        	|                 	|      	|
+| num_seed_episodes      	| 5               	|      	|
+|                        	|                 	|      	|
+| planner_horizon        	| 12              	|      	|
+| collect_objective      	| reward          	|      	|
+| collect_every          	| 5000            	|      	|
+|                        	|                 	|      	|
+| batch_shape            	| (50, 50)        	|      	|
+| num_chunks             	| 1               	|      	|
+| image_bits             	| 5               	|      	|
+| loader_every           	| 1000            	|      	|
+| bound_action           	| clip            	|      	|
+
+There are also some parameters on tasks.py
+
+| Parameter     	| Default               	| Help 	|
+|---------------	|-----------------------	|------	|
+| action_repeat 	| 1                     	|      	|
+| camera_id     	| 0                     	|      	|
+| max_length    	| 1000 // action_repeat 	|      	|
+
+We can see that there are a ton of parameters, this won't be easy to optimize.
+
+#### Training on a very simple AnimalAI arena
+
+I want to train a model on a arena with 4 GoodGoalMulti of size 1. To to this I need to be modify
+tasks.py to include AnimalAI arena and probably I have to modify or adapt the continuous actions to discrete.
+The [fork](https://github.com/piojanu/planet) from planet will probably be very useful.
+
+I will start using piojanu fork, I could first try it with a simple atari discrete game and if it works I 
+can move to AnimalAI. I should read carefully the thread of piojanu describing his work.
+
+  python -m planet.scripts.train --logdir logs_2 --params '{tasks: [gym_atari], game_name: "Boxing-v0"}'
+
+I have been reading the thread and I'm not sure if that applies to our problem. The images of AnimalAI arena
+are not that sharp, on Atari each pixel matters. I should move and try to implement AnimalAI arena.
+Even when the number of episodes is small the computational cost is high.
+
+I have made a quick implementation of AnimalAI following the example from Atari, however there are
+errors because the environment is missing some of the methods. So I have to create environments
+for both and compare them, and add the missing methods to AnimalAI.
+I have found that there is a wrapper for gym on animalai, it helps but I still need to fix some things.
+
+I have been able to do two initial trainings but the computer seems to have rebooted.
+1. The model does not learn any useful policy. It seems that it is able to predict the world.
+2. Increased the number of goals to 12, removed min and max duration, action_repeat=2, does not learn anything
+
+Although the model seems to be able to simulate the world the policy is terrible and predicting reward
+is also very bad. I'm going to add more wrappers so I don't have to modify the animalai environment.
+
+#### Submission with PlaNet
+
+#### Training on multiple arenas
+
+### Results
+
+
 <!---
+
+## Iteration n. More complex and less random arenas
+
+### Goal
+
+The goal of this iteration is to create an arena generator that allows to escape the limitations of
+the yaml files. The randonmess of each arena will be smaller so we probably will have to change
+configurations during the train, for example every 10k steps.
+Maybe I can dig in the code and force the arena configuration to be modified without stopping the train.
+
+### Development
+
+### Results
+
 
 ## Iteration n. Iteration_title
 
