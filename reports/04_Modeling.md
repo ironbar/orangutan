@@ -1414,8 +1414,27 @@ On this iteration I'm going to focus on create arenas that:
 * Have same reward. It could be 2 (1+1, 2, 0.5+0.5+0.5+0.5)
 * Are solvable
 * Have a big time limit, this causes that the reward has more weight on the score than speed
+* Have all relevant elements
+
+Hopefully this better training data will allow to better understand if the model is solving all
+the levels and to get a more stable LB score.
 
 ### Development
+
+#### First steps
+
+On the first steps I'm goint to create arenas with the positions of the unmovable objects fixed or at least
+that never create impossible situations.
+
+* No walls, but red goals and boxes
+* Wall in the middle and all the elements above
+* Wall in the border
+* Walls creating some kind of labyrinth
+* Death zone in the center
+* Platform with some goals
+
+I will create one yaml file for each goal category. (1+1, 2, 0.5+0.5+0.5+0.5, 2g)
+Files will be on saved on: data/env_configs/train_006
 
 ### Results
 
