@@ -4,8 +4,8 @@ arenas:
     t: 5000
     items:
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -28,8 +28,8 @@ arenas:
       positions:
       - !Vector3 {x: 20, y: 0, z: 20}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -62,8 +62,8 @@ arenas:
       - !Vector3 {x: 39, y: 0, z: 20}
       rotations: [0, 0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -93,8 +93,8 @@ arenas:
       - !Vector3 {x: 12, y: 0, z: 20}
       rotations: [0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -124,8 +124,8 @@ arenas:
       - !Vector3 {x: 28, y: 0, z: 20}
       rotations: [0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -155,8 +155,8 @@ arenas:
       - !Vector3 {x: -1, y: 0, z: 30}
       rotations: [0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -192,8 +192,8 @@ arenas:
       - !Vector3 {x: -1, y: 0, z: 32}
       rotations: [0, 0, 0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -223,8 +223,8 @@ arenas:
       - !Vector3 {x: 30, y: 0, z: -1}
       rotations: [0, 0, 0]
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -249,9 +249,11 @@ arenas:
       positions:
       - !Vector3 {x: 2, y: 0, z: -1}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
       positions:
+      - !Vector3 {x: -1, y: 0, z: 2}
+      - !Vector3 {x: -1, y: 0, z: 38}
       - !Vector3 {x: 38, y: 0, z: -1}
     - !Item
       name: BadGoal
@@ -277,9 +279,11 @@ arenas:
       positions:
       - !Vector3 {x: -1, y: 0, z: 2}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
       positions:
+      - !Vector3 {x: 2, y: 0, z: -1}
+      - !Vector3 {x: 38, y: 0, z: -1}
       - !Vector3 {x: -1, y: 0, z: 38}
     - !Item
       name: BadGoal
@@ -307,10 +311,11 @@ arenas:
       positions:
       - !Vector3 {x: -1, y: 0, z: 2}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}, !Vector3 {x: 0.666, y: 0.666, z: 0.666}]
       positions:
-      - !Vector3 {x: -1, y: 0, z: 38}
+      - !Vector3 {x: 2, y: 0, z: -1}
+      - !Vector3 {x: 38, y: 0, z: -1}
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -341,10 +346,13 @@ arenas:
       positions:
       - !Vector3 {x: 2, y: 0, z: -1}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}]
       positions:
       - !Vector3 {x: 20, y: 0, z: 20}
+      - !Vector3 {x: 38, y: 0, z: -1}
+      - !Vector3 {x: -1, y: 0, z: 2}
+      - !Vector3 {x: -1, y: 0, z: 38}
     - !Item
       name: BadGoal
       rotations: [-1, -1, -1, -1]
@@ -383,9 +391,12 @@ arenas:
       - !Vector3 {x: 20, y: 0, z: 32.5}
       - !Vector3 {x: 20, y: 0, z: 7.5}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}]
       positions:
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
       - !Vector3 {x: -1, y: 1, z: -1}
     - !Item
       name: BadGoal
@@ -435,9 +446,12 @@ arenas:
       - !Vector3 {x: 32.5, y: 0, z: 20}
       - !Vector3 {x: 7.5, y: 0, z: 20}
     - !Item
-      name: GoodGoal
-      sizes: [!Vector3 {x: 2, y: 2, z: 2}]
+      name: GoodGoalMulti
+      sizes: [!Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}, !Vector3 {x: 0.5, y: 0.5, z: 0.5}]
       positions:
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
+      - !Vector3 {x: -1, y: 1, z: -1}
       - !Vector3 {x: -1, y: 1, z: -1}
     - !Item
       name: BadGoal

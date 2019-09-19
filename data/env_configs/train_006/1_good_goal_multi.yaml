@@ -356,7 +356,7 @@ arenas:
       - !Vector3 {x: 4, y: 2, z: 5}
       - !Vector3 {x: 2, y: 2, z: 2}
   13: !Arena # platform on center
-    t: 250
+    t: 5000
     items:
     - !Item
       name: Wall
@@ -408,7 +408,7 @@ arenas:
       - !Vector3 {x: -1, y: 1, z: -1}
       - !Vector3 {x: -1, y: 1, z: -1}
   0: !Arena # platform on center 2
-    t: 250
+    t: 5000
     items:
     - !Item
       name: Wall
