@@ -1175,6 +1175,9 @@ Hopefully with low effort I could improve my current LB score.
 061_megatrain: same as 060 but setting infinite time for the episodes
 062_megatrain: same as 061 but increasing memory from 64 to 128, training metrics do not improve 061
 063_megatrain: same as 063 but setting time to 5000 instead of infinite, probably having a small negative reward is good, and all the levels should have the same.
+064_megatrain: retrain 063 lowering the learning rate faster (150k steps instead of 1e6)
+065_megatrain: retrain 064 with 1/10 of learning rate and beta for 50k epochs
+066_megatrain: same as 065 but lowering epsilon from 0.2 to 0.1
 
 * same as 049 but allowing moving backwards
 * try increasing episode duration to allow diferentiating between kills and episodes without reward
@@ -1192,8 +1195,53 @@ with all the memory but learns latter with the desired sequence length.
 By setting the time of the episodes to infinite there are no negative rewards except the ones from
 the dead zones or hot zones. The idea is that this change may allow to have better training metrics.
 
+On model 063 I have noticed that the LB score is very volatile. I cannot trust that score.
+
+| epoch 	| LB    	|
+|-------	|-------	|
+| 160k  	| 37.33 	|
+| 170k  	| 35.67 	|
+| 180k  	| 35.00 	|
+| 190k  	| 32.33 	|
+| 200k  	| 38.00 	|
+
+That is why I have retrained a model 064 with 150 max epochs to be sure that the learning rate
+has decreased and it's stable.
+
+| epoch 	| LB    	|
+|-------	|-------	|
+| 130k  	| 37.33 	|
+| 140k  	| 37.67 	|
+| 150k  	| 39.00 	|
+
+We can see that even when decreasing the learning rate to 0 it is not stable yet. Let's do another
+retrain with an smaller initial learning rate. If this does not work I could decrease epsilon.
+
+Training 066 uses a smaller learning rate and even when the LB score is robust the different
+categories change a lot. The next experiment will lower epsilon.
+
+I can observe the same pattern on episode duration when doing the same retrain. This seems to be a problem
+with some of the arenas configurations that sometime produce impossible levels.
+
+<img src="media/same_pattern_episode_length.png"/>
+
+
 ### Results
 
+I have made many experiments and the most important result is that the LB score is very volatile.
+Thus that makes very difficult to optimize the model and see if a change improves or not.
+I have verified that decreasing the learning rate or decreasing epsilon produces more stable LB scores
+but the scores on individual categories are different.
+
+So the source of volatility should be on the training data or in the tests. Most likely on train data.
+I have also seen that two retrainings had the same behaviour on episode length, so my hypothesis is that
+random arenas are generating impossible levels and that hurts the model because it discourages good behaviours.
+
+I have also seen that it's possible to get more stable training scores by using a bigger time limit for the
+arenas and still get good LB scores.
+
+On the next iteration I should focus on data, making levels with same amount of reward and always possible
+to solve them.
 
 ## Iteration 10. First steps with PlaNet
 
@@ -1335,12 +1383,41 @@ I have been able to do two initial trainings but the computer seems to have rebo
 Although the model seems to be able to simulate the world the policy is terrible and predicting reward
 is also very bad. I'm going to add more wrappers so I don't have to modify the animalai environment.
 
+python -m planet.scripts.train  --params '{tasks: [gym_animalai]}' --logdir /media/guillermo/Data/Kaggle/animalai/planet/debug_01
+
+Now I'm able to train with planet using the original animalai gym. I have also reduced the search space from 9 to 4 so training
+should be easier. I'm going to run another train in these conditions and read the thread meanwhile to understand the importance of the
+parameters.
+
+python -m planet.scripts.train  --params '{tasks: [gym_animalai]}' --logdir /media/guillermo/Data/Kaggle/animalai/planet/animal_03
+python -m planet.scripts.train  --params '{tasks: [gym_animalai], action_repeat: 4, num_seed_episodes: 20}' --logdir /media/guillermo/Data/Kaggle/animalai/planet/animal_04
+
+I have decided to stop the first one because the scores are always nan and I cannot know the progress.
+It seems that it has problems modelling the goals and that's why planning fails.
+
+#### Improving the training on AnimalAI
+
+There is an option for using a discrete_cem, --params '{planner: discrete_cem}', I could try to use that
+
 #### Submission with PlaNet
 
 #### Training on multiple arenas
 
 ### Results
 
+
+## Iteration 11. Focus on training data
+
+### Goal
+
+On this iteration I'm going to focus on create arenas that:
+* Have same reward. It could be 2 (1+1, 2, 0.5+0.5+0.5+0.5)
+* Are solvable
+* Have a big time limit, this causes that the reward has more weight on the score than speed
+
+### Development
+
+### Results
 
 <!---
 
