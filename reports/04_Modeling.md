@@ -1436,7 +1436,55 @@ that never create impossible situations.
 I will create one yaml file for each goal category. (1+1, 2, 0.5+0.5+0.5+0.5, 2g)
 Files will be on saved on: data/env_configs/train_006
 
+I have trained a first model 067 with same parameters as the previous trainings. It achieves a score of
+32 on LB, but one good thing is that the difference in score between 370k and 440k epochs is small even
+when looking at the individual categories. Moreover the bigger difference with the previous models is on
+generalization, which is normal because the model has not been trained on that. Also the main difference
+between 370k and 440k is on internal model and again it has not been trained on that.
+
+068 is the same as 067 but with epsilon=0.1 instead of 0.2. The idea is to avoid having a loss in
+reward in the middle of the train. And the plot below shows that the training is slower but more stable.
+
+<img src="media/comparison_reward_different_epsilon.png"/>
+
+I have also discovered that the training plays the game until the end, even if the time horizon is reached.
+That is why at the start of the train we can see long episode statistics. So probably it does not have sense
+to have a shorter horizon than the episode length, I don't want to estimate the reward.
+
+On 069 I'm going to train with a time horizon bigger than the levels duration. I'm going to train two models at the same time.
+
+  2019-09-20 21:05:08,017 - mlagents.trainers - INFO -  068_solvable-1: Learner: Step: 6000. Mean Reward: -1.045. Std of Reward: 2.260. Training.
+  2019-09-21 09:49:28,198 - mlagents.trainers - INFO -  068_solvable-1: Learner: Step: 236000. Mean Reward: 1.843. Std of Reward: 0.731. Training.
+
+Previously to training with two models at the same time it has taken 3.3 min to do 1k steps. We will see later if this changes. At the start of the
+training is using quite a lot RAM, probably because of the long time horizon. I guess that once it learns the RAM usage will be normal and probably
+the speed of the training will be faster. I had to pause the first training because the second is using too much RAM.
+After 16k epochs is still using too much RAM, so I have decided to stop it and relaunch to see
+if there was some unused RAM.
+It is still using too much RAM, I think the problem lies in that previously the games were processed in batches of 512 and discarded. Now we have to wait until all the game has been played to discard the data. That is why it is more memory demanding. However I don't think there is an alternative, we should use the whole game otherwise learning could be disoriented by estimations.
+
+However training this way has not bring improvements in score over the 100k epochs and it is using more memory.
+
+#### Training with lights off
+
+I'm going to add blackouts to all the existing levels and retrain and maybe train from zero. I will use
+different periods for blackout. I think this could be beneficial for all categories because it will force
+the model to have a better memory of its surroundings.
+
+#### Automatic generation of levels
+
+We have already seen that it's difficult to create random levels with the desired complexity. So instead of
+defining by hand the levels it will be better to automate the definition of levels, even if they are not random
+we can create many of them and change them over the training.
+
+I think I will have to use the classes from animalai/animalai/envs/arena_config.py to create the configurations.
+My idea is to use the objects to create higher level classes such as goal on platform, goal on object...
+
+
+
 ### Results
+
+Training with epsilon 0.1 on the first set of solvable levels has achieved a LB score of 36.33. That is close to the previous megatrain experiments.
 
 <!---
 
