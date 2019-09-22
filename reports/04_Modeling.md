@@ -1471,6 +1471,22 @@ I'm going to add blackouts to all the existing levels and retrain and maybe trai
 different periods for blackout. I think this could be beneficial for all categories because it will force
 the model to have a better memory of its surroundings.
 
+I have added histograms to tensorboard and now I can see the complete reward distribution and the episodes duration.
+They show that there are a few cases with negative rewards but most of them have a reward close to two.
+So probably it is not worth to keep training because it already is getting very good scores. However let's lower
+beta and learning rate and train for a few epochs.
+
+One good thing of the histograms is that they allow to see the complete picture of the rewards. I could go back
+to using a time limit of 500 on the levels because by watching the distribution I can now if the agent has picked
+all rewards or not.
+
+The scores on internal model have improved but others are worst. On next training I will try to find a better
+stopping point for the training by looking at the score distributions.
+
+#### Training for generalization
+
+I have taken the levels with lights off and removed any color information from objects.
+
 #### Automatic generation of levels
 
 We have already seen that it's difficult to create random levels with the desired complexity. So instead of
