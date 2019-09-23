@@ -1485,7 +1485,13 @@ stopping point for the training by looking at the score distributions.
 
 #### Training for generalization
 
-I have taken the levels with lights off and removed any color information from objects.
+I have taken the levels with lights off and removed any color information from objects. I have launched two
+trainings from zero and the difference between them is the possibility of moving backwards. I have also
+increased beta to 1.e-2 as in the original configuration.
+
+It's very beautiful to see the evolution of reward distribution over the training.
+
+However the LB scores are bad, worse than training without blackouts and without generalization.
 
 #### Automatic generation of levels
 
@@ -1496,15 +1502,17 @@ we can create many of them and change them over the training.
 I think I will have to use the classes from animalai/animalai/envs/arena_config.py to create the configurations.
 My idea is to use the objects to create higher level classes such as goal on platform, goal on object...
 
-
+However I think that this should be a new iteration.
 
 ### Results
 
 Training with epsilon 0.1 on the first set of solvable levels has achieved a LB score of 36.33. That is close to the previous megatrain experiments.
 
-<!---
+However adding blackouts and removing colors for improving generalization did not improve scores.
 
-## Iteration n. More complex and less random arenas
+I'm closing the iteration with the hope that creating more complex and less random environments will improve the results.
+
+## Iteration 12. More complex and less random arenas
 
 ### Goal
 
@@ -1515,7 +1523,21 @@ Maybe I can dig in the code and force the arena configuration to be modified wit
 
 ### Development
 
+#### Modifying environment when it's done
+
+I want to modify the current environment so the arena configuration changes when the level ends. The idea
+is to have a yaml with lots of arenas, for example in the order of thousands. When a game ends the environment
+chooses a new arena randomly.
+
+I have to understand what is done when the level ends. I have managed to add a new training parameter
+reset_env_period that allows to shuffle all the arena configurations and thus opens the door to using
+large configuration files. I have to test it with an already trained model to verify that produces good results.
+
 ### Results
+
+<!---
+
+
 
 
 ## Iteration n. Iteration_title
