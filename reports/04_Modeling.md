@@ -1533,6 +1533,29 @@ I have to understand what is done when the level ends. I have managed to add a n
 reset_env_period that allows to shuffle all the arena configurations and thus opens the door to using
 large configuration files. I have to test it with an already trained model to verify that produces good results.
 
+#### Solving the categories iteratively
+
+The idea is to take each category, read carefully the description and design arena configurations or scripts
+that create arena configurations that represent the objective of the category.
+
+Information of the different categories can be found in the links below:
+* https://www.mdcrosby.com/blog/animalaiprizes1.html
+* https://mdcrosby.com/blog/animalailaunch.html
+* https://mdcrosby.com/blog/animalaieval.html
+
+Ideally the levels of each category should be contained on a single file so we can train with 10 files.
+
+#### 01 Food
+
+Let's think of different arenas that the agent needs to be able to solve.
+
+* Picking foods of different sizes
+* Learn to avoid bad goals
+* Pick goals even when they are close to bad goals
+* Preference for yellow over green for different sizes
+* Red goals can be used to create many structures, but I don't think is likely
+* Moving goals
+
 ### Results
 
 <!---
