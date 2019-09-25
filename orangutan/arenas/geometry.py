@@ -9,6 +9,10 @@ def get_random_position():
     x, z = np.random.randint(1, 40, size=2)
     return float(x), float(z)
 
+def get_random_position_close_to_center(max_distance=5):
+    x, z = 20 + np.random.uniform(-max_distance, max_distance, size=2)
+    return float(x), float(z)
+
 def normalize_angle(angle):
     if angle < 0:
         angle += 360
