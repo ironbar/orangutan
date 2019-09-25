@@ -1553,8 +1553,14 @@ Let's think of different arenas that the agent needs to be able to solve.
 * Learn to avoid bad goals
 * Pick goals even when they are close to bad goals
 * Preference for yellow over green for different sizes
+* Moving goals, however movement decays fast, so probably is only interesting at the start
+of the episode
 * Red goals can be used to create many structures, but I don't think is likely
-* Moving goals
+
+I have launched two first trainings with red goal coming and yellow and green goal. It is interesting
+to see that after 200k epochs there are still agents dying for hitting red goals. Maybe the current
+distribution for that level is difficult, for example if the agent is close to the border is difficult
+to escape.
 
 ### Results
 

@@ -15,3 +15,8 @@ def normalize_angle(angle):
     if angle >= 360:
         angle -= 360
     return angle
+
+def get_position_in_front_of_agent(x, z, angle, distance):
+    theta = (90 - angle)*np.pi/180
+    x, z = float(np.cos(theta)*distance + x), float(np.sin(theta)*distance + z)
+    return x, z
