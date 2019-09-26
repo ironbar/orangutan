@@ -1562,7 +1562,23 @@ to see that after 200k epochs there are still agents dying for hitting red goals
 distribution for that level is difficult, for example if the agent is close to the border is difficult
 to escape.
 
+I have fixed that and launched train 077, which is identical to 075 but with fixed configuration. Training
+078 is identical to 077 but decreases the buffer size because the episodes tend to be very short. This models
+have learned much better and almost all the rewards are positive.
+The LB score on food is 24, so this configuration is not enough to solve the whole category.
+Moreover I have run the tests and I see that the model has many problems when dealing with bad goals
+and moreover it has not learn to take yellow goals first.
+
+I have launched a retrain over 078 on 079 but increasing the time limit to 5000, this will give
+better rewards for the episodes and clearly show if the agent has not learned to pick yellow over
+green. The first epoch clearly shows that it takes frequently the green reward over the yellow goal, maybe
+this training with more time can improve that. I'm going to launch 080 on same conditions but training from zero.
+**It's quite surprising but the model is unable to learn to take yellow first in this conditions.**
+
 ### Results
+
+The first model trained with incorrect arena configuration achieves a score of 25 on food category after
+230k epochs.
 
 <!---
 

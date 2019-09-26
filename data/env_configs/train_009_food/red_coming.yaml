@@ -8,22 +8,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.867846727336865
+        x: 16.269164410389205
         y: 0
-        z: 15.86275452243564
+        z: 21.19896768227512
       rotations:
-      - 310.3616375112124
+      - 107.81569478100239
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 13.43826542815286
+        x: 31.50189431839795
         y: 0
-        z: 25.576902520347925
+        z: 16.303669984519047
       rotations:
-      - 130.3616375112124
+      - 287.8156947810024
       sizes:
       - !Vector3
         x: -1
@@ -36,9 +36,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8664335760418473
-        y: 0.8664335760418473
-        z: 0.8664335760418473
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -46,10 +46,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1335664239581527
-        y: 1.1335664239581527
-        z: 1.1335664239581527
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    t: 5000
   1: !Arena
     blackouts: []
     items:
@@ -58,22 +78,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.061857875061282
+        x: 22.03167604916313
         y: 0
-        z: 17.105173085083273
+        z: 22.25694057110507
       rotations:
-      - 17.95623273001715
+      - 221.99323644866206
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 24.611085226529873
+        x: 9.988904276761792
         y: 0
-        z: 34.22843433408934
+        z: 8.878912015377828
       rotations:
-      - 197.95623273001715
+      - 41.99323644866206
       sizes:
       - !Vector3
         x: -1
@@ -86,10 +106,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.9026500614857642
+        y: 0.9026500614857642
+        z: 0.9026500614857642
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5973499385142358
+        y: 0.5973499385142358
+        z: 0.5973499385142358
+    t: 5000
   2: !Arena
     blackouts: []
     items:
@@ -98,22 +138,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.843444355277246
+        x: 22.185551014234285
         y: 0
-        z: 18.823639426778765
+        z: 22.04299913747907
       rotations:
-      - 324.3596754644244
+      - 226.93081046563108
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.937627945413462
+        x: 11.227607052446135
         y: 0
-        z: 32.6393841136957
+        z: 11.799783620352105
       rotations:
-      - 144.3596754644244
+      - 46.93081046563111
       sizes:
       - !Vector3
         x: -1
@@ -126,9 +166,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3670123666805298
-        y: 1.3670123666805298
-        z: 1.3670123666805298
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -136,10 +176,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6329876333194702
-        y: 0.6329876333194702
-        z: 0.6329876333194702
-    t: 500
+        x: 0.5686845565078139
+        y: 0.5686845565078139
+        z: 0.5686845565078139
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.9313154434921861
+        y: 0.9313154434921861
+        z: 0.9313154434921861
+    t: 5000
   3: !Arena
     blackouts: []
     items:
@@ -148,22 +198,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.130805281990284
+        x: 21.611069504606174
         y: 0
-        z: 21.87158847746285
+        z: 16.75950766616607
       rotations:
-      - 115.81376202557625
+      - 333.56489929227564
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.534232579874264
+        x: 14.933312065601996
         y: 0
-        z: 14.90443108907477
+        z: 30.191095643238043
       rotations:
-      - 295.81376202557624
+      - 153.56489929227564
       sizes:
       - !Vector3
         x: -1
@@ -176,10 +226,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5433960986796604
+        y: 0.5433960986796604
+        z: 0.5433960986796604
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5371223915616302
+        y: 0.5371223915616302
+        z: 0.5371223915616302
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.9194815097587093
+        y: 0.9194815097587093
+        z: 0.9194815097587093
+    t: 5000
   4: !Arena
     blackouts: []
     items:
@@ -188,22 +258,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.23508490871806
+        x: 24.00969132382052
         y: 0
-        z: 23.477849622556555
+        z: 19.972651748348873
       rotations:
-      - 212.7273505149792
+      - 270.3907819762013
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 13.584813555369253
+        x: 5.01013324590615
         y: 0
-        z: 10.017804841299956
+        z: 20.10223895434854
       rotations:
-      - 32.72735051497921
+      - 90.39078197620131
       sizes:
       - !Vector3
         x: -1
@@ -216,9 +286,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2515928693147724
-        y: 1.2515928693147724
-        z: 1.2515928693147724
+        x: 1.3869241522240292
+        y: 1.3869241522240292
+        z: 1.3869241522240292
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -226,10 +296,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7484071306852276
-        y: 0.7484071306852276
-        z: 0.7484071306852276
-    t: 500
+        x: 0.6130758477759708
+        y: 0.6130758477759708
+        z: 0.6130758477759708
+    t: 5000
   5: !Arena
     blackouts: []
     items:
@@ -238,22 +308,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.89079047787225
+        x: 17.0107322983704
         y: 0
-        z: 17.02417294133997
+        z: 23.813418821760067
       rotations:
-      - 327.56880931965645
+      - 141.90776622767515
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 12.773922513359448
+        x: 27.498528755944676
         y: 0
-        z: 31.37278676002086
+        z: 10.434101744102762
       rotations:
-      - 147.56880931965645
+      - 321.90776622767515
       sizes:
       - !Vector3
         x: -1
@@ -266,9 +336,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1204250271053466
-        y: 1.1204250271053466
-        z: 1.1204250271053466
+        x: 1.4262182426634749
+        y: 1.4262182426634749
+        z: 1.4262182426634749
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -276,10 +346,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8795749728946534
-        y: 0.8795749728946534
-        z: 0.8795749728946534
-    t: 500
+        x: 0.5737817573365251
+        y: 0.5737817573365251
+        z: 0.5737817573365251
+    t: 5000
   6: !Arena
     blackouts: []
     items:
@@ -288,22 +358,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.64216758104036
+        x: 18.35126369707328
         y: 0
-        z: 19.6469436834291
+        z: 23.856931852832407
       rotations:
-      - 274.34921163158276
+      - 156.8545740837483
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 8.688241723296766
+        x: 24.64032380837681
         y: 0
-        z: 20.860306665236386
+        z: 9.144769438135823
       rotations:
-      - 94.34921163158276
+      - 336.8545740837483
       sizes:
       - !Vector3
         x: -1
@@ -316,9 +386,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4036092373436668
-        y: 1.4036092373436668
-        z: 1.4036092373436668
+        x: 0.981803876055295
+        y: 0.981803876055295
+        z: 0.981803876055295
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -326,10 +396,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5963907626563332
-        y: 0.5963907626563332
-        z: 0.5963907626563332
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.518196123944705
+        y: 0.518196123944705
+        z: 0.518196123944705
+    t: 5000
   7: !Arena
     blackouts: []
     items:
@@ -338,22 +418,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.487347187107932
+        x: 23.23072683437921
         y: 0
-        z: 20.92434076146857
+        z: 16.050542578854404
       rotations:
-      - 207.79988308702923
+      - 320.7162196556021
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 13.491574657052318
+        x: 11.833814729269225
         y: 0
-        z: 7.655611858226962
+        z: 29.982893222891377
       rotations:
-      - 27.79988308702923
+      - 140.71621965560212
       sizes:
       - !Vector3
         x: -1
@@ -366,9 +446,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.818082709883909
-        y: 0.818082709883909
-        z: 0.818082709883909
+        x: 0.5960558435455199
+        y: 0.5960558435455199
+        z: 0.5960558435455199
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -376,9 +456,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6501071075674649
-        y: 0.6501071075674649
-        z: 0.6501071075674649
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -386,10 +466,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5318101825486261
-        y: 0.5318101825486261
-        z: 0.5318101825486261
-    t: 500
+        x: 0.9039441564544801
+        y: 0.9039441564544801
+        z: 0.9039441564544801
+    t: 5000
   8: !Arena
     blackouts: []
     items:
@@ -398,22 +478,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.600682118961785
+        x: 24.749311194854812
         y: 0
-        z: 23.332731953199048
+        z: 17.695626569423727
       rotations:
-      - 173.16756417067552
+      - 295.88273607046045
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 21.385173304114605
+        x: 8.554902860318464
         y: 0
-        z: 8.439257166900456
+        z: 25.553179540565544
       rotations:
-      - 353.1675641706755
+      - 115.88273607046045
       sizes:
       - !Vector3
         x: -1
@@ -426,9 +506,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2187748310621682
-        y: 1.2187748310621682
-        z: 1.2187748310621682
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -436,10 +516,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7812251689378318
-        y: 0.7812251689378318
-        z: 0.7812251689378318
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    t: 5000
   9: !Arena
     blackouts: []
     items:
@@ -448,22 +548,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.36207592156827
+        x: 18.285364736881693
         y: 0
-        z: 16.054370696766743
+        z: 19.290922263234055
       rotations:
-      - 9.184031946174201
+      - 67.53273525236082
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 22.23498520734453
+        x: 33.07093310923109
         y: 0
-        z: 33.82362482392978
+        z: 25.40541062339807
       rotations:
-      - 189.1840319461742
+      - 247.53273525236082
       sizes:
       - !Vector3
         x: -1
@@ -479,7 +579,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   10: !Arena
     blackouts: []
     items:
@@ -488,22 +588,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.599013522583158
+        x: 17.20352152131447
         y: 0
-        z: 21.402546215313073
+        z: 20.568827341787845
       rotations:
-      - 107.6765110163095
+      - 101.49758723689288
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.8435902044961
+        x: 32.882451109591784
         y: 0
-        z: 16.54426650030322
+        z: 17.379600638362355
       rotations:
-      - 287.6765110163095
+      - 281.49758723689285
       sizes:
       - !Vector3
         x: -1
@@ -516,9 +616,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.086480452860053
-        y: 1.086480452860053
-        z: 1.086480452860053
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -526,10 +626,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9135195471399471
-        y: 0.9135195471399471
-        z: 0.9135195471399471
-    t: 500
+        x: 0.9371945160783401
+        y: 0.9371945160783401
+        z: 0.9371945160783401
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5628054839216599
+        y: 0.5628054839216599
+        z: 0.5628054839216599
+    t: 5000
   11: !Arena
     blackouts: []
     items:
@@ -538,22 +648,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.31174783902372
+        x: 16.37048797223783
         y: 0
-        z: 20.870932775749388
+        z: 24.58631011815679
       rotations:
-      - 249.35649504605132
+      - 141.64262872839348
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 7.339074064427663
+        x: 27.54064953631745
         y: 0
-        z: 15.230095954893507
+        z: 10.471513249892679
       rotations:
-      - 69.35649504605135
+      - 321.64262872839345
       sizes:
       - !Vector3
         x: -1
@@ -566,10 +676,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.8255628076754791
+        y: 0.8255628076754791
+        z: 0.8255628076754791
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.174437192324521
+        y: 1.174437192324521
+        z: 1.174437192324521
+    t: 5000
   12: !Arena
     blackouts: []
     items:
@@ -578,22 +698,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.852507817605577
+        x: 18.351510637384298
         y: 0
-        z: 21.028012555707157
+        z: 20.034752980586852
       rotations:
-      - 250.1813931032197
+      - 91.20771431608856
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 5.918634971796866
+        x: 36.347512022360974
         y: 0
-        z: 14.92523036706709
+        z: 19.65536643375425
       rotations:
-      - 70.1813931032197
+      - 271.2077143160885
       sizes:
       - !Vector3
         x: -1
@@ -609,7 +729,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   13: !Arena
     blackouts: []
     items:
@@ -618,22 +738,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.66560158146016
+        x: 21.567917986606616
         y: 0
-        z: 21.19952253848285
+        z: 18.476382678696886
       rotations:
-      - 234.23955691372743
+      - 314.17902686316825
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 7.059186950541893
+        x: 10.810431630047368
         y: 0
-        z: 10.680366126027675
+        z: 28.929922140928884
       rotations:
-      - 54.23955691372743
+      - 134.17902686316825
       sizes:
       - !Vector3
         x: -1
@@ -646,10 +766,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.9132633242736636
+        y: 0.9132633242736636
+        z: 0.9132633242736636
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5867366757263364
+        y: 0.5867366757263364
+        z: 0.5867366757263364
+    t: 5000
   14: !Arena
     blackouts: []
     items:
@@ -658,22 +798,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.942034472150965
+        x: 15.181871255277386
         y: 0
-        z: 19.658463199902812
+        z: 21.67968631250485
       rotations:
-      - 289.9282310594398
+      - 109.21947340469742
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 3.079748783861181
+        x: 31.234368471552862
         y: 0
-        z: 26.13447663332912
+        z: 16.08349715188241
       rotations:
-      - 109.92823105943978
+      - 289.2194734046974
       sizes:
       - !Vector3
         x: -1
@@ -686,20 +826,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7573244302053748
-        y: 0.7573244302053748
-        z: 0.7573244302053748
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.2426755697946252
-        y: 1.2426755697946252
-        z: 1.2426755697946252
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   15: !Arena
     blackouts: []
     items:
@@ -708,22 +838,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.738835208567618
+        x: 16.167437166446366
         y: 0
-        z: 15.529690460433258
+        z: 24.57629045658686
       rotations:
-      - 3.34353820954297
+      - 140.05441786998338
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 20.67199737409055
+        x: 26.440393215705125
         y: 0
-        z: 31.502455041833578
+        z: 12.309816879800506
       rotations:
-      - 183.34353820954297
+      - 320.05441786998335
       sizes:
       - !Vector3
         x: -1
@@ -739,7 +869,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   16: !Arena
     blackouts: []
     items:
@@ -748,22 +878,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.111319355679253
+        x: 20.329102292386853
         y: 0
-        z: 23.228172943166435
+        z: 22.91759405459961
       rotations:
-      - 223.94400703365534
+      - 186.43571514280146
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 9.926173297788402
+        x: 18.19942321304775
         y: 0
-        z: 9.547824868936548
+        z: 4.037327451105227
       rotations:
-      - 43.94400703365534
+      - 6.435715142801428
       sizes:
       - !Vector3
         x: -1
@@ -776,9 +906,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0421522319206422
-        y: 1.0421522319206422
-        z: 1.0421522319206422
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -786,10 +916,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9578477680793578
-        y: 0.9578477680793578
-        z: 0.9578477680793578
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   17: !Arena
     blackouts: []
     items:
@@ -798,22 +928,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.1210173297009
+        x: 24.085540276933667
         y: 0
-        z: 23.014475056943944
+        z: 20.18481907019013
       rotations:
-      - 200.39906669133768
+      - 267.4098558778562
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 15.195552076508813
+        x: 5.104951470381689
         y: 0
-        z: 7.08058471173279
+        z: 19.326187276815425
       rotations:
-      - 20.39906669133768
+      - 87.40985587785622
       sizes:
       - !Vector3
         x: -1
@@ -826,10 +956,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.6074475431388149
+        y: 0.6074475431388149
+        z: 0.6074475431388149
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.3925524568611851
+        y: 1.3925524568611851
+        z: 1.3925524568611851
+    t: 5000
   18: !Arena
     blackouts: []
     items:
@@ -838,22 +978,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.134831907497162
+        x: 23.478928864950678
         y: 0
-        z: 15.528602643736221
+        z: 19.561071257377467
       rotations:
-      - 22.642635235718956
+      - 277.1908865284102
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 25.06451151154605
+        x: 5.620505627929791
         y: 0
-        z: 32.14123460213549
+        z: 21.814228927722
       rotations:
-      - 202.64263523571896
+      - 97.1908865284102
       sizes:
       - !Vector3
         x: -1
@@ -866,9 +1006,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7544112876149289
-        y: 0.7544112876149289
-        z: 0.7544112876149289
+        x: 0.511926364422655
+        y: 0.511926364422655
+        z: 0.511926364422655
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -876,20 +1016,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7120883111915252
-        y: 0.7120883111915252
-        z: 0.7120883111915252
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.5335004011935459
-        y: 0.5335004011935459
-        z: 0.5335004011935459
-    t: 500
+        x: 1.488073635577345
+        y: 1.488073635577345
+        z: 1.488073635577345
+    t: 5000
   19: !Arena
     blackouts: []
     items:
@@ -898,22 +1028,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.649115334943815
+        x: 24.738610082048456
         y: 0
-        z: 23.466118880152973
+        z: 23.22905195159524
       rotations:
-      - 174.21948470552115
+      - 235.72813630774948
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 21.36132065510955
+        x: 9.863861408721544
         y: 0
-        z: 6.552563578514107
+        z: 13.092886409075756
       rotations:
-      - 354.21948470552115
+      - 55.72813630774948
       sizes:
       - !Vector3
         x: -1
@@ -926,20 +1056,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0617936820760538
-        y: 1.0617936820760538
-        z: 1.0617936820760538
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.9382063179239462
-        y: 0.9382063179239462
-        z: 0.9382063179239462
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   20: !Arena
     blackouts: []
     items:
@@ -948,22 +1068,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.04653781677452
+        x: 22.078371351330794
         y: 0
-        z: 19.039023991181676
+        z: 17.504561026287927
       rotations:
-      - 287.5069504336555
+      - 320.21016610404337
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 7.787650365151521
+        x: 11.838797409938895
         y: 0
-        z: 23.852167843042135
+        z: 29.79891442525804
       rotations:
-      - 107.5069504336555
+      - 140.21016610404337
       sizes:
       - !Vector3
         x: -1
@@ -976,9 +1096,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5077664151115875
-        y: 0.5077664151115875
-        z: 0.5077664151115875
+        x: 0.642150564495314
+        y: 0.642150564495314
+        z: 0.642150564495314
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -986,10 +1106,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4922335848884125
-        y: 1.4922335848884125
-        z: 1.4922335848884125
-    t: 500
+        x: 1.357849435504686
+        y: 1.357849435504686
+        z: 1.357849435504686
+    t: 5000
   21: !Arena
     blackouts: []
     items:
@@ -998,22 +1118,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.31469364586696
+        x: 23.925922636949174
         y: 0
-        z: 16.570919983067295
+        z: 20.571856999832477
       rotations:
-      - 47.06262978472117
+      - 261.71247813761096
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.028273712843575
+        x: 7.103450166271649
         y: 0
-        z: 27.470096191135873
+        z: 18.121465199875406
       rotations:
-      - 227.06262978472117
+      - 81.71247813761096
       sizes:
       - !Vector3
         x: -1
@@ -1026,9 +1146,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9690517221775743
-        y: 0.9690517221775743
-        z: 0.9690517221775743
+        x: 1.1991825224799224
+        y: 1.1991825224799224
+        z: 1.1991825224799224
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1036,10 +1156,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0309482778224257
-        y: 1.0309482778224257
-        z: 1.0309482778224257
-    t: 500
+        x: 0.8008174775200776
+        y: 0.8008174775200776
+        z: 0.8008174775200776
+    t: 5000
   22: !Arena
     blackouts: []
     items:
@@ -1048,22 +1168,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.225968629876416
+        x: 16.28544555255187
         y: 0
-        z: 16.771413809397515
+        z: 16.21443316179875
       rotations:
-      - 307.37936659714745
+      - 44.45753027805125
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 9.127935973559628
+        x: 29.592672858904365
         y: 0
-        z: 28.306118396372938
+        z: 29.776059222749794
       rotations:
-      - 127.37936659714745
+      - 224.45753027805125
       sizes:
       - !Vector3
         x: -1
@@ -1076,10 +1196,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.9133566615371986
+        y: 0.9133566615371986
+        z: 0.9133566615371986
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.0866433384628014
+        y: 1.0866433384628014
+        z: 1.0866433384628014
+    t: 5000
   23: !Arena
     blackouts: []
     items:
@@ -1088,22 +1218,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.82460772404669
+        x: 20.36777727725184
         y: 0
-        z: 19.90393454938142
+        z: 19.534709432435303
       rotations:
-      - 85.32757003995194
+      - 321.67627566442764
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 35.76811161146125
+        x: 8.58580262140252
         y: 0
-        z: 21.28873634645123
+        z: 34.44058321456979
       rotations:
-      - 265.3275700399519
+      - 141.67627566442764
       sizes:
       - !Vector3
         x: -1
@@ -1116,9 +1246,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2756548608250369
-        y: 1.2756548608250369
-        z: 1.2756548608250369
+        x: 0.8215193567122554
+        y: 0.8215193567122554
+        z: 0.8215193567122554
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1126,10 +1256,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7243451391749631
-        y: 0.7243451391749631
-        z: 0.7243451391749631
-    t: 500
+        x: 0.5095560375786392
+        y: 0.5095560375786392
+        z: 0.5095560375786392
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.6689246057091054
+        y: 0.6689246057091054
+        z: 0.6689246057091054
+    t: 5000
   24: !Arena
     blackouts: []
     items:
@@ -1138,22 +1278,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.839428544306195
+        x: 18.266730694885396
         y: 0
-        z: 23.680947696323567
+        z: 17.242180836588414
       rotations:
-      - 177.50220907433322
+      - 32.14906308895664
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 20.49314157043814
+        x: 26.780711265162076
         y: 0
-        z: 8.695199157145906
+        z: 30.788845918775657
       rotations:
-      - 357.5022090743332
+      - 212.14906308895664
       sizes:
       - !Vector3
         x: -1
@@ -1166,9 +1306,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3421036508570559
-        y: 1.3421036508570559
-        z: 1.3421036508570559
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1176,10 +1316,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6578963491429441
-        y: 0.6578963491429441
-        z: 0.6578963491429441
-    t: 500
+        x: 0.8837267614249904
+        y: 0.8837267614249904
+        z: 0.8837267614249904
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.6162732385750096
+        y: 0.6162732385750096
+        z: 0.6162732385750096
+    t: 5000
   25: !Arena
     blackouts: []
     items:
@@ -1188,22 +1338,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.576963563723933
+        x: 22.90711650499248
         y: 0
-        z: 19.15924402759137
+        z: 16.928820789693635
       rotations:
-      - 283.2271246536236
+      - 316.57197674686154
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 7.0279618479856545
+        x: 9.845703402800773
         y: 0
-        z: 23.04904379268102
+        z: 30.727352877343208
       rotations:
-      - 103.2271246536236
+      - 136.57197674686154
       sizes:
       - !Vector3
         x: -1
@@ -1216,9 +1366,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4476553654492303
-        y: 1.4476553654492303
-        z: 1.4476553654492303
+        x: 1.069801614255564
+        y: 1.069801614255564
+        z: 1.069801614255564
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1226,10 +1376,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5523446345507697
-        y: 0.5523446345507697
-        z: 0.5523446345507697
-    t: 500
+        x: 0.930198385744436
+        y: 0.930198385744436
+        z: 0.930198385744436
+    t: 5000
   26: !Arena
     blackouts: []
     items:
@@ -1238,22 +1388,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.253594435881256
+        x: 15.171630270636221
         y: 0
-        z: 23.28799701744291
+        z: 17.32653632176959
       rotations:
-      - 124.71166608653174
+      - 61.0267431336262
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.228072340952025
+        x: 31.79370236168042
         y: 0
-        z: 13.607399552374499
+        z: 26.530161661826057
       rotations:
-      - 304.71166608653175
+      - 241.0267431336262
       sizes:
       - !Vector3
         x: -1
@@ -1266,10 +1416,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.4710941612308321
+        y: 1.4710941612308321
+        z: 1.4710941612308321
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5289058387691679
+        y: 0.5289058387691679
+        z: 0.5289058387691679
+    t: 5000
   27: !Arena
     blackouts: []
     items:
@@ -1278,22 +1438,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.37624957715841
+        x: 17.131900234053326
         y: 0
-        z: 21.2186778472256
+        z: 23.802123086493282
       rotations:
-      - 242.84863218685933
+      - 142.9712289440448
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 8.139385036031843
+        x: 28.574003888376353
         y: 0
-        z: 13.917192516307445
+        z: 8.63379213138396
       rotations:
-      - 62.848632186859334
+      - 322.9712289440448
       sizes:
       - !Vector3
         x: -1
@@ -1306,9 +1466,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5727342959590236
-        y: 0.5727342959590236
-        z: 0.5727342959590236
+        x: 1.4254558846568377
+        y: 1.4254558846568377
+        z: 1.4254558846568377
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1316,10 +1476,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4272657040409764
-        y: 1.4272657040409764
-        z: 1.4272657040409764
-    t: 500
+        x: 0.5745441153431623
+        y: 0.5745441153431623
+        z: 0.5745441153431623
+    t: 5000
   28: !Arena
     blackouts: []
     items:
@@ -1328,22 +1488,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.953769836389284
+        x: 16.39488774779086
         y: 0
-        z: 22.236556465855593
+        z: 17.222134298812918
       rotations:
-      - 245.7015024333832
+      - 52.384484854372275
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.371144760868438
+        x: 29.068878033728666
         y: 0
-        z: 15.652709117474053
+        z: 26.987889273824024
       rotations:
-      - 65.70150243338321
+      - 232.38448485437226
       sizes:
       - !Vector3
         x: -1
@@ -1356,9 +1516,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2075686697434405
-        y: 1.2075686697434405
-        z: 1.2075686697434405
+        x: 1.1389071709951544
+        y: 1.1389071709951544
+        z: 1.1389071709951544
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1366,10 +1526,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7924313302565595
-        y: 0.7924313302565595
-        z: 0.7924313302565595
-    t: 500
+        x: 0.8610928290048456
+        y: 0.8610928290048456
+        z: 0.8610928290048456
+    t: 5000
   29: !Arena
     blackouts: []
     items:
@@ -1378,22 +1538,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.21157300307054
+        x: 21.4200001904766
         y: 0
-        z: 17.16516549478041
+        z: 16.920973618734735
       rotations:
-      - 336.85873924956536
+      - 335.24156617878987
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 14.923582421644856
+        x: 15.138099043272517
         y: 0
-        z: 31.877785059219022
+        z: 30.542196690718985
       rotations:
-      - 156.85873924956536
+      - 155.24156617878987
       sizes:
       - !Vector3
         x: -1
@@ -1406,9 +1566,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.603064571173431
-        y: 0.603064571173431
-        z: 0.603064571173431
+        x: 1.216465966313294
+        y: 1.216465966313294
+        z: 1.216465966313294
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1416,10 +1576,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.396935428826569
-        y: 1.396935428826569
-        z: 1.396935428826569
-    t: 500
+        x: 0.783534033686706
+        y: 0.783534033686706
+        z: 0.783534033686706
+    t: 5000
   30: !Arena
     blackouts: []
     items:
@@ -1428,22 +1588,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.525836050378013
+        x: 20.555791462394446
         y: 0
-        z: 18.62559664782173
+        z: 16.176293042294628
       rotations:
-      - 72.92374212388563
+      - 351.72974342580085
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 33.68821680665249
+        x: 18.1104689922836
         y: 0
-        z: 24.204837211205817
+        z: 32.999503140761895
       rotations:
-      - 252.92374212388563
+      - 171.72974342580085
       sizes:
       - !Vector3
         x: -1
@@ -1456,9 +1616,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.457370639170639
-        y: 1.457370639170639
-        z: 1.457370639170639
+        x: 0.7426231149081763
+        y: 0.7426231149081763
+        z: 0.7426231149081763
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1466,10 +1626,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5426293608293611
-        y: 0.5426293608293611
-        z: 0.5426293608293611
-    t: 500
+        x: 0.6428507150939436
+        y: 0.6428507150939436
+        z: 0.6428507150939436
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.61452616999788
+        y: 0.61452616999788
+        z: 0.61452616999788
+    t: 5000
   31: !Arena
     blackouts: []
     items:
@@ -1478,22 +1648,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.62333421290203
+        x: 19.226831372347533
         y: 0
-        z: 23.980010855890097
+        z: 17.832583783380684
       rotations:
-      - 139.68852078163354
+      - 19.63251957790041
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.62135785610402
+        x: 24.93859681875516
         y: 0
-        z: 11.016852446630025
+        z: 33.844321212067925
       rotations:
-      - 319.68852078163354
+      - 199.6325195779004
       sizes:
       - !Vector3
         x: -1
@@ -1506,9 +1676,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9159953369509322
-        y: 0.9159953369509322
-        z: 0.9159953369509322
+        x: 0.9288871345702394
+        y: 0.9288871345702394
+        z: 0.9288871345702394
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1516,10 +1686,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0840046630490678
-        y: 1.0840046630490678
-        z: 1.0840046630490678
-    t: 500
+        x: 1.0711128654297606
+        y: 1.0711128654297606
+        z: 1.0711128654297606
+    t: 5000
   32: !Arena
     blackouts: []
     items:
@@ -1528,22 +1698,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.950326501832464
+        x: 24.818619225934018
         y: 0
-        z: 19.669432969711853
+        z: 19.920870012511312
       rotations:
-      - 279.61981965144366
+      - 270.94081034851513
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 7.161252155741096
+        x: 6.821045789419941
         y: 0
-        z: 22.17608012992052
+        z: 20.21642101874008
       rotations:
-      - 99.61981965144366
+      - 90.94081034851513
       sizes:
       - !Vector3
         x: -1
@@ -1556,10 +1726,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.426703894599602
+        y: 1.426703894599602
+        z: 1.426703894599602
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.573296105400398
+        y: 0.573296105400398
+        z: 0.573296105400398
+    t: 5000
   33: !Arena
     blackouts: []
     items:
@@ -1568,22 +1748,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.22253155048496
+        x: 15.209054179296807
         y: 0
-        z: 21.764958955730116
+        z: 19.671514765297804
       rotations:
-      - 214.70912766839598
+      - 86.07772472446293
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 12.681374197191202
+        x: 32.16923611057953
         y: 0
-        z: 9.434158857347366
+        z: 20.83436852127529
       rotations:
-      - 34.70912766839598
+      - 266.07772472446294
       sizes:
       - !Vector3
         x: -1
@@ -1596,10 +1776,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.264974977506988
+        y: 1.264974977506988
+        z: 1.264974977506988
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.7350250224930119
+        y: 0.7350250224930119
+        z: 0.7350250224930119
+    t: 5000
   34: !Arena
     blackouts: []
     items:
@@ -1608,22 +1798,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.987834466235846
+        x: 21.62967371710871
         y: 0
-        z: 16.546613741138156
+        z: 16.597241760053798
       rotations:
-      - 49.280475084088266
+      - 334.4089686323654
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.356515575571038
+        x: 13.854671318294066
         y: 0
-        z: 26.331964518409514
+        z: 32.83144447218064
       rotations:
-      - 229.28047508408827
+      - 154.40896863236537
       sizes:
       - !Vector3
         x: -1
@@ -1636,9 +1826,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.488477432042703
-        y: 1.488477432042703
-        z: 1.488477432042703
+        x: 0.6333927373376433
+        y: 0.6333927373376433
+        z: 0.6333927373376433
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1646,10 +1836,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.511522567957297
-        y: 0.511522567957297
-        z: 0.511522567957297
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.8666072626623567
+        y: 0.8666072626623567
+        z: 0.8666072626623567
+    t: 5000
   35: !Arena
     blackouts: []
     items:
@@ -1658,22 +1858,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.323506990799658
+        x: 19.059365057577125
         y: 0
-        z: 16.583130476247234
+        z: 16.349947937103146
       rotations:
-      - 53.84634870491024
+      - 14.450954446850801
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.04994978013628
+        x: 23.800837322924608
         y: 0
-        z: 26.612326274070135
+        z: 34.7488185751869
       rotations:
-      - 233.84634870491024
+      - 194.4509544468508
       sizes:
       - !Vector3
         x: -1
@@ -1686,10 +1886,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.793504009950281
+        y: 0.793504009950281
+        z: 0.793504009950281
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.706495990049719
+        y: 0.706495990049719
+        z: 0.706495990049719
+    t: 5000
   36: !Arena
     blackouts: []
     items:
@@ -1698,22 +1918,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.953043205627473
+        x: 18.35214106855563
         y: 0
-        z: 23.231430791622135
+        z: 17.794605744452667
       rotations:
-      - 230.7355829492928
+      - 36.76689120739235
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.79107514912963
+        x: 27.92911370770052
         y: 0
-        z: 12.472127985225688
+        z: 30.61184394420031
       rotations:
-      - 50.73558294929279
+      - 216.76689120739235
       sizes:
       - !Vector3
         x: -1
@@ -1726,10 +1946,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   37: !Arena
     blackouts: []
     items:
@@ -1738,22 +1968,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.088234416614196
+        x: 15.632401904132848
         y: 0
-        z: 24.565513728904005
+        z: 22.55184273070814
       rotations:
-      - 193.40683575933556
+      - 120.29632752689929
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 16.914683130549594
+        x: 29.447248102737234
         y: 0
-        z: 7.056045728345321
+        z: 14.480286219792422
       rotations:
-      - 13.406835759335536
+      - 300.2963275268993
       sizes:
       - !Vector3
         x: -1
@@ -1766,20 +1996,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8615464858438329
-        y: 0.8615464858438329
-        z: 0.8615464858438329
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.1384535141561671
-        y: 1.1384535141561671
-        z: 1.1384535141561671
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   38: !Arena
     blackouts: []
     items:
@@ -1788,22 +2008,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.539686757694426
+        x: 15.689476808909006
         y: 0
-        z: 20.898831119283116
+        z: 20.149093796967044
       rotations:
-      - 250.5104073380154
+      - 91.98097557776187
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 6.513750904835401
+        x: 33.67871928737553
         y: 0
-        z: 15.227025406809556
+        z: 19.526875948512185
       rotations:
-      - 70.5104073380154
+      - 271.98097557776185
       sizes:
       - !Vector3
         x: -1
@@ -1816,9 +2036,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2447045666620413
-        y: 1.2447045666620413
-        z: 1.2447045666620413
+        x: 1.2048283655963958
+        y: 1.2048283655963958
+        z: 1.2048283655963958
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1826,10 +2046,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7552954333379587
-        y: 0.7552954333379587
-        z: 0.7552954333379587
-    t: 500
+        x: 0.7951716344036042
+        y: 0.7951716344036042
+        z: 0.7951716344036042
+    t: 5000
   39: !Arena
     blackouts: []
     items:
@@ -1838,22 +2058,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.065282741591695
+        x: 20.688264713132956
         y: 0
-        z: 21.630063288961267
+        z: 16.356714452001324
       rotations:
-      - 231.71706824472878
+      - 349.30214460934917
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.290868250613808
+        x: 17.532557508394834
         y: 0
-        z: 12.336884963186499
+        z: 33.06125012462521
       rotations:
-      - 51.71706824472881
+      - 169.30214460934917
       sizes:
       - !Vector3
         x: -1
@@ -1869,7 +2089,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   40: !Arena
     blackouts: []
     items:
@@ -1878,22 +2098,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.226232264815621
+        x: 17.41311633392349
         y: 0
-        z: 17.17991185651517
+        z: 20.824684882883993
       rotations:
-      - 59.42766452022849
+      - 107.68200747544508
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.863023346257606
+        x: 32.65722688455751
         y: 0
-        z: 25.826549748679984
+        z: 15.964942758033278
       rotations:
-      - 239.4276645202285
+      - 287.68200747544506
       sizes:
       - !Vector3
         x: -1
@@ -1906,9 +2126,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4554453976723927
-        y: 1.4554453976723927
-        z: 1.4554453976723927
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1916,10 +2136,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5445546023276073
-        y: 0.5445546023276073
-        z: 0.5445546023276073
-    t: 500
+        x: 0.9479420539153542
+        y: 0.9479420539153542
+        z: 0.9479420539153542
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5520579460846458
+        y: 0.5520579460846458
+        z: 0.5520579460846458
+    t: 5000
   41: !Arena
     blackouts: []
     items:
@@ -1928,22 +2158,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.041851106319477
+        x: 15.474218241147241
         y: 0
-        z: 19.358758994085512
+        z: 22.629423670831706
       rotations:
-      - 301.61156525420677
+      - 120.15606217220179
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 6.564291568006819
+        x: 31.03810352492779
         y: 0
-        z: 28.269441898027956
+        z: 13.586997288863245
       rotations:
-      - 121.61156525420677
+      - 300.1560621722018
       sizes:
       - !Vector3
         x: -1
@@ -1956,9 +2186,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.990238851176345
-        y: 0.990238851176345
-        z: 0.990238851176345
+        x: 1.0187926930835194
+        y: 1.0187926930835194
+        z: 1.0187926930835194
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -1966,10 +2196,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0097611488236549
-        y: 1.0097611488236549
-        z: 1.0097611488236549
-    t: 500
+        x: 0.9812073069164806
+        y: 0.9812073069164806
+        z: 0.9812073069164806
+    t: 5000
   42: !Arena
     blackouts: []
     items:
@@ -1978,22 +2208,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.669896252034956
+        x: 16.135396281107013
         y: 0
-        z: 20.05317014097927
+        z: 19.10637956437703
       rotations:
-      - 268.1762964031326
+      - 76.98020620279578
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 6.677494051756593
+        x: 32.69836527046702
         y: 0
-        z: 19.575806270238626
+        z: 22.936269674745553
       rotations:
-      - 88.1762964031326
+      - 256.9802062027958
       sizes:
       - !Vector3
         x: -1
@@ -2006,9 +2236,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7791638576589476
-        y: 0.7791638576589476
-        z: 0.7791638576589476
+        x: 1.0546365513160274
+        y: 1.0546365513160274
+        z: 1.0546365513160274
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2016,10 +2246,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2208361423410525
-        y: 1.2208361423410525
-        z: 1.2208361423410525
-    t: 500
+        x: 0.9453634486839726
+        y: 0.9453634486839726
+        z: 0.9453634486839726
+    t: 5000
   43: !Arena
     blackouts: []
     items:
@@ -2028,22 +2258,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.609983893140566
+        x: 16.805459057288033
         y: 0
-        z: 20.10582719386709
+        z: 22.54742653660736
       rotations:
-      - 260.157622517452
+      - 128.56995008904823
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 2.874912618329578
+        x: 31.6605629058874
         y: 0
-        z: 17.02893803801923
+        z: 10.70150362417338
       rotations:
-      - 80.15762251745201
+      - 308.56995008904823
       sizes:
       - !Vector3
         x: -1
@@ -2056,10 +2286,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   44: !Arena
     blackouts: []
     items:
@@ -2068,22 +2308,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.18516576255441
+        x: 23.996186995905806
         y: 0
-        z: 18.805375437522073
+        z: 17.12104761419866
       rotations:
-      - 34.297270602578436
+      - 305.7699151521351
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.32792628114386
+        x: 10.202882434760983
         y: 0
-        z: 33.67562792571282
+        z: 27.058086875643763
       rotations:
-      - 214.29727060257844
+      - 125.76991515213513
       sizes:
       - !Vector3
         x: -1
@@ -2096,9 +2336,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1191624441306096
-        y: 1.1191624441306096
-        z: 1.1191624441306096
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2106,10 +2346,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8808375558693904
-        y: 0.8808375558693904
-        z: 0.8808375558693904
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   45: !Arena
     blackouts: []
     items:
@@ -2118,22 +2358,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.212990092272015
+        x: 22.386507001302853
         y: 0
-        z: 16.989328440223485
+        z: 17.0081538492618
       rotations:
-      - 42.7907518335677
+      - 321.421673580777
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.402833042877525
+        x: 11.785580324689185
         y: 0
-        z: 27.996921303424557
+        z: 30.298012900322526
       rotations:
-      - 222.7907518335677
+      - 141.421673580777
       sizes:
       - !Vector3
         x: -1
@@ -2149,7 +2389,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   46: !Arena
     blackouts: []
     items:
@@ -2158,22 +2398,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.16451567915175
+        x: 23.656790538353544
         y: 0
-        z: 20.104256589658068
+        z: 17.455250241477973
       rotations:
-      - 92.10573298560426
+      - 304.8339430398525
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 34.153035956990834
+        x: 8.882193183105233
         y: 0
-        z: 19.479613676106503
+        z: 27.736848998008476
       rotations:
-      - 272.1057329856043
+      - 124.8339430398525
       sizes:
       - !Vector3
         x: -1
@@ -2186,20 +2426,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2625122479912443
-        y: 1.2625122479912443
-        z: 1.2625122479912443
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.7374877520087557
-        y: 0.7374877520087557
-        z: 0.7374877520087557
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   47: !Arena
     blackouts: []
     items:
@@ -2208,22 +2438,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.943483989355313
+        x: 22.816804980730343
         y: 0
-        z: 18.278423197389948
+        z: 18.236121281349014
       rotations:
-      - 67.00373514232774
+      - 302.0547316648576
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 32.51302981175119
+        x: 7.561057888502848
         y: 0
-        z: 25.31050334763877
+        z: 27.789245412123847
       rotations:
-      - 247.00373514232774
+      - 122.05473166485763
       sizes:
       - !Vector3
         x: -1
@@ -2236,10 +2466,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.381301153853578
+        y: 1.381301153853578
+        z: 1.381301153853578
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.618698846146422
+        y: 0.618698846146422
+        z: 0.618698846146422
+    t: 5000
   48: !Arena
     blackouts: []
     items:
@@ -2248,22 +2488,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.726595595500658
+        x: 20.451208925691322
         y: 0
-        z: 23.66704473238945
+        z: 15.2780609457937
       rotations:
-      - 138.24615766720848
+      - 354.5416258441501
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.71336612573861
+        x: 19.024370466381114
         y: 0
-        z: 10.238815800195189
+        z: 30.210044471468823
       rotations:
-      - 318.2461576672085
+      - 174.54162584415008
       sizes:
       - !Vector3
         x: -1
@@ -2276,9 +2516,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1187410682699344
-        y: 1.1187410682699344
-        z: 1.1187410682699344
+        x: 1.4072912758814882
+        y: 1.4072912758814882
+        z: 1.4072912758814882
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2286,10 +2526,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8812589317300656
-        y: 0.8812589317300656
-        z: 0.8812589317300656
-    t: 500
+        x: 0.5927087241185118
+        y: 0.5927087241185118
+        z: 0.5927087241185118
+    t: 5000
   49: !Arena
     blackouts: []
     items:
@@ -2298,22 +2538,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.56380270640993
+        x: 18.912730805093485
         y: 0
-        z: 15.49399443456398
+        z: 22.29107653624324
       rotations:
-      - 352.8680726892453
+      - 154.61252978844334
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 18.57733196576424
+        x: 26.20126960235367
         y: 0
-        z: 31.370200971282962
+        z: 6.932782288481443
       rotations:
-      - 172.8680726892453
+      - 334.61252978844334
       sizes:
       - !Vector3
         x: -1
@@ -2326,9 +2566,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1083440311777493
-        y: 1.1083440311777493
-        z: 1.1083440311777493
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2336,10 +2576,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8916559688222507
-        y: 0.8916559688222507
-        z: 0.8916559688222507
-    t: 500
+        x: 0.7985642099580963
+        y: 0.7985642099580963
+        z: 0.7985642099580963
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.7014357900419037
+        y: 0.7014357900419037
+        z: 0.7014357900419037
+    t: 5000
   50: !Arena
     blackouts: []
     items:
@@ -2348,22 +2598,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.9996924005917
+        x: 22.990931862796305
         y: 0
-        z: 23.249695072452255
+        z: 23.742858602061453
       rotations:
-      - 137.28500278143042
+      - 218.6284782663
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.85332457897419
+        x: 11.129840505308191
         y: 0
-        z: 11.493902094674011
+        z: 8.899863223455396
       rotations:
-      - 317.2850027814304
+      - 38.62847826630002
       sizes:
       - !Vector3
         x: -1
@@ -2376,9 +2626,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8273631573215052
-        y: 0.8273631573215052
-        z: 0.8273631573215052
+        x: 0.9650064787892147
+        y: 0.9650064787892147
+        z: 0.9650064787892147
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2386,20 +2636,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6612003775426016
-        y: 0.6612003775426016
-        z: 0.6612003775426016
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.5114364651358931
-        y: 0.5114364651358931
-        z: 0.5114364651358931
-    t: 500
+        x: 1.0349935212107853
+        y: 1.0349935212107853
+        z: 1.0349935212107853
+    t: 5000
   51: !Arena
     blackouts: []
     items:
@@ -2408,22 +2648,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.835050880667495
+        x: 20.034750941587262
         y: 0
-        z: 19.783731211469654
+        z: 19.337852285508507
       rotations:
-      - 272.5610971249938
+      - 356.9957500495153
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 9.850033777278076
+        x: 19.09137040027718
         y: 0
-        z: 20.45400161296938
+        z: 37.31311398469602
       rotations:
-      - 92.56109712499381
+      - 176.99575004951532
       sizes:
       - !Vector3
         x: -1
@@ -2436,20 +2676,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7608924456222055
-        y: 0.7608924456222055
-        z: 0.7608924456222055
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.2391075543777945
-        y: 1.2391075543777945
-        z: 1.2391075543777945
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   52: !Arena
     blackouts: []
     items:
@@ -2458,22 +2688,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.456522574186813
+        x: 20.32142808823817
         y: 0
-        z: 15.141047827631624
+        z: 18.718470491035
       rotations:
-      - 36.10206738308119
+      - 345.9197625475716
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 25.884130756254535
+        x: 15.699099204449983
         y: 0
-        z: 28.0685458054079
+        z: 37.14763421840194
       rotations:
-      - 216.1020673830812
+      - 165.91976254757162
       sizes:
       - !Vector3
         x: -1
@@ -2486,20 +2716,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8174204283915982
-        y: 0.8174204283915982
-        z: 0.8174204283915982
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.1825795716084018
-        y: 1.1825795716084018
-        z: 1.1825795716084018
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   53: !Arena
     blackouts: []
     items:
@@ -2508,22 +2728,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.526084796650252
+        x: 19.849938117013934
         y: 0
-        z: 18.64305401480208
+        z: 18.300155815105047
       rotations:
-      - 311.6424760846034
+      - 5.0449806336064285
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.316499521762685
+        x: 21.25694273420739
         y: 0
-        z: 28.6102601411458
+        z: 34.23817131287629
       rotations:
-      - 131.6424760846034
+      - 185.04498063360643
       sizes:
       - !Vector3
         x: -1
@@ -2536,10 +2756,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.3742342926130309
+        y: 1.3742342926130309
+        z: 1.3742342926130309
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.6257657073869691
+        y: 0.6257657073869691
+        z: 0.6257657073869691
+    t: 5000
   54: !Arena
     blackouts: []
     items:
@@ -2548,22 +2778,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.47454380782915
+        x: 22.934312674796438
         y: 0
-        z: 22.175396124048994
+        z: 22.861681468732137
       rotations:
-      - 237.9495042195572
+      - 225.7179516847532
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.760832712627336
+        x: 9.331993732881164
         y: 0
-        z: 14.215399252960271
+        z: 9.596052218582976
       rotations:
-      - 57.949504219557184
+      - 45.71795168475319
       sizes:
       - !Vector3
         x: -1
@@ -2576,10 +2806,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.8657477952529664
+        y: 0.8657477952529664
+        z: 0.8657477952529664
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.6342522047470336
+        y: 0.6342522047470336
+        z: 0.6342522047470336
+    t: 5000
   55: !Arena
     blackouts: []
     items:
@@ -2588,22 +2838,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.176392659961387
+        x: 15.304240759620264
         y: 0
-        z: 23.496207087859002
+        z: 18.551813848447534
       rotations:
-      - 141.07495809237255
+      - 72.86008144900488
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.85754603181305
+        x: 33.46041127692076
         y: 0
-        z: 10.270740644402958
+        z: 24.151230974069474
       rotations:
-      - 321.0749580923725
+      - 252.8600814490049
       sizes:
       - !Vector3
         x: -1
@@ -2616,9 +2866,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0904736334869525
-        y: 1.0904736334869525
-        z: 1.0904736334869525
+        x: 0.9402137507033803
+        y: 0.9402137507033803
+        z: 0.9402137507033803
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2626,10 +2876,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9095263665130475
-        y: 0.9095263665130475
-        z: 0.9095263665130475
-    t: 500
+        x: 1.0597862492966197
+        y: 1.0597862492966197
+        z: 1.0597862492966197
+    t: 5000
   56: !Arena
     blackouts: []
     items:
@@ -2638,22 +2888,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.479365765589758
+        x: 16.554424768036917
         y: 0
-        z: 20.845475442444425
+        z: 17.86320709234083
       rotations:
-      - 100.59340865802692
+      - 58.194646260997686
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.223713333428726
+        x: 31.85160687398882
         y: 0
-        z: 18.08790136388168
+        z: 27.349840827093367
       rotations:
-      - 280.59340865802693
+      - 238.19464626099767
       sizes:
       - !Vector3
         x: -1
@@ -2669,7 +2919,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   57: !Arena
     blackouts: []
     items:
@@ -2678,22 +2928,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.020235793362744
+        x: 24.428927038574713
         y: 0
-        z: 24.157527351411506
+        z: 15.729010940608106
       rotations:
-      - 154.53677539446127
+      - 313.9599686221608
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 25.329074391679146
+        x: 11.472077611294518
         y: 0
-        z: 8.808883165563678
+        z: 28.22381197619042
       rotations:
-      - 334.5367753944613
+      - 133.95996862216077
       sizes:
       - !Vector3
         x: -1
@@ -2706,10 +2956,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.6331743543545931
+        y: 0.6331743543545931
+        z: 0.6331743543545931
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.3668256456454069
+        y: 1.3668256456454069
+        z: 1.3668256456454069
+    t: 5000
   58: !Arena
     blackouts: []
     items:
@@ -2718,22 +2978,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.570836036544414
+        x: 18.411527136101586
         y: 0
-        z: 20.0876688390197
+        z: 19.572266331048276
       rotations:
-      - 268.5935938986217
+      - 74.92922832893252
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 8.57535475908941
+        x: 34.826818877692304
         y: 0
-        z: 19.71950955624055
+        z: 23.992469611267836
       rotations:
-      - 88.59359389862169
+      - 254.92922832893254
       sizes:
       - !Vector3
         x: -1
@@ -2746,20 +3006,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1248606506414682
-        y: 1.1248606506414682
-        z: 1.1248606506414682
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.8751393493585318
-        y: 0.8751393493585318
-        z: 0.8751393493585318
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   59: !Arena
     blackouts: []
     items:
@@ -2768,22 +3018,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.738873143216026
+        x: 17.60419838740004
         y: 0
-        z: 16.04428912773679
+        z: 21.38524605072365
       rotations:
-      - 349.41984540293583
+      - 120.03638560148102
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 17.98470990413971
+        x: 33.18693707568034
         y: 0
-        z: 30.78927420241627
+        z: 12.375348439053896
       rotations:
-      - 169.41984540293583
+      - 300.036385601481
       sizes:
       - !Vector3
         x: -1
@@ -2796,9 +3046,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4061472147744982
-        y: 1.4061472147744982
-        z: 1.4061472147744982
+        x: 1.483442647693483
+        y: 1.483442647693483
+        z: 1.483442647693483
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2806,10 +3056,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5938527852255018
-        y: 0.5938527852255018
-        z: 0.5938527852255018
-    t: 500
+        x: 0.516557352306517
+        y: 0.516557352306517
+        z: 0.516557352306517
+    t: 5000
   60: !Arena
     blackouts: []
     items:
@@ -2818,22 +3068,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.309973075965118
+        x: 17.806403547881224
         y: 0
-        z: 21.571949849036535
+        z: 20.861726943465126
       rotations:
-      - 132.92691181164747
+      - 111.44676127945856
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 32.22221166419312
+        x: 35.490800150010045
         y: 0
-        z: 8.63171733705207
+        z: 13.914632815801767
       rotations:
-      - 312.92691181164747
+      - 291.44676127945854
       sizes:
       - !Vector3
         x: -1
@@ -2846,9 +3096,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2935132934866342
-        y: 1.2935132934866342
-        z: 1.2935132934866342
+        x: 0.5797011560322101
+        y: 0.5797011560322101
+        z: 0.5797011560322101
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -2856,10 +3106,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7064867065133658
-        y: 0.7064867065133658
-        z: 0.7064867065133658
-    t: 500
+        x: 1.42029884396779
+        y: 1.42029884396779
+        z: 1.42029884396779
+    t: 5000
   61: !Arena
     blackouts: []
     items:
@@ -2868,22 +3118,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.98602720631024
+        x: 20.731678489328942
         y: 0
-        z: 18.673386860738102
+        z: 16.692758558216507
       rotations:
-      - 0.6034558831665322
+      - 347.5250900505051
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 20.144008666257044
+        x: 16.627449172974334
         y: 0
-        z: 33.67255489960989
+        z: 35.244181730544156
       rotations:
-      - 180.60345588316653
+      - 167.52509005050513
       sizes:
       - !Vector3
         x: -1
@@ -2896,20 +3146,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6940849123899437
-        y: 0.6940849123899437
-        z: 0.6940849123899437
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.3059150876100563
-        y: 1.3059150876100563
-        z: 1.3059150876100563
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   62: !Arena
     blackouts: []
     items:
@@ -2918,22 +3158,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.40240466915367
+        x: 20.442546772667356
         y: 0
-        z: 17.062940630789544
+        z: 19.31482233645464
       rotations:
-      - 50.771966728994784
+      - 327.142142073536
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.796567247773098
+        x: 11.761638810894171
         y: 0
-        z: 27.181474811922197
+        z: 32.75512876745624
       rotations:
-      - 230.77196672899478
+      - 147.14214207353598
       sizes:
       - !Vector3
         x: -1
@@ -2949,7 +3189,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   63: !Arena
     blackouts: []
     items:
@@ -2958,22 +3198,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.186824890387065
+        x: 23.84780345132701
         y: 0
-        z: 19.000092763274505
+        z: 24.19375487397773
       rotations:
-      - 75.30647435748803
+      - 222.53662898559364
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 33.598160467624496
+        x: 13.030820918940375
         y: 0
-        z: 23.565768333967867
+        z: 12.404230333350895
       rotations:
-      - 255.306474357488
+      - 42.536628985593666
       sizes:
       - !Vector3
         x: -1
@@ -2989,7 +3229,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   64: !Arena
     blackouts: []
     items:
@@ -2998,22 +3238,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.334405434728104
+        x: 19.58161005463544
         y: 0
-        z: 19.80961567698602
+        z: 21.16072444952963
       rotations:
-      - 299.6538050740386
+      - 160.17800410520402
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 4.691852881827316
+        x: 25.34629475704422
         y: 0
-        z: 28.715262741053685
+        z: 5.167963265737313
       rotations:
-      - 119.65380507403859
+      - 340.178004105204
       sizes:
       - !Vector3
         x: -1
@@ -3026,9 +3266,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8300586766156368
-        y: 0.8300586766156368
-        z: 0.8300586766156368
+        x: 1.330561492570903
+        y: 1.330561492570903
+        z: 1.330561492570903
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3036,10 +3276,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1699413233843632
-        y: 1.1699413233843632
-        z: 1.1699413233843632
-    t: 500
+        x: 0.6694385074290969
+        y: 0.6694385074290969
+        z: 0.6694385074290969
+    t: 5000
   65: !Arena
     blackouts: []
     items:
@@ -3048,22 +3288,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.913997073027062
+        x: 15.47473489367394
         y: 0
-        z: 24.60460924801781
+        z: 19.58500089168219
       rotations:
-      - 202.57118134623468
+      - 84.76022446847993
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 15.388871476731408
+        x: 33.399517218019085
         y: 0
-        z: 8.906751561296117
+        z: 21.228831364949958
       rotations:
-      - 22.571181346234653
+      - 264.7602244684799
       sizes:
       - !Vector3
         x: -1
@@ -3076,9 +3316,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9600388026059514
-        y: 0.9600388026059514
-        z: 0.9600388026059514
+        x: 1.3277164042705696
+        y: 1.3277164042705696
+        z: 1.3277164042705696
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3086,10 +3326,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0399611973940486
-        y: 1.0399611973940486
-        z: 1.0399611973940486
-    t: 500
+        x: 0.6722835957294304
+        y: 0.6722835957294304
+        z: 0.6722835957294304
+    t: 5000
   66: !Arena
     blackouts: []
     items:
@@ -3098,22 +3338,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.547461769686254
+        x: 24.731760070315925
         y: 0
-        z: 24.30499330694699
+        z: 22.518068156185148
       rotations:
-      - 141.27092480730911
+      - 241.97973908155117
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.808956773909077
+        x: 10.607255698361278
         y: 0
-        z: 10.262958900570386
+        z: 15.00152797824197
       rotations:
-      - 321.27092480730914
+      - 61.9797390815512
       sizes:
       - !Vector3
         x: -1
@@ -3126,20 +3366,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.699934983105094
-        y: 0.699934983105094
-        z: 0.699934983105094
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.300065016894906
-        y: 1.300065016894906
-        z: 1.300065016894906
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   67: !Arena
     blackouts: []
     items:
@@ -3148,22 +3378,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.151319100463684
+        x: 22.041018107042444
         y: 0
-        z: 17.642406757870376
+        z: 22.996179977690144
       rotations:
-      - 58.50954075013448
+      - 214.26295627470685
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.794953623486858
+        x: 13.596140660691379
         y: 0
-        z: 26.00011200525558
+        z: 10.599243061011446
       rotations:
-      - 238.50954075013448
+      - 34.26295627470688
       sizes:
       - !Vector3
         x: -1
@@ -3176,20 +3406,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6825993692833079
-        y: 0.6825993692833079
-        z: 0.6825993692833079
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.3174006307166921
-        y: 1.3174006307166921
-        z: 1.3174006307166921
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   68: !Arena
     blackouts: []
     items:
@@ -3198,22 +3418,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.324821109912424
+        x: 21.36134280146571
         y: 0
-        z: 24.335517566157716
+        z: 17.237333377244084
       rotations:
-      - 158.87421654796123
+      - 333.7675792451041
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 24.81232002629061
+        x: 13.84711339052284
         y: 0
-        z: 7.5452716534263615
+        z: 32.48647618461923
       rotations:
-      - 338.8742165479612
+      - 153.76757924510412
       sizes:
       - !Vector3
         x: -1
@@ -3226,9 +3446,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0263628414242105
-        y: 1.0263628414242105
-        z: 1.0263628414242105
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3236,10 +3456,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9736371585757895
-        y: 0.9736371585757895
-        z: 0.9736371585757895
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   69: !Arena
     blackouts: []
     items:
@@ -3248,22 +3468,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.811477442776354
+        x: 16.65702084626732
         y: 0
-        z: 21.875884700603386
+        z: 23.050229888261075
       rotations:
-      - 243.79509531222035
+      - 132.37821981837726
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 9.455948287845125
+        x: 29.215118280820786
         y: 0
-        z: 14.81056215439791
+        z: 11.591862254768875
       rotations:
-      - 63.79509531222038
+      - 312.37821981837726
       sizes:
       - !Vector3
         x: -1
@@ -3276,9 +3496,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8340747683732276
-        y: 0.8340747683732276
-        z: 0.8340747683732276
+        x: 1.1408520573540306
+        y: 1.1408520573540306
+        z: 1.1408520573540306
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3286,20 +3506,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5006887358909593
-        y: 0.5006887358909593
-        z: 0.5006887358909593
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.6652364957358132
-        y: 0.6652364957358132
-        z: 0.6652364957358132
-    t: 500
+        x: 0.8591479426459694
+        y: 0.8591479426459694
+        z: 0.8591479426459694
+    t: 5000
   70: !Arena
     blackouts: []
     items:
@@ -3308,22 +3518,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.316353379007314
+        x: 23.96469063274559
         y: 0
-        z: 16.002215506196
+        z: 17.31100333228534
       rotations:
-      - 9.704077238198408
+      - 304.14654062113436
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 22.518984316207714
+        x: 10.723016045827878
         y: 0
-        z: 34.73035356314354
+        z: 26.291986248101267
       rotations:
-      - 189.7040772381984
+      - 124.14654062113436
       sizes:
       - !Vector3
         x: -1
@@ -3339,7 +3549,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   71: !Arena
     blackouts: []
     items:
@@ -3348,22 +3558,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.816620194686518
+        x: 18.857568227537357
         y: 0
-        z: 24.680815865627416
+        z: 20.500016064955123
       rotations:
-      - 211.03687984558132
+      - 113.63788733100053
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 15.082774618023983
+        x: 35.34732853693728
         y: 0
-        z: 11.82828177322613
+        z: 13.282827904837728
       rotations:
-      - 31.036879845581325
+      - 293.6378873310005
       sizes:
       - !Vector3
         x: -1
@@ -3376,9 +3586,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0982139010715075
-        y: 1.0982139010715075
-        z: 1.0982139010715075
+        x: 1.079855649758912
+        y: 1.079855649758912
+        z: 1.079855649758912
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3386,10 +3596,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9017860989284925
-        y: 0.9017860989284925
-        z: 0.9017860989284925
-    t: 500
+        x: 0.920144350241088
+        y: 0.920144350241088
+        z: 0.920144350241088
+    t: 5000
   72: !Arena
     blackouts: []
     items:
@@ -3398,22 +3608,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.24770502649302
+        x: 19.39884087544253
         y: 0
-        z: 16.07228332388986
+        z: 18.658336953238916
       rotations:
-      - 50.42666328347016
+      - 24.135725605510714
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.893091080016156
+        x: 26.350133394656986
         y: 0
-        z: 28.176525032616183
+        z: 34.17218664673257
       rotations:
-      - 230.42666328347016
+      - 204.13572560551071
       sizes:
       - !Vector3
         x: -1
@@ -3426,10 +3636,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.4992972722213456
+        y: 1.4992972722213456
+        z: 1.4992972722213456
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5007027277786544
+        y: 0.5007027277786544
+        z: 0.5007027277786544
+    t: 5000
   73: !Arena
     blackouts: []
     items:
@@ -3438,22 +3658,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.226329494619115
+        x: 19.244052564591364
         y: 0
-        z: 24.081949929524455
+        z: 24.61705054388705
       rotations:
-      - 183.17359609731344
+      - 170.7014936151469
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 19.285185990498803
+        x: 22.15245827815837
         y: 0
-        z: 7.108021424176847
+        z: 6.853571824748425
       rotations:
-      - 3.173596097313407
+      - 350.7014936151469
       sizes:
       - !Vector3
         x: -1
@@ -3469,7 +3689,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   74: !Arena
     blackouts: []
     items:
@@ -3478,22 +3698,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.1419073587176
+        x: 16.00308277953205
         y: 0
-        z: 19.99900458711957
+        z: 17.95226648958264
       rotations:
-      - 89.98826021643991
+      - 62.872655525285424
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 32.141907001860915
+        x: 32.022998070141426
         y: 0
-        z: 20.002487850997312
+        z: 26.159721276646657
       rotations:
-      - 269.9882602164399
+      - 242.87265552528544
       sizes:
       - !Vector3
         x: -1
@@ -3506,20 +3726,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1400623644364662
-        y: 1.1400623644364662
-        z: 1.1400623644364662
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.8599376355635338
-        y: 0.8599376355635338
-        z: 0.8599376355635338
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   75: !Arena
     blackouts: []
     items:
@@ -3528,22 +3738,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.920198158412816
+        x: 15.683858141018668
         y: 0
-        z: 24.568118531099515
+        z: 17.103391487140428
       rotations:
-      - 138.23185285209718
+      - 56.134019765764066
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.578085029939075
+        x: 28.13900769781678
         y: 0
-        z: 12.634575577150414
+        z: 25.462174264422767
       rotations:
-      - 318.2318528520972
+      - 236.13401976576407
       sizes:
       - !Vector3
         x: -1
@@ -3556,9 +3766,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8804765931719452
-        y: 0.8804765931719452
-        z: 0.8804765931719452
+        x: 0.9896036561855743
+        y: 0.9896036561855743
+        z: 0.9896036561855743
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3566,10 +3776,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1195234068280548
-        y: 1.1195234068280548
-        z: 1.1195234068280548
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5103963438144257
+        y: 0.5103963438144257
+        z: 0.5103963438144257
+    t: 5000
   76: !Arena
     blackouts: []
     items:
@@ -3578,22 +3798,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.71777575756422
+        x: 21.553689819271476
         y: 0
-        z: 15.820633009507386
+        z: 19.89966944933252
       rotations:
-      - 38.143966254771954
+      - 273.6947828975528
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.600008599991234
+        x: 5.58694597664312
         y: 0
-        z: 28.404013876669314
+        z: 20.930732523974168
       rotations:
-      - 218.14396625477195
+      - 93.69478289755278
       sizes:
       - !Vector3
         x: -1
@@ -3606,20 +3826,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.025538019263496
-        y: 1.025538019263496
-        z: 1.025538019263496
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.974461980736504
-        y: 0.974461980736504
-        z: 0.974461980736504
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   77: !Arena
     blackouts: []
     items:
@@ -3628,22 +3838,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.72479102461034
+        x: 17.711022984048824
         y: 0
-        z: 21.2902386787204
+        z: 16.990973349016652
       rotations:
-      - 244.6615839346392
+      - 37.26037418690612
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 6.45646646893816
+        x: 26.792594562090844
         y: 0
-        z: 13.586887709738551
+        z: 28.929359239617582
       rotations:
-      - 64.66158393463922
+      - 217.26037418690612
       sizes:
       - !Vector3
         x: -1
@@ -3656,20 +3866,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3892240008199508
-        y: 1.3892240008199508
-        z: 1.3892240008199508
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.6107759991800492
-        y: 0.6107759991800492
-        z: 0.6107759991800492
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   78: !Arena
     blackouts: []
     items:
@@ -3678,22 +3878,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.145766108384493
+        x: 15.699276235400442
         y: 0
-        z: 16.203581797957508
+        z: 16.299542404130047
       rotations:
-      - 320.3543713287181
+      - 49.29041775432373
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 12.29913028105659
+        x: 28.585705783344423
         y: 0
-        z: 29.293673135657436
+        z: 27.387370573157394
       rotations:
-      - 140.35437132871812
+      - 229.29041775432373
       sizes:
       - !Vector3
         x: -1
@@ -3709,7 +3909,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   79: !Arena
     blackouts: []
     items:
@@ -3718,22 +3918,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.28075048146504
+        x: 22.007232061910294
         y: 0
-        z: 19.023152483661175
+        z: 19.33583095060646
       rotations:
-      - 70.23997447334472
+      - 288.3087611094931
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 33.279737317452216
+        x: 5.86781534575972
         y: 0
-        z: 24.770536255596816
+        z: 24.676170646022793
       rotations:
-      - 250.23997447334472
+      - 108.3087611094931
       sizes:
       - !Vector3
         x: -1
@@ -3746,9 +3946,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.877521063216173
-        y: 0.877521063216173
-        z: 0.877521063216173
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3756,10 +3956,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.122478936783827
-        y: 1.122478936783827
-        z: 1.122478936783827
-    t: 500
+        x: 0.7104915207460674
+        y: 0.7104915207460674
+        z: 0.7104915207460674
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.7895084792539326
+        y: 0.7895084792539326
+        z: 0.7895084792539326
+    t: 5000
   80: !Arena
     blackouts: []
     items:
@@ -3768,22 +3978,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.007229691383777
+        x: 21.933137493108337
         y: 0
-        z: 16.56454169306973
+        z: 17.729930852220935
       rotations:
-      - 49.29064788819386
+      - 319.5830655264058
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 27.377648000037954
+        x: 10.26292830705278
         y: 0
-        z: 26.34787381899809
+        z: 31.434171712396463
       rotations:
-      - 229.29064788819386
+      - 139.5830655264058
       sizes:
       - !Vector3
         x: -1
@@ -3796,9 +4006,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3771629229667872
-        y: 1.3771629229667872
-        z: 1.3771629229667872
+        x: 1.3489762900213869
+        y: 1.3489762900213869
+        z: 1.3489762900213869
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3806,10 +4016,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6228370770332128
-        y: 0.6228370770332128
-        z: 0.6228370770332128
-    t: 500
+        x: 0.6510237099786131
+        y: 0.6510237099786131
+        z: 0.6510237099786131
+    t: 5000
   81: !Arena
     blackouts: []
     items:
@@ -3818,22 +4028,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.410461402229966
+        x: 15.897939406898695
         y: 0
-        z: 19.81060293292382
+        z: 23.481063448661505
       rotations:
-      - 72.18969838507432
+      - 130.3183811929498
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 36.547800858257766
+        x: 29.622233668499227
         y: 0
-        z: 25.316199755146897
+        z: 11.834443895289002
       rotations:
-      - 252.18969838507434
+      - 310.3183811929498
       sizes:
       - !Vector3
         x: -1
@@ -3846,9 +4056,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3175279420041455
-        y: 1.3175279420041455
-        z: 1.3175279420041455
+        x: 1.1999994784801027
+        y: 1.1999994784801027
+        z: 1.1999994784801027
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3856,10 +4066,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6824720579958545
-        y: 0.6824720579958545
-        z: 0.6824720579958545
-    t: 500
+        x: 0.8000005215198973
+        y: 0.8000005215198973
+        z: 0.8000005215198973
+    t: 5000
   82: !Arena
     blackouts: []
     items:
@@ -3868,22 +4078,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.037310878381252
+        x: 19.685490278208935
         y: 0
-        z: 19.98632696637779
+        z: 18.577741498166404
       rotations:
-      - 89.84214100092956
+      - 12.469378031092248
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.037253946647013
+        x: 23.140175039298786
         y: 0
-        z: 20.027654303407672
+        z: 34.200326213939064
       rotations:
-      - 269.8421410009296
+      - 192.46937803109225
       sizes:
       - !Vector3
         x: -1
@@ -3896,9 +4106,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5335010224466465
-        y: 0.5335010224466465
-        z: 0.5335010224466465
+        x: 0.9666417410453798
+        y: 0.9666417410453798
+        z: 0.9666417410453798
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -3906,10 +4116,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4664989775533535
-        y: 1.4664989775533535
-        z: 1.4664989775533535
-    t: 500
+        x: 1.0333582589546202
+        y: 1.0333582589546202
+        z: 1.0333582589546202
+    t: 5000
   83: !Arena
     blackouts: []
     items:
@@ -3918,22 +4128,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.667753424027914
+        x: 18.271410304759744
         y: 0
-        z: 15.024955180846039
+        z: 16.840897961944698
       rotations:
-      - 33.81386998969384
+      - 28.686488550295763
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.68469512950518
+        x: 25.471659846439408
         y: 0
-        z: 29.980251194936507
+        z: 29.99978874109253
       rotations:
-      - 213.81386998969384
+      - 208.68648855029576
       sizes:
       - !Vector3
         x: -1
@@ -3949,7 +4159,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   84: !Arena
     blackouts: []
     items:
@@ -3958,22 +4168,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.16079726984274
+        x: 18.64427951859119
         y: 0
-        z: 24.281626977890973
+        z: 16.500582921964615
       rotations:
-      - 195.16890263105705
+      - 21.1770269852548
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 16.9741512551008
+        x: 24.424291060520527
         y: 0
-        z: 8.839088483613375
+        z: 31.420082463677254
       rotations:
-      - 15.168902631057051
+      - 201.1770269852548
       sizes:
       - !Vector3
         x: -1
@@ -3986,20 +4196,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8893177819006317
-        y: 0.8893177819006317
-        z: 0.8893177819006317
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.1106822180993683
-        y: 1.1106822180993683
-        z: 1.1106822180993683
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   85: !Arena
     blackouts: []
     items:
@@ -4008,22 +4208,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.084575901230778
+        x: 23.328259316748515
         y: 0
-        z: 20.979579042540884
+        z: 21.05447256140328
       rotations:
-      - 227.91194049017506
+      - 252.42054656957623
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 9.952842765958533
+        x: 8.075474709650583
         y: 0
-        z: 10.925499402659273
+        z: 16.222023727791438
       rotations:
-      - 47.911940490175084
+      - 72.42054656957623
       sizes:
       - !Vector3
         x: -1
@@ -4036,9 +4236,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4756332675354487
-        y: 1.4756332675354487
-        z: 1.4756332675354487
+        x: 1.340071572755184
+        y: 1.340071572755184
+        z: 1.340071572755184
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4046,10 +4246,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5243667324645513
-        y: 0.5243667324645513
-        z: 0.5243667324645513
-    t: 500
+        x: 0.659928427244816
+        y: 0.659928427244816
+        z: 0.659928427244816
+    t: 5000
   86: !Arena
     blackouts: []
     items:
@@ -4058,22 +4258,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.25526988478249
+        x: 15.783585270521959
         y: 0
-        z: 16.88760977683132
+        z: 20.88871899849275
       rotations:
-      - 324.07252781254283
+      - 101.902355633263
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 11.693577497485899
+        x: 31.43959337431994
         y: 0
-        z: 31.463296858959602
+        z: 17.588808355185584
       rotations:
-      - 144.07252781254283
+      - 281.902355633263
       sizes:
       - !Vector3
         x: -1
@@ -4086,9 +4286,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4916396835315533
-        y: 1.4916396835315533
-        z: 1.4916396835315533
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4096,10 +4296,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5083603164684467
-        y: 0.5083603164684467
-        z: 0.5083603164684467
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   87: !Arena
     blackouts: []
     items:
@@ -4108,22 +4308,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.312962778443925
+        x: 21.83564112820002
         y: 0
-        z: 17.309532774603774
+        z: 24.63536948271507
       rotations:
-      - 44.96345429017467
+      - 201.60393770612725
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.61945260710084
+        x: 15.576437451419043
         y: 0
-        z: 28.630455341006115
+        z: 8.829599354924033
       rotations:
-      - 224.96345429017467
+      - 21.603937706127226
       sizes:
       - !Vector3
         x: -1
@@ -4136,9 +4336,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4038141634965504
-        y: 1.4038141634965504
-        z: 1.4038141634965504
+        x: 1.1845942361088027
+        y: 1.1845942361088027
+        z: 1.1845942361088027
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4146,10 +4346,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5961858365034496
-        y: 0.5961858365034496
-        z: 0.5961858365034496
-    t: 500
+        x: 0.8154057638911973
+        y: 0.8154057638911973
+        z: 0.8154057638911973
+    t: 5000
   88: !Arena
     blackouts: []
     items:
@@ -4158,22 +4358,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.09250603630132
+        x: 24.876930939272974
         y: 0
-        z: 21.030415132533616
+        z: 16.2928661276205
       rotations:
-      - 243.78292907809993
+      - 307.23979600151443
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 5.047097103771925
+        x: 12.139174319161066
         y: 0
-        z: 12.636724983210305
+        z: 25.975301579860563
       rotations:
-      - 63.782929078099926
+      - 127.23979600151443
       sizes:
       - !Vector3
         x: -1
@@ -4186,9 +4386,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5574913682751471
-        y: 0.5574913682751471
-        z: 0.5574913682751471
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4196,20 +4396,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9368377974851272
-        y: 0.9368377974851272
-        z: 0.9368377974851272
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.5056708342397258
-        y: 0.5056708342397258
-        z: 0.5056708342397258
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   89: !Arena
     blackouts: []
     items:
@@ -4218,22 +4408,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.645576713731874
+        x: 18.476741266916136
         y: 0
-        z: 23.290387010794852
+        z: 16.89276132496264
       rotations:
-      - 134.44785560770205
+      - 26.115436775070236
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.06778543583598
+        x: 25.519638911171054
         y: 0
-        z: 12.086229393700703
+        z: 31.25930554312967
       rotations:
-      - 314.4478556077021
+      - 206.11543677507024
       sizes:
       - !Vector3
         x: -1
@@ -4246,9 +4436,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4849747279517689
-        y: 1.4849747279517689
-        z: 1.4849747279517689
+        x: 0.6132541823163866
+        y: 0.6132541823163866
+        z: 0.6132541823163866
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4256,10 +4446,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5150252720482311
-        y: 0.5150252720482311
-        z: 0.5150252720482311
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.8867458176836134
+        y: 0.8867458176836134
+        z: 0.8867458176836134
+    t: 5000
   90: !Arena
     blackouts: []
     items:
@@ -4268,22 +4468,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.512167936460326
+        x: 20.744653671881146
         y: 0
-        z: 18.098943758224742
+        z: 21.31473727502732
       rotations:
-      - 52.61504602474939
+      - 209.52676965408602
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 31.814501586341155
+        x: 11.380880770295255
         y: 0
-        z: 29.02795341909917
+        z: 4.782352176454101
       rotations:
-      - 232.6150460247494
+      - 29.526769654086024
       sizes:
       - !Vector3
         x: -1
@@ -4296,9 +4496,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4760525357085372
-        y: 1.4760525357085372
-        z: 1.4760525357085372
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4306,10 +4506,30 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5239474642914628
-        y: 0.5239474642914628
-        z: 0.5239474642914628
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    t: 5000
   91: !Arena
     blackouts: []
     items:
@@ -4318,22 +4538,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.824341399589315
+        x: 22.646325786768344
         y: 0
-        z: 19.91583874547532
+        z: 22.491740341029193
       rotations:
-      - 88.84534816154124
+      - 226.72329868986287
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 33.82068642258163
+        x: 10.99750054092765
         y: 0
-        z: 20.27855876617937
+        z: 11.523382652119494
       rotations:
-      - 268.8453481615412
+      - 46.72329868986287
       sizes:
       - !Vector3
         x: -1
@@ -4346,9 +4566,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.2292454287061216
-        y: 1.2292454287061216
-        z: 1.2292454287061216
+        x: 0.6010143128206029
+        y: 0.6010143128206029
+        z: 0.6010143128206029
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4356,10 +4576,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7707545712938784
-        y: 0.7707545712938784
-        z: 0.7707545712938784
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.8989856871793971
+        y: 0.8989856871793971
+        z: 0.8989856871793971
+    t: 5000
   92: !Arena
     blackouts: []
     items:
@@ -4368,22 +4598,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.852390144156267
+        x: 24.031813431145416
         y: 0
-        z: 17.17136258939015
+        z: 16.70400397144378
       rotations:
-      - 300.2394882932936
+      - 309.26590099252485
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 11.893471419148913
+        x: 9.321689995615628
         y: 0
-        z: 24.725594878554535
+        z: 28.72948809938962
       rotations:
-      - 120.23948829329362
+      - 129.26590099252485
       sizes:
       - !Vector3
         x: -1
@@ -4396,10 +4626,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.4799256645610388
+        y: 1.4799256645610388
+        z: 1.4799256645610388
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5200743354389612
+        y: 0.5200743354389612
+        z: 0.5200743354389612
+    t: 5000
   93: !Arena
     blackouts: []
     items:
@@ -4408,22 +4648,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.8927674534609
+        x: 24.67942526166697
         y: 0
-        z: 23.735402827399263
+        z: 18.834583130274318
       rotations:
-      - 232.63993154396303
+      - 283.9850721305306
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 11.380526039810379
+        x: 6.2426095096988305
         y: 0
-        z: 13.419428225878193
+        z: 23.426295765879846
       rotations:
-      - 52.63993154396303
+      - 103.98507213053063
       sizes:
       - !Vector3
         x: -1
@@ -4436,9 +4676,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0929819994190917
-        y: 1.0929819994190917
-        z: 1.0929819994190917
+        x: 1.2366013630419386
+        y: 1.2366013630419386
+        z: 1.2366013630419386
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4446,10 +4686,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9070180005809083
-        y: 0.9070180005809083
-        z: 0.9070180005809083
-    t: 500
+        x: 0.7633986369580614
+        y: 0.7633986369580614
+        z: 0.7633986369580614
+    t: 5000
   94: !Arena
     blackouts: []
     items:
@@ -4458,22 +4698,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.38113773149273
+        x: 23.177244617309995
         y: 0
-        z: 21.045137671427682
+        z: 23.357037963299476
       rotations:
-      - 232.88439596550705
+      - 223.42388185021875
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 8.622423803290236
+        x: 11.49160952199326
         y: 0
-        z: 11.390334778655003
+        z: 11.010138254502056
       rotations:
-      - 52.88439596550705
+      - 43.42388185021878
       sizes:
       - !Vector3
         x: -1
@@ -4489,7 +4729,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   95: !Arena
     blackouts: []
     items:
@@ -4498,22 +4738,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.02751029571674
+        x: 19.997908036975183
         y: 0
-        z: 15.041338049446267
+        z: 19.055979718038394
       rotations:
-      - 21.692004092852898
+      - 0.12696809412841503
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 24.31100080301632
+        x: 20.037796207504066
         y: 0
-        z: 30.837468811271332
+        z: 37.05593552170224
       rotations:
-      - 201.6920040928529
+      - 180.12696809412842
       sizes:
       - !Vector3
         x: -1
@@ -4529,7 +4769,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   96: !Arena
     blackouts: []
     items:
@@ -4538,22 +4778,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.639440863630806
+        x: 19.294033585189695
         y: 0
-        z: 19.347139628583
+        z: 21.19170084069979
       rotations:
-      - 64.366114133797
+      - 149.35739860363017
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 34.867823705964724
+        x: 26.93925258251027
         y: 0
-        z: 27.134282257470844
+        z: 8.28625135286681
       rotations:
-      - 244.366114133797
+      - 329.35739860363014
       sizes:
       - !Vector3
         x: -1
@@ -4566,9 +4806,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7394574009727517
-        y: 0.7394574009727517
-        z: 0.7394574009727517
+        x: 1.497198913959759
+        y: 1.497198913959759
+        z: 1.497198913959759
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4576,20 +4816,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6077135184483208
-        y: 0.6077135184483208
-        z: 0.6077135184483208
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.6528290805789275
-        y: 0.6528290805789275
-        z: 0.6528290805789275
-    t: 500
+        x: 0.502801086040241
+        y: 0.502801086040241
+        z: 0.502801086040241
+    t: 5000
   97: !Arena
     blackouts: []
     items:
@@ -4598,22 +4828,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.815339801347463
+        x: 21.860869820431926
         y: 0
-        z: 16.042250665472526
+        z: 21.96875979467574
       rotations:
-      - 324.5739051506223
+      - 223.3862654750808
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 11.80194505822324
+        x: 11.557169991887386
         y: 0
-        z: 31.524664438270477
+        z: 11.067669489424102
       rotations:
-      - 144.5739051506223
+      - 43.38626547508079
       sizes:
       - !Vector3
         x: -1
@@ -4626,9 +4856,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.3820243206734828
-        y: 1.3820243206734828
-        z: 1.3820243206734828
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4636,10 +4866,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6179756793265172
-        y: 0.6179756793265172
-        z: 0.6179756793265172
-    t: 500
+        x: 0.7622931796467948
+        y: 0.7622931796467948
+        z: 0.7622931796467948
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.7377068203532052
+        y: 0.7377068203532052
+        z: 0.7377068203532052
+    t: 5000
   98: !Arena
     blackouts: []
     items:
@@ -4648,22 +4888,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.606984098827432
+        x: 18.195916900602597
         y: 0
-        z: 24.931980744837055
+        z: 17.967804374858066
       rotations:
-      - 145.4735016766392
+      - 41.597089343294044
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.242368550382913
+        x: 28.818128472547798
         y: 0
-        z: 10.92629024166218
+        z: 29.933113452388554
       rotations:
-      - 325.4735016766392
+      - 221.59708934329404
       sizes:
       - !Vector3
         x: -1
@@ -4676,10 +4916,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   99: !Arena
     blackouts: []
     items:
@@ -4688,22 +4938,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.910839661987938
+        x: 19.72662046347936
         y: 0
-        z: 17.765593792060894
+        z: 20.566591171576764
       rotations:
-      - 61.34684733736253
+      - 154.2427485161202
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.951455990569762
+        x: 27.548686933560017
         y: 0
-        z: 25.437692143461334
+        z: 4.355012712412464
       rotations:
-      - 241.34684733736253
+      - 334.2427485161202
       sizes:
       - !Vector3
         x: -1
@@ -4716,9 +4966,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.172725603151634
-        y: 1.172725603151634
-        z: 1.172725603151634
+        x: 1.0808384458475015
+        y: 1.0808384458475015
+        z: 1.0808384458475015
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4726,10 +4976,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.827274396848366
-        y: 0.827274396848366
-        z: 0.827274396848366
-    t: 500
+        x: 0.9191615541524985
+        y: 0.9191615541524985
+        z: 0.9191615541524985
+    t: 5000
   100: !Arena
     blackouts: []
     items:
@@ -4738,22 +4988,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.47078437103363
+        x: 21.40845120800095
         y: 0
-        z: 19.75691830535808
+        z: 23.763596031868218
       rotations:
-      - 297.30881770626956
+      - 200.51736573597293
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 4.476944907199631
+        x: 15.80059104065062
         y: 0
-        z: 28.015071803877355
+        z: 8.778539997823984
       rotations:
-      - 117.30881770626956
+      - 20.51736573597293
       sizes:
       - !Vector3
         x: -1
@@ -4769,7 +5019,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   101: !Arena
     blackouts: []
     items:
@@ -4778,22 +5028,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.273408786303158
+        x: 15.25983986215081
         y: 0
-        z: 19.702444023114595
+        z: 23.268667133717642
       rotations:
-      - 67.72976077446523
+      - 124.58893974952572
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 35.930729242539826
+        x: 28.43177535810422
         y: 0
-        z: 26.524003611525416
+        z: 14.185709724897396
       rotations:
-      - 247.72976077446523
+      - 304.5889397495257
       sizes:
       - !Vector3
         x: -1
@@ -4806,9 +5056,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9235093931601472
-        y: 0.9235093931601472
-        z: 0.9235093931601472
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4816,10 +5066,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.0764906068398528
-        y: 1.0764906068398528
-        z: 1.0764906068398528
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   102: !Arena
     blackouts: []
     items:
@@ -4828,22 +5078,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 20.701532898128495
+        x: 23.438491360010318
         y: 0
-        z: 16.457291905749805
+        z: 22.941894878628222
       rotations:
-      - 348.7991003884437
+      - 229.4504573268352
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 17.78778659783241
+        x: 9.761297292425168
         y: 0
-        z: 31.171573488535657
+        z: 11.23999920153327
       rotations:
-      - 168.79910038844378
+      - 49.45045732683519
       sizes:
       - !Vector3
         x: -1
@@ -4856,9 +5106,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.038515815103887
-        y: 1.038515815103887
-        z: 1.038515815103887
+        x: 1.0902174957405957
+        y: 1.0902174957405957
+        z: 1.0902174957405957
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4866,10 +5116,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.9614841848961131
-        y: 0.9614841848961131
-        z: 0.9614841848961131
-    t: 500
+        x: 0.9097825042594043
+        y: 0.9097825042594043
+        z: 0.9097825042594043
+    t: 5000
   103: !Arena
     blackouts: []
     items:
@@ -4878,22 +5128,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.331746305230187
+        x: 17.98432048480523
         y: 0
-        z: 17.759064933509467
+        z: 16.180335279129867
       rotations:
-      - 49.97475229814029
+      - 27.821108776020083
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.349685359538515
+        x: 26.385145555336763
         y: 0
-        z: 28.692191786259052
+        z: 32.099698901282885
       rotations:
-      - 229.9747522981403
+      - 207.82110877602008
       sizes:
       - !Vector3
         x: -1
@@ -4906,9 +5156,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4110762247911035
-        y: 1.4110762247911035
-        z: 1.4110762247911035
+        x: 0.6780586009687446
+        y: 0.6780586009687446
+        z: 0.6780586009687446
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4916,10 +5166,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5889237752088965
-        y: 0.5889237752088965
-        z: 0.5889237752088965
-    t: 500
+        x: 1.3219413990312554
+        y: 1.3219413990312554
+        z: 1.3219413990312554
+    t: 5000
   104: !Arena
     blackouts: []
     items:
@@ -4928,22 +5178,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.765764184833547
+        x: 23.404280924347454
         y: 0
-        z: 20.607606957151546
+        z: 20.627965621020085
       rotations:
-      - 257.60959892152937
+      - 259.5485058971004
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 8.115140587305195
+        x: 8.653148421410656
         y: 0
-        z: 17.38903146424395
+        z: 17.906919888070796
       rotations:
-      - 77.60959892152937
+      - 79.54850589710043
       sizes:
       - !Vector3
         x: -1
@@ -4956,9 +5206,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8646368197990599
-        y: 0.8646368197990599
-        z: 0.8646368197990599
+        x: 0.8737466486817609
+        y: 0.8737466486817609
+        z: 0.8737466486817609
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -4966,10 +5216,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.13536318020094
-        y: 1.13536318020094
-        z: 1.13536318020094
-    t: 500
+        x: 1.1262533513182391
+        y: 1.1262533513182391
+        z: 1.1262533513182391
+    t: 5000
   105: !Arena
     blackouts: []
     items:
@@ -4978,22 +5228,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.895096705401187
+        x: 19.447526395926857
         y: 0
-        z: 19.58255105483544
+        z: 18.78970541369634
       rotations:
-      - 282.4226345534431
+      - 24.535684047943278
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 5.293111390325308
+        x: 26.506944523001515
         y: 0
-        z: 23.239610474369783
+        z: 34.25465338344812
       rotations:
-      - 102.42263455344312
+      - 204.53568404794328
       sizes:
       - !Vector3
         x: -1
@@ -5006,9 +5256,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5534408784586131
-        y: 0.5534408784586131
-        z: 0.5534408784586131
+        x: 1.1607085840911986
+        y: 1.1607085840911986
+        z: 1.1607085840911986
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5016,20 +5266,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.863287119746168
-        y: 0.863287119746168
-        z: 0.863287119746168
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.5832720017952189
-        y: 0.5832720017952189
-        z: 0.5832720017952189
-    t: 500
+        x: 0.8392914159088014
+        y: 0.8392914159088014
+        z: 0.8392914159088014
+    t: 5000
   106: !Arena
     blackouts: []
     items:
@@ -5038,22 +5278,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.312365672770197
+        x: 19.448395532219358
         y: 0
-        z: 16.01750253179233
+        z: 21.13452979192953
       rotations:
-      - 49.64959943627966
+      - 154.0711391301934
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.74385190765627
+        x: 26.007218367148084
         y: 0
-        z: 25.72940875362181
+        z: 7.644465187932354
       rotations:
-      - 229.64959943627966
+      - 334.0711391301934
       sizes:
       - !Vector3
         x: -1
@@ -5066,9 +5306,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5197152456269377
-        y: 0.5197152456269377
-        z: 0.5197152456269377
+        x: 1.4385762355881822
+        y: 1.4385762355881822
+        z: 1.4385762355881822
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5076,10 +5316,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4802847543730624
-        y: 1.4802847543730624
-        z: 1.4802847543730624
-    t: 500
+        x: 0.5614237644118178
+        y: 0.5614237644118178
+        z: 0.5614237644118178
+    t: 5000
   107: !Arena
     blackouts: []
     items:
@@ -5088,22 +5328,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.352304167813443
+        x: 16.098538297253803
         y: 0
-        z: 23.5562984996685
+        z: 20.521907628184962
       rotations:
-      - 155.140878426512
+      - 97.61935533810066
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 24.65813262475219
+        x: 31.95727118660067
         y: 0
-        z: 9.946135845546342
+        z: 18.400447955141928
       rotations:
-      - 335.140878426512
+      - 277.61935533810066
       sizes:
       - !Vector3
         x: -1
@@ -5119,7 +5359,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
+    t: 5000
   108: !Arena
     blackouts: []
     items:
@@ -5128,22 +5368,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.609663261105965
+        x: 20.099861529008002
         y: 0
-        z: 23.334967803728432
+        z: 21.333642825646084
       rotations:
-      - 144.36895463838044
+      - 184.28224592105565
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 26.93067859342074
+        x: 18.755806419014014
         y: 0
-        z: 10.33040425185354
+        z: 3.383893081950518
       rotations:
-      - 324.36895463838044
+      - 4.282245921055619
       sizes:
       - !Vector3
         x: -1
@@ -5156,9 +5396,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5225297267015008
-        y: 0.5225297267015008
-        z: 0.5225297267015008
+        x: 0.6669412809562452
+        y: 0.6669412809562452
+        z: 0.6669412809562452
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5166,10 +5406,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.4774702732984992
-        y: 1.4774702732984992
-        z: 1.4774702732984992
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.8330587190437548
+        y: 0.8330587190437548
+        z: 0.8330587190437548
+    t: 5000
   109: !Arena
     blackouts: []
     items:
@@ -5178,22 +5428,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.491252875315663
+        x: 24.639827563664106
         y: 0
-        z: 17.98218933611391
+        z: 20.885169683043273
       rotations:
-      - 309.0060259487906
+      - 259.1991035253346
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.83505632730064
+        x: 6.958709826002597
         y: 0
-        z: 27.423221167118538
+        z: 17.512029373635503
       rotations:
-      - 129.00602594879058
+      - 79.19910352533458
       sizes:
       - !Vector3
         x: -1
@@ -5206,9 +5456,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6008505394569827
-        y: 0.6008505394569827
-        z: 0.6008505394569827
+        x: 0.8563067998943321
+        y: 0.8563067998943321
+        z: 0.8563067998943321
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5216,20 +5466,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5690213075553355
-        y: 0.5690213075553355
-        z: 0.5690213075553355
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.8301281529876817
-        y: 0.8301281529876817
-        z: 0.8301281529876817
-    t: 500
+        x: 1.1436932001056679
+        y: 1.1436932001056679
+        z: 1.1436932001056679
+    t: 5000
   110: !Arena
     blackouts: []
     items:
@@ -5238,22 +5478,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.37398103029421
+        x: 15.795875429702589
         y: 0
-        z: 22.73734726659712
+        z: 15.42034810848924
       rotations:
-      - 220.93366265027507
+      - 42.551959998902646
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.58065493981546
+        x: 27.292270723086524
         y: 0
-        z: 9.138911337284027
+        z: 27.943642214205184
       rotations:
-      - 40.933662650275096
+      - 222.55195999890265
       sizes:
       - !Vector3
         x: -1
@@ -5266,9 +5506,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6743591429515461
-        y: 0.6743591429515461
-        z: 0.6743591429515461
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5276,10 +5516,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.325640857048454
-        y: 1.325640857048454
-        z: 1.325640857048454
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   111: !Arena
     blackouts: []
     items:
@@ -5288,22 +5528,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 15.110903802974368
+        x: 17.347537577671655
         y: 0
-        z: 21.97408059300185
+        z: 15.206029091502476
       rotations:
-      - 111.98748135190665
+      - 28.955374004189423
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 32.72895173891611
+        x: 24.609461443513965
         y: 0
-        z: 14.860404544230793
+        z: 28.330984777778518
       rotations:
-      - 291.98748135190664
+      - 208.95537400418942
       sizes:
       - !Vector3
         x: -1
@@ -5316,9 +5556,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8679999613983949
-        y: 0.8679999613983949
-        z: 0.8679999613983949
+        x: 1.163871288330153
+        y: 1.163871288330153
+        z: 1.163871288330153
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5326,10 +5566,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1320000386016051
-        y: 1.1320000386016051
-        z: 1.1320000386016051
-    t: 500
+        x: 0.836128711669847
+        y: 0.836128711669847
+        z: 0.836128711669847
+    t: 5000
   112: !Arena
     blackouts: []
     items:
@@ -5338,22 +5578,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 16.151004071829767
+        x: 24.655856289654302
         y: 0
-        z: 22.150086884120242
+        z: 18.45024086367203
       rotations:
-      - 119.18815396759027
+      - 288.4106571360015
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 29.246347942379497
+        x: 8.52596246431882
         y: 0
-        z: 14.834899332727206
+        z: 23.819274778949925
       rotations:
-      - 299.18815396759027
+      - 108.41065713600148
       sizes:
       - !Vector3
         x: -1
@@ -5366,10 +5606,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.150087965460775
+        y: 1.150087965460775
+        z: 1.150087965460775
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.849912034539225
+        y: 0.849912034539225
+        z: 0.849912034539225
+    t: 5000
   113: !Arena
     blackouts: []
     items:
@@ -5378,22 +5628,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.442855897898603
+        x: 18.212888104475024
         y: 0
-        z: 17.495644966340766
+        z: 17.04374010072752
       rotations:
-      - 306.03237824630924
+      - 31.15371109792602
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 10.503900639474576
+        x: 27.524932449644623
         y: 0
-        z: 26.907522399695985
+        z: 32.44782495227241
       rotations:
-      - 126.03237824630924
+      - 211.15371109792602
       sizes:
       - !Vector3
         x: -1
@@ -5406,10 +5656,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.05106576609228
+        y: 1.05106576609228
+        z: 1.05106576609228
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.94893423390772
+        y: 0.94893423390772
+        z: 0.94893423390772
+    t: 5000
   114: !Arena
     blackouts: []
     items:
@@ -5418,22 +5678,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.717320036862645
+        x: 21.27681060784902
         y: 0
-        z: 22.983423839290957
+        z: 22.22308361988479
       rotations:
-      - 174.58737311113492
+      - 209.87056687702034
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 21.415218884518907
+        x: 12.312048399872307
         y: 0
-        z: 5.063682225553119
+        z: 6.614334837409221
       rotations:
-      - 354.5873731111349
+      - 29.870566877020337
       sizes:
       - !Vector3
         x: -1
@@ -5446,10 +5706,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.5
+        y: 0.5
+        z: 0.5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   115: !Arena
     blackouts: []
     items:
@@ -5458,22 +5728,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.51437566964407
+        x: 22.776726888191476
         y: 0
-        z: 24.275840029738042
+        z: 19.038376344223675
       rotations:
-      - 160.8404115531591
+      - 289.10176436785173
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 24.750184837074297
+        x: 6.712766687202716
         y: 0
-        z: 6.328286323803823
+        z: 24.60157530354997
       rotations:
-      - 340.84041155315913
+      - 109.10176436785173
       sizes:
       - !Vector3
         x: -1
@@ -5486,10 +5756,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 0.8266354968239669
+        y: 0.8266354968239669
+        z: 0.8266354968239669
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.1733645031760331
+        y: 1.1733645031760331
+        z: 1.1733645031760331
+    t: 5000
   116: !Arena
     blackouts: []
     items:
@@ -5498,22 +5778,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.735215521404335
+        x: 18.766351525139328
         y: 0
-        z: 24.85538805141294
+        z: 24.7560045982409
       rotations:
-      - 176.87851510448164
+      - 165.45865650170353
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 20.71537388852216
+        x: 23.53684368916381
         y: 0
-        z: 6.8820942638132685
+        z: 6.364636935313246
       rotations:
-      - 356.8785151044816
+      - 345.45865650170356
       sizes:
       - !Vector3
         x: -1
@@ -5526,9 +5806,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6572442452797482
-        y: 0.6572442452797482
-        z: 0.6572442452797482
+        x: 0.9784676505291876
+        y: 0.9784676505291876
+        z: 0.9784676505291876
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5536,9 +5816,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.5964988572334824
-        y: 0.5964988572334824
-        z: 0.5964988572334824
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5546,10 +5826,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.7462568974867694
-        y: 0.7462568974867694
-        z: 0.7462568974867694
-    t: 500
+        x: 0.5215323494708124
+        y: 0.5215323494708124
+        z: 0.5215323494708124
+    t: 5000
   117: !Arena
     blackouts: []
     items:
@@ -5558,22 +5838,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.933953285361177
+        x: 18.369089072353265
         y: 0
-        z: 24.7416628237255
+        z: 18.86652602711288
       rotations:
-      - 167.3291332182985
+      - 55.20091557622908
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 22.224205465432387
+        x: 30.6864640062853
         y: 0
-        z: 10.106969776328276
+        z: 27.427032714041104
       rotations:
-      - 347.32913321829847
+      - 235.20091557622908
       sizes:
       - !Vector3
         x: -1
@@ -5586,9 +5866,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.779388401336949
-        y: 0.779388401336949
-        z: 0.779388401336949
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5596,20 +5876,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.6655619983792296
-        y: 0.6655619983792296
-        z: 0.6655619983792296
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.5550496002838214
-        y: 0.5550496002838214
-        z: 0.5550496002838214
-    t: 500
+        x: 1.5
+        y: 1.5
+        z: 1.5
+    t: 5000
   118: !Arena
     blackouts: []
     items:
@@ -5618,22 +5888,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 21.561901831123187
+        x: 15.507459199350304
         y: 0
-        z: 15.229999006841059
+        z: 20.484620420201896
       rotations:
-      - 341.8693455272371
+      - 96.15681638997394
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 16.582942927525018
+        x: 34.39786872502294
         y: 0
-        z: 30.43558903933505
+        z: 18.446869711116857
       rotations:
-      - 161.8693455272371
+      - 276.1568163899739
       sizes:
       - !Vector3
         x: -1
@@ -5646,20 +5916,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.182618869555849
-        y: 1.182618869555849
-        z: 1.182618869555849
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.817381130444151
-        y: 0.817381130444151
-        z: 0.817381130444151
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   119: !Arena
     blackouts: []
     items:
@@ -5668,22 +5928,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.374133024318876
+        x: 21.90462702242874
         y: 0
-        z: 24.152019226089635
+        z: 23.044474444379144
       rotations:
-      - 209.7610092236974
+      - 212.03014895166814
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 14.928383277020878
+        x: 12.358049238108645
         y: 0
-        z: 11.130467448340111
+        z: 7.784629995370956
       rotations:
-      - 29.761009223697442
+      - 32.03014895166814
       sizes:
       - !Vector3
         x: -1
@@ -5696,10 +5956,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.4917255606647193
+        y: 1.4917255606647193
+        z: 1.4917255606647193
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.5082744393352807
+        y: 0.5082744393352807
+        z: 0.5082744393352807
+    t: 5000
   120: !Arena
     blackouts: []
     items:
@@ -5708,22 +5978,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.55414197379083
+        x: 17.168072930390185
         y: 0
-        z: 15.261616090053629
+        z: 16.439686392593508
       rotations:
-      - 323.1273626053236
+      - 38.49926816331288
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 14.553568172426779
+        x: 27.750651816583794
         y: 0
-        z: 27.261185717594408
+        z: 29.744160231024296
       rotations:
-      - 143.12736260532358
+      - 218.49926816331288
       sizes:
       - !Vector3
         x: -1
@@ -5736,9 +6006,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.754432298629405
-        y: 0.754432298629405
-        z: 0.754432298629405
+        x: 0.5
+        y: 0.5
+        z: 0.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5746,10 +6016,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.245567701370595
-        y: 1.245567701370595
-        z: 1.245567701370595
-    t: 500
+        x: 0.8289539027178943
+        y: 0.8289539027178943
+        z: 0.8289539027178943
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.6710460972821057
+        y: 0.6710460972821057
+        z: 0.6710460972821057
+    t: 5000
   121: !Arena
     blackouts: []
     items:
@@ -5758,22 +6038,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 23.21693980178074
+        x: 23.859530905844093
         y: 0
-        z: 18.78319886933235
+        z: 15.309342371994353
       rotations:
-      - 290.71902532607976
+      - 320.5520309889892
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 6.381060888027772
+        x: 13.693495121857486
         y: 0
-        z: 25.151336839056952
+        z: 27.664572699216254
       rotations:
-      - 110.71902532607976
+      - 140.5520309889892
       sizes:
       - !Vector3
         x: -1
@@ -5786,9 +6066,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1930851453102915
-        y: 1.1930851453102915
-        z: 1.1930851453102915
+        x: 1.0890796154518314
+        y: 1.0890796154518314
+        z: 1.0890796154518314
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -5796,10 +6076,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8069148546897085
-        y: 0.8069148546897085
-        z: 0.8069148546897085
-    t: 500
+        x: 0.9109203845481686
+        y: 0.9109203845481686
+        z: 0.9109203845481686
+    t: 5000
   122: !Arena
     blackouts: []
     items:
@@ -5808,22 +6088,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 22.812967242813787
+        x: 19.423745500562486
         y: 0
-        z: 23.493278495929523
+        z: 23.41824555351248
       rotations:
-      - 218.84280257727946
+      - 170.4309393232326
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 12.777993839671108
+        x: 21.91728987173873
         y: 0
-        z: 11.031364164727472
+        z: 8.626956344353758
       rotations:
-      - 38.842802577279485
+      - 350.43093932323256
       sizes:
       - !Vector3
         x: -1
@@ -5836,20 +6116,10 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.259929635073205
-        y: 1.259929635073205
-        z: 1.259929635073205
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.740070364926795
-        y: 0.740070364926795
-        z: 0.740070364926795
-    t: 500
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
   123: !Arena
     blackouts: []
     items:
@@ -5858,22 +6128,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 17.053466245641275
+        x: 24.208455065924483
         y: 0
-        z: 22.411853640628188
+        z: 23.183265993895
       rotations:
-      - 129.30167333315626
+      - 232.89622043940233
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 28.660791916618635
+        x: 12.245293025827097
         y: 0
-        z: 12.91080155320808
+        z: 14.13435699875238
       rotations:
-      - 309.30167333315626
+      - 52.89622043940233
       sizes:
       - !Vector3
         x: -1
@@ -5886,10 +6156,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.486575397403304
+        y: 1.486575397403304
+        z: 1.486575397403304
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.513424602596696
+        y: 0.513424602596696
+        z: 0.513424602596696
+    t: 5000
   124: !Arena
     blackouts: []
     items:
@@ -5898,22 +6178,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 19.809816424281266
+        x: 19.403819476681427
         y: 0
-        z: 17.690702055915253
+        z: 20.243128563957995
       rotations:
-      - 4.708002521348817
+      - 112.18614148333356
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 21.36929288614264
+        x: 36.07113455193354
         y: 0
-        z: 36.626594777540504
+        z: 13.446025638279025
       rotations:
-      - 184.70800252134882
+      - 292.1861414833336
       sizes:
       - !Vector3
         x: -1
@@ -5926,10 +6206,20 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
-        z: 2
-    t: 500
+        x: 1.316859083061152
+        y: 1.316859083061152
+        z: 1.316859083061152
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.683140916938848
+        y: 0.683140916938848
+        z: 0.683140916938848
+    t: 5000
   125: !Arena
     blackouts: []
     items:
@@ -5938,22 +6228,72 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 24.09619754460958
+        x: 20.532049864120474
         y: 0
-        z: 24.960205762830228
+        z: 18.016701968964068
       rotations:
-      - 219.55030360925372
+      - 344.98310772990476
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 13.271355177789152
+        x: 16.386388845913288
         y: 0
-        z: 11.85208660966834
+        z: 33.47029361369564
       rotations:
-      - 39.55030360925372
+      - 164.98310772990476
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: -1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 0.9679743814709696
+        y: 0.9679743814709696
+        z: 0.9679743814709696
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1.0320256185290304
+        y: 1.0320256185290304
+        z: 1.0320256185290304
+    t: 5000
+  126: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 16.77505087411383
+        y: 0
+        z: 21.812561688139628
+      rotations:
+      - 119.3378807033608
+      sizes: []
+    - !Item
+      colors: []
+      name: BadGoalBounce
+      positions:
+      - !Vector3
+        x: 32.466470415552585
+        y: 0
+        z: 12.993301357785729
+      rotations:
+      - 299.3378807033608
       sizes:
       - !Vector3
         x: -1
@@ -5969,57 +6309,7 @@ arenas:
         x: 2
         y: 2
         z: 2
-    t: 500
-  126: !Arena
-    blackouts: []
-    items:
-    - !Item
-      colors: []
-      name: Agent
-      positions:
-      - !Vector3
-        x: 24.232852378813078
-        y: 0
-        z: 20.22168678989124
-      rotations:
-      - 267.00199248575825
-      sizes: []
-    - !Item
-      colors: []
-      name: BadGoalBounce
-      positions:
-      - !Vector3
-        x: 7.256119358153015
-        y: 0
-        z: 19.332565906529346
-      rotations:
-      - 87.00199248575825
-      sizes:
-      - !Vector3
-        x: -1
-        y: -1
-        z: -1
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1.3019350452925118
-        y: 1.3019350452925118
-        z: 1.3019350452925118
-    - !Item
-      colors: []
-      name: GoodGoalMulti
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 0.6980649547074882
-        y: 0.6980649547074882
-        z: 0.6980649547074882
-    t: 500
+    t: 5000
   127: !Arena
     blackouts: []
     items:
@@ -6028,22 +6318,22 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 18.158495548328858
+        x: 24.65244295407103
         y: 0
-        z: 18.62824681394745
+        z: 23.858161888404084
       rotations:
-      - 53.31724347262295
+      - 230.33187821410402
       sizes: []
     - !Item
       colors: []
       name: BadGoalBounce
       positions:
       - !Vector3
-        x: 30.187827544767536
+        x: 13.106120452330945
         y: 0
-        z: 27.589004132358472
+        z: 14.283067283868284
       rotations:
-      - 233.31724347262295
+      - 50.331878214103995
       sizes:
       - !Vector3
         x: -1
@@ -6056,9 +6346,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 0.8934107010498893
-        y: 0.8934107010498893
-        z: 0.8934107010498893
+        x: 1.20114985010234
+        y: 1.20114985010234
+        z: 1.20114985010234
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -6066,7 +6356,7 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1.1065892989501107
-        y: 1.1065892989501107
-        z: 1.1065892989501107
-    t: 500
+        x: 0.7988501498976599
+        y: 0.7988501498976599
+        z: 0.7988501498976599
+    t: 5000

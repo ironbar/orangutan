@@ -10,7 +10,7 @@ DEFAULT_TIME_LIMIT = 500
 DEFAULT_REWARD = 2
 
 def create_arena_with_green_and_yellow_goal_in_front_of_agent(t=DEFAULT_TIME_LIMIT):
-    arena = Arena(t=DEFAULT_TIME_LIMIT, items=[])
+    arena = Arena(t=t, items=[])
     agent, x, z, angle = _create_agent_looking_center_at_random_position()
 
     arena.items.append(agent)
@@ -25,7 +25,7 @@ def create_arena_with_green_and_yellow_goal_in_front_of_agent(t=DEFAULT_TIME_LIM
     return arena
 
 def create_arena_with_red_goal_coming(t=DEFAULT_TIME_LIMIT):
-    arena = Arena(t=DEFAULT_TIME_LIMIT, items=[])
+    arena = Arena(t=t, items=[])
     agent, x, z, angle = _create_agent_looking_center_closer_to_center()
 
     arena.items.append(agent)
