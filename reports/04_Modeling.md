@@ -1575,6 +1575,13 @@ green. The first epoch clearly shows that it takes frequently the green reward o
 this training with more time can improve that. I'm going to launch 080 on same conditions but training from zero.
 **It's quite surprising but the model is unable to learn to take yellow first in this conditions.**
 
+Maybe I need more capacity? Let's try to increase the model capacity using current architecture.
+I have trained 081 and 082 using more memory or more visual capacity. However it has not learned preferences.
+I'm going to repeat the experiment but using only the levels of preference, not the level of bad goal coming.
+
+Still is not learning preferences, so maybe the problem lies on the arenas configuration file. I'm going to
+create a script to get the first image of each arena for debugging.
+
 ### Results
 
 The first model trained with incorrect arena configuration achieves a score of 25 on food category after
