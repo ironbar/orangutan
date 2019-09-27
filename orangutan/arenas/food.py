@@ -15,12 +15,16 @@ def create_arena_with_green_and_yellow_goal_in_front_of_agent(t=DEFAULT_TIME_LIM
 
     arena.items.append(agent)
     size = np.random.uniform(0.5, DEFAULT_REWARD - 0.5)
+    angle_yellow = angle + np.random.randint(-20, 21)
     arena.items.append(_create_goal_in_front_of_agent(
-        x, z, angle + np.random.randint(-20, 21), goal_type='GoodGoalMulti',
+        x, z, angle_yellow, goal_type='GoodGoalMulti',
         min_distance=5, max_distance=20, size=size))
     size = DEFAULT_REWARD - size
+    angle_green = angle + np.random.randint(-20, 21)
+    while abs(angle_yellow - angle_green) < 5:
+        angle_green = angle + np.random.randint(-20, 21)
     arena.items.append(_create_goal_in_front_of_agent(
-        x, z, angle + np.random.randint(-20, 21), goal_type='GoodGoal',
+        x, z, angle_green, goal_type='GoodGoal',
         min_distance=5, max_distance=20, size=size))
     return arena
 
