@@ -17,7 +17,7 @@ from animalai.envs.arena_config import ArenaConfig
 N_EPISODES = 30
 GRAY_FRAMES = 5
 SAVE_FOLDER = '/aaio/test/_temp/%s' % sys.argv[1]
-EPSILON = 1.e-1
+EPSILON = 1.e-2
 
 def main():
     # Load the agent from the submission

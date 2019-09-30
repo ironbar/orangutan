@@ -1580,7 +1580,15 @@ I have trained 081 and 082 using more memory or more visual capacity. However it
 I'm going to repeat the experiment but using only the levels of preference, not the level of bad goal coming.
 
 Still is not learning preferences, so maybe the problem lies on the arenas configuration file. I'm going to
-create a script to get the first image of each arena for debugging.
+create a script to get the first image of each arena for debugging. I have slighlty modified the configuration
+so both goals are clearly visible at the start of the episode. I'm going to run new training using that configuraion.
+
+The models have not still learn preferences. Maybe it's a network architecture problem. I had the thougth of having an
+output of the visual encoder of 3x3, that way it will have spatial sense. I have trained two models with that idea
+and one of them seems to have learned preferences.
+
+On 089 and 090 I will train again with preferences and dead coming with the new better architecture. In one of them I will
+train from zero and in the other I will retrain.
 
 ### Results
 
