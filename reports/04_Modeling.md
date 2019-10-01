@@ -1588,7 +1588,16 @@ output of the visual encoder of 3x3, that way it will have spatial sense. I have
 and one of them seems to have learned preferences.
 
 On 089 and 090 I will train again with preferences and dead coming with the new better architecture. In one of them I will
-train from zero and in the other I will retrain.
+train from zero and in the other I will retrain. I have mistakenly train from zero both models. At epoch 200 they have not
+learned preference over yellow.
+
+I have trained model 091 on three config files and again it's not learning correctly. I'm retraining on 092 with more entropy.
+I'm also retraining on 093 increasing the period for changing arenas from 2000 to 10000 steps, maybe the model needs more time
+to learn to optimize. Visual inspection of the tests of 091 show that it does not know how to pick big goals, so I should add
+levels with big goals, size 4 could be a good option.
+
+**The problem is that it has been a week trying to optimize for food without success**. If I cannot achieve a perfect score
+on simple train examples how can I continue to learn more complex tasks.
 
 ### Results
 
