@@ -1599,10 +1599,24 @@ levels with big goals, size 4 could be a good option.
 **The problem is that it has been a week trying to optimize for food without success**. If I cannot achieve a perfect score
 on simple train examples how can I continue to learn more complex tasks.
 
+The model 092 that was retrained with more entropy is clearly better than 091 and it solves most of the labyrinths and all
+yellow green preferences. It does not solve RedHouse or some RedWalls. So let's take this model as the base and add more
+arenas to training.
+
+To create levels with walls I can think of the different parameters that a wall level can have:
+* orientation of the wall (vertical-horizontal)
+* position of the wall
+* position of the door
+* width of the door
+* size of badgoals
+I will place two GoodGoalMulti on both sides of the wall and the start position of the agent will be random.
+
 ### Results
 
 The first model trained with incorrect arena configuration achieves a score of 25 on food category after
 230k epochs.
+
+We have probed that it's possible to train a model using deterministic arenas.
 
 <!---
 
