@@ -51,6 +51,29 @@ def create_arena_with_red_wall(t=DEFAULT_TIME_LIMIT):
         positions=[Vector3(np.random.randint(1, 7), 0, -1), Vector3(40 - np.random.randint(1, 7), 0, -1)]))
     return arena
 
+def create_arena_with_red_houses(t=DEFAULT_TIME_LIMIT):
+    arena = Arena(t=t, items=[])
+    centers, radiuses = [], []
+
+    for idx in range(4):
+        not_good_center = True
+        while not_good_center:
+            not_good_center = False
+            radius = np.random.uniform(2, 4)
+            center = np.random.randint(5, 35, 2)
+            for _center, _radius in zip(centers, radiuses):
+                distance = np.sqrt(np.sum((center - _center)**2))
+                if distance < radius + _radius + 4:
+                    not_good_center = True
+        centers.append(center)
+        radiuses.append(radius)
+        goal_size = np.random.uniform(1, 2)
+        _add_red_circle_to_arena(arena, center=center, radius=radius, goal_size=goal_size)
+        if idx < 2:
+            arena.items.append(Item(name='GoodGoalMulti', sizes=[Vector3(1,1,1)],
+                                    positions=[Vector3(center[0], 0, center[1])]))
+    return arena
+
 def _create_agent_looking_center_at_random_position():
     x, z = get_random_position()
     angle = get_angle_looking_center(x, z)
@@ -92,6 +115,16 @@ def _add_wall_to_arena(arena, orientation, position, goal_size):
         positions = [Vector3(x, 0, position) for x in x_range]
     else:
         raise Exception('Unknown orientation: %s' % orientation)
+    sizes = [Vector3(goal_size, goal_size, goal_size)]*len(positions)
+    goal = Item(name='BadGoal', sizes=sizes, positions=positions)
+    arena.items.append(goal)
+
+def _add_red_circle_to_arena(arena, center, radius, goal_size):
+    theta_range = np.linspace(0, np.pi*2, int((2*np.pi*radius)/(goal_size + 0.5)), endpoint=False)
+    theta_range += np.random.uniform(0, np.pi)
+    theta_range = theta_range.tolist()
+    theta_range.pop(np.random.randint(len(theta_range)))
+    positions = [Vector3(radius*np.cos(theta) + center[0], 0, radius*np.sin(theta)+ center[1]) for theta in theta_range]
     sizes = [Vector3(goal_size, goal_size, goal_size)]*len(positions)
     goal = Item(name='BadGoal', sizes=sizes, positions=positions)
     arena.items.append(goal)
