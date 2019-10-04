@@ -1611,6 +1611,31 @@ To create levels with walls I can think of the different parameters that a wall 
 * size of badgoals
 I will place two GoodGoalMulti on both sides of the wall and the start position of the agent will be random.
 
+I have also prepared levels for RedHouse. I'm happy because I believe this is the only viable way to try
+to improve my current score on leaderboard. I have to create richer arenas to train a better agent.
+
+The model 094 which was trained on walls does not perform better on walls tests. The model 095 that has
+been trained also on red houses is no better.
+
+#### More flexible model architecture
+
+I have the intuition that using the same mlp encoding for visual perception and speed observations does not
+have any sense and it's probably harming the model. My idea is to improve the model configuration so I can
+solve this problem and others in the future with minimal changes.
+
+  PPOPolicy(trainer_params)
+  PPOModel(h_size, normalize, use_recurrent, num_layers, visual_encoding_conf)
+  LearningModel(m_size, normalize, use_recurrent)
+
+The idea is to simplify the interface by using a simple "architecture" parameter with all the information
+inside. I will be doing changes and launching trainings to verify that it works correctly.
+
+I have implemented the changes and now it will be quite easier to add more parameters and variations to the architecture.
+The create_dc_actor_critic function receives as input the whole architecture, so this enables to add more parameters easily on demand.
+I will probably just need to modify models.py script.
+
+I'm going to train two models: one with a smaller vector encoding and one that does not use mlp for visual encoding.
+
 ### Results
 
 The first model trained with incorrect arena configuration achieves a score of 25 on food category after
