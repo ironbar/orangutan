@@ -1636,6 +1636,65 @@ I will probably just need to modify models.py script.
 
 I'm going to train two models: one with a smaller vector encoding and one that does not use mlp for visual encoding.
 
+I think that I should concentrate now on creating high quality train data and on the final stage of the challenge make many
+trainings trying architecture variations.
+
+#### 02 Preferences
+
+* Learn differences of sizes between goals, that should be green goals. If yellow goal the agent should
+pick it previously so that introduces bias in the experiment
+* Closer food is better than food away if the size is the same
+
+Forced choice could be part of this category, but it seems more reasonable to be on advanced preferences category.
+I think I can create levels for preference easily by reusing code from food category, because dead coming level
+is equivalent to these.
+
+One thing that worries me is that these levels will be quite simple and fast to pass, so they may dominate scores
+on the metrics. The only idea for solving this is to have few levels of this type.
+
+Transparent walls can be used so the agent sees the goal but it knows it has to navigate to get it.
+
+#### 03 Obstacles
+
+> Navigation around the different types of obstacles that exist in the environment.
+Navigation up ramps.
+Pushing movable objects out of the way.
+Exploration is a key component of animal behaviour. Whilst the more complex tasks involving pushing objects all appear in later categories, the agent must be able push some objects to solve all the tasks here.
+
+The only need to navigate up ramps is to climb to a platform or to climb a wall. I have
+to create levels that require those abilities.
+
+The need to push an object could arise from the object blocking the path or because it may
+be hiding the goal.
+
+All this levels should be created with generalization capacity on mind, changing one parameter
+should allow to create levels for generalization.
+
+#### 04 Avoidance
+
+> Completely avoiding red zones.
+Minimizing time spent on orange zones.
+
+For red zones we can think of many levels that can be created.
+
+For orange zones is more difficult, sometimes going to an orange zone is good and
+sometimes is bad. The agent could start on an orange zone and escape from it.
+
+#### 05 Spatial Reasoning
+
+> Navigation in restricted environments.
+Memory of exploration.
+Understanding gravity.
+
+Restricted environments refers to mazes probably and memory is required to solve a maze.
+
+Gravity could involve pussing objects to get the food, or avoid falling on an elevated
+maze or platform.
+
+#### 06 Generalization
+
+This should be faced as simple as taking previous levels and removing color information.
+
 ### Results
 
 The first model trained with incorrect arena configuration achieves a score of 25 on food category after
