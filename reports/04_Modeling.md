@@ -1635,6 +1635,7 @@ The create_dc_actor_critic function receives as input the whole architecture, so
 I will probably just need to modify models.py script.
 
 I'm going to train two models: one with a smaller vector encoding and one that does not use mlp for visual encoding.
+It seems that the one with the smaller vector encoding was better and removing the mlp for visual encoding was similar.
 
 I think that I should concentrate now on creating high quality train data and on the final stage of the challenge make many
 trainings trying architecture variations.
