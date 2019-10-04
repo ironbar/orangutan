@@ -1,0 +1,7682 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 1.0
+      rotations:
+      - 0.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.55839194724002
+        y: 0
+        z: 16.990253232305534
+      rotations:
+      - 182.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 12.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 13.380819998697055
+        y: 8.893695754478165
+        z: 1.1525231254542394
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.661026362218106
+        y: 0
+        z: 8.650438047704284
+      rotations:
+      - 163.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  1: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 37.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 221.82016988013578
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.033222596193205
+        y: 0
+        z: 31.45926503846439
+      rotations:
+      - 59.82016988013578
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 29.665256545831916
+        y: 0
+        z: 30.802345551223908
+      rotations:
+      - 221.82016988013578
+      sizes:
+      - !Vector3
+        x: 16.15777913712211
+        y: 9.117880324147404
+        z: 1.3601796176511338
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 31.11681655823014
+        y: 0
+        z: 32.189115138949646
+      rotations:
+      - 40.82016988013578
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  2: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 14.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 160.55996517182382
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.795319754792725
+        y: 0
+        z: 21.735501696770555
+      rotations:
+      - 342.5599651718238
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.99384141282165
+        y: 0
+        z: 25.684115997005325
+      rotations:
+      - 160.55996517182382
+      sizes:
+      - !Vector3
+        x: 13.348253814890143
+        y: 6.620663464235038
+        z: 1.3387490366142683
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.069119829685837
+        y: 0
+        z: 28.000265423405857
+      rotations:
+      - 359.5599651718238
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  3: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 7.0
+        y: 0
+        z: 22.0
+      rotations:
+      - 98.7461622625552
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.70186911498655
+        y: 0
+        z: 18.83021009121135
+      rotations:
+      - 280.74616226255523
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.848832069458023
+        y: 0
+        z: 20.023256604698766
+      rotations:
+      - 98.7461622625552
+      sizes:
+      - !Vector3
+        x: 15.500604625320666
+        y: 5.615275493650898
+        z: 1.3578145577165723
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.358054537126314
+        y: 0
+        z: 19.29976823639523
+      rotations:
+      - 296.74616226255523
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  4: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 14.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 116.56505117707799
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 30.525772247703134
+        y: 0
+        z: 19.012663593695052
+      rotations:
+      - 283.565051177078
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.627553482998906
+        y: 0
+        z: 17.186223258500547
+      rotations:
+      - 116.56505117707799
+      sizes:
+      - !Vector3
+        x: 18.895115569188732
+        y: 9.089534655665855
+        z: 1.5936356233502935
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.088572409183257
+        y: 0
+        z: 19.546120150015003
+      rotations:
+      - 299.565051177078
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  5: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 22.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 333.434948822922
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.341323428401203
+        y: 0
+        z: 31.77756124651816
+      rotations:
+      - 170.43494882292202
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.08065044950046
+        y: 0
+        z: 25.838699100999072
+      rotations:
+      - 333.434948822922
+      sizes:
+      - !Vector3
+        x: 14.251601709851679
+        y: 5.319540810764405
+        z: 1.6629783310855641
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.491406967869796
+        y: 0
+        z: 19.562271036135147
+      rotations:
+      - 135.43494882292202
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  6: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 11.0
+        y: 0
+        z: 8.0
+      rotations:
+      - 36.86989764584402
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.779491645106706
+        y: 0
+        z: 21.38052663514887
+      rotations:
+      - 206.86989764584402
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.6
+        y: 0
+        z: 16.8
+      rotations:
+      - 36.86989764584402
+      sizes:
+      - !Vector3
+        x: 13.301160980405891
+        y: 6.957004593318512
+        z: 1.8493035581637365
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.907085031662302
+        y: 0
+        z: 11.452610098466927
+      rotations:
+      - 234.86989764584402
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  7: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 12.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 110.55604521958347
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 29.546590435078095
+        y: 0
+        z: 15.711847689323037
+      rotations:
+      - 292.55604521958344
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.235950130828535
+        y: 0
+        z: 18.786518700939297
+      rotations:
+      - 110.55604521958347
+      sizes:
+      - !Vector3
+        x: 17.059864007299673
+        y: 6.971102043067365
+        z: 1.1184117526252892
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.62601211641551
+        y: 0
+        z: 19.179003808065637
+      rotations:
+      - 309.55604521958344
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  8: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 13.0
+        y: 0
+        z: 3.0
+      rotations:
+      - 22.38013505195957
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.559983354711363
+        y: 0
+        z: 17.256465835871577
+      rotations:
+      - 221.38013505195957
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.568997663051537
+        y: 0
+        z: 14.096137181696593
+      rotations:
+      - 22.38013505195957
+      sizes:
+      - !Vector3
+        x: 10.827835885047007
+        y: 8.538759785973749
+        z: 1.4653806374359482
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.728700152080805
+        y: 0
+        z: 7.946614608836776
+      rotations:
+      - 188.38013505195957
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  9: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 29.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 251.56505117707798
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.707208171047299
+        y: 0
+        z: 12.05851464680307
+      rotations:
+      - 52.565051177077976
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.56448372144435
+        y: 0
+        z: 19.521494573814778
+      rotations:
+      - 251.56505117707798
+      sizes:
+      - !Vector3
+        x: 17.72356523204801
+        y: 6.453382362767575
+        z: 1.2957417163946037
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.000259323266285
+        y: 0
+        z: 22.93167905486158
+      rotations:
+      - 89.56505117707798
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  10: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 25.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 194.74356283647074
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.814403697680902
+        y: 0
+        z: 21.763132796549876
+      rotations:
+      - 16.743562836470744
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.20057370792392
+        y: 0
+        z: 28.36218009011089
+      rotations:
+      - 194.74356283647074
+      sizes:
+      - !Vector3
+        x: 10.402051309469716
+        y: 8.704421129066482
+        z: 1.805769244874176
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.44532318290789
+        y: 0
+        z: 33.01654888356521
+      rotations:
+      - 355.74356283647074
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  11: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 17.0
+      rotations:
+      - 284.0362434679265
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.38658640429164
+        y: 0
+        z: 20.383510467069105
+      rotations:
+      - 103.03624346792651
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.328432498401348
+        y: 0
+        z: 19.66789187539966
+      rotations:
+      - 284.0362434679265
+      sizes:
+      - !Vector3
+        x: 11.774937666248093
+        y: 8.475573025007774
+        z: 1.9003800620429496
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.0029364831601
+        y: 0
+        z: 16.82866346371067
+      rotations:
+      - 88.03624346792651
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  12: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 1.0
+      rotations:
+      - 6.009005957494537
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.505435384425596
+        y: 0
+        z: 16.802619831359234
+      rotations:
+      - 189.00900595749454
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.151532629698472
+        y: 0
+        z: 11.939559982135465
+      rotations:
+      - 6.009005957494537
+      sizes:
+      - !Vector3
+        x: 11.638780200166053
+        y: 8.336450920661022
+        z: 1.1716683543663868
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.165022884522305
+        y: 0
+        z: 8.956306505950394
+      rotations:
+      - 174.00900595749454
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  13: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 6.0
+        y: 0
+        z: 12.0
+      rotations:
+      - 60.25511870305776
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.98526676923328
+        y: 0
+        z: 24.973970633879937
+      rotations:
+      - 220.25511870305775
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.41891770549351
+        y: 0
+        z: 17.953667260282007
+      rotations:
+      - 60.25511870305776
+      sizes:
+      - !Vector3
+        x: 11.086743599323333
+        y: 8.104955972277608
+        z: 1.3672018566016293
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 11.913427107051447
+        y: 0
+        z: 13.01556873208521
+      rotations:
+      - 260.25511870305775
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  14: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 35.0
+        y: 0
+        z: 2.0
+      rotations:
+      - 320.19442890773485
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.635500801526003
+        y: 0
+        z: 19.51468388397792
+      rotations:
+      - 157.19442890773485
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 27.317787204026242
+        y: 0
+        z: 11.21865535516851
+      rotations:
+      - 320.19442890773485
+      sizes:
+      - !Vector3
+        x: 15.285610013272946
+        y: 7.3716352388810185
+        z: 1.0542776368789153
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 30.425540554605618
+        y: 0
+        z: 7.298520622064441
+      rotations:
+      - 139.19442890773485
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  15: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 5.0
+      rotations:
+      - 348.69006752597977
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.239353894882292
+        y: 0
+        z: 20.2753477427464
+      rotations:
+      - 162.69006752597977
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.646606378341783
+        y: 0
+        z: 16.76696810829104
+      rotations:
+      - 348.69006752597977
+      sizes:
+      - !Vector3
+        x: 17.17238607416256
+        y: 8.334708004450729
+        z: 1.1629521231897646
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.359805124122072
+        y: 0
+        z: 13.8966808431241
+      rotations:
+      - 188.69006752597977
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  16: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 38.0
+        y: 0
+        z: 26.0
+      rotations:
+      - 251.56505117707798
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.000875324919683
+        y: 0
+        z: 26.177513185185912
+      rotations:
+      - 90.56505117707798
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.615800423393836
+        y: 0
+        z: 22.20526680779794
+      rotations:
+      - 251.56505117707798
+      sizes:
+      - !Vector3
+        x: 16.230059105216554
+        y: 8.94601587772216
+        z: 1.7114582400272227
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 33.52279810699186
+        y: 0
+        z: 23.774092722226662
+      rotations:
+      - 63.565051177077976
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  17: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 31.0
+      rotations:
+      - 235.4914770123316
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.605902692783864
+        y: 0
+        z: 26.240043671138984
+      rotations:
+      - 75.49147701233159
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.111496909607588
+        y: 0
+        z: 24.201654125355216
+      rotations:
+      - 235.4914770123316
+      sizes:
+      - !Vector3
+        x: 14.970457803909094
+        y: 6.121444427647949
+        z: 1.9456730312174155
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 30.940130934538608
+        y: 0
+        z: 27.775449637486357
+      rotations:
+      - 57.491477012331586
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  18: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 10.0
+        y: 0
+        z: 7.0
+      rotations:
+      - 37.56859202882748
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.671269823935248
+        y: 0
+        z: 17.742965238025135
+      rotations:
+      - 235.56859202882748
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.706818369346614
+        y: 0
+        z: 15.718863880150604
+      rotations:
+      - 37.56859202882748
+      sizes:
+      - !Vector3
+        x: 17.585002848492113
+        y: 8.587410489439991
+        z: 1.970843592505982
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.870544171166955
+        y: 0
+        z: 12.832571287095043
+      rotations:
+      - 213.56859202882748
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  19: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 5.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 141.70983680775694
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.128357915472844
+        y: 0
+        z: 28.564343131638182
+      rotations:
+      - 310.7098368077569
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 13.055375751527269
+        y: 0
+        z: 28.796524048065457
+      rotations:
+      - 141.70983680775694
+      sizes:
+      - !Vector3
+        x: 11.580078816863747
+        y: 5.061757231204393
+        z: 1.1767131489824412
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 7.824465045754249
+        y: 0
+        z: 30.45468565789927
+      rotations:
+      - 341.7098368077569
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  20: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.0
+        y: 0
+        z: 26.0
+      rotations:
+      - 213.69006752597977
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 9.511432306422408
+        y: 0
+        z: 13.708482348032865
+      rotations:
+      - 49.69006752597977
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.898297841522485
+        y: 0
+        z: 16.847446762283717
+      rotations:
+      - 213.69006752597977
+      sizes:
+      - !Vector3
+        x: 11.803686939748228
+        y: 6.980209492980675
+        z: 1.2159991955754315
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.747180136822262
+        y: 0
+        z: 19.80168063603396
+      rotations:
+      - 27.69006752597977
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  21: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 25.0
+      rotations:
+      - 247.38013505195957
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.478049922320945
+        y: 0
+        z: 20.99685553212464
+      rotations:
+      - 76.38013505195954
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.923076923076923
+        y: 0
+        z: 20.384615384615387
+      rotations:
+      - 247.38013505195957
+      sizes:
+      - !Vector3
+        x: 14.032181714027212
+        y: 7.44609580776796
+        z: 1.27767051768831
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.49680891956708
+        y: 0
+        z: 20.34076124550612
+      rotations:
+      - 54.38013505195954
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  22: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 7.0
+        y: 0
+        z: 14.0
+      rotations:
+      - 65.22485943116807
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.359712673488936
+        y: 0
+        z: 18.621666500396316
+      rotations:
+      - 254.22485943116806
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.89551261400542
+        y: 0
+        z: 19.028698129540963
+      rotations:
+      - 65.22485943116807
+      sizes:
+      - !Vector3
+        x: 19.70732788480823
+        y: 9.67315066453936
+        z: 1.5622809414622123
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 10.786392449094848
+        y: 0
+        z: 17.26546049148317
+      rotations:
+      - 229.22485943116806
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  23: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 16.0
+        y: 0
+        z: 22.0
+      rotations:
+      - 116.56505117707799
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 34.614256666057194
+        y: 0
+        z: 18.190872964819196
+      rotations:
+      - 281.565051177078
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.838699100999072
+        y: 0
+        z: 17.08065044950046
+      rotations:
+      - 116.56505117707799
+      sizes:
+      - !Vector3
+        x: 16.91308452982424
+        y: 8.833278836104068
+        z: 1.5353216884276109
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.39137400360154
+        y: 0
+        z: 19.609218880680924
+      rotations:
+      - 298.565051177078
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  24: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 198.43494882292202
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.388483754228455
+        y: 0
+        z: 14.342517680419576
+      rotations:
+      - 30.434948822922024
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.52149457381478
+        y: 0
+        z: 18.564483721444347
+      rotations:
+      - 198.43494882292202
+      sizes:
+      - !Vector3
+        x: 10.565664923478234
+        y: 8.752623836234942
+        z: 1.7890310325254997
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.163871396137615
+        y: 0
+        z: 23.00223823701475
+      rotations:
+      - 358.434948822922
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  25: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 1.0
+        y: 0
+        z: 1.0
+      rotations:
+      - 45.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.753288904374106
+        y: 0
+        z: 10.992349288972044
+      rotations:
+      - 234.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 9.485281374238571
+        y: 0
+        z: 9.48528137423857
+      rotations:
+      - 45.0
+      sizes:
+      - !Vector3
+        x: 13.82299871919446
+        y: 7.127545725303914
+        z: 1.1063264123371872
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 6.5409532779309245
+        y: 0
+        z: 8.092096782460498
+      rotations:
+      - 218.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  26: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 38.0
+        y: 0
+        z: 14.0
+      rotations:
+      - 288.434948822922
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.034134127162215
+        y: 0
+        z: 15.138389956705119
+      rotations:
+      - 93.43494882292202
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.66711712534332
+        y: 0
+        z: 18.110960958218897
+      rotations:
+      - 288.434948822922
+      sizes:
+      - !Vector3
+        x: 19.92980551077591
+        y: 8.92016760118177
+        z: 1.3376729119291868
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 32.44169206651839
+        y: 0
+        z: 18.255022081798806
+      rotations:
+      - 127.43494882292202
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  27: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 259.38034472384487
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.29117282211653
+        y: 0
+        z: 19.867094904146846
+      rotations:
+      - 79.38034472384487
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 24.205533756788135
+        y: 0
+        z: 20.788537579397776
+      rotations:
+      - 259.38034472384487
+      sizes:
+      - !Vector3
+        x: 14.218231639353007
+        y: 9.048665611299793
+        z: 1.5208105817089625
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 29.79768784399078
+        y: 0
+        z: 19.754799864504463
+      rotations:
+      - 62.38034472384487
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  28: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 37.0
+        y: 0
+        z: 7.0
+      rotations:
+      - 307.40535663140855
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.9324813154817
+        y: 0
+        z: 14.364778029904574
+      rotations:
+      - 119.40535663140855
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 28.262063837250842
+        y: 0
+        z: 13.68195118327877
+      rotations:
+      - 307.40535663140855
+      sizes:
+      - !Vector3
+        x: 13.461387573060417
+        y: 9.484863679114985
+        z: 1.317197495909475
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 31.890098918360856
+        y: 0
+        z: 14.40870507820787
+      rotations:
+      - 145.40535663140855
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  29: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 9.0
+      rotations:
+      - 312.5104470780009
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.657384880852383
+        y: 0
+        z: 16.321486277095858
+      rotations:
+      - 115.51044707800088
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.154150317591107
+        y: 0
+        z: 17.10869554220816
+      rotations:
+      - 312.5104470780009
+      sizes:
+      - !Vector3
+        x: 10.156515117298593
+        y: 6.500958619083118
+        z: 1.5157129116662018
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 29.097227482169487
+        y: 0
+        z: 13.071106939117161
+      rotations:
+      - 144.51044707800088
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  30: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 26.0
+        y: 0
+        z: 4.0
+      rotations:
+      - 339.44395478041656
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.873691151593874
+        y: 0
+        z: 18.931949119264917
+      rotations:
+      - 151.44395478041656
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.786518700939308
+        y: 0
+        z: 15.235950130828538
+      rotations:
+      - 339.44395478041656
+      sizes:
+      - !Vector3
+        x: 14.750273318390223
+        y: 7.415518766775339
+        z: 1.925399677112472
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.900816607043982
+        y: 0
+        z: 9.898457075257028
+      rotations:
+      - 169.44395478041656
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  31: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 3.0
+        y: 0
+        z: 11.0
+      rotations:
+      - 62.102728969052365
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.807475734821644
+        y: 0
+        z: 13.474613281509862
+      rotations:
+      - 261.10272896905235
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 12.72166707981768
+        y: 0
+        z: 16.14676492460936
+      rotations:
+      - 62.102728969052365
+      sizes:
+      - !Vector3
+        x: 18.14560035707408
+        y: 6.494501015744134
+        z: 1.2883503577840312
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 8.210403477400394
+        y: 0
+        z: 15.674579724712572
+      rotations:
+      - 228.10272896905235
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  32: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 28.0
+        y: 0
+        z: 6.0
+      rotations:
+      - 330.25511870305775
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.897629152830188
+        y: 0
+        z: 16.08649401783959
+      rotations:
+      - 132.25511870305775
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.542471678074822
+        y: 0
+        z: 15.550674563369048
+      rotations:
+      - 330.25511870305775
+      sizes:
+      - !Vector3
+        x: 17.621460260198578
+        y: 5.606250688461818
+        z: 1.5490444566069224
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.153692723262324
+        y: 0
+        z: 10.927855922542872
+      rotations:
+      - 170.25511870305775
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  33: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 10.0
+      rotations:
+      - 343.3007557660064
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.836397235684508
+        y: 0
+        z: 24.911592467153213
+      rotations:
+      - 151.30075576600638
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.2644774876375
+        y: 0
+        z: 22.451741707874966
+      rotations:
+      - 343.3007557660064
+      sizes:
+      - !Vector3
+        x: 18.281472143598265
+        y: 8.19292549079649
+        z: 1.5679990173136003
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.508447825764218
+        y: 0
+        z: 15.979830805299098
+      rotations:
+      - 175.30075576600643
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  34: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 0.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.39449188396253
+        y: 0
+        z: 31.93911516946793
+      rotations:
+      - 185.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 11.945388282065144
+        y: 7.511362256234715
+        z: 1.8075816783606773
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.437166400997626
+        y: 0
+        z: 24.86326977710987
+      rotations:
+      - 170.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  35: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 180.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.668404277691614
+        y: 0
+        z: 10.002893792028566
+      rotations:
+      - 1.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 17.0
+      rotations:
+      - 180.0
+      sizes:
+      - !Vector3
+        x: 16.869290660673556
+        y: 9.659801166071585
+        z: 1.0334490732166652
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.693453269197676
+        y: 0
+        z: 22.207929916068025
+      rotations:
+      - 346.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  36: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 18.0
+      rotations:
+      - 303.69006752597977
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 8.380675866006667
+        y: 0
+        z: 28.501207638421405
+      rotations:
+      - 125.69006752597977
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 13.015396467945873
+        y: 0
+        z: 24.65640235470275
+      rotations:
+      - 303.69006752597977
+      sizes:
+      - !Vector3
+        x: 18.910970239665794
+        y: 6.637954771451792
+        z: 1.3537632780718742
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.04067946481125
+        y: 0
+        z: 24.277351338682198
+      rotations:
+      - 141.69006752597977
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  37: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 3.0
+      rotations:
+      - 6.709836807756915
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.787529683227316
+        y: 0
+        z: 17.738713589222318
+      rotations:
+      - 190.70983680775691
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.51893621837616
+        y: 0
+        z: 15.910957856197392
+      rotations:
+      - 6.709836807756915
+      sizes:
+      - !Vector3
+        x: 14.882563317839494
+        y: 6.045998089266865
+        z: 1.6546568477963162
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.928200233054365
+        y: 0
+        z: 8.903494326208444
+      rotations:
+      - 169.70983680775691
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  38: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 14.0
+        y: 0
+        z: 1.0
+      rotations:
+      - 17.525568373722876
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.045397207745186
+        y: 0
+        z: 17.96782675176873
+      rotations:
+      - 183.52556837372288
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.61357641524517
+        y: 0
+        z: 12.4429919816097
+      rotations:
+      - 17.525568373722876
+      sizes:
+      - !Vector3
+        x: 13.296169244165679
+        y: 8.665009179084946
+        z: 1.1810539936869895
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.568414738420266
+        y: 0
+        z: 7.5117774632941465
+      rotations:
+      - 201.52556837372288
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  39: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 32.0
+      rotations:
+      - 180.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.95201902033782
+        y: 0
+        z: 15.258268198792464
+      rotations:
+      - 350.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 19.0
+      rotations:
+      - 180.0
+      sizes:
+      - !Vector3
+        x: 17.567272499085295
+        y: 5.490624310923124
+        z: 1.7296975119171627
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.52786404500042
+        y: 0
+        z: 24.39154786963877
+      rotations:
+      - 18.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  40: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 11.0
+        y: 0
+        z: 4.0
+      rotations:
+      - 29.357753542791272
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.08621709214149
+        y: 0
+        z: 18.79722816973925
+      rotations:
+      - 202.35775354279127
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.88313487559071
+        y: 0
+        z: 14.458906445494591
+      rotations:
+      - 29.357753542791272
+      sizes:
+      - !Vector3
+        x: 10.77180853113491
+        y: 9.952431476879369
+        z: 1.2055994002943493
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.269048762658848
+        y: 0
+        z: 8.216067203216877
+      rotations:
+      - 225.35775354279127
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  41: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 38.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 291.25050550713325
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.012340962852026
+        y: 0
+        z: 13.62829810751003
+      rotations:
+      - 92.25050550713325
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.883939269963157
+        y: 0
+        z: 17.711801395014334
+      rotations:
+      - 291.25050550713325
+      sizes:
+      - !Vector3
+        x: 15.67217287384205
+        y: 6.394816756559745
+        z: 1.1480168060600848
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 33.25151818402701
+        y: 0
+        z: 14.565860927213482
+      rotations:
+      - 108.25050550713325
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  42: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 14.0
+      rotations:
+      - 290.55604521958344
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.646423737936704
+        y: 0
+        z: 22.508181564669755
+      rotations:
+      - 124.55604521958344
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.827720691602416
+        y: 0
+        z: 18.564604740649084
+      rotations:
+      - 290.55604521958344
+      sizes:
+      - !Vector3
+        x: 19.03101510395731
+        y: 6.904915324951486
+        z: 1.8727778743431502
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.017328556426076
+        y: 0
+        z: 14.558223733642293
+      rotations:
+      - 93.55604521958344
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  43: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 28.0
+        y: 0
+        z: 10.0
+      rotations:
+      - 321.3401917459099
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.090627620790137
+        y: 0
+        z: 20.29493051417701
+      rotations:
+      - 133.34019174590992
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.50365942934691
+        y: 0
+        z: 19.370425713316365
+      rotations:
+      - 321.3401917459099
+      sizes:
+      - !Vector3
+        x: 19.438565587041566
+        y: 6.2705577268789945
+        z: 1.3868832963516005
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.913851638636377
+        y: 0
+        z: 14.544005393304444
+      rotations:
+      - 155.34019174590992
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  44: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 2.0
+        y: 0
+        z: 3.0
+      rotations:
+      - 46.63657704161673
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.438707071338092
+        y: 0
+        z: 14.187313374359366
+      rotations:
+      - 225.63657704161673
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 11.45117098314763
+        y: 0
+        z: 11.926105928528312
+      rotations:
+      - 46.63657704161673
+      sizes:
+      - !Vector3
+        x: 19.332064073714662
+        y: 5.9579004709341215
+        z: 1.9463764021704701
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 10.1985247718725
+        y: 0
+        z: 6.712706770671901
+      rotations:
+      - 245.63657704161673
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  45: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 22.0
+        y: 0
+        z: 6.0
+      rotations:
+      - 351.86989764584405
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.242911916655835
+        y: 0
+        z: 21.998155950007067
+      rotations:
+      - 180.86989764584405
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.302943725152282
+        y: 0
+        z: 17.879393923933996
+      rotations:
+      - 351.86989764584405
+      sizes:
+      - !Vector3
+        x: 10.746640767392531
+        y: 6.726794424808782
+        z: 1.8590211503723957
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.464617092752043
+        y: 0
+        z: 14.276537180435968
+      rotations:
+      - 156.86989764584405
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  46: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 198.43494882292202
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.524202693187423
+        y: 0
+        z: 10.005958383671214
+      rotations:
+      - 1.4349488229220242
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.52149457381478
+        y: 0
+        z: 18.564483721444347
+      rotations:
+      - 198.43494882292202
+      sizes:
+      - !Vector3
+        x: 19.15973250683995
+        y: 5.066908387465393
+        z: 1.8089586494406118
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.5180409329997
+        y: 0
+        z: 23.53741094445729
+      rotations:
+      - 24.434948822922024
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  47: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 173.29016319224306
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.477405644240328
+        y: 0
+        z: 21.007123965626214
+      rotations:
+      - 358.2901631922431
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.51893621837617
+        y: 0
+        z: 24.089042143802608
+      rotations:
+      - 173.29016319224306
+      sizes:
+      - !Vector3
+        x: 14.997986123121777
+        y: 6.773586262056192
+        z: 1.9212849724915728
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.602882675911488
+        y: 0
+        z: 31.593984667480136
+      rotations:
+      - 334.2901631922431
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  48: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 29.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 307.8749836510982
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.52482801791978
+        y: 0
+        z: 22.4640746066839
+      rotations:
+      - 119.8749836510982
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.317125608860408
+        y: 0
+        z: 19.75334674866412
+      rotations:
+      - 307.8749836510982
+      sizes:
+      - !Vector3
+        x: 16.446445365925655
+        y: 6.097158115461966
+        z: 1.7042324531065378
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.32086875418225
+        y: 0
+        z: 19.981938720210636
+      rotations:
+      - 140.8749836510982
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  49: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 21.0
+        y: 0
+        z: 7.0
+      rotations:
+      - 355.6012946450045
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.66302919827904
+        y: 0
+        z: 22.828410137215414
+      rotations:
+      - 171.6012946450045
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.156338512267894
+        y: 0
+        z: 17.967599340517395
+      rotations:
+      - 355.6012946450045
+      sizes:
+      - !Vector3
+        x: 19.643457691941556
+        y: 9.712151189936186
+        z: 1.0358954756912424
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.016729794872234
+        y: 0
+        z: 14.741627796172754
+      rotations:
+      - 194.6012946450045
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  50: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 31.0
+      rotations:
+      - 169.69515353123396
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.775489947568563
+        y: 0
+        z: 12.039499607565883
+      rotations:
+      - 3.6951535312339274
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.1466252583998
+        y: 0
+        z: 19.19356107880111
+      rotations:
+      - 169.69515353123396
+      sizes:
+      - !Vector3
+        x: 10.99658813474771
+        y: 5.791648795885382
+        z: 1.0740627875992355
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.03680523127009
+        y: 0
+        z: 24.09317703102284
+      rotations:
+      - 329.6951535312339
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  51: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 26.0
+        y: 0
+        z: 14.0
+      rotations:
+      - 315.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 11.88024831592951
+        y: 0
+        z: 26.713481520818306
+      rotations:
+      - 132.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.80761184457488
+        y: 0
+        z: 23.192388155425117
+      rotations:
+      - 315.0
+      sizes:
+      - !Vector3
+        x: 10.960177965533806
+        y: 6.453877091722238
+        z: 1.226595458863546
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.980941282304688
+        y: 0
+        z: 18.085914497655917
+      rotations:
+      - 117.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  52: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 11.0
+        y: 0
+        z: 38.0
+      rotations:
+      - 153.43494882292202
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.79643004214933
+        y: 0
+        z: 22.417685066647827
+      rotations:
+      - 336.434948822922
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.366563145999493
+        y: 0
+        z: 27.266873708001008
+      rotations:
+      - 153.43494882292202
+      sizes:
+      - !Vector3
+        x: 14.947451930224176
+        y: 8.939801526627
+        z: 1.8650108093433693
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.824243836236672
+        y: 0
+        z: 32.9278533727294
+      rotations:
+      - 316.434948822922
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  53: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 8.0
+        y: 0
+        z: 11.0
+      rotations:
+      - 53.13010235415598
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.164596853168717
+        y: 0
+        z: 18.68342386445427
+      rotations:
+      - 243.13010235415598
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.4
+        y: 0
+        z: 18.8
+      rotations:
+      - 53.13010235415598
+      sizes:
+      - !Vector3
+        x: 10.761513163892175
+        y: 9.139880706732146
+        z: 1.754519477467706
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 11.82579407443328
+        y: 0
+        z: 16.86202180992456
+      rotations:
+      - 213.13010235415598
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  54: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 293.6293777306568
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.486303034327065
+        y: 0
+        z: 16.788482597111432
+      rotations:
+      - 104.62937773065681
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.006111981173728
+        y: 0
+        z: 17.809826008236488
+      rotations:
+      - 293.6293777306568
+      sizes:
+      - !Vector3
+        x: 11.416608754845498
+        y: 6.253755976394302
+        z: 1.881228733699047
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 29.188334762853643
+        y: 0
+        z: 17.195380399564726
+      rotations:
+      - 121.62937773065681
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  55: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 25.0
+        y: 0
+        z: 11.0
+      rotations:
+      - 330.9453959009229
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.60025890173206
+        y: 0
+        z: 23.427564100903624
+      rotations:
+      - 145.9453959009229
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.172284825856423
+        y: 0
+        z: 21.489887313458457
+      rotations:
+      - 330.9453959009229
+      sizes:
+      - !Vector3
+        x: 16.411893550200485
+        y: 7.760634403893402
+        z: 1.5352675970576048
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.450383844818496
+        y: 0
+        z: 15.753807923296911
+      rotations:
+      - 161.9453959009229
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  56: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 11.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 66.03751102542182
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.55680853575918
+        y: 0
+        z: 19.61929900025526
+      rotations:
+      - 256.03751102542185
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.965738583443084
+        y: 0
+        z: 20.87366159264137
+      rotations:
+      - 66.03751102542182
+      sizes:
+      - !Vector3
+        x: 16.269747773742722
+        y: 7.084071318376655
+        z: 1.2102450163641811
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.717913699505866
+        y: 0
+        z: 19.343219664189988
+      rotations:
+      - 228.03751102542182
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  57: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 1.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 131.82016988013578
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 8.800837335086484
+        y: 0
+        z: 23.030499763000797
+      rotations:
+      - 330.8201698801358
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 9.942895762301191
+        y: 0
+        z: 28.99846168636209
+      rotations:
+      - 131.82016988013578
+      sizes:
+      - !Vector3
+        x: 19.03080284127926
+        y: 6.389549210081125
+        z: 1.0223607020328231
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 6.216689194675695
+        y: 0
+        z: 32.33243598371122
+      rotations:
+      - 311.8201698801358
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  58: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 6.0
+        y: 0
+        z: 10.0
+      rotations:
+      - 54.46232220802561
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.265845078816103
+        y: 0
+        z: 21.311674236362457
+      rotations:
+      - 233.46232220802563
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 15.76480165448082
+        y: 0
+        z: 16.974858324629157
+      rotations:
+      - 54.46232220802561
+      sizes:
+      - !Vector3
+        x: 18.18280631059514
+        y: 9.184511060858657
+        z: 1.6010136995918942
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.627694827778155
+        y: 0
+        z: 12.561812241115666
+      rotations:
+      - 253.46232220802563
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  59: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.0
+        y: 0
+        z: 18.0
+      rotations:
+      - 296.565051177078
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.311980255892292
+        y: 0
+        z: 30.344642338332385
+      rotations:
+      - 136.56505117707798
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 14.161300899000922
+        y: 0
+        z: 22.919349550499533
+      rotations:
+      - 296.565051177078
+      sizes:
+      - !Vector3
+        x: 12.171826532416306
+        y: 8.081943996158843
+        z: 1.5042208219484472
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.289235288657423
+        y: 0
+        z: 20.263311322736854
+      rotations:
+      - 104.56505117707798
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  60: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 323.13010235415595
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.552124405489254
+        y: 0
+        z: 29.587987265951853
+      rotations:
+      - 148.13010235415595
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 15.79999999999999
+        y: 0
+        z: 25.599999999999994
+      rotations:
+      - 323.13010235415595
+      sizes:
+      - !Vector3
+        x: 11.579526606329246
+        y: 9.470217681027659
+        z: 1.1152452470253782
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.493724877011797
+        y: 0
+        z: 20.322144637788195
+      rotations:
+      - 128.13010235415595
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  61: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 26.565051177077976
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.049241617748905
+        y: 0
+        z: 34.01129300883461
+      rotations:
+      - 198.56505117707798
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.813776741499453
+        y: 0
+        z: 27.627553482998906
+      rotations:
+      - 26.565051177077976
+      sizes:
+      - !Vector3
+        x: 16.600886501829315
+        y: 6.67324485463349
+        z: 1.1109476308520756
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.998320401731373
+        y: 0
+        z: 20.900693130735277
+      rotations:
+      - 225.56505117707798
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  62: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 13.0
+        y: 0
+        z: 17.0
+      rotations:
+      - 66.8014094863518
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.45903845787832
+        y: 0
+        z: 23.622256699143602
+      rotations:
+      - 243.80140948635182
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 24.94888539023475
+        y: 0
+        z: 22.120950881529183
+      rotations:
+      - 66.8014094863518
+      sizes:
+      - !Vector3
+        x: 14.797451862459116
+        y: 7.83137664196877
+        z: 1.6482729571949521
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.920999819937506
+        y: 0
+        z: 17.885302644396262
+      rotations:
+      - 259.8014094863518
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  63: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 31.0
+        y: 0
+        z: 22.0
+      rotations:
+      - 259.695153531234
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.329832630243008
+        y: 0
+        z: 18.66750545922589
+      rotations:
+      - 78.69515353123398
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.17743098890102
+        y: 0
+        z: 20.032260179800186
+      rotations:
+      - 259.695153531234
+      sizes:
+      - !Vector3
+        x: 14.046320709032605
+        y: 9.166255351742304
+        z: 1.3881377001274526
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.01677842914065
+        y: 0
+        z: 22.409271029663802
+      rotations:
+      - 94.69515353123398
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  64: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 1.0
+        y: 0
+        z: 12.0
+      rotations:
+      - 67.16634582208245
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.603724079929362
+        y: 0
+        z: 20.13302768451016
+      rotations:
+      - 237.16634582208246
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 12.981259876794848
+        y: 0
+        z: 17.044741000755728
+      rotations:
+      - 67.16634582208245
+      sizes:
+      - !Vector3
+        x: 14.80865133635594
+        y: 9.423781832555697
+        z: 1.7745988081626334
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 8.800152430218176
+        y: 0
+        z: 13.776969911214444
+      rotations:
+      - 257.16634582208246
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  65: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 12.0
+        y: 0
+        z: 15.0
+      rotations:
+      - 57.9946167919165
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.55369688953165
+        y: 0
+        z: 27.214332026256564
+      rotations:
+      - 229.99461679191648
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.175979648061055
+        y: 0
+        z: 21.359987280038162
+      rotations:
+      - 57.9946167919165
+      sizes:
+      - !Vector3
+        x: 16.871657527368
+        y: 7.846301126940891
+        z: 1.8253218934919695
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.762183938343746
+        y: 0
+        z: 16.936104467046746
+      rotations:
+      - 255.99461679191648
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  66: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 19.0
+        y: 0
+        z: 31.0
+      rotations:
+      - 174.80557109226518
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.62036585582136
+        y: 0
+        z: 13.899956501613293
+      rotations:
+      - 341.80557109226515
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.176964698552744
+        y: 0
+        z: 18.05338831591985
+      rotations:
+      - 174.80557109226518
+      sizes:
+      - !Vector3
+        x: 11.106628364903715
+        y: 8.308656763511827
+        z: 1.2726759754514516
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.148473432913793
+        y: 0
+        z: 26.07304328154322
+      rotations:
+      - 9.805571092265154
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  67: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 20.0
+      rotations:
+      - 180.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 5.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 9.0
+      rotations:
+      - 180.0
+      sizes:
+      - !Vector3
+        x: 16.70121619011755
+        y: 5.908267755637173
+        z: 1.5487174534732613
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.538141476386315
+        y: 0
+        z: 15.218476220184822
+      rotations:
+      - 17.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  68: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 34.0
+        y: 0
+        z: 18.0
+      rotations:
+      - 278.130102354156
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.326044873712412
+        y: 0
+        z: 24.780797921081845
+      rotations:
+      - 112.13010235415601
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.11055556972717
+        y: 0
+        z: 19.555634918610405
+      rotations:
+      - 278.130102354156
+      sizes:
+      - !Vector3
+        x: 13.366503604634536
+        y: 6.661071672398268
+        z: 1.9184567256409166
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 29.002662513790895
+        y: 0
+        z: 17.83684961253721
+      rotations:
+      - 88.13010235415601
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  69: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.0
+        y: 0
+        z: 7.0
+      rotations:
+      - 342.89727103094765
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.31010698372498
+        y: 0
+        z: 25.92469977551942
+      rotations:
+      - 174.89727103094765
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.470969813949733
+        y: 0
+        z: 18.469348104663403
+      rotations:
+      - 342.89727103094765
+      sizes:
+      - !Vector3
+        x: 17.124379873913718
+        y: 6.112209068667193
+        z: 1.5112169659133405
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.04016252238749
+        y: 0
+        z: 15.082059585953038
+      rotations:
+      - 153.89727103094765
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  70: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 11.0
+        y: 0
+        z: 8.0
+      rotations:
+      - 36.86989764584402
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.484169222228278
+        y: 0
+        z: 19.140639895231544
+      rotations:
+      - 225.86989764584402
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.2
+        y: 0
+        z: 17.6
+      rotations:
+      - 36.86989764584402
+      sizes:
+      - !Vector3
+        x: 15.999486967408522
+        y: 6.565527031163511
+        z: 1.9036575961173345
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.910782828494208
+        y: 0
+        z: 16.516298686949824
+      rotations:
+      - 198.86989764584402
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  71: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 14.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 146.30993247402023
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.08852687175164
+        y: 0
+        z: 11.00194897962676
+      rotations:
+      - 341.30993247402023
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.101702158477515
+        y: 0
+        z: 19.847446762283717
+      rotations:
+      - 146.30993247402023
+      sizes:
+      - !Vector3
+        x: 15.411742003691455
+        y: 9.467862823019313
+        z: 1.602820140229782
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.992301766027058
+        y: 0
+        z: 21.511547350959404
+      rotations:
+      - 326.30993247402023
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  72: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 39.0
+        y: 0
+        z: 33.0
+      rotations:
+      - 235.61965527615513
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 28.796987579951093
+        y: 0
+        z: 20.67528752642368
+      rotations:
+      - 39.61965527615513
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 29.09631286500202
+        y: 0
+        z: 26.223793012896117
+      rotations:
+      - 235.61965527615513
+      sizes:
+      - !Vector3
+        x: 16.946298747150433
+        y: 9.3425697862837
+        z: 1.295660232003164
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 30.619371613843526
+        y: 0
+        z: 29.718983716415245
+      rotations:
+      - 68.61965527615513
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  73: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 24.0
+      rotations:
+      - 255.96375653207355
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.3957140377294
+        y: 0
+        z: 20.246452909766237
+      rotations:
+      - 77.96375653207355
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 24.358289998256016
+        y: 0
+        z: 21.089572499564007
+      rotations:
+      - 255.96375653207355
+      sizes:
+      - !Vector3
+        x: 12.046906584333794
+        y: 6.334144468059991
+        z: 1.9550505462002081
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 30.754122856825347
+        y: 0
+        z: 21.087823322887548
+      rotations:
+      - 60.963756532073546
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  74: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 233.13010235415598
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.79303973742153
+        y: 0
+        z: 15.914439915567199
+      rotations:
+      - 35.13010235415595
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.6
+        y: 0
+        z: 21.2
+      rotations:
+      - 233.13010235415598
+      sizes:
+      - !Vector3
+        x: 13.46052469378425
+        y: 8.994719241663804
+        z: 1.7649235106915808
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.4
+        y: 0
+        z: 24.8
+      rotations:
+      - 53.13010235415595
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  75: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 336.8014094863518
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.336373414459057
+        y: 0
+        z: 29.287075475891616
+      rotations:
+      - 154.80140948635176
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.879049118470817
+        y: 0
+        z: 24.94888539023475
+      rotations:
+      - 336.8014094863518
+      sizes:
+      - !Vector3
+        x: 10.445570145080357
+        y: 5.721616978433928
+        z: 1.4454467436433631
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.77280550994654
+        y: 0
+        z: 16.8190595338864
+      rotations:
+      - 139.80140948635182
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  76: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 5.0
+        y: 0
+        z: 24.0
+      rotations:
+      - 104.93141717813756
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.010130838981077
+        y: 0
+        z: 18.64124698510639
+      rotations:
+      - 290.93141717813756
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.594819275214956
+        y: 0
+        z: 20.90804819327601
+      rotations:
+      - 104.93141717813756
+      sizes:
+      - !Vector3
+        x: 15.12916471842791
+        y: 9.35814978738594
+        z: 1.7229193944217145
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 9.988234169044848
+        y: 0
+        z: 23.657188280869157
+      rotations:
+      - 273.93141717813756
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  77: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 37.0
+        y: 0
+        z: 22.0
+      rotations:
+      - 263.2901631922431
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.114384170372414
+        y: 0
+        z: 24.08170957045406
+      rotations:
+      - 96.29016319224309
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.075343352448364
+        y: 0
+        z: 20.714746276758632
+      rotations:
+      - 263.2901631922431
+      sizes:
+      - !Vector3
+        x: 17.13576202804952
+        y: 7.541417259311182
+        z: 1.7251554676650236
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 32.354654610069595
+        y: 0
+        z: 20.150468651724893
+      rotations:
+      - 68.29016319224309
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  78: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 31.0
+        y: 0
+        z: 9.0
+      rotations:
+      - 315.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.142490489468315
+        y: 0
+        z: 16.725571123650813
+      rotations:
+      - 121.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.51471862576143
+        y: 0
+        z: 17.485281374238568
+      rotations:
+      - 315.0
+      sizes:
+      - !Vector3
+        x: 11.046503612745527
+        y: 6.892448634260226
+        z: 1.8283737916945828
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.558541381893722
+        y: 0
+        z: 13.91491226573395
+      rotations:
+      - 145.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  79: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 16.0
+        y: 0
+        z: 36.0
+      rotations:
+      - 165.96375653207352
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.492360062073327
+        y: 0
+        z: 19.065630763292997
+      rotations:
+      - 354.9637565320735
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.910427500435997
+        y: 0
+        z: 24.35828999825602
+      rotations:
+      - 165.96375653207352
+      sizes:
+      - !Vector3
+        x: 15.995678484241473
+        y: 8.462378874910165
+        z: 1.419406732292292
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.036572205724596
+        y: 0
+        z: 31.433560068185496
+      rotations:
+      - 335.9637565320735
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  80: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 34.0
+        y: 0
+        z: 4.0
+      rotations:
+      - 318.81407483429035
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.776170328755434
+        y: 0
+        z: 20.011515404182
+      rotations:
+      - 152.8140748342903
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.09794470557778
+        y: 0
+        z: 13.030920336482533
+      rotations:
+      - 318.81407483429035
+      sizes:
+      - !Vector3
+        x: 13.287323311447466
+        y: 8.29625356901121
+        z: 1.3623057212035932
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.987343866677314
+        y: 0
+        z: 9.641157146877909
+      rotations:
+      - 128.81407483429035
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  81: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 35.0
+        y: 0
+        z: 2.0
+      rotations:
+      - 320.19442890773485
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.377410545438497
+        y: 0
+        z: 15.244812439308825
+      rotations:
+      - 134.19442890773485
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 27.317787204026242
+        y: 0
+        z: 11.21865535516851
+      rotations:
+      - 320.19442890773485
+      sizes:
+      - !Vector3
+        x: 12.781963071049312
+        y: 8.230243007156162
+        z: 1.330239063329111
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 32.15841714017257
+        y: 0
+        z: 9.478329148328186
+      rotations:
+      - 159.19442890773485
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  82: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 14.0
+        y: 0
+        z: 8.0
+      rotations:
+      - 26.565051177077976
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.29331629436748
+        y: 0
+        z: 23.413222738821325
+      rotations:
+      - 195.56505117707798
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.813776741499453
+        y: 0
+        z: 19.627553482998906
+      rotations:
+      - 26.565051177077976
+      sizes:
+      - !Vector3
+        x: 19.92046960260608
+        y: 7.151889831470202
+        z: 1.0983710995445977
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.613748851408324
+        y: 0
+        z: 13.699633657816236
+      rotations:
+      - 224.56505117707798
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  83: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 8.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 104.03624346792647
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.685040689881962
+        y: 0
+        z: 16.24652554776556
+      rotations:
+      - 292.03624346792645
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.611852501889317
+        y: 0
+        z: 19.847036874527674
+      rotations:
+      - 104.03624346792647
+      sizes:
+      - !Vector3
+        x: 11.15415265834493
+        y: 8.079011210038459
+        z: 1.7851970724643211
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.990173602417194
+        y: 0
+        z: 22.629226473342804
+      rotations:
+      - 273.03624346792645
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  84: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.0
+        y: 0
+        z: 26.0
+      rotations:
+      - 213.69006752597977
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.38359249019457
+        y: 0
+        z: 10.964738892651848
+      rotations:
+      - 37.69006752597977
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.788897449072028
+        y: 0
+        z: 15.183346173608028
+      rotations:
+      - 213.69006752597977
+      sizes:
+      - !Vector3
+        x: 19.92311102315071
+        y: 7.195035533984875
+        z: 1.6354080372273554
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.26518882509532
+        y: 0
+        z: 17.425572448401205
+      rotations:
+      - 17.69006752597977
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  85: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 7.0
+        y: 0
+        z: 6.0
+      rotations:
+      - 42.87890360333856
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.47139940636945
+        y: 0
+        z: 18.09751191246719
+      rotations:
+      - 220.87890360333856
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 14.484962093040057
+        y: 0
+        z: 14.06072840788929
+      rotations:
+      - 42.87890360333856
+      sizes:
+      - !Vector3
+        x: 12.731493751482752
+        y: 7.645353374828073
+        z: 1.042616873519118
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.93758041015155
+        y: 0
+        z: 10.242029848124401
+      rotations:
+      - 241.87890360333856
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  86: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 26.0
+      rotations:
+      - 206.56505117707798
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.221898318666636
+        y: 0
+        z: 7.610607831610114
+      rotations:
+      - 14.565051177077976
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.633436854000507
+        y: 0
+        z: 15.266873708001008
+      rotations:
+      - 206.56505117707798
+      sizes:
+      - !Vector3
+        x: 10.0600211624895
+        y: 9.17985275570123
+        z: 1.5967843257157872
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.02877042075603
+        y: 0
+        z: 19.266173649999438
+      rotations:
+      - 41.565051177077976
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  87: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 212.27564431457762
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.235602390415846
+        y: 0
+        z: 22.681283279075256
+      rotations:
+      - 16.27564431457762
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 25.058091111956244
+        y: 0
+        z: 28.00864426059737
+      rotations:
+      - 212.27564431457762
+      sizes:
+      - !Vector3
+        x: 19.41076928061017
+        y: 7.289849865200084
+        z: 1.3457680538244798
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 28.210714653907115
+        y: 0
+        z: 35.73789691059805
+      rotations:
+      - 49.27564431457762
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  88: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 29.0
+        y: 0
+        z: 27.0
+      rotations:
+      - 232.1250163489018
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.152015703907859
+        y: 0
+        z: 21.038677802450103
+      rotations:
+      - 68.1250163489018
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.317125608860408
+        y: 0
+        z: 20.246653251335875
+      rotations:
+      - 232.1250163489018
+      sizes:
+      - !Vector3
+        x: 14.507663080106084
+        y: 9.810921279573485
+        z: 1.1311480132189962
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.043175497916835
+        y: 0
+        z: 21.659939901894205
+      rotations:
+      - 48.125016348901795
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  89: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 28.0
+        y: 0
+        z: 18.0
+      rotations:
+      - 284.0362434679265
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 10.149954444866282
+        y: 0
+        z: 24.509675389729587
+      rotations:
+      - 110.03624346792651
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 15.388147498110685
+        y: 0
+        z: 21.15296312547233
+      rotations:
+      - 284.0362434679265
+      sizes:
+      - !Vector3
+        x: 12.627607948066153
+        y: 9.83087528232326
+        z: 1.6268159057656117
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.03000295440827
+        y: 0
+        z: 17.307795483069413
+      rotations:
+      - 85.03624346792651
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  90: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 11.0
+      rotations:
+      - 311.98721249581666
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.409534463676033
+        y: 0
+        z: 19.996520680835154
+      rotations:
+      - 119.98721249581666
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.080470245034
+        y: 0
+        z: 19.027576779469392
+      rotations:
+      - 311.98721249581666
+      sizes:
+      - !Vector3
+        x: 14.485951285633094
+        y: 5.3722294076580335
+        z: 1.0511203462676064
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.708307823921317
+        y: 0
+        z: 18.279972109399022
+      rotations:
+      - 143.98721249581666
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  91: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 8.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 147.72435568542238
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 11.189225566456464
+        y: 0
+        z: 24.34295936124006
+      rotations:
+      - 347.7243556854224
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 14.407915896655778
+        y: 0
+        z: 28.854133163628347
+      rotations:
+      - 147.72435568542238
+      sizes:
+      - !Vector3
+        x: 13.578365105244345
+        y: 9.466239889133849
+        z: 1.2580376577456196
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.263424981507125
+        y: 0
+        z: 31.073890776234474
+      rotations:
+      - 331.7243556854224
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  92: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 19.0
+        y: 0
+        z: 35.0
+      rotations:
+      - 176.18592516570965
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.27578410554897
+        y: 0
+        z: 19.33892601084355
+      rotations:
+      - 348.18592516570965
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.798228126285288
+        y: 0
+        z: 23.026578105720695
+      rotations:
+      - 176.18592516570965
+      sizes:
+      - !Vector3
+        x: 12.534018853843808
+        y: 5.9830467860344845
+        z: 1.748973414511697
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.733491885699074
+        y: 0
+        z: 29.13519333682602
+      rotations:
+      - 12.185925165709648
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  93: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 3.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 100.00797980144134
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.774761784859088
+        y: 0
+        z: 14.077703935576274
+      rotations:
+      - 298.00797980144137
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 13.832619146997304
+        y: 0
+        z: 21.088361327000477
+      rotations:
+      - 100.00797980144134
+      sizes:
+      - !Vector3
+        x: 12.579780048321513
+        y: 5.029844676508644
+        z: 1.7385288319051
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 7.962645844037195
+        y: 0
+        z: 22.389962110471526
+      rotations:
+      - 277.00797980144137
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  94: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 14.0
+      rotations:
+      - 18.434948822922024
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.19980789227601
+        y: 0
+        z: 30.857071075281144
+      rotations:
+      - 187.43494882292202
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.110960958218897
+        y: 0
+        z: 26.33288287465668
+      rotations:
+      - 18.434948822922024
+      sizes:
+      - !Vector3
+        x: 14.705365580410788
+        y: 9.111666949645858
+        z: 1.070609714644344
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.17224141596476
+        y: 0
+        z: 20.825862697630853
+      rotations:
+      - 211.43494882292202
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  95: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 39.0
+        y: 0
+        z: 26.0
+      rotations:
+      - 252.47443162627712
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.015746957804787
+        y: 0
+        z: 20.389994584007646
+      rotations:
+      - 69.47443162627712
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.60342535325616
+        y: 0
+        z: 22.085292216817734
+      rotations:
+      - 252.47443162627712
+      sizes:
+      - !Vector3
+        x: 19.506927723467093
+        y: 5.706555346463075
+        z: 1.1175763514608126
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 33.374860623182244
+        y: 0
+        z: 21.83372984656848
+      rotations:
+      - 53.47443162627712
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  96: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 12.0
+        y: 0
+        z: 34.0
+      rotations:
+      - 150.25511870305778
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.191595677054423
+        y: 0
+        z: 15.468121366680098
+      rotations:
+      - 347.25511870305775
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.44980619863884
+        y: 0
+        z: 22.71283915238203
+      rotations:
+      - 150.25511870305778
+      sizes:
+      - !Vector3
+        x: 13.68806093416386
+        y: 6.046790925039339
+        z: 1.0221078394338248
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.327677276226353
+        y: 0
+        z: 29.574853844477058
+      rotations:
+      - 332.25511870305775
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  97: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 173.29016319224306
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.091994883836307
+        y: 0
+        z: 20.455287974339402
+      rotations:
+      - 13.290163192243085
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.51893621837617
+        y: 0
+        z: 24.089042143802608
+      rotations:
+      - 173.29016319224306
+      sizes:
+      - !Vector3
+        x: 14.028287092194539
+        y: 7.563116511745674
+        z: 1.3903101997276628
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.908583163661863
+        y: 0
+        z: 31.06919258155264
+      rotations:
+      - 351.2901631922431
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  98: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 12.0
+      rotations:
+      - 308.6598082540901
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 12.341557467460873
+        y: 0
+        z: 19.01280310040238
+      rotations:
+      - 111.65980825409008
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.410443096126663
+        y: 0
+        z: 18.871645523098664
+      rotations:
+      - 308.6598082540901
+      sizes:
+      - !Vector3
+        x: 17.740675729231413
+        y: 6.741787258616647
+        z: 1.3584666190253203
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.399408158319527
+        y: 0
+        z: 16.270470942763218
+      rotations:
+      - 148.65980825409008
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  99: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 4.0
+        y: 0
+        z: 31.0
+      rotations:
+      - 124.50852298766841
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.834130013821813
+        y: 0
+        z: 16.98982131490401
+      rotations:
+      - 317.5085229876684
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 13.88850309039241
+        y: 0
+        z: 24.201654125355216
+      rotations:
+      - 124.50852298766841
+      sizes:
+      - !Vector3
+        x: 17.940584147286664
+        y: 7.742207558162359
+        z: 1.466456262625029
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 8.793887378927717
+        y: 0
+        z: 29.57921014989635
+      rotations:
+      - 286.5085229876684
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  100: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 26.0
+        y: 0
+        z: 10.0
+      rotations:
+      - 329.0362434679265
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.750157029186504
+        y: 0
+        z: 24.26325366160513
+      rotations:
+      - 147.0362434679265
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.82605093486969
+        y: 0
+        z: 20.289915108550538
+      rotations:
+      - 329.0362434679265
+      sizes:
+      - !Vector3
+        x: 19.956230583046807
+        y: 9.728140398037752
+        z: 1.2153312456739722
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.65399207477554
+        y: 0
+        z: 15.84707299982076
+      rotations:
+      - 167.0362434679265
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  101: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 11.0
+      rotations:
+      - 0.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.63405728367889
+        y: 0
+        z: 27.834557168606697
+      rotations:
+      - 172.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 17.89059255094607
+        y: 9.921190400658357
+        z: 1.8610448051574457
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.663293526542077
+        y: 0
+        z: 18.825180805870446
+      rotations:
+      - 192.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  102: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 29.0
+        y: 0
+        z: 39.0
+      rotations:
+      - 205.34617594194668
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.073419213334322
+        y: 0
+        z: 26.451574047483092
+      rotations:
+      - 38.34617594194668
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.434877518392423
+        y: 0
+        z: 27.251408094383997
+      rotations:
+      - 205.34617594194668
+      sizes:
+      - !Vector3
+        x: 15.538988670457108
+        y: 6.64710870501212
+        z: 1.1448187621614578
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.977088343814
+        y: 0
+        z: 31.065666269708665
+      rotations:
+      - 7.346175941946683
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  103: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 7.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 142.59464336859145
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.26224029194028
+        y: 0
+        z: 26.018720390821695
+      rotations:
+      - 307.59464336859145
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 14.289401290849565
+        y: 0
+        z: 27.467706004273644
+      rotations:
+      - 142.59464336859145
+      sizes:
+      - !Vector3
+        x: 13.490413210763725
+        y: 8.449911116099772
+        z: 1.721018859992098
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 9.841639721173179
+        y: 0
+        z: 28.46038152520554
+      rotations:
+      - 341.59464336859145
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  104: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 19.0
+        y: 0
+        z: 24.0
+      rotations:
+      - 165.96375653207352
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.204949091744712
+        y: 0
+        z: 6.135560476107454
+      rotations:
+      - 352.9637565320735
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.910427500435997
+        y: 0
+        z: 12.358289998256017
+      rotations:
+      - 165.96375653207352
+      sizes:
+      - !Vector3
+        x: 13.880867073795791
+        y: 5.294681034950219
+        z: 1.470433852401518
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.63643224760692
+        y: 0
+        z: 16.874246670802833
+      rotations:
+      - 332.9637565320735
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  105: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 28.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 205.20112364547506
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.77819163190289
+        y: 0
+        z: 21.667974140717554
+      rotations:
+      - 36.201123645475036
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.89043556404145
+        y: 0
+        z: 26.14217557358807
+      rotations:
+      - 205.20112364547506
+      sizes:
+      - !Vector3
+        x: 16.50997587166586
+        y: 5.480159901254082
+        z: 1.0486361779102569
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.56089507970433
+        y: 0
+        z: 28.11580183537193
+      rotations:
+      - 9.201123645475036
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  106: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 16.0
+        y: 0
+        z: 21.0
+      rotations:
+      - 104.03624346792647
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 32.25403353501076
+        y: 0
+        z: 16.019398244916026
+      rotations:
+      - 287.03624346792645
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.671567501598652
+        y: 0
+        z: 18.33210812460034
+      rotations:
+      - 104.03624346792647
+      sizes:
+      - !Vector3
+        x: 13.109557989807364
+        y: 5.841708711159111
+        z: 1.509349781117256
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 23.629414449584615
+        y: 0
+        z: 16.225899544786532
+      rotations:
+      - 302.03624346792645
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  107: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 21.0
+        y: 0
+        z: 23.0
+      rotations:
+      - 198.43494882292202
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.187375028807352
+        y: 0
+        z: 4.0009239540818875
+      rotations:
+      - 359.434948822922
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.205266807797944
+        y: 0
+        z: 11.615800423393836
+      rotations:
+      - 198.43494882292202
+      sizes:
+      - !Vector3
+        x: 16.04299262095553
+        y: 6.711587641164247
+        z: 1.2716821947308852
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.592081028067966
+        y: 0
+        z: 16.323904559034403
+      rotations:
+      - 33.434948822922024
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  108: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 21.0
+        y: 0
+        z: 3.0
+      rotations:
+      - 356.63353933657015
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.373300746505183
+        y: 0
+        z: 19.944439945293215
+      rotations:
+      - 184.63353933657015
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.354057758533813
+        y: 0
+        z: 13.981018104924955
+      rotations:
+      - 356.63353933657015
+      sizes:
+      - !Vector3
+        x: 10.268165025738636
+        y: 9.8893477194894
+        z: 1.1358843082505754
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.62033643061752
+        y: 0
+        z: 8.50792168576804
+      rotations:
+      - 156.63353933657015
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  109: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 31.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 230.71059313749964
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.66946977577649
+        y: 0
+        z: 22.12272118195986
+      rotations:
+      - 62.71059313749964
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.938555110356823
+        y: 0
+        z: 20.767908726655588
+      rotations:
+      - 230.71059313749964
+      sizes:
+      - !Vector3
+        x: 14.944975949827658
+        y: 9.360170454911488
+        z: 1.6162427388573526
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.413359761083722
+        y: 0
+        z: 24.19000916876273
+      rotations:
+      - 36.71059313749964
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  110: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 4.0
+        y: 0
+        z: 29.0
+      rotations:
+      - 119.35775354279127
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.063081260766126
+        y: 0
+        z: 23.7817871399215
+      rotations:
+      - 290.3577535427913
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 13.587330908370042
+        y: 0
+        z: 23.60712636404185
+      rotations:
+      - 119.35775354279127
+      sizes:
+      - !Vector3
+        x: 12.376241939937966
+        y: 9.621878363366353
+        z: 1.5015034097131945
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 7.38709269647981
+        y: 0
+        z: 25.32201100253778
+      rotations:
+      - 317.3577535427913
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  111: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 39.0
+        y: 0
+        z: 17.0
+      rotations:
+      - 278.9726266148964
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.002161214477777
+        y: 0
+        z: 17.254620822960913
+      rotations:
+      - 90.9726266148964
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 28.134607381380242
+        y: 0
+        z: 18.715588308203124
+      rotations:
+      - 278.9726266148964
+      sizes:
+      - !Vector3
+        x: 16.548491682572344
+        y: 9.66731861818128
+        z: 1.3308886720752815
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 32.761436766708634
+        y: 0
+        z: 20.1749533515038
+      rotations:
+      - 116.9726266148964
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  112: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 15.0
+      rotations:
+      - 21.801409486351815
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 26.2698116976038
+        y: 0
+        z: 32.105853222981175
+      rotations:
+      - 205.80140948635182
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.085297439895143
+        y: 0
+        z: 25.21324359973785
+      rotations:
+      - 21.801409486351815
+      sizes:
+      - !Vector3
+        x: 15.865749734129325
+        y: 9.67311892696883
+        z: 1.042918953654449
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.07107102782007
+        y: 0
+        z: 21.91757232368151
+      rotations:
+      - 188.80140948635182
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  113: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 23.0
+        y: 0
+        z: 25.0
+      rotations:
+      - 210.96375653207352
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 16.82557029051001
+        y: 0
+        z: 7.0312377231327545
+      rotations:
+      - 18.96375653207349
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.31155517944216
+        y: 0
+        z: 13.852591965736924
+      rotations:
+      - 210.96375653207352
+      sizes:
+      - !Vector3
+        x: 10.547394607061966
+        y: 7.8644972790254455
+        z: 1.367002169128053
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.410929550755817
+        y: 0
+        z: 19.71412898266768
+      rotations:
+      - 40.96375653207349
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  114: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 19.0
+      rotations:
+      - 0.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.029681019713477
+        y: 0
+        z: 35.2571808513716
+      rotations:
+      - 163.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 32.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 19.44338099376626
+        y: 5.025958914870911
+        z: 1.325138818309949
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.62780826369713
+        y: 0
+        z: 27.978076452338417
+      rotations:
+      - 184.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  115: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 5.0
+      rotations:
+      - 0.0
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.67794727556379
+        y: 0
+        z: 20.30087609540857
+      rotations:
+      - 197.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 17.0
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 18.399774118193925
+        y: 6.466700282713537
+        z: 1.1314842130681955
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.947879140045988
+        y: 0
+        z: 10.63815572471545
+      rotations:
+      - 160.0
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  116: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 15.0
+        y: 0
+        z: 34.0
+      rotations:
+      - 160.34617594194668
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.773119685298308
+        y: 0
+        z: 19.258568345950554
+      rotations:
+      - 349.3461759419467
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.69970036697972
+        y: 0
+        z: 23.640838972456788
+      rotations:
+      - 160.34617594194668
+      sizes:
+      - !Vector3
+        x: 17.128331875363312
+        y: 7.477614092026391
+        z: 1.578933962853549
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 17.397582149895797
+        y: 0
+        z: 29.612335492029835
+      rotations:
+      - 331.3461759419467
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  117: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 7.0
+        y: 0
+        z: 28.0
+      rotations:
+      - 121.60750224624891
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.410037543615957
+        y: 0
+        z: 23.695265059919862
+      rotations:
+      - 285.60750224624894
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.07155811715907
+        y: 0
+        z: 21.18673346636365
+      rotations:
+      - 121.60750224624891
+      sizes:
+      - !Vector3
+        x: 13.187328969215908
+        y: 6.081322259353268
+        z: 1.7662374532625091
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 14.224654593528069
+        y: 0
+        z: 22.63303009099047
+      rotations:
+      - 306.60750224624894
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  118: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 27.0
+        y: 0
+        z: 30.0
+      rotations:
+      - 214.99202019855866
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 18.523181628708635
+        y: 0
+        z: 16.43004973111039
+      rotations:
+      - 31.992020198558635
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 19.544989523276733
+        y: 0
+        z: 19.349985033252473
+      rotations:
+      - 214.99202019855866
+      sizes:
+      - !Vector3
+        x: 19.83384287233346
+        y: 9.247146970197507
+        z: 1.523247168228886
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 20.963054391490612
+        y: 0
+        z: 24.75068692875923
+      rotations:
+      - 48.992020198558635
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  119: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 29.0
+        y: 0
+        z: 37.0
+      rotations:
+      - 207.89727103094762
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 15.127535095654387
+        y: 0
+        z: 24.01713754683894
+      rotations:
+      - 46.89727103094765
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 22.91745963455258
+        y: 0
+        z: 25.510757087488194
+      rotations:
+      - 207.89727103094762
+      sizes:
+      - !Vector3
+        x: 19.897020651562382
+        y: 5.228427417239775
+        z: 1.245968333125672
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 25.643507691976424
+        y: 0
+        z: 28.649313837403625
+      rotations:
+      - 21.89727103094765
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  120: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 1.0
+        y: 0
+        z: 34.0
+      rotations:
+      - 126.38435181583588
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.667113523774573
+        y: 0
+        z: 25.966057320604826
+      rotations:
+      - 302.3843518158359
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 10.660670048240416
+        y: 0
+        z: 26.8816115434018
+      rotations:
+      - 126.38435181583588
+      sizes:
+      - !Vector3
+        x: 10.89044774960418
+        y: 7.73549774029625
+        z: 1.259030427483626
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 6.977173786943762
+        y: 0
+        z: 27.271449374443826
+      rotations:
+      - 318.3843518158359
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  121: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 39.0
+        y: 0
+        z: 15.0
+      rotations:
+      - 284.74356283647074
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.116934491006415
+        y: 0
+        z: 21.418408525564885
+      rotations:
+      - 109.74356283647074
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 27.395105552848243
+        y: 0
+        z: 18.05391959135573
+      rotations:
+      - 284.74356283647074
+      sizes:
+      - !Vector3
+        x: 19.940726503591875
+        y: 8.510858865316838
+        z: 1.357509162561111
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 31.017069880298436
+        y: 0
+        z: 15.522328157350863
+      rotations:
+      - 93.74356283647074
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  122: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.0
+        y: 0
+        z: 3.0
+      rotations:
+      - 346.7594800848128
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.152059232305557
+        y: 0
+        z: 19.89926373896487
+      rotations:
+      - 173.75948008481282
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 21.022488661567888
+        y: 0
+        z: 15.654423188336487
+      rotations:
+      - 346.7594800848128
+      sizes:
+      - !Vector3
+        x: 16.11987174515777
+        y: 7.598821735263039
+        z: 1.162113301575483
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.4414854954205
+        y: 0
+        z: 8.427154275479584
+      rotations:
+      - 154.75948008481282
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  123: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 12.0
+        y: 0
+        z: 33.0
+      rotations:
+      - 148.3924977537511
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 24.61645833355351
+        y: 0
+        z: 18.793488143893022
+      rotations:
+      - 318.39249775375106
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 18.813266533636355
+        y: 0
+        z: 21.928441882840932
+      rotations:
+      - 148.3924977537511
+      sizes:
+      - !Vector3
+        x: 15.995348625656625
+        y: 7.160740967135348
+        z: 1.602652323860565
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.207237103555286
+        y: 0
+        z: 27.122706526316772
+      rotations:
+      - 348.39249775375106
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  124: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 26.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 319.3987053549955
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 13.997983802856032
+        y: 0
+        z: 23.580718652506256
+      rotations:
+      - 131.3987053549955
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 17.539712145072407
+        y: 0
+        z: 22.870335830748854
+      rotations:
+      - 319.3987053549955
+      sizes:
+      - !Vector3
+        x: 16.401510949186633
+        y: 5.507057818061015
+        z: 1.7269650690046783
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 22.43657394646592
+        y: 0
+        z: 19.02511367203927
+      rotations:
+      - 149.3987053549955
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  125: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 5.0
+        y: 0
+        z: 13.0
+      rotations:
+      - 64.98310652189996
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.61455544496566
+        y: 0
+        z: 16.378575017078145
+      rotations:
+      - 256.98310652189997
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 14.968014539947918
+        y: 0
+        z: 17.651740118642365
+      rotations:
+      - 64.98310652189996
+      sizes:
+      - !Vector3
+        x: 15.145933184188612
+        y: 6.184156310088427
+        z: 1.3811869313528873
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 9.285077030547878
+        y: 0
+        z: 15.576453927837829
+      rotations:
+      - 238.98310652189997
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  126: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 18.0
+        y: 0
+        z: 16.0
+      rotations:
+      - 26.565051177077976
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 28.40497539149947
+        y: 0
+        z: 28.15468992209552
+      rotations:
+      - 220.56505117707798
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 23.813776741499453
+        y: 0
+        z: 27.627553482998906
+      rotations:
+      - 26.565051177077976
+      sizes:
+      - !Vector3
+        x: 14.275440262964043
+        y: 7.740592056691119
+        z: 1.9897640755547727
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 21.32580885006366
+        y: 0
+        z: 23.275918876185898
+      rotations:
+      - 204.56505117707798
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
+  127: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 35.0
+        y: 0
+        z: 19.0
+      rotations:
+      - 273.81407483429035
+      sizes: []
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 19.00342723423315
+        y: 0
+        z: 18.668850865128174
+      rotations:
+      - 88.81407483429035
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 24.0243632635773
+        y: 0
+        z: 19.73170911576151
+      rotations:
+      - 273.81407483429035
+      sizes:
+      - !Vector3
+        x: 19.702518038780482
+        y: 6.947679041875801
+        z: 1.5707934287420224
+    - !Item
+      colors: []
+      name: GoodGoal
+      positions:
+      - !Vector3
+        x: 27.47361976919207
+        y: 0
+        z: 21.71175231562611
+      rotations:
+      - 109.81407483429035
+      sizes:
+      - !Vector3
+        x: 2
+        y: 2
+        z: 2
+    t: 5000
