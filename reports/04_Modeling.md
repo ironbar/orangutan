@@ -1654,6 +1654,12 @@ on the metrics. The only idea for solving this is to have few levels of this typ
 
 Transparent walls can be used so the agent sees the goal but it knows it has to navigate to get it.
 
+This are the levels that I'm going to create:
+* two green goals at first sight with different size
+* one close green goal and one green goal away with same size
+* one close green goal and bigger reward at the other side of a transparent wall
+* one close green goal and another with same size at the other side of transparent wall
+
 #### 03 Obstacles
 
 > Navigation around the different types of obstacles that exist in the environment.

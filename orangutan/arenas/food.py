@@ -87,9 +87,12 @@ def _create_agent_looking_center_closer_to_center():
     return agent, x, z, angle
 
 def _create_goal_in_front_of_agent(x, z, angle, goal_type='BadGoalBounce', min_distance=15, max_distance=20, size=-1):
-    distance = np.random.randint(min_distance, max_distance)
-    x, z = get_position_in_front_of_agent(x, z, angle, distance)
-    goal = Item(name=goal_type, positions=[Vector3(x, 0, z)], sizes=[Vector3(size, size, size)],
+    while 1:
+        distance = np.random.randint(min_distance, max_distance)
+        x_new, z_new = get_position_in_front_of_agent(x, z, angle, distance)
+        if x_new > 0 + size/2 and x_new < 40 - size/2 and z_new > 0 + size/2 and z_new < 40 - size/2:
+            break
+    goal = Item(name=goal_type, positions=[Vector3(x_new, 0, z_new)], sizes=[Vector3(size, size, size)],
                 rotations=[normalize_angle(angle+180)])
     return goal
 
