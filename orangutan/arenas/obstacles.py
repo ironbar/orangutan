@@ -19,8 +19,22 @@ def create_arena_with_obstacles(t=DEFAULT_TIME_LIMIT):
 def _add_rewards_to_arena(arena):
     # TODO: add more complex goals
     for _ in range(DEFAULT_REWARD):
-        item = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)])
-        arena.items.append(item)
+        _add_goal_on_top_of_box(arena)
+        _add_simple_goal(arena)
+
+def _add_simple_goal(arena):
+    item = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)])
+    arena.items.append(item)
+
+def _add_goal_on_top_of_box(arena):
+    box = _create_random_box()
+    border_distance = np.sqrt(box.sizes[0].x*2 + box.sizes[0].z*2)
+    x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
+    box.positions = [Vector3(x, 0, z)]
+    arena.items.append(box)
+    goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, box.sizes[0].y, z)])
+    arena.items.append(goal)
+
 
 def _add_obstacles_to_arena(arena):
     for _ in range(10):
@@ -39,11 +53,14 @@ def _add_random_movable_object(arena):
         _add_random_wooden_object(arena)
 
 def _add_random_box(arena):
+    arena.items.append(_create_random_box())
+
+def _create_random_box():
     movable_objects = ['Cardbox1', 'Cardbox2']
     name = str(np.random.choice(movable_objects))
     sizes = [Vector3(*np.random.randint(1, 6, 3).tolist())]
     item = Item(name=name, sizes=sizes)
-    arena.items.append(item)
+    return item
 
 def _add_random_wooden_object(arena):
     movable_objects = ['UObject', 'LObject', 'LObject2']
