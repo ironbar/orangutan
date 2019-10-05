@@ -30,7 +30,7 @@ def create_arena_with_different_sizes_green_goal_in_front_of_agent(t=DEFAULT_TIM
         min_distance=5, max_distance=20, size=size_small))
     return arena
 
-def create_arena_with_different_one_close_and_one_farther_goal_in_front_of_agent(t=DEFAULT_TIME_LIMIT):
+def create_arena_with_same_size_one_close_and_one_farther_goal_in_front_of_agent(t=DEFAULT_TIME_LIMIT):
     arena = Arena(t=t, items=[])
     agent, x, z, angle = _create_agent_looking_center_at_random_position()
 

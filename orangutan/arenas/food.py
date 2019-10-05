@@ -41,14 +41,14 @@ def create_arena_with_red_goal_coming(t=DEFAULT_TIME_LIMIT):
 def create_arena_with_red_wall(t=DEFAULT_TIME_LIMIT):
     arena = Arena(t=t, items=[])
     orientation = np.random.choice(['horizontal', 'vertical'])
-    goal_size = np.random.choice([1, 2, 3])
+    goal_size = float(np.random.choice([1, 2, 3]))
     _add_wall_to_arena(arena, orientation='horizontal', position=np.random.randint(10, 30), goal_size=goal_size)
     if orientation == 'horizontal':
         arena.items.append(Item(name='GoodGoalMulti', sizes=[Vector3(1,1,1)]*2,
-        positions=[Vector3(-1,0, np.random.randint(1, 7)), Vector3(-1,0, 40 - np.random.randint(1, 7))]))
+        positions=[Vector3(-1,0, float(np.random.randint(1, 7))), Vector3(-1,0, 40 - float(np.random.randint(1, 7)))]))
     else:
         arena.items.append(Item(name='GoodGoalMulti', sizes=[Vector3(1,1,1)]*2,
-        positions=[Vector3(np.random.randint(1, 7), 0, -1), Vector3(40 - np.random.randint(1, 7), 0, -1)]))
+        positions=[Vector3(float(np.random.randint(1, 7)), 0, -1), Vector3(40 - float(np.random.randint(1, 7)), 0, -1)]))
     return arena
 
 def create_arena_with_red_houses(t=DEFAULT_TIME_LIMIT):
@@ -67,7 +67,7 @@ def create_arena_with_red_houses(t=DEFAULT_TIME_LIMIT):
                     not_good_center = True
         centers.append(center)
         radiuses.append(radius)
-        goal_size = np.random.uniform(1, 2)
+        goal_size = float(np.random.uniform(1, 2))
         _add_red_circle_to_arena(arena, center=center, radius=radius, goal_size=goal_size)
         if idx < 2:
             arena.items.append(Item(name='GoodGoalMulti', sizes=[Vector3(1,1,1)],
@@ -113,9 +113,9 @@ def _add_wall_to_arena(arena, orientation, position, goal_size):
     x_range = np.linspace(goal_size/2, 40 - goal_size/2, int((40 - goal_size)/(goal_size + 0.5))).tolist()
     x_range.pop(np.random.randint(len(x_range)))
     if orientation == 'horizontal':
-        positions = [Vector3(position, 0, z) for z in x_range]
+        positions = [Vector3(float(position), 0, float(z)) for z in x_range]
     elif orientation == 'vertical':
-        positions = [Vector3(x, 0, position) for x in x_range]
+        positions = [Vector3(float(x), 0, float(position)) for x in x_range]
     else:
         raise Exception('Unknown orientation: %s' % orientation)
     sizes = [Vector3(goal_size, goal_size, goal_size)]*len(positions)
@@ -127,7 +127,7 @@ def _add_red_circle_to_arena(arena, center, radius, goal_size):
     theta_range += np.random.uniform(0, np.pi)
     theta_range = theta_range.tolist()
     theta_range.pop(np.random.randint(len(theta_range)))
-    positions = [Vector3(radius*np.cos(theta) + center[0], 0, radius*np.sin(theta)+ center[1]) for theta in theta_range]
+    positions = [Vector3(float(radius*np.cos(theta) + center[0]), 0, float(radius*np.sin(theta)+ center[1])) for theta in theta_range]
     sizes = [Vector3(goal_size, goal_size, goal_size)]*len(positions)
     goal = Item(name='BadGoal', sizes=sizes, positions=positions)
     arena.items.append(goal)

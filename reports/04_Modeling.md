@@ -1660,6 +1660,11 @@ This are the levels that I'm going to create:
 * one close green goal and one green goal away with same size
 * one close green goal and bigger reward at the other side of a transparent wall
 * one close green goal and another with same size at the other side of transparent wall
+* one close green goal and another yellow at the other side of transparent wall
+
+I have been training over the night with this configuration and the problem is that the number of
+episodes played has rised from around 300 to 1400. I have to think of how to do arenas with similar duration.
+One option could be to have less levels of short duration.
 
 #### 03 Obstacles
 
@@ -1708,6 +1713,13 @@ The first model trained with incorrect arena configuration achieves a score of 2
 230k epochs.
 
 We have probed that it's possible to train a model using deterministic arenas.
+
+We have not been able to improve food score on LB.
+
+We have discovered that there is a problem if some arenas are easier than others because they dominate
+the metrics. The best solution is to sample arenas with inverse frequency to their duration. To have a more
+stable training the bigger the number of arenas the better because the less variability there will be
+during sampling.
 
 <!---
 
