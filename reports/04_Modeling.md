@@ -1680,7 +1680,12 @@ The need to push an object could arise from the object blocking the path or beca
 be hiding the goal.
 
 All this levels should be created with generalization capacity on mind, changing one parameter
-should allow to create levels for generalization.
+should allow to create levels for generalization. Probably it's simpler to create a function
+that removes color information from arenas.
+
+I'm going to prepare a level generator in a similar way to the one I did with a table to have
+the better distribution possible of objects. The difference is that the goals can be more complex: goal
+on platform, goal on top of object, goal surrounded by objects, goal inside tunnel...
 
 #### 04 Avoidance
 

@@ -16,3 +16,4 @@ scripts/test_submission/configs/bak/*
 scripts/test_submission/test_config.1.yaml
 scripts/test_submission/_temp/*
 data/env_configs/debug.yaml
+notebooks/temp.yaml
