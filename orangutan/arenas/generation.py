@@ -31,7 +31,15 @@ from orangutan.arenas.food import (
     create_arena_with_green_and_yellow_goal_in_front_of_agent,
     create_arena_with_red_goal_coming,
     create_arena_with_red_wall,
-    create_arena_with_red_houses)
+    create_arena_with_red_houses,
+    create_arena_with_4_goodgoalmulti,
+    create_arena_with_4_goodgoalmultibounce,
+    create_arena_with_30_badgoal_labyrinth,
+    create_arena_with_15_badgoal_labyrinth,
+    create_arena_with_5_badgoalbounce_labyrinth,
+    create_arena_with_10_badgoalbounce_labyrinth,
+    create_arena_with_15_badgoalbounce_labyrinth,
+)
 from orangutan.arenas.preferences import (
     create_arena_with_different_sizes_green_goal_in_front_of_agent,
     create_arena_with_same_size_one_close_and_one_farther_goal_in_front_of_agent,
@@ -53,7 +61,7 @@ def generate_arena_config(t, n):
     """
     arena_config = ArenaConfig()
     _add_food_levels(arena_config, t, n)
-    # _add_preference_levels(arena_config, t, n)
+    _add_preference_levels(arena_config, t, n)
     _shuffle_arenas(arena_config)
     return arena_config
 
@@ -63,6 +71,13 @@ def _add_food_levels(arena_config, t, n):
         (create_arena_with_red_goal_coming, 2),
         (create_arena_with_red_wall, 4),
         (create_arena_with_red_houses, 4),
+        (create_arena_with_4_goodgoalmulti, 2),
+        (create_arena_with_4_goodgoalmultibounce, 2),
+        (create_arena_with_15_badgoal_labyrinth, 4),
+        (create_arena_with_30_badgoal_labyrinth, 4),
+        (create_arena_with_5_badgoalbounce_labyrinth, 4),
+        (create_arena_with_10_badgoalbounce_labyrinth, 4),
+        (create_arena_with_15_badgoalbounce_labyrinth, 4),
     ]
     _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
 

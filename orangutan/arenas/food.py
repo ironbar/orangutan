@@ -2,12 +2,16 @@
 Functions for creating arenas for food category
 """
 import numpy as np
+import os
 from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 
 from orangutan.arenas.geometry import get_angle_looking_center, get_random_position, normalize_angle, get_position_in_front_of_agent, get_random_position_close_to_center
 
 DEFAULT_TIME_LIMIT = 500
 DEFAULT_REWARD = 2
+
+FOOD_HANDWRITTEN_ARENAS = ArenaConfig(
+    os.path.join(os.path.dirname(os.path.realpath(__file__)), 'food.yaml')).arenas
 
 def create_arena_with_green_and_yellow_goal_in_front_of_agent(t=DEFAULT_TIME_LIMIT):
     arena = Arena(t=t, items=[])
@@ -131,3 +135,42 @@ def _add_red_circle_to_arena(arena, center, radius, goal_size):
     sizes = [Vector3(goal_size, goal_size, goal_size)]*len(positions)
     goal = Item(name='BadGoal', sizes=sizes, positions=positions)
     arena.items.append(goal)
+
+"""
+Handwritten levels
+"""
+
+def create_arena_with_4_goodgoalmulti(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[0]
+    arena.t = t
+    return arena
+
+def create_arena_with_4_goodgoalmultibounce(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[1]
+    arena.t = t
+    return arena
+
+def create_arena_with_15_badgoal_labyrinth(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[2]
+    arena.t = t
+    return arena
+
+def create_arena_with_30_badgoal_labyrinth(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[3]
+    arena.t = t
+    return arena
+
+def create_arena_with_5_badgoalbounce_labyrinth(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[4]
+    arena.t = t
+    return arena
+
+def create_arena_with_10_badgoalbounce_labyrinth(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[5]
+    arena.t = t
+    return arena
+
+def create_arena_with_15_badgoalbounce_labyrinth(t):
+    arena= FOOD_HANDWRITTEN_ARENAS[6]
+    arena.t = t
+    return arena
