@@ -1687,6 +1687,9 @@ I'm going to prepare a level generator in a similar way to the one I did with a 
 the better distribution possible of objects. The difference is that the goals can be more complex: goal
 on platform, goal on top of object, goal surrounded by objects, goal inside tunnel...
 
+I have prepared a first version of levels for obstacles (train_011_fpo) categories and it's being trained, hopefully
+it will achieve nice scores.
+
 #### 04 Avoidance
 
 > Completely avoiding red zones.
@@ -1725,6 +1728,10 @@ We have discovered that there is a problem if some arenas are easier than others
 the metrics. The best solution is to sample arenas with inverse frequency to their duration. To have a more
 stable training the bigger the number of arenas the better because the less variability there will be
 during sampling.
+
+Training with sampling produced better results. Moreover a model trained from zero achieved better scores
+than a model retrained from food category. Scores on food and preferences were 25 and 17, which I think is
+a good start point and probably training for other categories will improve these scores.
 
 <!---
 

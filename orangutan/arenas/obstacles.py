@@ -10,25 +10,29 @@ from orangutan.arenas.geometry import detect_collisions, CollisionDetected
 DEFAULT_TIME_LIMIT = 500
 DEFAULT_REWARD = 2
 
-# TODO: add empty platforms
 # TODO: add empty group of boxes
-# TODO: add goal inside tunnel
+# TODO: add boxes surrounding goal
 
 
 def create_arena_with_obstacles(t=DEFAULT_TIME_LIMIT):
     arena = Arena(t=t, items=[])
     _add_rewards_to_arena(arena)
-    # _add_obstacles_to_arena(arena)
-    # _add_badgoals_to_arena(arena)
+    _add_obstacles_to_arena(arena, np.random.randint(5, 10))
+    _add_badgoals_to_arena(arena, np.random.randint(2, 7))
     return arena
 
 def _add_rewards_to_arena(arena):
-    # TODO: add more complex goals
-    for _ in range(DEFAULT_REWARD):
-        _add_goal_on_top_of_platform(arena)
-        _add_goal_on_top_of_box(arena)
-        _add_goal_inside_cillinder(arena)
-        # _add_simple_goal(arena)
+    funcs = {
+        0: _add_goal_on_top_of_platform,
+        1: _add_goal_on_top_of_box,
+        2: _add_goal_inside_cillinder,
+        3: _add_simple_goal,
+    }
+    func_keys = np.short(np.random.randint(0, np.max(list(funcs.keys())), 2))
+    for key in func_keys:
+        funcs[key](arena)
+    if np.random.uniform() < 0.2:
+        _add_goal_on_top_of_platform(arena, empty_platform=True)
 
 def _add_simple_goal(arena):
     item = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)])
@@ -48,7 +52,7 @@ def _add_goal_on_top_of_box(arena):
     goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, box.sizes[0].y, z)])
     arena.items.append(goal)
 
-def _add_goal_on_top_of_platform(arena):
+def _add_goal_on_top_of_platform(arena, empty_platform=False):
     while 1:
         try:
             platform = _create_random_platform()
@@ -63,8 +67,9 @@ def _add_goal_on_top_of_platform(arena):
             break
         except CollisionDetected:
             pass
-    goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, platform.sizes[0].y, z)])
-    arena.items.append(goal)
+    if not empty_platform:
+        goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, platform.sizes[0].y, z)])
+        arena.items.append(goal)
 
 def _add_goal_inside_cillinder(arena):
     while 1:
@@ -80,13 +85,15 @@ def _add_goal_inside_cillinder(arena):
     goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, 0, z)])
     arena.items.append(goal)
 
-def _add_obstacles_to_arena(arena):
-    for _ in range(10):
-        _add_random_inmovable_object(arena)
-        _add_random_movable_object(arena)
+def _add_obstacles_to_arena(arena, n_obstacles=5):
+    for _ in range(n_obstacles):
+        if np.random.randint(0, 2):
+            _add_random_inmovable_object(arena)
+        else:
+            _add_random_movable_object(arena)
 
-def _add_badgoals_to_arena(arena):
-    for _ in range(5):
+def _add_badgoals_to_arena(arena, n_badgoals=5):
+    for _ in range(n_badgoals):
         item = Item(name='BadGoal', sizes=[Vector3(*[1]*3)])
         arena.items.append(item)
 
