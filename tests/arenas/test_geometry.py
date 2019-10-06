@@ -33,6 +33,7 @@ def test_get_position_in_front_of_agent(x, z, angle, distance, x_new, z_new):
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), 0, [Vector3(1, 0, 1), Vector3(1, 0, -1), Vector3(-1, 0, -1), Vector3(-1, 0, 1)]),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[90], sizes=[Vector3(2, 0, 2)]), 0, [Vector3(1, 0, -1), Vector3(-1, 0, -1), Vector3(-1, 0, 1), Vector3(1, 0, 1)]),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(4, 0, 2)]), 0, [Vector3(2, 0, 1), Vector3(2, 0, -1), Vector3(-2, 0, -1), Vector3(-2, 0, 1)]),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 4)]), 0, [Vector3(1, 0, 2), Vector3(1, 0, -2), Vector3(-1, 0, -2), Vector3(-1, 0, 2)]),
 ])
 def test_get_object_vertices(item, ref_angle, vertices):
     computed_vertices = (_get_object_vertices(item, ref_angle))

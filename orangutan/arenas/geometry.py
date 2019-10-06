@@ -64,7 +64,15 @@ def _get_object_vertices(item, ref_angle):
     object_radius = np.sqrt(size.x**2 + size.z**2)/2
     vertices = []
     for vertex_idx in range(4):
-        vertex_angle = np.arctan2(size.z, size.x) - (vertex_idx*90 + angle)*np.pi/180
+        if vertex_idx == 0:
+            vertex_angle = np.arctan2(size.z, size.x)
+        elif vertex_idx == 1:
+            vertex_angle = -np.arctan2(size.z, size.x)
+        elif vertex_idx == 2:
+            vertex_angle = np.pi + np.arctan2(size.z, size.x)
+        elif vertex_idx == 3:
+            vertex_angle = np.pi - np.arctan2(size.z, size.x)
+        vertex_angle -= angle*np.pi/180
         vertex = Vector3(np.cos(vertex_angle)*object_radius, 0, np.sin(vertex_angle)*object_radius)
         vertices.append(vertex)
     return vertices
