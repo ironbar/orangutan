@@ -3,7 +3,7 @@ from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 
 from orangutan.arenas.geometry import (
     get_angle_looking_center, get_position_in_front_of_agent, _get_object_vertices,
-    detect_collision_between_two_items, CollisionDetected
+    detect_collision_between_two_items, CollisionDetected, detect_object_out_of_arena
 )
 from orangutan.arenas.utils import _str_Vector3
 
@@ -69,3 +69,18 @@ def test_objects_do_collide(item_ref, item):
 ])
 def test_objects_dont_collide(item_ref, item):
     detect_collision_between_two_items(item_ref, item)
+
+@pytest.mark.parametrize('item', [
+    Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]),
+    Item(positions=[Vector3(1, 0, 1)], rotations=[], sizes=[Vector3(2, 0, 2)]),
+])
+def test_detect_object_out_of_arena(item):
+    with pytest.raises(CollisionDetected):
+        detect_object_out_of_arena(item)
+
+@pytest.mark.parametrize('item', [
+    Item(positions=[Vector3(10, 0, 10)], rotations=[0], sizes=[Vector3(2, 0, 2)]),
+    Item(positions=[Vector3(1, 0, 1)], rotations=[0], sizes=[Vector3(2, 0, 2)]),
+])
+def test_detect_object_inside_of_arena(item):
+    detect_object_out_of_arena(item)

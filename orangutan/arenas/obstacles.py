@@ -27,7 +27,7 @@ def create_arena_with_obstacles(t=DEFAULT_TIME_LIMIT):
 
 def _add_rewards_to_arena(arena):
     # TODO: add more complex goals
-    for _ in range(DEFAULT_REWARD*3):
+    for _ in range(DEFAULT_REWARD*10):
         _add_goal_on_top_of_platform(arena)
         # _add_goal_on_top_of_box(arena)
         # _add_simple_goal(arena)
@@ -49,7 +49,7 @@ def _add_goal_on_top_of_platform(arena):
     while 1:
         try:
             platform = _create_random_platform()
-            border_distance = np.sqrt(platform.sizes[0].x*2 + platform.sizes[0].z*2)*2
+            border_distance = np.max([platform.sizes[0].x, platform.sizes[0].z])
             x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
             platform.positions = [Vector3(x, 0, z)]
             ramp = _create_ramp_for_platform(platform)

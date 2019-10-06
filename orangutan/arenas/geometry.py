@@ -51,14 +51,22 @@ def detect_collisions(new_item, existing_items):
     ------
     CollisionDetected
     """
+    detect_object_out_of_arena(new_item)
     ref_angle = new_item.rotations[0]
-    # TODO: verify collision with arena borders
     for item in existing_items:
         detect_collision_between_two_items(new_item, item)
 
 def detect_collision_between_two_items(item1, item2):
     _detect_collision_between_two_items(item1, item2)
     _detect_collision_between_two_items(item2, item1)
+
+def detect_object_out_of_arena(item):
+    EPSILON = 1e-6
+    vertices = _get_object_vertices(item, ref_angle=0)
+    for vertex in vertices:
+        if vertex.x < 0-EPSILON or vertex.x > 40+EPSILON or vertex.z < 0-EPSILON or vertex.z > 40+EPSILON:
+            msg = 'vertex: %s is out of arena' % (_str_Vector3(vertex))
+            raise CollisionDetected(msg)
 
 def _detect_collision_between_two_items(item_ref, item):
     EPSILON = 1e-6
