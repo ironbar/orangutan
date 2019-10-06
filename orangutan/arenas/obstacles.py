@@ -5,11 +5,14 @@ import numpy as np
 from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 
 from orangutan.arenas.utils import GRAY, PINK, BLUE
+from orangutan.arenas.geometry import detect_collisions, CollisionDetected
 
 DEFAULT_TIME_LIMIT = 500
 DEFAULT_REWARD = 2
 
 # TODO: verify that goals do not overlap
+# TODO: what happens when some information is missing
+# TODO: detect collisions with arena border
 # TODO: add empty platforms
 # TODO: add empty group of boxes
 # TODO: add goal inside tunnel
@@ -24,7 +27,7 @@ def create_arena_with_obstacles(t=DEFAULT_TIME_LIMIT):
 
 def _add_rewards_to_arena(arena):
     # TODO: add more complex goals
-    for _ in range(DEFAULT_REWARD):
+    for _ in range(DEFAULT_REWARD*3):
         _add_goal_on_top_of_platform(arena)
         # _add_goal_on_top_of_box(arena)
         # _add_simple_goal(arena)
@@ -43,12 +46,20 @@ def _add_goal_on_top_of_box(arena):
     arena.items.append(goal)
 
 def _add_goal_on_top_of_platform(arena):
-    platform = _create_random_platform()
-    border_distance = np.sqrt(platform.sizes[0].x*2 + platform.sizes[0].z*2)*2
-    x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
-    platform.positions = [Vector3(x, 0, z)]
-    arena.items.append(platform)
-    arena.items.append(_create_ramp_for_platform(platform))
+    while 1:
+        try:
+            platform = _create_random_platform()
+            border_distance = np.sqrt(platform.sizes[0].x*2 + platform.sizes[0].z*2)*2
+            x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
+            platform.positions = [Vector3(x, 0, z)]
+            ramp = _create_ramp_for_platform(platform)
+            detect_collisions(ramp, arena.items)
+            detect_collisions(platform, arena.items)
+            arena.items.append(platform)
+            arena.items.append(ramp)
+            break
+        except CollisionDetected:
+            pass
     goal = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)], positions=[Vector3(x, platform.sizes[0].y, z)])
     arena.items.append(goal)
 

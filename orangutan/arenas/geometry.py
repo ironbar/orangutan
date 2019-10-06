@@ -57,8 +57,11 @@ def detect_collisions(new_item, existing_items):
         detect_collision_between_two_items(new_item, item)
 
 def detect_collision_between_two_items(item1, item2):
-    _detect_collision_between_two_items(item1, item2)
-    _detect_collision_between_two_items(item2, item1)
+    try:
+        _detect_collision_between_two_items(item1, item2)
+        _detect_collision_between_two_items(item2, item1)
+    except IndexError:
+        pass
 
 def _detect_collision_between_two_items(item_ref, item):
     EPSILON = 1e-6
