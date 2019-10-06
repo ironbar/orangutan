@@ -1,7 +1,10 @@
 import pytest
 from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 
-from orangutan.arenas.geometry import get_angle_looking_center, get_position_in_front_of_agent, _get_object_vertices
+from orangutan.arenas.geometry import (
+    get_angle_looking_center, get_position_in_front_of_agent, _get_object_vertices,
+    detect_collision_between_two_items, CollisionDetected
+)
 from orangutan.arenas.utils import _str_Vector3
 
 @pytest.mark.parametrize('x, y, angle', [
@@ -36,8 +39,8 @@ def test_get_position_in_front_of_agent(x, z, angle, distance, x_new, z_new):
     (Item(positions=[Vector3(0, 0, 0)], rotations=[270], sizes=[Vector3(2, 0, 2)]), 0, [Vector3(-1, 0, 1), Vector3(1, 0, 1), Vector3(1, 0, -1), Vector3(-1, 0, -1)]),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(4, 0, 2)]), 0, [Vector3(2, 0, 1), Vector3(2, 0, -1), Vector3(-2, 0, -1), Vector3(-2, 0, 1)]),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 4)]), 0, [Vector3(1, 0, 2), Vector3(1, 0, -2), Vector3(-1, 0, -2), Vector3(-1, 0, 2)]),
-    (Item(positions=[Vector3(0, 0, 0)], rotations=[45], sizes=[Vector3(1.41421356237, 0, 1.41421356237)]), 0, [Vector3(1, 0, 0), Vector3(0, 0, -1), Vector3(-1, 0, 0), Vector3(0, 0, 1)]),
-    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(1.41421356237, 0, 1.41421356237)]), -45, [Vector3(1, 0, 0), Vector3(0, 0, -1), Vector3(-1, 0, 0), Vector3(0, 0, 1)]),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[45], sizes=[Vector3(2**0.5, 0, 2**0.5)]), 0, [Vector3(1, 0, 0), Vector3(0, 0, -1), Vector3(-1, 0, 0), Vector3(0, 0, 1)]),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2**0.5, 0, 2**0.5)]), -45, [Vector3(1, 0, 0), Vector3(0, 0, -1), Vector3(-1, 0, 0), Vector3(0, 0, 1)]),
 ])
 def test_get_object_vertices(item, ref_angle, vertices):
     computed_vertices = (_get_object_vertices(item, ref_angle))
@@ -46,3 +49,20 @@ def test_get_object_vertices(item, ref_angle, vertices):
         assert pytest.approx(vertex_1.x) == vertex_2.x, msg
         assert pytest.approx(vertex_1.y) == vertex_2.y, msg
         assert pytest.approx(vertex_1.z) == vertex_2.z, msg
+
+@pytest.mark.parametrize('item_ref, item', [
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(4, 0, 4)])),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[45], sizes=[Vector3(2, 0, 2)])),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[10], sizes=[Vector3(2, 0, 2)])),
+])
+def test_objects_do_collide(item_ref, item):
+    with pytest.raises(CollisionDetected):
+        detect_collision_between_two_items(item_ref, item)
+
+@pytest.mark.parametrize('item_ref, item', [
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(10, 0, 10)], rotations=[0], sizes=[Vector3(4, 0, 4)])),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(0, 0, 2)], rotations=[0], sizes=[Vector3(2, 0, 2)])),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)])),
+])
+def test_objects_dont_collide(item_ref, item):
+    detect_collision_between_two_items(item_ref, item)

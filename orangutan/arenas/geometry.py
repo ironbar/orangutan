@@ -54,10 +54,23 @@ def detect_collisions(new_item, existing_items):
     for item in existing_items:
         detect_collision_between_two_items(new_item, item)
 
-def detect_collision_between_two_items(item_ref, item):
-    pass
+def detect_collision_between_two_items(item1, item2):
+    _detect_collision_between_two_items(item1, item2)
+    _detect_collision_between_two_items(item2, item1)
+
+def _detect_collision_between_two_items(item_ref, item):
+    vertices = _get_object_vertices(item, item_ref.rotations[0])
+    size = item_ref.sizes[0]
+    center = item_ref.positions[0]
+    x_limits = [center.x - size.x/2, center.x + size.x/2]
+    z_limits = [center.z - size.z/2, center.z + size.z/2]
+    for vertex in vertices:
+        if vertex.x > x_limits[0] and vertex.x < x_limits[1]:
+            if vertex.z > z_limits[0] and vertex.z < z_limits[1]:
+                raise CollisionDetected()
 
 def _get_object_vertices(item, ref_angle):
+    # TODO: what happens if some information is missing
     size = item.sizes[0]
     center = item.positions[0]
     angle = item.rotations[0] - ref_angle
