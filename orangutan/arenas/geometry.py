@@ -57,42 +57,52 @@ def detect_collisions(new_item, existing_items):
         detect_collision_between_two_items(new_item, item)
 
 def detect_collision_between_two_items(item1, item2):
-    try:
-        _detect_collision_between_two_items(item1, item2)
-        _detect_collision_between_two_items(item2, item1)
-    except IndexError:
-        pass
+    _detect_collision_between_two_items(item1, item2)
+    _detect_collision_between_two_items(item2, item1)
 
 def _detect_collision_between_two_items(item_ref, item):
     EPSILON = 1e-6
-    vertices = _get_object_vertices(item, item_ref.rotations[0])
-    size = item_ref.sizes[0]
-    center = item_ref.positions[0]
-    x_limits = [center.x - size.x/2, center.x + size.x/2]
-    z_limits = [center.z - size.z/2, center.z + size.z/2]
-    for vertex in vertices:
-        if vertex.x > x_limits[0]+EPSILON and vertex.x < x_limits[1]-EPSILON:
-            if vertex.z > z_limits[0]+EPSILON and vertex.z < z_limits[1]-EPSILON:
-                msg = 'vertex: %s, x_limits: %s, z_limits: %s' % (_str_Vector3(vertex), str(x_limits), str(z_limits))
-                raise CollisionDetected(msg)
+    try:
+        ref_rotations = [item_ref.rotations[0]]
+    except IndexError:
+        # If no rotation is given try with 0, 45 and 90
+        ref_rotations = [0, 45, 90]
+    for ref_rotation in ref_rotations:
+        vertices = _get_object_vertices(item, ref_rotation)
+        size = item_ref.sizes[0]
+        center = item_ref.positions[0]
+        x_limits = [center.x - size.x/2, center.x + size.x/2]
+        z_limits = [center.z - size.z/2, center.z + size.z/2]
+        for vertex in vertices:
+            if vertex.x > x_limits[0]+EPSILON and vertex.x < x_limits[1]-EPSILON:
+                if vertex.z > z_limits[0]+EPSILON and vertex.z < z_limits[1]-EPSILON:
+                    msg = 'vertex: %s, x_limits: %s, z_limits: %s' % (_str_Vector3(vertex), str(x_limits), str(z_limits))
+                    raise CollisionDetected(msg)
 
 def _get_object_vertices(item, ref_angle):
-    # TODO: what happens if some information is missing
     size = item.sizes[0]
     center = item.positions[0]
-    angle = item.rotations[0] - ref_angle
+    try:
+        angles = [item.rotations[0] - ref_angle]
+    except IndexError:
+        # If no rotation is given try with 0, 45 and 90
+        angles = [-ref_angle, 45 - ref_angle, 90 - ref_angle]
     object_radius = np.sqrt(size.x**2 + size.z**2)/2
     vertices = []
-    for vertex_idx in range(4):
-        if vertex_idx == 0:
-            vertex_angle = np.arctan2(size.z, size.x)
-        elif vertex_idx == 1:
-            vertex_angle = -np.arctan2(size.z, size.x)
-        elif vertex_idx == 2:
-            vertex_angle = np.pi + np.arctan2(size.z, size.x)
-        elif vertex_idx == 3:
-            vertex_angle = np.pi - np.arctan2(size.z, size.x)
-        vertex_angle -= angle*np.pi/180
-        vertex = Vector3(np.cos(vertex_angle)*object_radius + center.x, 0, np.sin(vertex_angle)*object_radius + center.z)
-        vertices.append(vertex)
+    for angle in angles:
+        for vertex_idx in range(4):
+            if vertex_idx == 0:
+                vertex_angle = np.arctan2(size.z, size.x)
+            elif vertex_idx == 1:
+                vertex_angle = -np.arctan2(size.z, size.x)
+            elif vertex_idx == 2:
+                vertex_angle = np.pi + np.arctan2(size.z, size.x)
+            elif vertex_idx == 3:
+                vertex_angle = np.pi - np.arctan2(size.z, size.x)
+            vertex_angle -= angle*np.pi/180
+            vertex = Vector3(
+                np.cos(vertex_angle)*object_radius + center.x,
+                0,
+                np.sin(vertex_angle)*object_radius + center.z)
+            vertices.append(vertex)
     return vertices

@@ -55,6 +55,7 @@ def test_get_object_vertices(item, ref_angle, vertices):
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(4, 0, 4)])),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[45], sizes=[Vector3(2, 0, 2)])),
     (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[10], sizes=[Vector3(2, 0, 2)])),
+    (Item(positions=[Vector3(0, 0, 0)], rotations=[0], sizes=[Vector3(2, 0, 2)]), Item(positions=[Vector3(2, 0, 0)], rotations=[], sizes=[Vector3(2, 0, 2)])),
 ])
 def test_objects_do_collide(item_ref, item):
     with pytest.raises(CollisionDetected):
