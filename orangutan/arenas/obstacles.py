@@ -9,10 +9,10 @@ from orangutan.arenas.utils import GRAY, PINK, BLUE
 DEFAULT_TIME_LIMIT = 500
 DEFAULT_REWARD = 2
 
-# TODO: make ramp lenght dependent on height
 # TODO: verify that goals do not overlap
 # TODO: add empty platforms
 # TODO: add empty group of boxes
+# TODO: add goal inside tunnel
 
 
 def create_arena_with_obstacles(t=DEFAULT_TIME_LIMIT):
@@ -111,21 +111,40 @@ def _create_random_platform():
     item = Item(name=name, sizes=sizes, colors=colors, rotations=[0])
     return item
 
-def _create_ramp_for_platform(platform):
+def _create_ramp_for_platform(platform, rotation=None):
+    """
+    Creates a ramp that allows to climb the platform
+
+    Parameters
+    ----------
+    platform : Item
+    rotation : int
+        If given the ramp will be placed with that orientation, otherwise it will
+        be randomly sampled from 0, 90, 180, 270
+    """
     position = platform.positions[0]
     size = platform.sizes[0]
-    rotation = float(np.random.choice([0, 90, 180, 270]))
-    rotation = 270
+    if rotation is None:
+        rotation = float(np.random.choice([0, 90, 180, 270]))
+    else:
+        assert rotation in [0, 90, 180, 270]
     sizes = platform.sizes
+    ramp_length = size.y*np.random.uniform(1, 3)
     if rotation == 0:
-        positions = [Vector3(position.x, position.y, position.z + size.z)]
+        sizes = [Vector3(size.x, size.y, ramp_length)]
+        displacement = (size.z + ramp_length)/2
+        positions = [Vector3(position.x, position.y, position.z + displacement)]
     elif rotation == 180:
-        positions = [Vector3(position.x, position.y, position.z - size.z)]
+        sizes = [Vector3(size.x, size.y, ramp_length)]
+        displacement = (size.z + ramp_length)/2
+        positions = [Vector3(position.x, position.y, position.z - displacement)]
     elif rotation == 90:
-        sizes = [Vector3(size.z, size.y, size.x)]
-        positions = [Vector3(position.x + size.x, position.y, position.z)]
+        sizes = [Vector3(size.z, size.y, ramp_length)]
+        displacement = (size.x + ramp_length)/2
+        positions = [Vector3(position.x + displacement, position.y, position.z)]
     elif rotation == 270:
-        sizes = [Vector3(size.z, size.y, size.x)]
-        positions = [Vector3(position.x - size.x, position.y, position.z)]
+        sizes = [Vector3(size.z, size.y, ramp_length)]
+        displacement = (size.x + ramp_length)/2
+        positions = [Vector3(position.x - displacement, position.y, position.z)]
     item = Item(name='Ramp', sizes=sizes, colors=[PINK], rotations=[rotation], positions=positions)
     return item
