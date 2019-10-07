@@ -233,7 +233,7 @@ def create_arena_splitted_in_two(t):
         _add_random_wooden_object(arena)
     return arena
 
-def _split_arena_in_two(arena):
+def _split_arena_in_two(arena, block_path=False):
     inmovable_objects = ['Wall', 'WallTransparent']
     name = str(np.random.choice(inmovable_objects))
     colors = [GRAY]
@@ -258,6 +258,13 @@ def _split_arena_in_two(arena):
         positions = [Vector3(40 - wall_2_width/2, 0, wall_position) ]
         item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
         arena.items.append(item)
+        if block_path:
+            box = _create_random_box()
+            box.sizes = [Vector3(hole_width-0.5, box.sizes[0].y, box.sizes[0].z)]
+            box.positions = [Vector3( wall_1_width + hole_width/2, 0, wall_position)]
+            box.rotations = [0]
+            arena.items.append(box)
+
     else:
         sizes = [Vector3(float(np.random.randint(1, 5)),
                         float(np.random.randint(2, 10)),
@@ -272,6 +279,12 @@ def _split_arena_in_two(arena):
         positions = [Vector3(wall_position, 0, 40 - wall_2_width/2)]
         item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
         arena.items.append(item)
+        if block_path:
+            box = _create_random_box()
+            box.sizes = [Vector3(box.sizes[0].x, box.sizes[0].y, hole_width-0.5)]
+            box.positions = [Vector3( wall_position, 0, wall_1_width + hole_width/2)]
+            box.rotations = [0]
+            arena.items.append(box)
 
 def create_arena_splitted_in_four(t):
     arena = Arena(t=t, items=[])
@@ -315,3 +328,15 @@ def _split_arena_in_four(arena):
     positions = [Vector3(40-wall_position, 0, wall_width/2)]
     item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
     arena.items.append(item)
+
+def create_arena_splitted_in_two_with_path_blocked(t):
+    arena = Arena(t=t, items=[])
+    _split_arena_in_two(arena, block_path=True)
+    for _ in range(DEFAULT_REWARD):
+        _add_simple_goal(arena)
+    _add_badgoals_to_arena(arena, np.random.randint(2, 7))
+    for _ in range(np.random.randint(2, 4)):
+        _add_random_box(arena)
+    for _ in range(np.random.randint(1, 3)):
+        _add_random_wooden_object(arena)
+    return arena
