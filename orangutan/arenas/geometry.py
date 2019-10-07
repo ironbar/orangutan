@@ -77,8 +77,13 @@ def _detect_collision_between_two_items(item_ref, item):
         ref_rotations = [0, 45, 90]
     for ref_rotation in ref_rotations:
         vertices = _get_object_vertices(item, ref_rotation)
-        size = item_ref.sizes[0]
-        center = item_ref.positions[0]
+        try:
+            size = item_ref.sizes[0]
+            center = item_ref.positions[0]
+        except IndexError:
+            # This case happens when using random goals, that is why they are placed at the last position
+            # when sampling
+            return
         x_limits = [center.x - size.x/2, center.x + size.x/2]
         z_limits = [center.z - size.z/2, center.z + size.z/2]
         for vertex in vertices:
@@ -88,8 +93,13 @@ def _detect_collision_between_two_items(item_ref, item):
                     raise CollisionDetected(msg)
 
 def _get_object_vertices(item, ref_angle):
-    size = item.sizes[0]
-    center = item.positions[0]
+    try:
+        size = item.sizes[0]
+        center = item.positions[0]
+    except IndexError:
+        # This case happens when using random goals, that is why they are placed at the last position
+        # when sampling
+        return []
     try:
         angles = [item.rotations[0] - ref_angle]
     except IndexError:

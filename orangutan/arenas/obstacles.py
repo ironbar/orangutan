@@ -28,7 +28,7 @@ def _add_rewards_to_arena(arena):
         2: _add_goal_inside_cillinder,
         3: _add_simple_goal,
     }
-    func_keys = np.short(np.random.randint(0, np.max(list(funcs.keys())), 2))
+    func_keys = np.short(np.random.randint(0, np.max(list(funcs.keys()))+1, 2))
     for key in func_keys:
         funcs[key](arena)
     if np.random.uniform() < 0.2:
