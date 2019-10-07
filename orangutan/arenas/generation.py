@@ -49,7 +49,8 @@ from orangutan.arenas.preferences import (
 from orangutan.arenas.obstacles import (
     create_arena_with_obstacles,
     create_center_blocked_arena,
-    create_arena_splitted_in_two
+    create_arena_splitted_in_two,
+    create_arena_splitted_in_four
 )
 
 def generate_arena_config(t, n):
@@ -101,6 +102,7 @@ def _add_obstacles_levels(arena_config, t, n):
         (create_arena_with_obstacles, 32),
         (create_center_blocked_arena, 8),
         (create_arena_splitted_in_two, 8),
+        (create_arena_splitted_in_four, 8),
     ]
     _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
 

@@ -227,9 +227,9 @@ def create_arena_splitted_in_two(t):
     for _ in range(DEFAULT_REWARD):
         _add_simple_goal(arena)
     _add_badgoals_to_arena(arena, np.random.randint(2, 7))
-    for _ in range(np.random.randint(2, 6)):
+    for _ in range(np.random.randint(2, 4)):
         _add_random_box(arena)
-    if np.random.randint(0, 2):
+    for _ in range(np.random.randint(1, 3)):
         _add_random_wooden_object(arena)
     return arena
 
@@ -272,3 +272,46 @@ def _split_arena_in_two(arena):
         positions = [Vector3(wall_position, 0, 40 - wall_2_width/2)]
         item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
         arena.items.append(item)
+
+def create_arena_splitted_in_four(t):
+    arena = Arena(t=t, items=[])
+    _split_arena_in_four(arena)
+    for _ in range(DEFAULT_REWARD):
+        _add_simple_goal(arena)
+    _add_badgoals_to_arena(arena, np.random.randint(2, 7))
+    for _ in range(np.random.randint(2, 4)):
+        _add_random_box(arena)
+    for _ in range(np.random.randint(1, 3)):
+        _add_random_wooden_object(arena)
+    return arena
+
+def _split_arena_in_four(arena):
+    inmovable_objects = ['Wall', 'WallTransparent']
+    name = str(np.random.choice(inmovable_objects))
+    colors = [GRAY]
+
+    wall_position = float(np.random.randint(13, 16))
+    wall_width = float(np.random.randint(19, 22))
+    wall_thickness = 1
+
+    sizes = [Vector3(
+        float(wall_width),
+        float(np.random.randint(2, 10)),
+        float(wall_thickness))]
+    positions = [Vector3(wall_width/2, 0, wall_position)]
+    item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
+    arena.items.append(item)
+    positions = [Vector3(40-wall_width/2, 0, 40-wall_position)]
+    item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
+    arena.items.append(item)
+
+    sizes = [Vector3(
+        float(wall_thickness),
+        float(np.random.randint(2, 10)),
+        float(wall_width))]
+    positions = [Vector3(wall_position, 0, 40-wall_width/2)]
+    item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
+    arena.items.append(item)
+    positions = [Vector3(40-wall_position, 0, wall_width/2)]
+    item = Item(name=name, sizes=sizes, colors=colors, positions=positions, rotations=[0])
+    arena.items.append(item)
