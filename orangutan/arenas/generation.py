@@ -78,7 +78,7 @@ PREFERENCES_FUNC_WEIGHTS = [
     ]
 
 OBSTACLES_FUNC_WEIGHTS = [
-    (create_arena_with_obstacles, 32),
+    (create_arena_with_obstacles, 16),
     (create_center_blocked_arena, 8),
     (create_arena_splitted_in_two, 8),
     (create_arena_splitted_in_four, 8),
@@ -97,11 +97,13 @@ def generate_arena_config(t, n):
     n : int
         Controls the size of the generated arena, the bigger n the bigger the number of arenas
     """
+    _summarize_funcs_weights()
     arena_config = ArenaConfig()
     _add_arenas_using_functions_and_weights(arena_config, FOOD_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, PREFERENCES_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n)
-    _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n, remove_color=True)
+    _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n,
+                                            remove_color=True)
     _shuffle_arenas(arena_config)
     return arena_config
 
@@ -120,3 +122,9 @@ def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n, r
             if remove_color:
                 remove_color_information(arena)
             arena_config.arenas[idx] = arena
+
+def _summarize_funcs_weights():
+    print('Food: %i' % sum([weight for func, weight in FOOD_FUNC_WEIGHTS]))
+    print('Preferences: %i' % sum([weight for func, weight in PREFERENCES_FUNC_WEIGHTS]))
+    print('Obstacles: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
+    print('Generalization: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
