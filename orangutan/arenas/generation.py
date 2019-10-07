@@ -55,26 +55,7 @@ from orangutan.arenas.obstacles import (
 )
 from orangutan.arenas.generalization import remove_color_information
 
-def generate_arena_config(t, n):
-    """
-    Creates an ArenaConfig object
-
-    Parameters
-    ----------
-    t : int
-        Max number of steps on the level
-    n : int
-        Controls the size of the generated arena, the bigger n the bigger the number of arenas
-    """
-    arena_config = ArenaConfig()
-    _add_food_levels(arena_config, t, n)
-    _add_preference_levels(arena_config, t, n)
-    _add_obstacles_levels(arena_config, t, n)
-    _shuffle_arenas(arena_config)
-    return arena_config
-
-def _add_food_levels(arena_config, t, n):
-    funcs_weights = [
+FOOD_FUNC_WEIGHTS = [
         (create_arena_with_green_and_yellow_goal_in_front_of_agent, 1),
         (create_arena_with_red_goal_coming, 2),
         (create_arena_with_red_wall, 4),
@@ -87,27 +68,42 @@ def _add_food_levels(arena_config, t, n):
         (create_arena_with_10_badgoalbounce_labyrinth, 4),
         (create_arena_with_15_badgoalbounce_labyrinth, 4),
     ]
-    _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
 
-def _add_preference_levels(arena_config, t, n):
-    funcs_weights = [
+PREFERENCES_FUNC_WEIGHTS = [
         (create_arena_with_different_sizes_green_goal_in_front_of_agent, 1),
         (create_arena_with_same_size_one_close_and_one_farther_goal_in_front_of_agent, 1),
         (create_arena_with_different_sizes_green_goal_separated_by_wall, 2),
         (create_arena_with_same_size_green_goal_separated_by_wall, 1),
         (create_arena_with_yellow_goal_separated_by_wall, 2),
     ]
-    _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
 
-def _add_obstacles_levels(arena_config, t, n):
-    funcs_weights = [
-        (create_arena_with_obstacles, 32),
-        (create_center_blocked_arena, 8),
-        (create_arena_splitted_in_two, 8),
-        (create_arena_splitted_in_four, 8),
-        (create_arena_splitted_in_two_with_path_blocked, 8),
-    ]
-    _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
+OBSTACLES_FUNC_WEIGHTS = [
+    (create_arena_with_obstacles, 32),
+    (create_center_blocked_arena, 8),
+    (create_arena_splitted_in_two, 8),
+    (create_arena_splitted_in_four, 8),
+    (create_arena_splitted_in_two_with_path_blocked, 8),
+]
+
+
+def generate_arena_config(t, n):
+    """
+    Creates an ArenaConfig object
+
+    Parameters
+    ----------
+    t : int
+        Max number of steps on the level
+    n : int
+        Controls the size of the generated arena, the bigger n the bigger the number of arenas
+    """
+    arena_config = ArenaConfig()
+    _add_arenas_using_functions_and_weights(arena_config, FOOD_FUNC_WEIGHTS, t, n)
+    _add_arenas_using_functions_and_weights(arena_config, PREFERENCES_FUNC_WEIGHTS, t, n)
+    _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n)
+    _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n, remove_color=True)
+    _shuffle_arenas(arena_config)
+    return arena_config
 
 def _shuffle_arenas(arena_config):
     arenas_copy = arena_config.arenas.copy()
@@ -124,4 +120,3 @@ def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n, r
             if remove_color:
                 remove_color_information(arena)
             arena_config.arenas[idx] = arena
-
