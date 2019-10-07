@@ -53,6 +53,7 @@ from orangutan.arenas.obstacles import (
     create_arena_splitted_in_four,
     create_arena_splitted_in_two_with_path_blocked
 )
+from orangutan.arenas.generalization import remove_color_information
 
 def generate_arena_config(t, n):
     """
@@ -115,8 +116,12 @@ def _shuffle_arenas(arena_config):
     for key, new_key in zip(arena_config.arenas, keys):
         arena_config.arenas[key] = arenas_copy[new_key]
 
-def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n):
+def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n, remove_color=False):
     for func, weight in funcs_weights:
         for _ in range(weight*n):
             idx = len(arena_config.arenas)
-            arena_config.arenas[idx] = func(t=t)
+            arena = func(t=t)
+            if remove_color:
+                remove_color_information(arena)
+            arena_config.arenas[idx] = arena
+
