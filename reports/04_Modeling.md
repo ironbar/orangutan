@@ -1688,7 +1688,11 @@ the better distribution possible of objects. The difference is that the goals ca
 on platform, goal on top of object, goal surrounded by objects, goal inside tunnel...
 
 I have prepared a first version of levels for obstacles (train_011_fpo) categories and it's being trained, hopefully
-it will achieve nice scores.
+it will achieve nice scores. The results of this models on LB is not good, the obstacles categories gets very bad
+scores of 2 and 5. Moreover they do not now how to navigate on arena with centerblocked, which should be fairly easy. They fail
+too in getting reward from goal on platform (maybe because the goal is green). They fail also on moving an obstacle to get to
+the other side of the wall. The agents also move backwards without sense, maybe when I add death zones they will stop doing
+that. I could remove death coming levels and block backwards movement. Having a memory of the explored places could help.
 
 #### 04 Avoidance
 

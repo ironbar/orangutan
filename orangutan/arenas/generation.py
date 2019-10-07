@@ -47,7 +47,8 @@ from orangutan.arenas.preferences import (
     create_arena_with_same_size_green_goal_separated_by_wall,
     create_arena_with_yellow_goal_separated_by_wall)
 from orangutan.arenas.obstacles import (
-    create_arena_with_obstacles
+    create_arena_with_obstacles,
+    create_center_blocked_arena,
 )
 
 def generate_arena_config(t, n):
@@ -97,10 +98,9 @@ def _add_preference_levels(arena_config, t, n):
 def _add_obstacles_levels(arena_config, t, n):
     funcs_weights = [
         (create_arena_with_obstacles, 32),
+        (create_center_blocked_arena, 8),
     ]
     _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n)
-
-create_arena_with_obstacles
 
 def _shuffle_arenas(arena_config):
     arenas_copy = arena_config.arenas.copy()

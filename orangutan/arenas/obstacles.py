@@ -193,3 +193,30 @@ def _create_ramp_for_platform(platform, rotation=None):
         positions = [Vector3(position.x - displacement, position.y, position.z)]
     item = Item(name='Ramp', sizes=sizes, colors=[PINK], rotations=[rotation], positions=positions)
     return item
+
+"""
+More levels
+"""
+
+def create_center_blocked_arena(t):
+    arena = Arena(t=t, items=[])
+    _add_center_blocking_wall(arena)
+    for _ in range(DEFAULT_REWARD):
+        _add_simple_goal(arena)
+    _add_badgoals_to_arena(arena, np.random.randint(2, 7))
+    for _ in range(np.random.randint(2, 6)):
+        _add_random_box(arena)
+    if np.random.randint(0, 2):
+        _add_random_wooden_object(arena)
+    return arena
+
+def _add_center_blocking_wall(arena):
+    inmovable_objects = ['Wall', 'WallTransparent']
+    name = str(np.random.choice(inmovable_objects))
+    colors = [GRAY]
+    sizes = [Vector3(float(np.random.randint(15, 25)),
+                     float(np.random.randint(2, 10)),
+                     float(np.random.randint(15, 25)))]
+    positions = [Vector3(20, 0, 20)]
+    item = Item(name=name, sizes=sizes, colors=colors, positions=positions)
+    arena.items.append(item)
