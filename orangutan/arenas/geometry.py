@@ -52,7 +52,6 @@ def detect_collisions(new_item, existing_items):
     CollisionDetected
     """
     detect_object_out_of_arena(new_item)
-    ref_angle = new_item.rotations[0]
     for item in existing_items:
         detect_collision_between_two_items(new_item, item)
 
