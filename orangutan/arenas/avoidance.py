@@ -129,7 +129,7 @@ def _add_agent_to_arena(arena):
 More levels
 """
 
-def create_center_blocked_arena(t):
+def create_center_blocked_arena_deathzone(t):
     arena = Arena(t=t, items=[])
     _add_center_blocking_wall(arena)
     for item in arena.items:
@@ -144,7 +144,7 @@ def create_center_blocked_arena(t):
         _add_random_wooden_object(arena)
     return arena
 
-def create_arena_splitted_in_two(t):
+def create_arena_splitted_in_two_deathzone(t):
     arena = Arena(t=t, items=[])
     _split_arena_in_two(arena)
     for item in arena.items:
@@ -159,7 +159,7 @@ def create_arena_splitted_in_two(t):
         _add_random_wooden_object(arena)
     return arena
 
-def create_arena_splitted_in_four(t):
+def create_arena_splitted_in_four_deathzone(t):
     arena = Arena(t=t, items=[])
     _split_arena_in_four(arena)
     for item in arena.items:
@@ -174,7 +174,7 @@ def create_arena_splitted_in_four(t):
         _add_random_wooden_object(arena)
     return arena
 
-def create_arena_splitted_in_two_with_path_blocked(t):
+def create_arena_splitted_in_two_with_path_blocked_deathzone(t):
     arena = Arena(t=t, items=[])
     _split_arena_in_two(arena, block_path=True)
     for item in arena.items[:-1]:

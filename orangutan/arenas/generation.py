@@ -54,6 +54,13 @@ from orangutan.arenas.obstacles import (
     create_arena_splitted_in_two_with_path_blocked
 )
 from orangutan.arenas.generalization import remove_color_information
+from orangutan.arenas.avoidance import (
+    create_arena_with_obstacles_and_deathzones,
+    create_center_blocked_arena_deathzone,
+    create_arena_splitted_in_two_deathzone,
+    create_arena_splitted_in_four_deathzone,
+    create_arena_splitted_in_two_with_path_blocked_deathzone,
+)
 
 FOOD_FUNC_WEIGHTS = [
         (create_arena_with_green_and_yellow_goal_in_front_of_agent, 1),
@@ -85,6 +92,15 @@ OBSTACLES_FUNC_WEIGHTS = [
     (create_arena_splitted_in_two_with_path_blocked, 8),
 ]
 
+AVOIDANCE_FUNC_WEIGHTS = [
+    (create_arena_with_obstacles_and_deathzones, 16),
+    (create_center_blocked_arena_deathzone, 8),
+    (create_arena_splitted_in_two_deathzone, 8),
+    (create_arena_splitted_in_four_deathzone, 8),
+    (create_arena_splitted_in_two_with_path_blocked_deathzone, 8),
+]
+
+GENERALIZATION_FUNC_WEIGHTS = OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS[:1]
 
 def generate_arena_config(t, n):
     """
@@ -102,7 +118,8 @@ def generate_arena_config(t, n):
     _add_arenas_using_functions_and_weights(arena_config, FOOD_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, PREFERENCES_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n)
-    _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n,
+    _add_arenas_using_functions_and_weights(arena_config, AVOIDANCE_FUNC_WEIGHTS, t, n)
+    _add_arenas_using_functions_and_weights(arena_config, GENERALIZATION_FUNC_WEIGHTS, t, n,
                                             remove_color=True)
     _shuffle_arenas(arena_config)
     return arena_config
@@ -127,4 +144,5 @@ def _summarize_funcs_weights():
     print('Food: %i' % sum([weight for func, weight in FOOD_FUNC_WEIGHTS]))
     print('Preferences: %i' % sum([weight for func, weight in PREFERENCES_FUNC_WEIGHTS]))
     print('Obstacles: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
-    print('Generalization: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
+    print('Avoidance: %i' % sum([weight for func, weight in AVOIDANCE_FUNC_WEIGHTS]))
+    print('Generalization: %i' % sum([weight for func, weight in GENERALIZATION_FUNC_WEIGHTS]))
