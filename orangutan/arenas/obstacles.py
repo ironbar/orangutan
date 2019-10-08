@@ -45,6 +45,7 @@ def _add_goal_on_top_of_box(arena):
             border_distance = np.max([box.sizes[0].x, box.sizes[0].z])*1.2
             x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
             box.positions = [Vector3(x, 0, z)]
+            detect_collisions(box, arena.items)
             arena.items.append(box)
             break
         except CollisionDetected:
@@ -78,6 +79,7 @@ def _add_goal_inside_cillinder(arena):
             border_distance = np.max([cillinder.sizes[0].x, cillinder.sizes[0].z])*1.2
             x, z = np.random.uniform(border_distance, 40 -border_distance, 2).tolist()
             cillinder.positions = [Vector3(x, 0, z)]
+            detect_collisions(cillinder, arena.items)
             arena.items.append(cillinder)
             break
         except CollisionDetected:
