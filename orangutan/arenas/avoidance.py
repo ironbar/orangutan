@@ -15,7 +15,8 @@ from orangutan.arenas.obstacles import (
     _add_center_blocking_wall,
     _add_random_box,
     _add_random_wooden_object,
-    _split_arena_in_two
+    _split_arena_in_two,
+    _split_arena_in_four
 )
 
 DEFAULT_TIME_LIMIT = 500
@@ -146,6 +147,21 @@ def create_center_blocked_arena(t):
 def create_arena_splitted_in_two(t):
     arena = Arena(t=t, items=[])
     _split_arena_in_two(arena)
+    for item in arena.items:
+        item.name = 'DeathZone'
+    _add_agent_to_arena(arena)
+    for _ in range(DEFAULT_REWARD):
+        _add_simple_goal(arena)
+    _add_badgoals_to_arena(arena, np.random.randint(2, 7))
+    for _ in range(np.random.randint(2, 4)):
+        _add_random_box(arena)
+    for _ in range(np.random.randint(1, 3)):
+        _add_random_wooden_object(arena)
+    return arena
+
+def create_arena_splitted_in_four(t):
+    arena = Arena(t=t, items=[])
+    _split_arena_in_four(arena)
     for item in arena.items:
         item.name = 'DeathZone'
     _add_agent_to_arena(arena)
