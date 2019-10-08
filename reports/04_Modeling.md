@@ -1694,6 +1694,9 @@ too in getting reward from goal on platform (maybe because the goal is green). T
 the other side of the wall. The agents also move backwards without sense, maybe when I add death zones they will stop doing
 that. I could remove death coming levels and block backwards movement. Having a memory of the explored places could help.
 
+I have added more levels and also generalization levels and I'm training 104 and 105 with those. The different
+between this two trainings is duration: 5e5 and 1e6. On first 250k epochs I don't see differences between them on training metrics.
+
 #### 04 Avoidance
 
 > Completely avoiding red zones.
@@ -1703,6 +1706,11 @@ For red zones we can think of many levels that can be created.
 
 For orange zones is more difficult, sometimes going to an orange zone is good and
 sometimes is bad. The agent could start on an orange zone and escape from it.
+
+I can reuse many of the obstacles levels:
+* On exploration levels I can add death or hot zones . I have to fix goal and agent positions. I could
+add traps like goals on death zones and new goals on hot zones.
+* I could take levels with walls dividing the arena and replace them by death zones
 
 #### 05 Spatial Reasoning
 
@@ -1736,6 +1744,8 @@ during sampling.
 Training with sampling produced better results. Moreover a model trained from zero achieved better scores
 than a model retrained from food category. Scores on food and preferences were 25 and 17, which I think is
 a good start point and probably training for other categories will improve these scores.
+
+First models trained on obstacles category do not get good results on that category.
 
 <!---
 
