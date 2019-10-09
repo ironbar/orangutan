@@ -4,6 +4,7 @@ Functions for creating arenas for food category
 import numpy as np
 import os
 from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
+import copy
 
 from orangutan.arenas.geometry import get_angle_looking_center, get_random_position, normalize_angle, get_position_in_front_of_agent, get_random_position_close_to_center
 
@@ -141,36 +142,36 @@ Handwritten levels
 """
 
 def create_arena_with_4_goodgoalmulti(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[0]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[0])
     arena.t = t
     return arena
 
 def create_arena_with_4_goodgoalmultibounce(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[1]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[1])
     arena.t = t
     return arena
 
 def create_arena_with_15_badgoal_labyrinth(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[2]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[2])
     arena.t = t
     return arena
 
 def create_arena_with_30_badgoal_labyrinth(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[3]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[3])
     arena.t = t
     return arena
 
 def create_arena_with_5_badgoalbounce_labyrinth(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[4]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[4])
     arena.t = t
     return arena
 
 def create_arena_with_10_badgoalbounce_labyrinth(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[5]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[5])
     arena.t = t
     return arena
 
 def create_arena_with_15_badgoalbounce_labyrinth(t):
-    arena= FOOD_HANDWRITTEN_ARENAS[6]
+    arena= copy.deepcopy(FOOD_HANDWRITTEN_ARENAS[6])
     arena.t = t
     return arena

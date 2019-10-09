@@ -101,6 +101,8 @@ AVOIDANCE_FUNC_WEIGHTS = [
 ]
 
 GENERALIZATION_FUNC_WEIGHTS = OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS[:1]
+INTERNAL_MODELS_FUNC_WEIGHTS = FOOD_FUNC_WEIGHTS + OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS
+INTERNAL_MODELS_FUNC_WEIGHTS = [(ret[0], int(ret[1]//4)) for ret in INTERNAL_MODELS_FUNC_WEIGHTS]
 
 def generate_arena_config(t, n):
     """
@@ -121,6 +123,8 @@ def generate_arena_config(t, n):
     _add_arenas_using_functions_and_weights(arena_config, AVOIDANCE_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, GENERALIZATION_FUNC_WEIGHTS, t, n,
                                             remove_color=True)
+    _add_arenas_using_functions_and_weights(arena_config, INTERNAL_MODELS_FUNC_WEIGHTS, t, n,
+                                            add_blackouts=True)
     _shuffle_arenas(arena_config)
     return arena_config
 
@@ -131,13 +135,16 @@ def _shuffle_arenas(arena_config):
     for key, new_key in zip(arena_config.arenas, keys):
         arena_config.arenas[key] = arenas_copy[new_key]
 
-def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n, remove_color=False):
+def _add_arenas_using_functions_and_weights(arena_config, funcs_weights, t, n,
+                                            remove_color=False, add_blackouts=False):
     for func, weight in funcs_weights:
         for _ in range(weight*n):
             idx = len(arena_config.arenas)
             arena = func(t=t)
             if remove_color:
                 remove_color_information(arena)
+            if add_blackouts:
+                _add_blackouts_to_arena(arena)
             arena_config.arenas[idx] = arena
 
 def _summarize_funcs_weights():
@@ -146,3 +153,8 @@ def _summarize_funcs_weights():
     print('Obstacles: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
     print('Avoidance: %i' % sum([weight for func, weight in AVOIDANCE_FUNC_WEIGHTS]))
     print('Generalization: %i' % sum([weight for func, weight in GENERALIZATION_FUNC_WEIGHTS]))
+    print('Internal models: %i' % sum([weight for func, weight in INTERNAL_MODELS_FUNC_WEIGHTS]))
+
+def _add_blackouts_to_arena(arena):
+    blackout = int(np.random.choice([-20, -20, -40]))
+    arena.blackouts = [blackout]

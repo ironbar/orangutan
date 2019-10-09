@@ -563,11 +563,11 @@ My first idea is to pass a list with the number of kernels for each convolution.
 into a dictionary called visual_encoding so I can later extend this.
 Previously I was using kernels [8, 8, 16, 16] and the model weighted 9 MB.
 If I use [8, 16, 32, 64] the model uses now TODO:
-If using [16, 16, 32, 32] the weight is 
+If using [16, 16, 32, 32] the weight is
 
 #### Multiple configuration files
 
-Using different configuration files on the different environments could allow to reduce the number of arenas or 
+Using different configuration files on the different environments could allow to reduce the number of arenas or
 to make a more diverse training. I have been looking at the code and I think it could be as easy as passing a list of
 ArenaConfigs and modifying the broadcast on reset function on subprocess_environment.
 
@@ -772,7 +772,7 @@ I don't think PPO is the solution to the most difficult categories but I believe
 on the challenge is possible (at least much better than the current ones).
 
 The way to achieve this is to provide better configuration for the models to learn. The configurations
-should have a fixed reward, be solvable and small variability in difficulty. If that is true then the 
+should have a fixed reward, be solvable and small variability in difficulty. If that is true then the
 training metrics are a reliable metric that allows to improve model architecture if necessary.
 
 I think we should focus on each category at a time and create arena configurations that solve nearly all
@@ -780,7 +780,7 @@ the episodes of that category on the test set. On a first step we will create co
 category 1, once we solve that category we will focus on category 2 and so on. Finally we can mix all the configurations
 together and create a very strong agent.
 One interesting thing is that this behaviour could go unnoticed because I can solve each category alone without getting
-a good score. 
+a good score.
 
 This work of creating arena configurations will be useful later when I switch to a more promising approach for
 the final categories such as PlaNet.
@@ -814,7 +814,7 @@ I identify the following challenges when designing the levels:
 Let's enumerate some ideas for creating arenas:
 * I think that red goals should almost be present always. The agent needs to learn to avoid them
 * Maybe I need to recover moving backwards to avoid moving red goals, it would be nice to be able to parametrize it for easier enabling/disabling
-* Red goals may hide green or yellow goals, this can happen randomly but I could force that behaviour 
+* Red goals may hide green or yellow goals, this can happen randomly but I could force that behaviour
 * I could place the agent and goal in the other side of the arena and multiple red goals between them to force navigation
 
 I have trained two models with some initial configurations that are able to get scores of 24 and 23 on LB. Moreover I have
@@ -959,7 +959,7 @@ Let's remember the available objects:
 We already have navigation levels without death or hot zones so we must include them. Using objects of random size could
 result in very big objects which I don't think is desirable. I think we should have a set of objects with different
 sizes and random heigth and use them randomly.
-The problem is that designing random tests with death zones could result in impossible tests. So instead of doing tests I'm going 
+The problem is that designing random tests with death zones could result in impossible tests. So instead of doing tests I'm going
 to create 16 arenas for training with all these elements focusing on having death and hot zones and variability of the other elements.
 
 | element \ arena      	| 0 	| 1 	| 2 	| 3 	| 4 	| 5 	| 6 	| 7 	| 8 	| 9 	| 10 	| 11 	| 12 	| 13 	| 14 	| 15 	|
@@ -991,7 +991,7 @@ I have prepared 16 levels for training with lighst off.
 #### 9. Advanced choices
 
 > Compare different paths of rewards and choose the best one.
-> This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward. 
+> This category tests the agent's ability to make more complex decisions to ensure it gets the highest possible reward.
 Expect tests with choices that lead to different achievable rewards.
 
 I have prepared some random tests that use the scenario from forcedchoice and could be used for training.
@@ -1362,7 +1362,7 @@ I want to train a model on a arena with 4 GoodGoalMulti of size 1. To to this I 
 tasks.py to include AnimalAI arena and probably I have to modify or adapt the continuous actions to discrete.
 The [fork](https://github.com/piojanu/planet) from planet will probably be very useful.
 
-I will start using piojanu fork, I could first try it with a simple atari discrete game and if it works I 
+I will start using piojanu fork, I could first try it with a simple atari discrete game and if it works I
 can move to AnimalAI. I should read carefully the thread of piojanu describing his work.
 
   python -m planet.scripts.train --logdir logs_2 --params '{tasks: [gym_atari], game_name: "Boxing-v0"}'
@@ -1712,6 +1712,8 @@ I can reuse many of the obstacles levels:
 add traps like goals on death zones and new goals on hot zones.
 * I could take levels with walls dividing the arena and replace them by death zones
 
+I have completely reused obstacles levels.
+
 #### 05 Spatial Reasoning
 
 > Navigation in restricted environments.
@@ -1726,6 +1728,25 @@ maze or platform.
 #### 06 Generalization
 
 This should be faced as simple as taking previous levels and removing color information.
+
+#### 07 Internal models
+
+> For the blackout category, blackout times used are either multiples of -20, or,
+if the lights will be turned out after a while, they first flicker off at multiples of 25
+(starting at either 25 or 50) for 5 steps a few times. So, for example, [-20], [25, 30, 50, 55, 75]
+and [50, 55, 75, 80, 100, 105, 125] are all valid settings.
+
+> This category tests the agent's ability to store internal models of the environment.
+In these tests, the lights may turn off after a while and the agent must remember the layout of
+the environment to navigate it in the dark. Many animals are capable of this behaviour,
+but have access to more sensory input than our agents. Hence, the tests here are fairly simple in nature,
+designed for agents that must rely on visual input alone.
+
+I don't think it has sense to train with levels where the light goes completely off. So blackout times should be
+multiples of -20. I don't think using -80 has much sense, so I will be using -20 and -40 but giving more weight
+to -20.
+
+I will be reusing arenas from the other categories and adding blackouts to them.
 
 ### Results
 
@@ -1746,6 +1767,9 @@ than a model retrained from food category. Scores on food and preferences were 2
 a good start point and probably training for other categories will improve these scores.
 
 First models trained on obstacles category do not get good results on that category.
+
+When training on fpog training for 1000k epochs yields better training metrics than training for 500k epochs.
+However the LB score is worse for 1000k epochs (25.69 vs 29)
 
 <!---
 
