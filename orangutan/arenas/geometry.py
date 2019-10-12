@@ -56,8 +56,10 @@ def detect_collisions(new_item, existing_items):
         detect_collision_between_two_items(new_item, item)
 
 def detect_collision_between_two_items(item1, item2):
-    _detect_collision_between_two_items(item1, item2)
-    _detect_collision_between_two_items(item2, item1)
+    for item1_idx in range(_get_number_objects_inside_item(item1)):
+        for item2_idx in range(_get_number_objects_inside_item(item2)):
+            _detect_collision_between_two_items(item1, item2, item1_idx, item2_idx)
+            _detect_collision_between_two_items(item2, item1, item2_idx, item1_idx)
 
 def detect_object_out_of_arena(item):
     EPSILON = 1e-6
@@ -67,18 +69,18 @@ def detect_object_out_of_arena(item):
             msg = 'vertex: %s is out of arena' % (_str_Vector3(vertex))
             raise CollisionDetected(msg)
 
-def _detect_collision_between_two_items(item_ref, item):
+def _detect_collision_between_two_items(item_ref, item, item_ref_idx=0, item_idx=0):
     EPSILON = 1e-6
     try:
-        ref_rotations = [item_ref.rotations[0]]
+        ref_rotations = [item_ref.rotations[item_ref_idx]]
     except IndexError:
         # If no rotation is given try with 0, 45 and 90
         ref_rotations = [0, 45, 90]
     for ref_rotation in ref_rotations:
-        vertices = _get_object_vertices(item, ref_rotation)
+        vertices = _get_object_vertices(item, ref_rotation, item_idx)
         try:
-            size = item_ref.sizes[0]
-            center = item_ref.positions[0]
+            size = item_ref.sizes[item_ref_idx]
+            center = item_ref.positions[item_ref_idx]
         except IndexError:
             # This case happens when using random goals, that is why they are placed at the last position
             # when sampling
@@ -91,16 +93,16 @@ def _detect_collision_between_two_items(item_ref, item):
                     msg = 'vertex: %s, x_limits: %s, z_limits: %s' % (_str_Vector3(vertex), str(x_limits), str(z_limits))
                     raise CollisionDetected(msg)
 
-def _get_object_vertices(item, ref_angle):
+def _get_object_vertices(item, ref_angle, item_idx=0):
     try:
-        size = item.sizes[0]
-        center = item.positions[0]
+        size = item.sizes[item_idx]
+        center = item.positions[item_idx]
     except IndexError:
         # This case happens when using random goals, that is why they are placed at the last position
         # when sampling
         return []
     try:
-        angles = [item.rotations[0] - ref_angle]
+        angles = [item.rotations[item_idx] - ref_angle]
     except IndexError:
         # If no rotation is given try with 0, 45 and 90
         angles = [-ref_angle, 45 - ref_angle, 90 - ref_angle]
@@ -123,3 +125,6 @@ def _get_object_vertices(item, ref_angle):
                 np.sin(vertex_angle)*object_radius + center.z)
             vertices.append(vertex)
     return vertices
+
+def _get_number_objects_inside_item(item):
+    return 1
