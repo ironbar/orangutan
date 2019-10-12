@@ -1,11 +1,16 @@
 import pytest
+import os
 from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 
 from orangutan.arenas.geometry import (
     get_angle_looking_center, get_position_in_front_of_agent, _get_object_vertices,
-    detect_collision_between_two_items, CollisionDetected, detect_object_out_of_arena
+    detect_collision_between_two_items, CollisionDetected, detect_object_out_of_arena,
+    detect_collisions
 )
 from orangutan.arenas.utils import _str_Vector3
+
+RESOURCES_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.realpath(__file__))),
+                              'resources')
 
 @pytest.mark.parametrize('x, y, angle', [
     (20, 10, 0),
@@ -84,3 +89,9 @@ def test_detect_object_out_of_arena(item):
 ])
 def test_detect_object_inside_of_arena(item):
     detect_object_out_of_arena(item)
+
+def test_collision_detected_is_raised_on_death_maze():
+    arena = ArenaConfig(os.path.join(RESOURCES_PATH, 'death_maze.yaml')).arenas[0]
+    with pytest.raises(CollisionDetected):
+        for idx in range(1, 4):
+            detect_collisions(arena.items[-idx], arena.items[:-idx])

@@ -7,10 +7,16 @@ from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 from orangutan.arenas.utils import GRAY, PINK, BLUE
 from orangutan.arenas.geometry import detect_collisions, CollisionDetected
 from orangutan.arenas.maze import Maze
+from orangutan.arenas.avoidance import _add_simple_goal as _add_goal_on_fixed_position
 from orangutan.arenas.obstacles import _add_simple_goal
+from orangutan.arenas.avoidance import _add_agent_to_arena
 
 DEFAULT_REWARD = 2
 WALL_HEIGHT = 5
+
+"""
+Walls maze
+"""
 
 def create_arena_with_walls_maze(t):
     arena = Arena(t=t, items=[])
@@ -50,14 +56,15 @@ def _add_walls(arena, n_cells, wall_thickness):
 
 def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells, height):
     centers = np.linspace(0, 40, n_cells, endpoint=False)[1:].tolist()
-    wall_length = (40 - n_cells*wall_thickness)/n_cells
-
     positions, sizes = [], []
     cell_x_idx = cell.x
     cell_z_idx = cell.y
 
     # horizontal walls
     if cell_z_idx < n_cells - 1 and 's' in cell.walls:
+        wall_length = (40 - n_cells*wall_thickness)/n_cells
+        if not cell_x_idx or cell_x_idx == n_cells -1:
+            wall_length += wall_thickness/2
         sizes.append(Vector3(wall_length, height, wall_thickness))
         if not cell_x_idx:
             x = centers[cell_x_idx] - wall_length/2 - wall_thickness/2
@@ -67,6 +74,9 @@ def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells, height):
 
     # vertical walls
     if cell_x_idx < n_cells - 1 and 'e' in cell.walls:
+        wall_length = (40 - n_cells*wall_thickness)/n_cells
+        if not cell_z_idx or cell_z_idx == n_cells -1:
+            wall_length += wall_thickness/2
         sizes.append(Vector3(wall_thickness, height, wall_length))
         if not cell_z_idx:
             z = centers[cell_z_idx] - wall_length/2 - wall_thickness/2
@@ -82,3 +92,20 @@ def _apply_color_to_wall_maze(arena):
             item.name = 'WallTransparent'
         elif option == 'gray':
             item.colors = [GRAY]*len(item.rotations)
+
+"""
+Death maze
+"""
+
+def create_arena_with_death_maze(t):
+    arena = Arena(t=t, items=[])
+    _add_walls_maze(arena, n_cells=np.random.randint(4, 6), wall_thickness=5)
+    _replace_walls_by_death_zones(arena)
+    for _ in range(DEFAULT_REWARD):
+        _add_goal_on_fixed_position(arena)
+    _add_agent_to_arena(arena)
+    return arena
+
+def _replace_walls_by_death_zones(arena):
+    for item in arena.items:
+        item.name = 'DeathZone'
