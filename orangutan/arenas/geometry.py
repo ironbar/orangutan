@@ -127,4 +127,5 @@ def _get_object_vertices(item, ref_angle, item_idx=0):
     return vertices
 
 def _get_number_objects_inside_item(item):
-    return 1
+    n_objects = [1, len(item.sizes), len(item.positions), len(item.rotations), len(item.colors)]
+    return max(n_objects)
