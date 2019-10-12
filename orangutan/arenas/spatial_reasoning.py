@@ -14,7 +14,7 @@ WALL_HEIGHT = 5
 
 def create_arena_with_walls_maze(t):
     arena = Arena(t=t, items=[])
-    _add_walls_maze(arena, n_cells=4, wall_thickness=1)
+    _add_walls_maze(arena, n_cells=np.random.randint(4, 7), wall_thickness=1)
     _apply_color_to_wall_maze(arena)
     for _ in range(DEFAULT_REWARD):
         _add_simple_goal(arena)
@@ -41,8 +41,6 @@ def _get_pillars_positions(n_cells):
 def _add_walls(arena, n_cells, wall_thickness):
     maze = Maze()
     maze = maze.generate(n_cells, n_cells)
-    print(maze)
-
     for cell in maze.cells:
         positions, sizes = _get_cell_walls_positions_and_sizes(
             cell, wall_thickness, n_cells, WALL_HEIGHT)
@@ -79,7 +77,6 @@ def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells, height):
 
 def _apply_color_to_wall_maze(arena):
     option = np.random.choice(['random', 'transparent', 'gray'])
-    option = 'transparent'
     for item in arena.items:
         if option == 'transparent':
             item.name = 'WallTransparent'
