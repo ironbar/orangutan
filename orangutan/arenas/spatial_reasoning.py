@@ -7,12 +7,17 @@ from animalai.envs.arena_config import Vector3, RGB, Item, Arena, ArenaConfig
 from orangutan.arenas.utils import GRAY, PINK, BLUE
 from orangutan.arenas.geometry import detect_collisions, CollisionDetected
 from orangutan.arenas.maze import Maze
+from orangutan.arenas.obstacles import _add_simple_goal
 
 DEFAULT_REWARD = 2
+WALL_HEIGHT = 5
 
 def create_arena_with_walls_maze(t):
     arena = Arena(t=t, items=[])
-    _add_walls_maze(arena, n_cells=5, wall_thickness=1)
+    _add_walls_maze(arena, n_cells=4, wall_thickness=1)
+    _apply_color_to_wall_maze(arena)
+    for _ in range(DEFAULT_REWARD):
+        _add_simple_goal(arena)
     return arena
 
 def _add_walls_maze(arena, n_cells, wall_thickness):
@@ -21,7 +26,7 @@ def _add_walls_maze(arena, n_cells, wall_thickness):
 
 def _add_wall_pillars_to_maze(arena, n_cells, wall_thickness):
     positions = _get_pillars_positions(n_cells)
-    sizes = [Vector3(wall_thickness, 5, wall_thickness)]*len(positions)
+    sizes = [Vector3(wall_thickness, WALL_HEIGHT, wall_thickness)]*len(positions)
     pillars = Item(name='Wall', positions=positions, rotations=[0]*len(positions), sizes=sizes)
     arena.items.append(pillars)
 
@@ -40,12 +45,12 @@ def _add_walls(arena, n_cells, wall_thickness):
 
     for cell in maze.cells:
         positions, sizes = _get_cell_walls_positions_and_sizes(
-            cell, wall_thickness, n_cells)
+            cell, wall_thickness, n_cells, WALL_HEIGHT)
         if positions:
             wall = Item(name='Wall', positions=positions, rotations=[0]*len(positions), sizes=sizes)
             arena.items.append(wall)
 
-def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells):
+def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells, height):
     centers = np.linspace(0, 40, n_cells, endpoint=False)[1:].tolist()
     wall_length = (40 - n_cells*wall_thickness)/n_cells
 
@@ -55,7 +60,7 @@ def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells):
 
     # horizontal walls
     if cell_z_idx < n_cells - 1 and 's' in cell.walls:
-        sizes.append(Vector3(wall_length, 5, wall_thickness))
+        sizes.append(Vector3(wall_length, height, wall_thickness))
         if not cell_x_idx:
             x = centers[cell_x_idx] - wall_length/2 - wall_thickness/2
         else:
@@ -64,10 +69,19 @@ def _get_cell_walls_positions_and_sizes(cell, wall_thickness, n_cells):
 
     # vertical walls
     if cell_x_idx < n_cells - 1 and 'e' in cell.walls:
-        sizes.append(Vector3(wall_thickness, 5, wall_length))
+        sizes.append(Vector3(wall_thickness, height, wall_length))
         if not cell_z_idx:
             z = centers[cell_z_idx] - wall_length/2 - wall_thickness/2
         else:
             z = centers[cell_z_idx - 1] + wall_length/2 + wall_thickness/2
         positions.append(Vector3(centers[cell_x_idx], 0, z))
     return positions, sizes
+
+def _apply_color_to_wall_maze(arena):
+    option = np.random.choice(['random', 'transparent', 'gray'])
+    option = 'transparent'
+    for item in arena.items:
+        if option == 'transparent':
+            item.name = 'WallTransparent'
+        elif option == 'gray':
+            item.colors = [GRAY]*len(item.rotations)
