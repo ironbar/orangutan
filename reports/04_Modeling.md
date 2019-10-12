@@ -1723,7 +1723,14 @@ Understanding gravity.
 Restricted environments refers to mazes probably and memory is required to solve a maze.
 
 Gravity could involve pussing objects to get the food, or avoid falling on an elevated
-maze or platform.
+maze or platform. Or jumping between platforms.
+
+<p align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Prim_Maze.svg/200px-Prim_Maze.svg.png">
+</p>
+
+The basic unit of the maze is the cell. I have to think how to create cells for the different types of mazes.
+
 
 #### 06 Generalization
 
@@ -1773,7 +1780,7 @@ However the LB score is worse for 1000k epochs (25.69 vs 29)
 
 I have decided to launch a megatrain with train_014_fpoagi_500 configuration. I will be using 8 environments and 16 arenas just like in that training and a buffer of 65k. The main difference is model architecture.
 If RAM permits I could launch another equivalent training. This change implies that I will be using x4 more data
-during training and the buffer size will be x8.
+during training and the buffer size will be x8. However RAM usage is about 45 GB so there is not room for another training.
 
 <!---
 
