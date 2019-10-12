@@ -1771,6 +1771,10 @@ First models trained on obstacles category do not get good results on that categ
 When training on fpog training for 1000k epochs yields better training metrics than training for 500k epochs.
 However the LB score is worse for 1000k epochs (25.69 vs 29)
 
+I have decided to launch a megatrain with train_014_fpoagi_500 configuration. I will be using 8 environments and 16 arenas just like in that training and a buffer of 65k. The main difference is model architecture.
+If RAM permits I could launch another equivalent training. This change implies that I will be using x4 more data
+during training and the buffer size will be x8.
+
 <!---
 
 
