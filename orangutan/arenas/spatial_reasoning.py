@@ -99,7 +99,7 @@ Death maze
 
 def create_arena_with_death_maze(t):
     arena = Arena(t=t, items=[])
-    _add_walls_maze(arena, n_cells=np.random.randint(4, 6), wall_thickness=5)
+    _add_walls_maze(arena, n_cells=np.random.randint(4, 6), wall_thickness=4)
     _replace_walls_by_death_zones(arena)
     for _ in range(DEFAULT_REWARD):
         _add_goal_on_fixed_position(arena)
