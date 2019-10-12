@@ -116,10 +116,14 @@ Platform maze
 """
 def create_arena_with_platform_maze(t):
     arena = Arena(t=t, items=[])
-    _add_platform_maze(arena, n_cells=np.random.randint(4, 6), wall_thickness=6)
+    n_cells = np.random.randint(4, 6)
+    wall_thickness = 6
+    _add_platform_maze(arena, n_cells=n_cells, wall_thickness=wall_thickness)
     _apply_color_to_platform_maze(arena)
-    for _ in range(DEFAULT_REWARD):
-        _add_simple_goal(arena)
+    _add_goals_and_agent_to_platform_maze(arena, n_cells, wall_thickness)
+    item = Item(name='DeathZone', sizes=[Vector3(40, 0, 40)],
+                    positions=[Vector3(20, 0, 20)], rotations=[0])
+    arena.items.append(item)
     return arena
 
 def _add_platform_maze(arena, n_cells, wall_thickness):
@@ -189,3 +193,22 @@ def _apply_color_to_platform_maze(arena):
     for item in arena.items:
         if option == 'blue':
             item.colors = [BLUE]*len(item.rotations)
+
+def _add_goals_and_agent_to_platform_maze(arena, n_cells, wall_thickness):
+    centers = np.linspace(0, 40, n_cells, endpoint=False).tolist()
+    wall_length = (40 - n_cells*wall_thickness)/n_cells
+    if n_cells % 2 == 1:
+        x_indexes = [0, n_cells//2, n_cells -1]
+    else:
+        x_indexes = [0, np.random.choice([n_cells//2, n_cells//2-1]), n_cells -1]
+    z_indexes = x_indexes.copy()
+    np.random.shuffle(x_indexes)
+    np.random.shuffle(z_indexes)
+    for idx in range(3):
+        x = float(centers[x_indexes[idx]] + wall_length/2 + wall_thickness/2)
+        z = float(centers[z_indexes[idx]] + wall_length/2 + wall_thickness/2)
+        item = Item(name='GoodGoalMulti', sizes=[Vector3(*[1]*3)],
+                    positions=[Vector3(x, PLATFORM_HEIGHT, z)])
+        if not idx:
+            item.name = 'Agent'
+        arena.items.append(item)
