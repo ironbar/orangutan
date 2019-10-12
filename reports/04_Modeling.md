@@ -1730,6 +1730,9 @@ maze or platform. Or jumping between platforms.
 </p>
 
 The basic unit of the maze is the cell. I have to think how to create cells for the different types of mazes.
+I have successfully prepared script for creating mazes of wall and death zones. Now I want to do the same
+with platforms. The difference lies in that in the platform example the "walls" are empty and the cells are
+platforms.
 
 
 #### 06 Generalization
