@@ -132,7 +132,6 @@ def _add_platform_maze(arena, n_cells, wall_thickness):
 def _add_platforms_to_maze(arena, n_cells, wall_thickness):
     maze = Maze()
     maze = maze.generate(n_cells, n_cells)
-    print(maze)
     for cell in maze.cells:
         positions, sizes = _get_cell_walls_positions_and_sizes(
             cell, wall_thickness, n_cells, PLATFORM_HEIGHT)

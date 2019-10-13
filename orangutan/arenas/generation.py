@@ -61,6 +61,11 @@ from orangutan.arenas.avoidance import (
     create_arena_splitted_in_four_deathzone,
     create_arena_splitted_in_two_with_path_blocked_deathzone,
 )
+from orangutan.arenas.spatial_reasoning import (
+    create_arena_with_death_maze,
+    create_arena_with_platform_maze,
+    create_arena_with_walls_maze,
+)
 
 FOOD_FUNC_WEIGHTS = [
         (create_arena_with_green_and_yellow_goal_in_front_of_agent, 1),
@@ -100,6 +105,12 @@ AVOIDANCE_FUNC_WEIGHTS = [
     (create_arena_splitted_in_two_with_path_blocked_deathzone, 8),
 ]
 
+SPATIAL_REASONING_FUNC_WEIGHTS = [
+    (create_arena_with_death_maze, 12),
+    (create_arena_with_platform_maze, 12),
+    (create_arena_with_walls_maze, 12),
+]
+
 GENERALIZATION_FUNC_WEIGHTS = OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS[:1]
 INTERNAL_MODELS_FUNC_WEIGHTS = FOOD_FUNC_WEIGHTS + OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS
 INTERNAL_MODELS_FUNC_WEIGHTS = [(ret[0], int(ret[1]//4)) for ret in INTERNAL_MODELS_FUNC_WEIGHTS]
@@ -121,6 +132,7 @@ def generate_arena_config(t, n):
     _add_arenas_using_functions_and_weights(arena_config, PREFERENCES_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, OBSTACLES_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, AVOIDANCE_FUNC_WEIGHTS, t, n)
+    _add_arenas_using_functions_and_weights(arena_config, SPATIAL_REASONING_FUNC_WEIGHTS, t, n)
     _add_arenas_using_functions_and_weights(arena_config, GENERALIZATION_FUNC_WEIGHTS, t, n,
                                             remove_color=True)
     _add_arenas_using_functions_and_weights(arena_config, INTERNAL_MODELS_FUNC_WEIGHTS, t, n,
@@ -152,6 +164,7 @@ def _summarize_funcs_weights():
     print('Preferences: %i' % sum([weight for func, weight in PREFERENCES_FUNC_WEIGHTS]))
     print('Obstacles: %i' % sum([weight for func, weight in OBSTACLES_FUNC_WEIGHTS]))
     print('Avoidance: %i' % sum([weight for func, weight in AVOIDANCE_FUNC_WEIGHTS]))
+    print('Spatial reasoning: %i' % sum([weight for func, weight in SPATIAL_REASONING_FUNC_WEIGHTS]))
     print('Generalization: %i' % sum([weight for func, weight in GENERALIZATION_FUNC_WEIGHTS]))
     print('Internal models: %i' % sum([weight for func, weight in INTERNAL_MODELS_FUNC_WEIGHTS]))
 

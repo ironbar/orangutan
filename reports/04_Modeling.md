@@ -1784,6 +1784,8 @@ However the LB score is worse for 1000k epochs (25.69 vs 29)
 I have decided to launch a megatrain with train_014_fpoagi_500 configuration. I will be using 8 environments and 16 arenas just like in that training and a buffer of 65k. The main difference is model architecture.
 If RAM permits I could launch another equivalent training. This change implies that I will be using x4 more data
 during training and the buffer size will be x8. However RAM usage is about 45 GB so there is not room for another training.
+On epoch 170k the model achieves 36 LB score, so clearly megatrain is better than the other training configurations that achieved
+less than 30 on LB.
 
 <!---
 
