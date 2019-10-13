@@ -10,6 +10,7 @@ class EnvWrapper(object):
         '''
         # wrap the object
         self._env = UnityEnvironment(*args, **kwargs)
+        self._arenas_configurations = None
 
     def __getattr__(self, attr):
         # see if this object has attr
@@ -20,3 +21,15 @@ class EnvWrapper(object):
             return getattr(self, attr)
         # proxy to the wrapped object
         return getattr(self._env, attr)
+
+    def reset(self, arenas_configurations=None, train_mode=True):
+        """ Shuffle arenas and reset configuration """
+        print('reset')
+        if arenas_configurations is not None:
+            self._arenas_configurations = arenas_configurations
+        self._arenas_configurations.shuffle_arenas()
+        return self._env.reset(self._arenas_configurations, train_mode)
+
+    def step(self, *args, **kwargs):
+        print('step')
+        return self._env.step(*args, **kwargs)

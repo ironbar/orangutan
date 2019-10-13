@@ -9,6 +9,7 @@ import numpy as np
 import glob
 import time
 
+from orangutan.env import EnvWrapper
 from animalai.envs import UnityEnvironment
 from animalai.envs.arena_config import ArenaConfig
 from animalai.envs.exception import UnityWorkerInUseException
@@ -80,7 +81,7 @@ def _create_environment(config_filepath):
     worker_id = 0
     while worker_id < 10:
         try:
-            env = UnityEnvironment(
+            env = EnvWrapper(
                 file_name=ENVIRONMENT_FILEPATH,   # Path to the environment
                 worker_id=worker_id,                # Unique ID for running the environment (used for connection)
                 seed=int(os.getenv('ENV_SEED', 0)),                     # The random seed
@@ -191,7 +192,7 @@ def parse_args(args):
     Record games
     Use keys (w,a,s,d) to move.
     Press "o" to end the application.
-    Press "l" to reset the level without saving the current game.
+    Press "k" to reset the level without saving the current game.
     The environment variable ENV_SEED can be used to modify the random seed that is 0 by default
     """
     parser = argparse.ArgumentParser(

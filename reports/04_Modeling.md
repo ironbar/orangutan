@@ -1525,13 +1525,27 @@ Maybe I can dig in the code and force the arena configuration to be modified wit
 
 #### Modifying environment when it's done
 
+##### reset_env_period
+
 I want to modify the current environment so the arena configuration changes when the level ends. The idea
 is to have a yaml with lots of arenas, for example in the order of thousands. When a game ends the environment
 chooses a new arena randomly.
 
 I have to understand what is done when the level ends. I have managed to add a new training parameter
-reset_env_period that allows to shuffle all the arena configurations and thus opens the door to using
+*reset_env_period* that allows to shuffle all the arena configurations and thus opens the door to using
 large configuration files. I have to test it with an already trained model to verify that produces good results.
+
+##### Automatically switching configurations
+
+The ideal way of doing it is that when the level it's done chooses a new configuration randomly. However I'm not
+sure if this is possible. Maybe I have to modify the source code of the simulation. Another idea is to
+have only one arena on each environment and reset the environment at each step.
+
+https://github.com/beyretb/AnimalAI-Olympics/blob/master/documentation/training.md
+In the link above says that it is possible to modify a single arena by passing just the configuration for that arena.
+
+**I believe that it should be possible to create a wrapper around the environment that resets the arenas when it detects
+that the episode is done**
 
 #### Solving the categories iteratively
 
@@ -1757,6 +1771,17 @@ multiples of -20. I don't think using -80 has much sense, so I will be using -20
 to -20.
 
 I will be reusing arenas from the other categories and adding blackouts to them.
+
+#### Reviewing megatrain configuration
+
+I'm going to review old megatrain configuration to see if there are levels of interest that I can add to
+my current training configuration.
+
+I have found two differences:
+* Forced choice levels. I think I need to first train on those levels to see if the model is able
+to learn that concept
+* More levels with green goals. This may be beneficial, but without trying I don't know.
+
 
 ### Results
 
