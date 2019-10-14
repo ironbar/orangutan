@@ -1,0 +1,216 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 9.5
+        y: 0
+        z: 15.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 19.0
+        y: 3.0
+        z: 1.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 30.5
+        y: 0
+        z: 25.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 19.0
+        y: 3.0
+        z: 1.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 15.0
+        y: 0
+        z: 30.5
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1.0
+        y: 8.0
+        z: 19.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 25.0
+        y: 0
+        z: 9.5
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1.0
+        y: 8.0
+        z: 19.0
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 4.082956112297371
+        y: 0
+        z: 3.6382634943304897
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 18.105584660474065
+        y: 0
+        z: 21.445534793710177
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 21.546808718551205
+        y: 0
+        z: 16.674160302078807
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 5
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 3
+        z: 1
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 9.0
+    t: 500

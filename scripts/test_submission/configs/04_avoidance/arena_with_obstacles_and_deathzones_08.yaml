@@ -1,0 +1,221 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 0
+      name: Wall
+      positions:
+      - !Vector3
+        x: 26.571040600036497
+        y: 0
+        z: 17.35874368117588
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2.0
+        z: 6
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions:
+      - !Vector3
+        x: 31.309764737315028
+        y: 0
+        z: 17.35874368117588
+      rotations:
+      - 90.0
+      sizes:
+      - !Vector3
+        x: 6
+        y: 2.0
+        z: 2.4774482745570587
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 26.571040600036497
+        y: 2.0
+        z: 17.35874368117588
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 30.18804112937097
+        y: 0
+        z: 29.943390326156383
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 13.702357796649029
+        y: 0
+        z: 26.393606369358515
+      rotations:
+      - 170.0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 4
+        z: 5
+    - !Item
+      colors: []
+      name: HotZone
+      positions:
+      - !Vector3
+        x: 25.98132554600045
+        y: 0
+        z: 28.941604150028972
+      rotations:
+      - 137.0
+      sizes:
+      - !Vector3
+        x: 3
+        y: 3
+        z: 8
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 33.78855708407208
+        y: 0
+        z: 22.23588443243129
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2
+        z: 5
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 7.0
+    - !Item
+      colors: []
+      name: LObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 7.0
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 9.0
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 4.0
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 2
+        z: 6
+    - !Item
+      colors: []
+      name: UObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 3.0
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    t: 500

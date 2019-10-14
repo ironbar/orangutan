@@ -1,0 +1,187 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors: []
+      name: CylinderTunnelTransparent
+      positions:
+      - !Vector3
+        x: 29.388540617197464
+        y: 0
+        z: 29.601565909647434
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 7
+        y: 3
+        z: 7
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 29.388540617197464
+        y: 0
+        z: 29.601565909647434
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: HotZone
+      positions:
+      - !Vector3
+        x: 18.13862186236859
+        y: 0
+        z: 31.6749403713239
+      rotations:
+      - 85.0
+      sizes:
+      - !Vector3
+        x: 5
+        y: 5
+        z: 5
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 18.13862186236859
+        y: 0
+        z: 31.6749403713239
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 17.050561427713333
+        y: 0
+        z: 16.341807996020787
+      rotations:
+      - 102.0
+      sizes:
+      - !Vector3
+        x: 6
+        y: 4
+        z: 5
+    - !Item
+      colors: []
+      name: HotZone
+      positions:
+      - !Vector3
+        x: 28.940080623259647
+        y: 0
+        z: 14.875587844275277
+      rotations:
+      - 108.0
+      sizes:
+      - !Vector3
+        x: 6
+        y: 5
+        z: 8
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 24.85685627219509
+        y: 0
+        z: 6.508677942409679
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: LObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 8.0
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 1
+        z: 2
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 9
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 1
+        z: 3
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 4
+        y: 2
+        z: 2
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 2
+        z: 5
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    t: 500

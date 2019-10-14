@@ -1,0 +1,158 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 8.75
+        y: 0
+        z: 21
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 17.5
+        y: 3.0
+        z: 1.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 31.25
+        y: 0
+        z: 21
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 17.5
+        y: 8.0
+        z: 2.0
+    - !Item
+      colors: []
+      name: Agent
+      positions:
+      - !Vector3
+        x: 28.878080669680095
+        y: 0
+        z: 27.470197205303784
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 3.2905871036653593
+        y: 0
+        z: 11.815385420979673
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 21.131092501814564
+        y: 0
+        z: 19.77248126220963
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 3
+        z: 5
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 1
+        z: 4
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 4
+        z: 4
+    - !Item
+      colors: []
+      name: UObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 9.0
+    t: 500
