@@ -1826,6 +1826,10 @@ because with previous configuration short levels dominated the scores. Moreover 
   <img src="media/training_metrics_dynamics.png">
 </p>
 
+I have found that there was a bug in the generation of mazes that was probably hurting the scores.
+
+I'm going to launch a new 115_megatrain with fixed configuration and same memory as in 049_megatrain.
+
 <!---
 
 
