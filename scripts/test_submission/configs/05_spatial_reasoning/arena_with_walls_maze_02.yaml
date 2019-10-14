@@ -239,30 +239,12 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 6.666666666666667
-      - !Vector3
         x: 6.666666666666667
         y: 0
         z: 3.0833333333333335
       rotations:
       - 0
-      - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 1
       - !Vector3
         x: 1
         y: 5
@@ -271,55 +253,13 @@ arenas:
       colors: []
       name: WallTransparent
       positions:
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 6.666666666666667
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 16.666666666666668
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 16.666666666666668
-        y: 0
-        z: 6.666666666666667
       - !Vector3
         x: 20.0
         y: 0
         z: 3.0833333333333335
       rotations:
       - 0
-      - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
       - !Vector3
         x: 1
         y: 5
@@ -329,95 +269,14 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 23.333333333333332
+        x: 30.0
         y: 0
         z: 6.666666666666667
       rotations:
       - 0
-      - 0
       sizes:
       - !Vector3
         x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 30.0
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 33.333333333333336
-        y: 0
-        z: 3.0833333333333335
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 1
-        y: 5
-        z: 6.166666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 3.0833333333333335
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 6.666666666666667
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 10.0
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 13.333333333333334
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
         y: 5
         z: 1
     - !Item
@@ -427,7 +286,7 @@ arenas:
       - !Vector3
         x: 10.0
         y: 0
-        z: 10.0
+        z: 13.333333333333334
       - !Vector3
         x: 13.333333333333334
         y: 0
@@ -439,7 +298,7 @@ arenas:
       - !Vector3
         x: 5.666666666666667
         y: 5
-        z: 5.666666666666667
+        z: 1
       - !Vector3
         x: 1
         y: 5
@@ -451,34 +310,10 @@ arenas:
       - !Vector3
         x: 16.666666666666668
         y: 0
-        z: 10.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 10.0
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
         z: 13.333333333333334
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 5.666666666666667
         y: 5
@@ -488,26 +323,17 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 30.0
-        y: 0
-        z: 10.0
-      - !Vector3
-        x: 30.0
+        x: 23.333333333333332
         y: 0
         z: 13.333333333333334
       - !Vector3
-        x: 33.333333333333336
+        x: 26.666666666666668
         y: 0
         z: 10.0
       rotations:
       - 0
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 5.666666666666667
         y: 5
@@ -523,196 +349,25 @@ arenas:
       - !Vector3
         x: 36.91666666666667
         y: 0
-        z: 10.0
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
         z: 13.333333333333334
       rotations:
       - 0
-      - 0
       sizes:
       - !Vector3
         x: 6.166666666666667
         y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
         z: 1
     - !Item
       colors: []
       name: WallTransparent
       positions:
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 20.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 20.0
-      - !Vector3
-        x: 13.333333333333334
-        y: 0
-        z: 16.666666666666668
-      rotations:
-      - 0
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-      - !Vector3
-        x: 1
-        y: 5
-        z: 5.666666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 16.666666666666668
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 16.666666666666668
-        y: 0
-        z: 20.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 20.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 30.0
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 30.0
-        y: 0
-        z: 20.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 16.666666666666668
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 20.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 23.333333333333332
       - !Vector3
         x: 6.666666666666667
         y: 0
-        z: 23.333333333333332
+        z: 16.666666666666668
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 1
         y: 5
@@ -722,14 +377,14 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 10.0
+        x: 13.333333333333334
         y: 0
-        z: 23.333333333333332
+        z: 16.666666666666668
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 5.666666666666667
+        x: 1
         y: 5
         z: 5.666666666666667
     - !Item
@@ -737,23 +392,44 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 16.666666666666668
+        x: 26.666666666666668
         y: 0
-        z: 23.333333333333332
+        z: 16.666666666666668
+      rotations:
+      - 0
+      sizes:
       - !Vector3
-        x: 16.666666666666668
+        x: 1
+        y: 5
+        z: 5.666666666666667
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 20.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 5.666666666666667
+        y: 5
+        z: 1
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 3.0833333333333335
         y: 0
         z: 26.666666666666668
       rotations:
       - 0
-      - 0
       sizes:
       - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 5.666666666666667
+        x: 6.166666666666667
         y: 5
         z: 1
     - !Item
@@ -761,21 +437,12 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 23.333333333333332
-      - !Vector3
-        x: 26.666666666666668
+        x: 13.333333333333334
         y: 0
         z: 23.333333333333332
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 1
         y: 5
@@ -785,14 +452,14 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 30.0
+        x: 20.0
         y: 0
         z: 23.333333333333332
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 5.666666666666667
+        x: 1
         y: 5
         z: 5.666666666666667
     - !Item
@@ -800,23 +467,14 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 23.333333333333332
-      - !Vector3
-        x: 36.91666666666667
+        x: 23.333333333333332
         y: 0
         z: 26.666666666666668
       rotations:
       - 0
-      - 0
       sizes:
       - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
+        x: 5.666666666666667
         y: 5
         z: 1
     - !Item
@@ -824,30 +482,12 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 3.0833333333333335
+        x: 33.333333333333336
         y: 0
-        z: 30.0
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 33.333333333333336
-      - !Vector3
-        x: 6.666666666666667
-        y: 0
-        z: 30.0
+        z: 23.333333333333332
       rotations:
       - 0
-      - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 1
       - !Vector3
         x: 1
         y: 5
@@ -857,21 +497,27 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 10.0
+        x: 6.666666666666667
         y: 0
         z: 30.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 5
+        z: 5.666666666666667
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
       - !Vector3
         x: 13.333333333333334
         y: 0
         z: 30.0
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 1
         y: 5
@@ -883,43 +529,25 @@ arenas:
       - !Vector3
         x: 16.666666666666668
         y: 0
-        z: 30.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 30.0
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
         z: 33.333333333333336
-      - !Vector3
-        x: 26.666666666666668
-        y: 0
-        z: 30.0
       rotations:
       - 0
-      - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 5.666666666666667
       - !Vector3
         x: 5.666666666666667
         y: 5
         z: 1
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 26.666666666666668
+        y: 0
+        z: 30.0
+      rotations:
+      - 0
+      sizes:
       - !Vector3
         x: 1
         y: 5
@@ -931,58 +559,25 @@ arenas:
       - !Vector3
         x: 30.0
         y: 0
-        z: 30.0
-      - !Vector3
-        x: 33.333333333333336
-        y: 0
-        z: 30.0
+        z: 33.333333333333336
       rotations:
-      - 0
       - 0
       sizes:
       - !Vector3
         x: 5.666666666666667
         y: 5
-        z: 5.666666666666667
-      - !Vector3
-        x: 1
-        y: 5
-        z: 5.666666666666667
+        z: 1
     - !Item
       colors: []
       name: WallTransparent
       positions:
       - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 30.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 5.666666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 3.0833333333333335
-        y: 0
-        z: 36.91666666666667
-      - !Vector3
-        x: 6.666666666666667
+        x: 20.0
         y: 0
         z: 36.91666666666667
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 6.166666666666667
-        y: 5
-        z: 6.166666666666667
       - !Vector3
         x: 1
         y: 5
@@ -991,102 +586,15 @@ arenas:
       colors: []
       name: WallTransparent
       positions:
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 36.91666666666667
-      - !Vector3
-        x: 13.333333333333334
-        y: 0
-        z: 36.91666666666667
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 1
-        y: 5
-        z: 6.166666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 16.666666666666668
-        y: 0
-        z: 36.91666666666667
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 23.333333333333332
-        y: 0
-        z: 36.91666666666667
       - !Vector3
         x: 26.666666666666668
         y: 0
         z: 36.91666666666667
       rotations:
       - 0
-      - 0
       sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
       - !Vector3
         x: 1
-        y: 5
-        z: 6.166666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 30.0
-        y: 0
-        z: 36.91666666666667
-      - !Vector3
-        x: 33.333333333333336
-        y: 0
-        z: 36.91666666666667
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 5.666666666666667
-        y: 5
-        z: 6.166666666666667
-      - !Vector3
-        x: 1
-        y: 5
-        z: 6.166666666666667
-    - !Item
-      colors: []
-      name: WallTransparent
-      positions:
-      - !Vector3
-        x: 36.91666666666667
-        y: 0
-        z: 36.91666666666667
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.166666666666667
         y: 5
         z: 6.166666666666667
     - !Item
