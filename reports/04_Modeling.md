@@ -1547,6 +1547,10 @@ In the link above says that it is possible to modify a single arena by passing j
 **I believe that it should be possible to create a wrapper around the environment that resets the arenas when it detects
 that the episode is done**
 
+I have come to a solution that allows to reset the level when the episode is done. The only limitation is that
+the environments need to have a single arena. I have been able to train with up to 32 environments, the speed is similar
+to previous trainings.
+
 #### Solving the categories iteratively
 
 The idea is to take each category, read carefully the description and design arena configurations or scripts
@@ -1811,6 +1815,16 @@ If RAM permits I could launch another equivalent training. This change implies t
 during training and the buffer size will be x8. However RAM usage is about 45 GB so there is not room for another training.
 On epoch 170k the model achieves 36 LB score, so clearly megatrain is better than the other training configurations that achieved
 less than 30 on LB.
+
+I have launched a second megatrain including labyrinths and using a new approach to resetting the arenas. Now
+I'm using 32 environments with a single arena and the arena is shuffled every time the level is done. This has
+the same speed as previously but the variability of the levels is much higher. This has caused a great
+impact on training metrics. For example the cumulative reward grows much slower than on previous trainings, probably
+because with previous configuration short levels dominated the scores. Moreover the scores are much more stable now.
+
+<p align="center">
+  <img src="media/training_metrics_dynamics.png">
+</p>
 
 <!---
 
