@@ -424,6 +424,211 @@
   Borders_Blocked_2.yaml:
     threshold: 1
     n_tests: 5
+  ### arena_with_obstacles
+  arena_with_obstacles_00.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_01.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_02.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_03.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_04.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_05.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_06.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_07.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_08.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_with_obstacles_09.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  ### center_blocked_arena
+  center_blocked_arena_00.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_01.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_02.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_03.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_04.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_05.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_06.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_07.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_08.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  center_blocked_arena_09.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  ### arena_splitted_in_two
+  arena_splitted_in_two_00.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_01.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_02.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_03.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_04.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_05.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_06.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_07.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_08.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_09.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  ### arena_splitted_in_four
+  arena_splitted_in_four_00.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_01.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_02.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_03.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_04.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_05.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_06.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_07.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_08.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_four_09.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  ### arena_splitted_in_two_with_path_blocked
+  arena_splitted_in_two_with_path_blocked_00.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_01.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_02.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_03.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_04.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_05.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_06.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_07.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_08.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
+  arena_splitted_in_two_with_path_blocked_09.yaml:
+    threshold: 1
+    n_tests: 1
+    partial_threshold: 0
 04_avoidance:
   ### CenterMoat
   CenterMoat_1.yaml:

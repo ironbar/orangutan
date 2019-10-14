@@ -1,0 +1,300 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 0
+      name: Wall
+      positions:
+      - !Vector3
+        x: 9.64850896453528
+        y: 0
+        z: 22.485640939665153
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2.0
+        z: 5
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions:
+      - !Vector3
+        x: 9.64850896453528
+        y: 0
+        z: 17.2732438266647
+      rotations:
+      - 180.0
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2.0
+        z: 5.424794226000907
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 9.64850896453528
+        y: 2.0
+        z: 22.485640939665153
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 0
+      name: Wall
+      positions:
+      - !Vector3
+        x: 7.9467363247134655
+        y: 0
+        z: 8.23689880072493
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 5
+        y: 1.0
+        z: 5
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions:
+      - !Vector3
+        x: 7.9467363247134655
+        y: 0
+        z: 5.021192336916313
+      rotations:
+      - 180.0
+      sizes:
+      - !Vector3
+        x: 5
+        y: 1.0
+        z: 1.4314129276172352
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions:
+      - !Vector3
+        x: 7.9467363247134655
+        y: 1.0
+        z: 8.23689880072493
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 0
+      name: Wall
+      positions:
+      - !Vector3
+        x: 15.712616870336824
+        y: 0
+        z: 29.080506971052227
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 6
+        y: 2.0
+        z: 6
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions:
+      - !Vector3
+        x: 15.712616870336824
+        y: 0
+        z: 34.01457744610751
+      rotations:
+      - 0.0
+      sizes:
+      - !Vector3
+        x: 6
+        y: 2.0
+        z: 3.8681409501105604
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 4
+        z: 7
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 9
+        y: 6
+        z: 3
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 3
+        z: 5
+    - !Item
+      colors: []
+      name: UObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 8.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: Wall
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 9
+        y: 6
+        z: 4
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 3
+        z: 4
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: CylinderTunnel
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 7
+        y: 9
+        z: 6
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: Wall
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 2
+        z: 7
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    t: 500

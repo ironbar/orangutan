@@ -1,0 +1,154 @@
+!ArenaConfig
+arenas:
+  0: !Arena
+    blackouts: []
+    items:
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 29
+        y: 0
+        z: 13.5
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 3.0
+        y: 2.0
+        z: 27.0
+    - !Item
+      colors:
+      - !RGB
+        b: 153
+        g: 153
+        r: 153
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 29
+        y: 0
+        z: 35.5
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 3.0
+        y: 5.0
+        z: 9.0
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: GoodGoalMulti
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 4
+        y: 2
+        z: 2
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 4
+        y: 1
+        z: 4
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 3
+        z: 2
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 5.0
+    t: 500
