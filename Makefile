@@ -50,3 +50,6 @@ tensorboard:
 
 visualize-arena: ## Visualize arena with animalai script. CONFIG_FILEPATH=data/env_configs/1-Food_multi.yaml make visualize-arena
 	cd ../AnimalAI-Olympics/examples/; python visualizeArena.py "$(CONFIG_FILEPATH)"
+
+debug-train: ## Launch a train with debug configuration
+	cd ../AnimalAI-Olympics/examples/; python trainMLAgents.py  /media/guillermo/Data/Kaggle/animalai/agents/debug/data/temp.yaml /media/guillermo/Data/Kaggle/animalai/agents/debug/data/trainer_config.yaml --n_envs 2 --n_arenas 1 --save_freq 10000 --keep_checkpoints 50
