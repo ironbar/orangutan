@@ -1829,6 +1829,8 @@ because with previous configuration short levels dominated the scores. Moreover 
 I have found that there was a bug in the generation of mazes that was probably hurting the scores.
 
 I'm going to launch a new 115_megatrain with fixed configuration and same memory as in 049_megatrain.
+At epoch 580k it does not know how to navigate in the arena: it moves backwards without sense, does
+not seem to use memory...
 
 
 ## Iteration 13. Architecture improvements
