@@ -1830,6 +1830,40 @@ I have found that there was a bug in the generation of mazes that was probably h
 
 I'm going to launch a new 115_megatrain with fixed configuration and same memory as in 049_megatrain.
 
+
+## Iteration 13. Architecture improvements
+
+### Goal
+
+At this point I consider that the training arenas configuration is close to optimal. I also consider
+that ppo is a strongth enough algorithm. So the way to improve the model is by modifying the model architecture
+or by changing training hyperparameters.
+
+The goals are:
+* Introduce new architectures, biologically inspired ones will be prefered to be able to win that prize.
+* Optimize training parameters
+
+### Development
+
+#### Previous action as input
+
+On my first supervised trainings I saw that having the previous action as input was useful to solve ambiguity
+about where to rotate. However the default model provided by AnimalAI does not use that input. I want to change
+that and use that information for predicting the new action. I think that this will free memory from the agent.
+
+The action should be given as one hot encoding.
+
+  trainers.policy.Policy._fill_eval_dict()
+  trainers.models.Model.create_vector_input()
+  trainers.ppo.policy.PPOPolicy.get_intrinsic_rewards()
+  trainers.ppo.policy.PPOPolicy.get_value_estimate()
+  trainers.ppo.PPOTrainer.construct_curr_info()
+  trainers.ppo.PPOTrainer.add_experiences()
+
+
+
+### Results
+
 <!---
 
 
