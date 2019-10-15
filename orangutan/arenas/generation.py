@@ -69,7 +69,7 @@ from orangutan.arenas.spatial_reasoning import (
 
 FOOD_FUNC_WEIGHTS = [
         (create_arena_with_green_and_yellow_goal_in_front_of_agent, 1),
-        (create_arena_with_red_goal_coming, 2),
+        # (create_arena_with_red_goal_coming, 2),
         (create_arena_with_red_wall, 4),
         (create_arena_with_red_houses, 4),
         (create_arena_with_4_goodgoalmulti, 2),

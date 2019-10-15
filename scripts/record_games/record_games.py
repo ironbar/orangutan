@@ -193,6 +193,7 @@ def parse_args(args):
     Use keys (w,a,s,d) to move.
     Press "o" to end the application.
     Press "k" to reset the level without saving the current game.
+    Press "n" to save the game
     The environment variable ENV_SEED can be used to modify the random seed that is 0 by default
     """
     parser = argparse.ArgumentParser(

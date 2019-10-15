@@ -1830,7 +1830,11 @@ I have found that there was a bug in the generation of mazes that was probably h
 
 I'm going to launch a new 115_megatrain with fixed configuration and same memory as in 049_megatrain.
 At epoch 580k it does not know how to navigate in the arena: it moves backwards without sense, does
-not seem to use memory...
+not seem to use memory... The results are not good so I'm goint to stop the training.
+
+I'm launching 116_megatrain extending episode duration to 750 and also removing the option to move
+backwards. I think that with the current configuration increasing episode lenght should not increase
+memory usage.
 
 
 ## Iteration 13. Architecture improvements
@@ -1857,17 +1861,22 @@ The action should be given as one hot encoding.
 
 I have detected that I should modify at least the following functions.
 
-  trainers.policy.Policy._fill_eval_dict()
   trainers.models.Model.create_vector_input()
+  trainers.policy.Policy._fill_eval_dict()
   trainers.ppo.policy.PPOPolicy.get_intrinsic_rewards()
   trainers.ppo.policy.PPOPolicy.get_value_estimate()
-  trainers.ppo.PPOTrainer.construct_curr_info()
-  trainers.ppo.PPOTrainer.add_experiences()
 
 I think that the best option is to first save the previous action into the structures used during training
 and later add a placeholder for that.
 I have prepared a make debug-train method for being able to launch the same train over and over easily.
 
+I have discovered that it is already implemented on create_dc_actor_critic() if recurrent=True.
+
+#### Using speed as a map
+
+I want to make a proof of concept to see if speed can be used to build a kind of map of where the
+agent is and has been at each moment. I think that the easiest option is to use the record level script
+and visualize the trajectorie on a notebook.
 
 
 ### Results
