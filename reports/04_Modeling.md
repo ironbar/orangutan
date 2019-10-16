@@ -1834,7 +1834,11 @@ not seem to use memory... The results are not good so I'm goint to stop the trai
 
 I'm launching 116_megatrain extending episode duration to 750 and also removing the option to move
 backwards. I think that with the current configuration increasing episode lenght should not increase
-memory usage.
+memory usage. On my local validation scores this model is better than the previous days but on LB I get
+worse score.
+
+I'm going to launch a final 117_megatrain with more training steps and that will finalize this iteration.
+Also I'm going to disable normalization on input vectors.
 
 
 ## Iteration 13. Architecture improvements
