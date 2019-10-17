@@ -135,11 +135,13 @@ Which are my requirements:
 
 I have solved the problme this way:
 
-  conda create -n animal -c conda-forge python=3.6 jupyter ipywidgets pytest rope pylint tqdm pandas scikit-learn ipython ipykernel autopep8 matplotlib tensorflow-gpu opencv==4.1.0 cudatoolkit==10.0.130 numpy==1.14.5 -y
-  conda activate animal
-  #Install animalai and animalai_train with develop mode: "python setup.py develop"
-  python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python ($CONDA_DEFAULT_ENV)"
-  pip install evalai
+```bash
+conda create -n animal -c conda-forge python=3.6 jupyter ipywidgets pytest rope pylint tqdm pandas scikit-learn ipython ipykernel autopep8 matplotlib tensorflow-gpu opencv==4.1.0 cudatoolkit==10.0.130 numpy==1.14.5 -y
+conda activate animal
+#Install animalai and animalai_train with develop mode: "python setup.py develop"
+python -m ipykernel install --user --name $CONDA_DEFAULT_ENV --display-name "Python ($CONDA_DEFAULT_ENV)"
+pip install evalai
+```
 
 ### Results
 
@@ -307,13 +309,15 @@ env = SubprocessUnityEnvironment(env_factory, num_envs)  This seems to hold the 
 I have tried importing "from mlagents.envs.subprocess_environment import SubprocessUnityEnvironment" but there are conflicts with animalai.
 Maybe I should copy that into animalai.
 
-  TypeError: Couldn't build proto file into descriptor pool!
-  Invalid proto descriptor for file "mlagents/envs/communicator_objects/agent_action_proto.proto":
-  communicator_objects.AgentActionProto.vector_actions: "communicator_objects.AgentActionProto.vector_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
-  communicator_objects.AgentActionProto.text_actions: "communicator_objects.AgentActionProto.text_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
-  communicator_objects.AgentActionProto.memories: "communicator_objects.AgentActionProto.memories" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
-  communicator_objects.AgentActionProto.value: "communicator_objects.AgentActionProto.value" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
-  communicator_objects.AgentActionProto: "communicator_objects.AgentActionProto" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+```
+TypeError: Couldn't build proto file into descriptor pool!
+Invalid proto descriptor for file "mlagents/envs/communicator_objects/agent_action_proto.proto":
+communicator_objects.AgentActionProto.vector_actions: "communicator_objects.AgentActionProto.vector_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+communicator_objects.AgentActionProto.text_actions: "communicator_objects.AgentActionProto.text_actions" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+communicator_objects.AgentActionProto.memories: "communicator_objects.AgentActionProto.memories" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+communicator_objects.AgentActionProto.value: "communicator_objects.AgentActionProto.value" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+communicator_objects.AgentActionProto: "communicator_objects.AgentActionProto" is already defined in file "animalai/communicator_objects/agent_action_proto.proto".
+```
 
 I'm trying to implement the SubprocessUnityEnvironment on Animalai. At this moment I'm able to create n environments, reset them and send actions.
 It runs on multicore but it is not moving and the actions have a strange format. So I have to fix that, but it seems to be at reach. I should look
@@ -1170,14 +1174,14 @@ Hopefully with low effort I could improve my current LB score.
 
 ### Development
 
-059_megatrain: reduce memory size but increase sequence length, allow moving backwards, LB 35
-060_megatrain: reduce sequence length and batch size to match 049, LB 34. The dynamic is very similar to previous train.
-061_megatrain: same as 060 but setting infinite time for the episodes
-062_megatrain: same as 061 but increasing memory from 64 to 128, training metrics do not improve 061
-063_megatrain: same as 063 but setting time to 5000 instead of infinite, probably having a small negative reward is good, and all the levels should have the same.
-064_megatrain: retrain 063 lowering the learning rate faster (150k steps instead of 1e6)
-065_megatrain: retrain 064 with 1/10 of learning rate and beta for 50k epochs
-066_megatrain: same as 065 but lowering epsilon from 0.2 to 0.1
+059_megatrain: reduce memory size but increase sequence length, allow moving backwards, LB 35  
+060_megatrain: reduce sequence length and batch size to match 049, LB 34. The dynamic is very similar to previous train.  
+061_megatrain: same as 060 but setting infinite time for the episodes  
+062_megatrain: same as 061 but increasing memory from 64 to 128, training metrics do not improve 061  
+063_megatrain: same as 063 but setting time to 5000 instead of infinite, probably having a small negative reward is good, and all the levels should have the same.  
+064_megatrain: retrain 063 lowering the learning rate faster (150k steps instead of 1e6)  
+065_megatrain: retrain 064 with 1/10 of learning rate and beta for 50k epochs  
+066_megatrain: same as 065 but lowering epsilon from 0.2 to 0.1  
 
 * same as 049 but allowing moving backwards
 * try increasing episode duration to allow diferentiating between kills and episodes without reward
