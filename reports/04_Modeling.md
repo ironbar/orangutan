@@ -1886,11 +1886,30 @@ I want to make a proof of concept to see if speed can be used to build a kind of
 agent is and has been at each moment. I think that the easiest option is to use the record level script
 and visualize the trajectorie on a notebook.
 
+I already have a script on a notebook that creates the map, however I want it to turn into an object
+that also is able to return a normalized trajectory to the current position and orientation of the object.
+The goal is to integrate this object on the environment wrapper and thus compute that on the fly.
+I would like to use the record games script visualizing at the same time the trajectory. I'm thinking of
+creating something like a weight plot where the areas visited more than once have more color.
+
 
 ### Results
 
 <!---
 
+## Iteration n. Iteration_title
+
+We have 3 ways of improving the score: data, architecture, algorithm. I will first focus on data, since
+I think that it's the most important one because using a similar model I was able to get a very good
+LB score previously. Next I will try to improve the architecture, for example adding the new map feature.
+
+Simplify the levels. Goal on platform only, goal on box only, easier labyrinths...
+
+### Goal
+
+### Development
+
+### Results
 
 
 
