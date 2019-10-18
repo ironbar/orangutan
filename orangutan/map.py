@@ -15,6 +15,7 @@ class ArenaMap():
         self._positions = [self._position.copy()]
 
     def add_point(self, speed, previous_action):
+        # print(speed.shape, previous_action.shape)
         rotation = previous_action[0, 1]
         if rotation == 1:
             self._orientation += 6
@@ -32,6 +33,8 @@ class ArenaMap():
     def visualize_trajectory(self):
         positions = self._get_normalized_positions_to_last_state()
         plt.scatter(positions[:, 0], positions[:, 1], c=np.linspace(0, 1, len(positions)))
+        plt.xlim(-60, 60)
+        plt.ylim(-60, 60)
 
     def _get_normalized_positions_to_last_state(self):
         positions = np.array(self._positions)
@@ -41,3 +44,12 @@ class ArenaMap():
         positions[:, 0] = radius*np.sin(angles)
         positions[:, 1] = radius*np.cos(angles)
         return positions
+
+    def get_heatmap(self, side=60):
+        assert side % 2 == 0
+        positions = (self._get_normalized_positions_to_last_state()/2 + side//2).astype(np.int)
+        heatmap = np.zeros((side, side))
+        for position in positions:
+            heatmap[position[1], position[0]] = 1
+        heatmap = heatmap[::-1]
+        return heatmap

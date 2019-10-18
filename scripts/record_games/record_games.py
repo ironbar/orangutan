@@ -14,6 +14,8 @@ from animalai.envs import UnityEnvironment
 from animalai.envs.arena_config import ArenaConfig
 from animalai.envs.exception import UnityWorkerInUseException
 
+from orangutan.map import ArenaMap
+
 ENVIRONMENT_FILEPATH = '/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/AnimalAI-Olympics/env/AnimalAI.x86_64'
 
 def main(args=None):
@@ -30,10 +32,13 @@ def record_games(args):
     level_idx = _get_initial_level_idx(output_folder)
     n_steps = 0
     cv2.namedWindow('img', cv2.WINDOW_NORMAL)
+    cv2.namedWindow('map', cv2.WINDOW_NORMAL)
     level_storage = LevelStorage()
+    arena_map = ArenaMap()
 
     while 1:
         _update_window(info, level_idx, n_steps)
+        _update_map_and_show(arena_map, info)
         action = _get_action_from_keyboard()
         if isinstance(action, str):
             if action == 'break':
@@ -43,6 +48,7 @@ def record_games(args):
                 level_storage = LevelStorage()
                 n_steps = 0
                 _transition_between_levels()
+                arena_map = ArenaMap()
                 continue
             elif action == 'save':
                 info = env.reset()['Learner']
@@ -51,6 +57,7 @@ def record_games(args):
                 level_idx += 1
                 n_steps = 0
                 _transition_between_levels()
+                arena_map = ArenaMap()
                 continue
 
 
@@ -69,6 +76,7 @@ def record_games(args):
                 msg = 'Not saving level because of negative reward'
                 print(msg)
                 cv2.displayOverlay('img', msg)
+            arena_map = ArenaMap()
             level_storage = LevelStorage()
             n_steps = 0
             _transition_between_levels()
@@ -183,6 +191,12 @@ def _transition_between_levels():
     for _ in range(5):
         time.sleep(0.1)
         cv2.waitKey(1)
+
+def _update_map_and_show(arena_map, info):
+    frame, speed, previous_action, reward = _unpack_info(info)
+    arena_map.add_point(speed[0, [0, 2]], previous_action)
+    heatmap = arena_map.get_heatmap()
+    cv2.imshow('map', (heatmap*255).astype(np.uint8))
 
 def parse_args(args):
     epilog = """
