@@ -111,7 +111,9 @@ def _add_random_box(arena):
 def _create_random_box():
     movable_objects = ['Cardbox1', 'Cardbox2']
     name = str(np.random.choice(movable_objects))
-    sizes = [Vector3(*np.random.randint(1, 6, 3).tolist())]
+    x, z = np.random.randint(1, 6, 2).tolist()
+    y = float(np.random.randint(1, 3))
+    sizes = [Vector3(x, y, z)]
     item = Item(name=name, sizes=sizes)
     return item
 
@@ -341,4 +343,29 @@ def create_arena_splitted_in_two_with_path_blocked(t):
         _add_random_box(arena)
     for _ in range(np.random.randint(1, 3)):
         _add_random_wooden_object(arena)
+    return arena
+
+"""
+Simpler levels
+"""
+
+def create_arena_with_goal_on_platform(t):
+    arena = Arena(t=t, items=[])
+    _add_goal_on_top_of_platform(arena)
+    if np.random.randint(0, 2):
+        arena.items[-1].name = 'GoodGoal'
+    return arena
+
+def create_arena_with_goal_on_top_of_box(t):
+    arena = Arena(t=t, items=[])
+    _add_goal_on_top_of_box(arena)
+    if np.random.randint(0, 2):
+        arena.items[-1].name = 'GoodGoal'
+    return arena
+
+def create_arena_with_goal_inside_cillinder(t):
+    arena = Arena(t=t, items=[])
+    _add_goal_inside_cillinder(arena)
+    if np.random.randint(0, 2):
+        arena.items[-1].name = 'GoodGoal'
     return arena

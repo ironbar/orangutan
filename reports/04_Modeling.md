@@ -1877,6 +1877,15 @@ that will help the agent to better learn the skills needed for the challenge.
 
 ### Development
 
+#### Adding old arenas from megatrain
+
+#### Simplifying existing levels
+
+* Goal on platform
+* Goal on box
+* Goal on tunnel
+* Simpler mazes
+
 ### Results
 
 ## Iteration 14. Architecture improvements
