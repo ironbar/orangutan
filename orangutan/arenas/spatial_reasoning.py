@@ -113,9 +113,23 @@ def _apply_color_to_wall_maze(arena):
 Death maze
 """
 
-def create_arena_with_death_maze(t):
+def create_arena_with_death_maze(t, difficulty=None):
     arena = Arena(t=t, items=[])
-    _add_walls_maze(arena, n_cells=np.random.randint(4, 6), wall_thickness=4)
+    if difficulty is None:
+        difficulty = np.random.choice(DIFFICULTY_LEVELS)
+    else:
+        assert difficulty in DIFFICULTY_LEVELS
+    if difficulty == 'easy':
+        n_cells = 3
+    elif difficulty == 'medium':
+        n_cells = np.random.randint(3, 5)
+    elif difficulty == 'hard':
+        n_cells = 4 # 5 seems to be very difficult
+    else:
+        raise Exception('Unknown difficulty: %s' % difficulty)
+    wall_thickness = 4
+
+    _add_walls_maze(arena, n_cells=n_cells, wall_thickness=wall_thickness)
     _replace_walls_by_death_zones(arena)
     for _ in range(DEFAULT_REWARD):
         _add_goal_on_fixed_position(arena)
@@ -129,10 +143,23 @@ def _replace_walls_by_death_zones(arena):
 """
 Platform maze
 """
-def create_arena_with_platform_maze(t):
+def create_arena_with_platform_maze(t, difficulty=None):
     arena = Arena(t=t, items=[])
-    n_cells = np.random.randint(4, 6)
+
+    if difficulty is None:
+        difficulty = np.random.choice(DIFFICULTY_LEVELS)
+    else:
+        assert difficulty in DIFFICULTY_LEVELS
+    if difficulty == 'easy':
+        n_cells = 3
+    elif difficulty == 'medium':
+        n_cells = np.random.randint(3, 5)
+    elif difficulty == 'hard':
+        n_cells = 4
+    else:
+        raise Exception('Unknown difficulty: %s' % difficulty)
     wall_thickness = 6
+
     _add_platform_maze(arena, n_cells=n_cells, wall_thickness=wall_thickness)
     _apply_color_to_platform_maze(arena)
     _add_goals_and_agent_to_platform_maze(arena, n_cells, wall_thickness)
