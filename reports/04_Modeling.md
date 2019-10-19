@@ -1842,10 +1842,44 @@ memory usage. On my local validation scores this model is better than the previo
 worse score.
 
 I'm going to launch a final 117_megatrain with more training steps and that will finalize this iteration.
-Also I'm going to disable normalization on input vectors.
+Also I'm going to disable normalization on input vectors. This training has been running for 60 hours constantly
+improving but that has not been reflected on LB where the max score was 31.7. Moreover on the internal tests
+I can see that it fails on very simple tests such as having a single goal on the arena.
 
+## Reflections before the end of the challenge
 
-## Iteration 13. Architecture improvements
+There are less than two weeks until the end of the challenge, today is 19/10/2019. I have to think carefully
+which are going to be my moves on these final days.
+
+I have been developing more complex and rich arenas but surprisingly the LB scores are clearly worst than
+the initial megatrains back in August. Moreover I have modified the train script and now the agent plays
+a much more varied number of arenas and the training metrics are more meaningfull. I also have the option
+to easily modify the model architecture if necessary. But despite of these improvements I have failed to
+improve the LB score.
+
+Let's enumerate ideas for the following days:
+* I think the new training arenas are better, but maybe too complicated. I'm going to add more simple arenas
+and also I'm going to add all the arenas from the megatrain. Now that I have a great variability in arenas
+I don't think having a different reward is relevant.
+* Megatrains produced good results in 10 hours. I think I should concentrate on fast iterations and if possible
+train two models at the same time.
+* Architecture modifications could bring improvements
+* I could add the new map feature. This may be done on the last weekend.
+* I should focus on improving my internal scores, my last model is already better than megatrain049 but I want it
+to be clearly better.
+
+## Iteration 13. Adding simpler arenas
+
+### Goal
+
+The goal of this iteration is to compliment the arenas designed on the previous iteration with more simple arenas
+that will help the agent to better learn the skills needed for the challenge.
+
+### Development
+
+### Results
+
+## Iteration 14. Architecture improvements
 
 ### Goal
 
@@ -1896,22 +1930,6 @@ creating something like a weight plot where the areas visited more than once hav
 ### Results
 
 <!---
-
-## Iteration n. Iteration_title
-
-We have 3 ways of improving the score: data, architecture, algorithm. I will first focus on data, since
-I think that it's the most important one because using a similar model I was able to get a very good
-LB score previously. Next I will try to improve the architecture, for example adding the new map feature.
-
-Simplify the levels. Goal on platform only, goal on box only, easier labyrinths...
-
-### Goal
-
-### Development
-
-### Results
-
-
 
 ## Iteration n. Iteration_title
 
