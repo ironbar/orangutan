@@ -98,9 +98,9 @@ OBSTACLES_FUNC_WEIGHTS = [
     (create_arena_splitted_in_two, 8),
     (create_arena_splitted_in_four, 8),
     (create_arena_splitted_in_two_with_path_blocked, 8),
-    (create_arena_with_goal_on_platform, 4)
-    (create_arena_with_goal_on_top_of_box, 4)
-    (create_arena_with_goal_inside_cillinder, 4)
+    (create_arena_with_goal_on_platform, 4),
+    (create_arena_with_goal_on_top_of_box, 4),
+    (create_arena_with_goal_inside_cillinder, 4),
 ]
 
 AVOIDANCE_FUNC_WEIGHTS = [

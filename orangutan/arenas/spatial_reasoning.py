@@ -14,14 +14,29 @@ from orangutan.arenas.avoidance import _add_agent_to_arena
 DEFAULT_REWARD = 2
 WALL_HEIGHT = 5
 PLATFORM_HEIGHT = 2
+DIFFICULTY_LEVELS = ['easy', 'medium', 'hard']
+
 
 """
 Walls maze
 """
 
-def create_arena_with_walls_maze(t):
+def create_arena_with_walls_maze(t, difficulty=None):
     arena = Arena(t=t, items=[])
-    _add_walls_maze(arena, n_cells=np.random.randint(4, 7), wall_thickness=1)
+    if difficulty is None:
+        difficulty = np.random.choice(DIFFICULTY_LEVELS)
+    else:
+        assert difficulty in DIFFICULTY_LEVELS
+    if difficulty == 'easy':
+        n_cells = 3
+    elif difficulty == 'medium':
+        n_cells = 4
+    elif difficulty == 'hard':
+        n_cells = 5
+    else:
+        raise Exception('Unknown difficulty: %s' % difficulty)
+
+    _add_walls_maze(arena, n_cells=n_cells, wall_thickness=1)
     _apply_color_to_wall_maze(arena)
     for _ in range(DEFAULT_REWARD):
         _add_simple_goal(arena)
