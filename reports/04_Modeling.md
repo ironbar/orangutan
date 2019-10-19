@@ -1879,12 +1879,30 @@ that will help the agent to better learn the skills needed for the challenge.
 
 #### Adding old arenas from megatrain
 
+I have prepared a merge function that allows to add arenas from old trainings.
+
 #### Simplifying existing levels
 
 * Goal on platform
 * Goal on box
 * Goal on tunnel
 * Simpler mazes
+
+#### Number of environments
+
+I have verified that using 32 or 16 environments is equally faster, the only difference is that 1k steps
+when using 32 environments is equivalent to 2k steps with 16 environments. Using 8 environments is slightly
+slower.
+
+I thus think that the best option is to use 16 environments with a a buffer size that permits to train
+two models at the same time. A buffer size of 49152 seems to be a good compromise.
+
+I have verified that it is possible to train with two models at the same time on that conditions.
+I will be training for 1M steps.
+
+On megatrain I was using 16 arenas and 9 environments. Now I'm using 16 environments and 1 arena.
+This means that to have a equivalent number of steps I have to use a ratio of 9.
+So I should be having good LB scores around 600k steps.
 
 ### Results
 
