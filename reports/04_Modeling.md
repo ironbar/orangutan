@@ -1867,6 +1867,7 @@ train two models at the same time.
 * I could add the new map feature. This may be done on the last weekend.
 * I should focus on improving my internal scores, my last model is already better than megatrain049 but I want it
 to be clearly better.
+* Visualizing test videos and diagnosing the mistakes and how to fix them
 
 ## Iteration 13. Adding simpler arenas
 
@@ -1904,7 +1905,19 @@ On megatrain I was using 16 arenas and 9 environments. Now I'm using 16 environm
 This means that to have a equivalent number of steps I have to use a ratio of 9.
 So I should be having good LB scores around 600k steps.
 
+#### Ultratrains
+
+**118_ultratrain**: baseline training with the new configuration  
+**119_ultratrain_backwards**: same but allowing to move backwards  
+
 ### Results
+
+The first two trainings get a score of 34.67 and 36.00, being the best for the model that does not
+move backwards. This is achieved after 1M epochs which is equivalent to previous 500k and about 100k
+of the megatrain trainings.
+
+I'm going to assume that the training configuration is good enough and I will focus on architecture
+on the following days.
 
 ## Iteration 14. Architecture improvements
 
@@ -1953,6 +1966,38 @@ The goal is to integrate this object on the environment wrapper and thus compute
 I would like to use the record games script visualizing at the same time the trajectory. I'm thinking of
 creating something like a weight plot where the areas visited more than once have more color.
 
+#### Non-recurrent architecture with previous action
+
+I want to train a non-recurrent model that uses previous_action as input to compare it with the current
+memory models. If it works good enough maybe adding the map feature will provide all information to
+get rid of the recurrent layers.
+
+To simplify the implementation I will have to use use_recurrent=True and sequence_length=1 because only
+when that is true previous_action is given. However there may be problems with memory in and memory out.
+We will have to try.
+
+#### Visual encoders examples
+
+http://rll.berkeley.edu/dsae/dsae.pdf
+<p align="center">
+  <img src="media/visual_encoder_1.png">
+</p>
+
+https://pdfs.semanticscholar.org/5e86/87689b38eae0c8337bb5df46b9d8f17f93c3.pdf
+<p align="center">
+  <img src="media/visual_encoder_0.png">
+</p>
+
+https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf
+
+> We now describe the exact architecture used for all seven Atari games. The input to the neural
+network consists is an 84 × 84 × 4 image produced by φ. The first hidden layer convolves 16 8 × 8
+filters with stride 4 with the input image and applies a rectifier nonlinearity [10, 18]. The second
+hidden layer convolves 32 4 × 4 filters with stride 2, again followed by a rectifier nonlinearity. The
+final hidden layer is fully-connected and consists of 256 rectifier units.
+The output layer is a fullyconnected linear layer with a single output for each valid action.
+The number of valid actions varied between 4 and 18 on the games we considered.
+We refer to convolutional networks trained with our approach as Deep Q-Networks (DQN).
 
 ### Results
 
