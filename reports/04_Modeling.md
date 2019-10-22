@@ -2001,6 +2001,35 @@ We refer to convolutional networks trained with our approach as Deep Q-Networks 
 
 ### Results
 
+I have trained two non-recurrent models that are allowed to move backwards.
+The difference between them is the capacity of the visual encoder and final mlp.
+The model with higher capacity achieves a similar training metrics to 119_ultratrain_backwards even
+when not having any kind of memory. Moreover it seems that more capacity is better.
+
+**120_ultratrain_no_recurrent**: LB 30.3, internal 0.52
+**121_ultratrain_no_recurrent_2**: LB 33, internal 0.57
+
+On the next iteration I will be training the same model as in 121 but disabling moving backwards. I will
+also train tha same model but adding memory.
+
+**122_ultratrain_no_recurrent_2_no_backwards**: LB 31, internal 0.57
+**123_ultratrain_with_memory_1000k**: LB 32, internal 0.57
+
+Maybe I need to train for longer. The last part of the training the scores raise, so maybe I have
+to be more patient. I have retrained the 121 to see how much can improve. I have to focus on
+improving the internal scores and forget about LB.
+
+**124_ultratrain_no_recurrent_2_retrain**: LB, internal
+
+On this next iteration I want to train a model for more steps. To train on similar conditions
+to the megatrains that should be around 10M steps. I would also like to try reducing the
+buffer size, this will result in more frequent update of the network.
+I will be training the feedforward model with memory (same as 123)
+
+**125_ultratrain_with_memory**:
+**126_ultratrain_with_memory_smaller_buffer**:
+
+
 <!---
 
 ## Iteration n. Iteration_title
