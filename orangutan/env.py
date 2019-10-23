@@ -1,5 +1,7 @@
 from animalai.envs.environment import UnityEnvironment
 
+from orangutan.map import ArenaMap
+
 class EnvWrapper(object):
     '''
     Wrapper around UnityEnvironment that resets each arena if the episode is done
@@ -30,4 +32,42 @@ class EnvWrapper(object):
         if ret['Learner'].local_done[0]:
             new_ret = self.reset()
             ret['Learner'].visual_observations = new_ret['Learner'].visual_observations
+        return ret
+
+class MapEnv(object):
+    '''
+    Wrapper around UnityEnvironment that resets each arena if the episode is done
+    and creates a map with the trajectory of the agent.
+
+    It will only work correctly if using a single arena on each environment
+    '''
+    def __init__(self, *args, **kwargs):
+        '''
+        Check UnityEnvironment parameters
+        '''
+        self._env = EnvWrapper(*args, **kwargs)
+        self._arena_map = None
+
+    def __getattr__(self, attr):
+        if attr in self.__dict__:
+            return getattr(self, attr)
+        return getattr(self._env, attr)
+
+    def reset(self, arenas_configurations=None, train_mode=True):
+        ret = self._env.reset(arenas_configurations, train_mode)
+        self._arena_map = ArenaMap()
+        ret = self._add_map_to_brain_info(ret)
+        return ret
+
+    def step(self, *args, **kwargs):
+        ret = self._env.step(*args, **kwargs)
+        speed = ret['Learner'].vector_observations[0][[0, 2]]
+        previous_action = ret['Learner'].previous_vector_actions
+        self._arena_map.add_point(speed, previous_action)
+        ret = self._add_map_to_brain_info(ret)
+        return ret
+
+    def _add_map_to_brain_info(self, ret):
+        heatmap = self._arena_map.get_heatmap()
+        ret['Learner'].heatmap = heatmap
         return ret
