@@ -9,7 +9,7 @@ import numpy as np
 import glob
 import time
 
-from orangutan.env import EnvWrapper
+from orangutan.env import EnvWrapper, MapEnv
 from animalai.envs import UnityEnvironment
 from animalai.envs.arena_config import ArenaConfig
 from animalai.envs.exception import UnityWorkerInUseException
@@ -34,11 +34,10 @@ def record_games(args):
     cv2.namedWindow('img', cv2.WINDOW_NORMAL)
     cv2.namedWindow('map', cv2.WINDOW_NORMAL)
     level_storage = LevelStorage()
-    arena_map = ArenaMap()
 
     while 1:
         _update_window(info, level_idx, n_steps)
-        _update_map_and_show(arena_map, info)
+        _show_map(info)
         action = _get_action_from_keyboard()
         if isinstance(action, str):
             if action == 'break':
@@ -48,7 +47,6 @@ def record_games(args):
                 level_storage = LevelStorage()
                 n_steps = 0
                 _transition_between_levels()
-                arena_map = ArenaMap()
                 continue
             elif action == 'save':
                 info = env.reset()['Learner']
@@ -57,7 +55,6 @@ def record_games(args):
                 level_idx += 1
                 n_steps = 0
                 _transition_between_levels()
-                arena_map = ArenaMap()
                 continue
 
 
@@ -76,7 +73,6 @@ def record_games(args):
                 msg = 'Not saving level because of negative reward'
                 print(msg)
                 cv2.displayOverlay('img', msg)
-            arena_map = ArenaMap()
             level_storage = LevelStorage()
             n_steps = 0
             _transition_between_levels()
@@ -89,7 +85,7 @@ def _create_environment(config_filepath):
     worker_id = 0
     while worker_id < 10:
         try:
-            env = EnvWrapper(
+            env = MapEnv(
                 file_name=ENVIRONMENT_FILEPATH,   # Path to the environment
                 worker_id=worker_id,                # Unique ID for running the environment (used for connection)
                 seed=int(os.getenv('ENV_SEED', 0)),                     # The random seed
@@ -192,10 +188,8 @@ def _transition_between_levels():
         time.sleep(0.1)
         cv2.waitKey(1)
 
-def _update_map_and_show(arena_map, info):
-    frame, speed, previous_action, reward = _unpack_info(info)
-    arena_map.add_point(speed[0, [0, 2]], previous_action)
-    heatmap = arena_map.get_heatmap()
+def _show_map(info):
+    heatmap = info.heatmap
     cv2.imshow('map', (heatmap*255).astype(np.uint8))
 
 def parse_args(args):
