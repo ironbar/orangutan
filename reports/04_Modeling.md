@@ -2019,7 +2019,10 @@ Maybe I need to train for longer. The last part of the training the scores raise
 to be more patient. I have retrained the 121 to see how much can improve. I have to focus on
 improving the internal scores and forget about LB.
 
-**124_ultratrain_no_recurrent_2_retrain**: LB, internal
+**124_ultratrain_no_recurrent_2_retrain**: LB 36.67, internal 0.607
+
+It is surprising that a model without memory is able to get such a score. This gives me hope that
+if using also the map feature it may achieve top level scores.
 
 On this next iteration I want to train a model for more steps. To train on similar conditions
 to the megatrains that should be around 10M steps. I would also like to try reducing the

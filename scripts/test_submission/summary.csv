@@ -23,3 +23,4 @@ name,elapsed_time,level_01_food,level_02_preferences,level_03_obstacles,level_04
 122_ultratrain_no_recurrent_2_no_backwards_640k,2255.7743,0.773,0.3333,0.533,0.6026,0.2855,0.3792,0.4844
 123_ultratrain_with_memory_1000k,1775.6565,0.754,0.6667,0.566,0.6897,0.3935,0.4875,0.5929
 124_ultratrain_no_recurrent_2_retrain_800k,1432.091,0.8032,0.4667,0.631,0.6795,0.3823,0.5458,0.5847
+124_ultratrain_no_recurrent_2_retrain_920k,1499.5278,0.8349,0.2667,0.679,0.6808,0.3177,0.525,0.5507
