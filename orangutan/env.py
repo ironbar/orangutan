@@ -55,15 +55,16 @@ class MapEnv(object):
 
     def reset(self, arenas_configurations=None, train_mode=True):
         ret = self._env.reset(arenas_configurations, train_mode)
-        self._arena_map = ArenaMap()
+        self._reset_map()
         ret = self._add_map_to_brain_info(ret)
         return ret
 
     def step(self, *args, **kwargs):
         ret = self._env.step(*args, **kwargs)
-        speed = ret['Learner'].vector_observations[0][[0, 2]]
-        previous_action = ret['Learner'].previous_vector_actions
-        self._arena_map.add_point(speed, previous_action)
+        if ret['Learner'].local_done[0]:
+            self._reset_map()
+        else:
+            self._update_map(ret)
         ret = self._add_map_to_brain_info(ret)
         return ret
 
@@ -71,3 +72,11 @@ class MapEnv(object):
         heatmap = self._arena_map.get_heatmap()
         ret['Learner'].heatmap = heatmap
         return ret
+
+    def _update_map(self, ret):
+        speed = ret['Learner'].vector_observations[0][[0, 2]]
+        previous_action = ret['Learner'].previous_vector_actions
+        self._arena_map.add_point(speed, previous_action)
+
+    def _reset_map(self):
+        self._arena_map = ArenaMap()
