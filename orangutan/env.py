@@ -1,3 +1,4 @@
+import numpy as np
 from animalai.envs.environment import UnityEnvironment
 
 from orangutan.map import ArenaMap
@@ -70,7 +71,8 @@ class MapEnv(object):
 
     def _add_map_to_brain_info(self, ret):
         heatmap = self._arena_map.get_heatmap()
-        ret['Learner'].heatmap = heatmap
+        heatmap = np.expand_dims(heatmap, axis=2)
+        ret['Learner'].heatmap = [heatmap]
         return ret
 
     def _update_map(self, ret):

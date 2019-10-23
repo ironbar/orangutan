@@ -1999,6 +1999,41 @@ The output layer is a fullyconnected linear layer with a single output for each 
 The number of valid actions varied between 4 and 18 on the games we considered.
 We refer to convolutional networks trained with our approach as Deep Q-Networks (DQN).
 
+#### Using map as feature
+
+I have implemented a wrapper for the environment that automatically creates the map of the trajectory of the agent
+and returns it in the BrainInfo object. Now I have to add it to the model and train script.
+
+I have to add the map in the PPOPolicy:
+* evaluate
+* get_intrinsic_rewards
+* get_value_estimate
+
+And also on PPOTrainer:
+* construct_curr_info
+* add_experiences
+
+I think the best way to implement this is to first add the feature on the model, and that will fail.
+Next add the map in the points stated above and if it is done correctly it will train.
+
+I'm training with just 1 environment and after doing modifications on policy it trains until it reaches the time for training.
+
+I have doubts regarding what to
+do when using multiple environments.
+
+```
+ret['Learner'].visual_observations[0].shape
+(1, 84, 84, 3)
+ret['Learner'].vector_observations[0].shape
+(3,)
+ret['Learner'].previous_vector_actions
+array([[0., 0.]])
+ret['Learner'].previous_vector_actions.shape
+(1, 2)
+
+python trainMLAgents.py /media/guillermo/Data/Kaggle/animalai/agents/debug/data/temp.yaml /media/guillermo/Data/Kaggle/animalai/agents/debug/data/trainer_config.yaml --n_envs 1 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
+```
+
 ### Results
 
 I have trained two non-recurrent models that are allowed to move backwards.
