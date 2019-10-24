@@ -189,7 +189,7 @@ def _transition_between_levels():
         cv2.waitKey(1)
 
 def _show_map(info):
-    heatmap = info.heatmap
+    heatmap = info.trajectory_map[0, :, :, 0]
     cv2.imshow('map', (heatmap*255).astype(np.uint8))
 
 def parse_args(args):
