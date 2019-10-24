@@ -47,7 +47,8 @@ class ArenaMap():
 
     def get_heatmap(self, side=60):
         assert side % 2 == 0
-        positions = (self._get_normalized_positions_to_last_state()/2 + side//2).astype(np.int)
+        scale = side/2/(40*2**0.5*1.05)
+        positions = (self._get_normalized_positions_to_last_state()*scale + side//2).astype(np.int)
         heatmap = np.zeros((side, side))
         for position in positions:
             heatmap[position[1], position[0]] = 1
