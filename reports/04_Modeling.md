@@ -2008,6 +2008,7 @@ I have to add the map in the PPOPolicy:
 * evaluate
 * get_intrinsic_rewards
 * get_value_estimate
+* update
 
 And also on PPOTrainer:
 * construct_curr_info
@@ -2017,11 +2018,16 @@ I think the best way to implement this is to first add the feature on the model,
 Next add the map in the points stated above and if it is done correctly it will train.
 
 I'm training with just 1 environment and after doing modifications on policy it trains until it reaches the time for training.
+I have fixed the problem of updating the policy and now seems to be working.
+
+However it doesn't when moving to multiple environments. I think the problem is that I have to adapt BrainInfo
+to handle that information. I have to study how the output of the environment changes when having multiple arenas.
 
 I have doubts regarding what to
 do when using multiple environments.
 
 ```
+# 1 arena
 ret['Learner'].visual_observations[0].shape
 (1, 84, 84, 3)
 ret['Learner'].vector_observations[0].shape
@@ -2031,7 +2037,17 @@ array([[0., 0.]])
 ret['Learner'].previous_vector_actions.shape
 (1, 2)
 
+# 2 arenas
+ret['Learner'].previous_vector_actions.shape
+(2, 2)
+ret['Learner'].visual_observations[0].shape
+(2, 84, 84, 3)
+ret['Learner'].vector_observations.shape
+(2, 3)
+
 python trainMLAgents.py /media/guillermo/Data/Kaggle/animalai/agents/debug/data/temp.yaml /media/guillermo/Data/Kaggle/animalai/agents/debug/data/trainer_config.yaml --n_envs 1 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
+
+ValueError: Cannot feed value of shape (8, 64, 60, 60, 1) for Tensor 'map_dc_actor_critic/map_input:0', which has shape '(?, 60, 60, 1)'
 ```
 
 ### Results

@@ -71,8 +71,8 @@ class MapEnv(object):
 
     def _add_map_to_brain_info(self, ret):
         heatmap = self._arena_map.get_heatmap()
-        heatmap = np.expand_dims(heatmap, axis=2)
-        ret['Learner'].trajectory_map = [heatmap]
+        heatmap = np.expand_dims(np.expand_dims(heatmap, axis=2), axis=0)
+        ret['Learner'].trajectory_map = heatmap
         return ret
 
     def _update_map(self, ret):
