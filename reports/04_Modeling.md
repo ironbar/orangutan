@@ -2023,8 +2023,7 @@ I have fixed the problem of updating the policy and now seems to be working.
 However it doesn't when moving to multiple environments. I think the problem is that I have to adapt BrainInfo
 to handle that information. I have to study how the output of the environment changes when having multiple arenas.
 
-I have doubts regarding what to
-do when using multiple environments.
+Below there is the shapes of different parameters of the brain.
 
 ```
 # 1 arena
@@ -2044,10 +2043,13 @@ ret['Learner'].visual_observations[0].shape
 (2, 84, 84, 3)
 ret['Learner'].vector_observations.shape
 (2, 3)
+```
 
+I have decided that the map is going to be initially (1, 60, 60, 1). After little modifications
+on the scripts I have been able to make it work.
+
+```
 python trainMLAgents.py /media/guillermo/Data/Kaggle/animalai/agents/debug/data/temp.yaml /media/guillermo/Data/Kaggle/animalai/agents/debug/data/trainer_config.yaml --n_envs 1 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
-
-ValueError: Cannot feed value of shape (8, 64, 60, 60, 1) for Tensor 'map_dc_actor_critic/map_input:0', which has shape '(?, 60, 60, 1)'
 ```
 
 ### Results
