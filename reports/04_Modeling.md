@@ -2082,9 +2082,29 @@ to the megatrains that should be around 10M steps. I would also like to try redu
 buffer size, this will result in more frequent update of the network.
 I will be training the feedforward model with memory (same as 123)
 
-**125_ultratrain_with_memory**:
+**125_ultratrain_with_memory**: LB 30, internal 0.54
 **126_ultratrain_with_memory_smaller_buffer**:
 
+This experiment clearly shows that the bigger the buffer the better. The training is more stable
+and gets better scores. So in the final model I should train using all the memory on the computer.
+It seems that training for a large number of steps is worse than training many times for a shorter
+amount of steps.
+
+On the next experiment I will be training with map feature and a buffer size of 81920. This may be one of the 
+latest shots. No memory is being used, maybe adding a small amount of memory could be helpful.
+I have stopped the training at epoch 800k because it was running faster than expected, I have increased the
+number of steps to 1.4M and the buffer size to 92k
+
+**127_ultratrain_map**: LB 33.7, internal 0.57
+
+The model has trained quicker than expected, maybe because a single model was being trained or maybe
+because of the big buffer size. The resuls of this first train are not different from training without
+the map feature at least in terms of training metris. The LB score and internal score are not promising
+also. I have made an evaluation setting the map to black and the score is worse (0.51).
+
+Maybe it simply needs more training time.
+
+**128_ultratrain_map_retrain**:
 
 <!---
 
