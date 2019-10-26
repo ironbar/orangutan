@@ -2052,6 +2052,31 @@ on the scripts I have been able to make it work.
 python trainMLAgents.py /media/guillermo/Data/Kaggle/animalai/agents/debug/data/temp.yaml /media/guillermo/Data/Kaggle/animalai/agents/debug/data/trainer_config.yaml --n_envs 1 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
 ```
 
+#### Comparison with OpenAI hide and seek
+
+A recent work on RL on hide and seek has been [published](https://openai.com/blog/emergent-tool-use/)
+by OpenAI. Cool videos show very complex behaviours learned by the agents.
+
+They have used PPO, the same algorithm that I'm using.
+
+> Agent policies are trained with self-play and Proximal Policy Optimization.
+
+> We find increasing batch size gives a drastic speedup in wall-clock time to convergence,
+though doesn’t affect the sample efficiency greatly at or above 32k.
+However, we found that batch sizes of 8k and 16k never reached stage 4 in the allotted number of episodes.
+
+I could try increasing the batch size.
+
+They have trained their system for ~ 450M episodes. That is an incredible number. On my largest training
+I have trained 1M steps with 8 environments and 16 arenas. If an episode is around 300 steps that is 0.42M
+episodes. So the scale is totally different. So maybe the model just needs more time training.
+
+![](https://d4mucfpksywv.cloudfront.net/emergent-tool-use/images/multi-agent-policy-architecture-20190904a.png)
+
+At the end there is an LSTM, so maybe that is a good practice.
+
+They pass the positions of the objects directly to the agent, so that is easier than our problem.
+
 ### Results
 
 I have trained two non-recurrent models that are allowed to move backwards.
@@ -2104,7 +2129,15 @@ also. I have made an evaluation setting the map to black and the score is worse 
 
 Maybe it simply needs more training time.
 
-**128_ultratrain_map_retrain**:
+**128_ultratrain_map_retrain**: LB 33, internal 0.62
+
+It is the model that achieves the highest training metrics of all the ultratrain models. Only the model
+049_megatrain_913k achieves a higher score on internal tests. However the LB score is bad.
+
+Now I'm going to retrain with lower entropy and bigger batch size. I have been able to increase
+the batch size to 4096 from 512, so maybe this could help. I have divided entropy by 10.
+
+**129_ultratrain_map_retrain**:
 
 <!---
 
