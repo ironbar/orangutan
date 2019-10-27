@@ -98,9 +98,9 @@ OBSTACLES_FUNC_WEIGHTS = [
     (create_arena_splitted_in_two, 8),
     (create_arena_splitted_in_four, 8),
     (create_arena_splitted_in_two_with_path_blocked, 8),
-    (create_arena_with_goal_on_platform, 4),
-    (create_arena_with_goal_on_top_of_box, 4),
+    (create_arena_with_goal_on_platform, 8),
     (create_arena_with_goal_inside_cillinder, 4),
+    (create_arena_with_goal_on_top_of_box, 4),
 ]
 
 AVOIDANCE_FUNC_WEIGHTS = [
@@ -117,7 +117,7 @@ SPATIAL_REASONING_FUNC_WEIGHTS = [
     (create_arena_with_walls_maze, 12),
 ]
 
-GENERALIZATION_FUNC_WEIGHTS = OBSTACLES_FUNC_WEIGHTS[:5] + AVOIDANCE_FUNC_WEIGHTS[:1]
+GENERALIZATION_FUNC_WEIGHTS = OBSTACLES_FUNC_WEIGHTS[:7] + AVOIDANCE_FUNC_WEIGHTS[:1]
 INTERNAL_MODELS_FUNC_WEIGHTS = FOOD_FUNC_WEIGHTS + OBSTACLES_FUNC_WEIGHTS + AVOIDANCE_FUNC_WEIGHTS
 INTERNAL_MODELS_FUNC_WEIGHTS = [(ret[0], int(ret[1]//4)) for ret in INTERNAL_MODELS_FUNC_WEIGHTS]
 
