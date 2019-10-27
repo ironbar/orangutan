@@ -39,6 +39,7 @@ from orangutan.arenas.food import (
     create_arena_with_5_badgoalbounce_labyrinth,
     create_arena_with_10_badgoalbounce_labyrinth,
     create_arena_with_15_badgoalbounce_labyrinth,
+    create_arena_with_small_goal
 )
 from orangutan.arenas.preferences import (
     create_arena_with_different_sizes_green_goal_in_front_of_agent,
