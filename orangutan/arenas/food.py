@@ -79,6 +79,14 @@ def create_arena_with_red_houses(t=DEFAULT_TIME_LIMIT):
                                     positions=[Vector3(center[0], 0, center[1])]))
     return arena
 
+def create_arena_with_small_goal(t):
+    arena = Arena(t=t, items=[])
+    if np.random.randint(0, 2):
+        arena.items.append(Item(name='GoodGoalMulti', sizes=[Vector3(0.5, 0.5, 0.5)]))
+    else:
+        arena.items.append(Item(name='GoodGoal', sizes=[Vector3(0.5, 0.5, 0.5)]))
+    return arena
+
 def _create_agent_looking_center_at_random_position():
     x, z = get_random_position()
     angle = get_angle_looking_center(x, z)
