@@ -37,7 +37,7 @@ class Agent(object):
         self.memory_in = None
         self.use_recurrent = self.trainer_params['model_architecture']['use_recurrent']
         self._arena_map = None
-        if self.trainer_params['model_architecture']['architecture'] == 'map':
+        if self.trainer_params['model_architecture']['architecture'] in ['map', 'wba_prize']:
             self._map_side = self.trainer_params['model_architecture']['map_encoding']['map_side']
         else:
             self._map_side = None
