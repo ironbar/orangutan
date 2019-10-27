@@ -9,38 +9,38 @@ arenas:
         b: 153
         g: 153
         r: 153
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 13
         y: 0
-        z: 11.75
+        z: 9.25
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 3.0
-        y: 9.0
-        z: 23.5
+        y: 7.0
+        z: 18.5
     - !Item
       colors:
       - !RGB
         b: 153
         g: 153
         r: 153
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 13
         y: 0
-        z: 34.25
+        z: 31.75
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 2.0
-        y: 7.0
-        z: 11.5
+        x: 3.0
+        y: 2.0
+        z: 16.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -93,14 +93,34 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: Cardbox1
+      name: BadGoal
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 3
-        z: 3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
     - !Item
       colors: []
       name: Cardbox1
@@ -108,12 +128,22 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 4
+        x: 3
+        y: 1.0
         z: 2
     - !Item
       colors: []
-      name: LObject
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1.0
+        z: 2
+    - !Item
+      colors: []
+      name: UObject
       positions: []
       rotations: []
       sizes:
@@ -123,12 +153,12 @@ arenas:
         z: 9.0
     - !Item
       colors: []
-      name: LObject2
+      name: LObject
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: -1
         y: -1
-        z: 6.0
+        z: 8.0
     t: 500

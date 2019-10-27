@@ -4,31 +4,27 @@ arenas:
     blackouts: []
     items:
     - !Item
-      colors:
-      - !RGB
-        b: 153
-        g: 153
-        r: 153
-      name: CylinderTunnel
+      colors: []
+      name: CylinderTunnelTransparent
       positions:
       - !Vector3
-        x: 27.436652262778104
+        x: 19.98303919567313
         y: 0
-        z: 10.742920752774808
+        z: 25.80129882906155
       rotations: []
       sizes:
       - !Vector3
-        x: 8
-        y: 4
-        z: 8
+        x: 7
+        y: 6
+        z: 6
     - !Item
       colors: []
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 27.436652262778104
+        x: 19.98303919567313
         y: 0
-        z: 10.742920752774808
+        z: 25.80129882906155
       rotations: []
       sizes:
       - !Vector3
@@ -44,16 +40,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 19.095200114333636
+        x: 26.14285828110515
         y: 0
-        z: 10.34684435789785
+        z: 18.19821490902361
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 4
+        x: 6
         y: 2.0
-        z: 5
+        z: 4
     - !Item
       colors:
       - !RGB
@@ -63,24 +59,24 @@ arenas:
       name: Ramp
       positions:
       - !Vector3
-        x: 15.31039401990444
+        x: 26.14285828110515
         y: 0
-        z: 10.34684435789785
+        z: 14.721634293546137
       rotations:
-      - 270.0
+      - 180.0
       sizes:
       - !Vector3
-        x: 5
+        x: 6
         y: 2.0
-        z: 3.5696121888583954
+        z: 2.953161230954943
     - !Item
       colors: []
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 19.095200114333636
+        x: 26.14285828110515
         y: 2.0
-        z: 10.34684435789785
+        z: 18.19821490902361
       rotations: []
       sizes:
       - !Vector3
@@ -88,43 +84,97 @@ arenas:
         y: 1
         z: 1
     - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 0
+      name: Wall
+      positions:
+      - !Vector3
+        x: 28.605586342425283
+        y: 0
+        z: 9.318754005325635
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2.0
+        z: 7
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions:
+      - !Vector3
+        x: 34.149203652243145
+        y: 0
+        z: 9.318754005325635
+      rotations:
+      - 90.0
+      sizes:
+      - !Vector3
+        x: 7
+        y: 2.0
+        z: 4.08723461963573
+    - !Item
+      colors:
+      - !RGB
+        b: 255
+        g: 0
+        r: 255
+      name: Ramp
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 3
+        z: 4
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 9.0
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 1.0
+        z: 5
+    - !Item
       colors: []
       name: WallTransparent
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 5
-        y: 5
+        x: 6
+        y: 6
         z: 4
     - !Item
-      colors:
-      - !RGB
-        b: 153
-        g: 153
-        r: 153
-      name: CylinderTunnel
+      colors: []
+      name: Cardbox2
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 7
-        y: 7
-        z: 4
-    - !Item
-      colors:
-      - !RGB
-        b: 153
-        g: 153
-        r: 153
-      name: CylinderTunnel
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 3
-        y: 7
-        z: 6
+        x: 4
+        y: 2.0
+        z: 1
     - !Item
       colors: []
       name: LObject
@@ -134,31 +184,7 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 6.0
-    - !Item
-      colors:
-      - !RGB
-        b: 153
-        g: 153
-        r: 153
-      name: CylinderTunnel
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 4
-        y: 3
-        z: 4
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
+        z: 3.0
     - !Item
       colors: []
       name: BadGoal

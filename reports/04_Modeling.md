@@ -2137,7 +2137,20 @@ It is the model that achieves the highest training metrics of all the ultratrain
 Now I'm going to retrain with lower entropy and bigger batch size. I have been able to increase
 the batch size to 4096 from 512, so maybe this could help. I have divided entropy by 10.
 
-**129_ultratrain_map_retrain**:
+**129_ultratrain_map_retrain**: LB 34, internal 0.66
+
+I have been able to improve the internal score of the best previous model. It seems that training for
+long times is a good thing. LB score is still bad. We have been training this model for 3 days. We have
+6 days to train the final model. Hopefully it will be enough. I'm happy because the goal was to improve
+internal score and I have been able to do it with a memory without recurrent connections.
+
+* Sometimes it fails to go to small goals, it passes close but does not pick them.
+* Navigation is very good
+* Sometimes it fails to go upside a ramp
+* On mazes it seems to suffer the lack of memory, but does quite well.
+
+On the final model I have designed an architecture for the wba_prize. It uses memory and residual connections
+on the mlp. It is a deeper network than the map architecture.
 
 <!---
 

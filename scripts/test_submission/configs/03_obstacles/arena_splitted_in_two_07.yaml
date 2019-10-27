@@ -12,16 +12,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 30
+        x: 14
         y: 0
-        z: 5.5
+        z: 6.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 1.0
-        y: 4.0
-        z: 11.0
+        y: 7.0
+        z: 12.0
     - !Item
       colors:
       - !RGB
@@ -31,16 +31,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 30
+        x: 14
         y: 0
-        z: 27.5
+        z: 28.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 3.0
-        y: 6.0
-        z: 25.0
+        x: 4.0
+        y: 2.0
+        z: 24.0
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -83,82 +83,32 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: BadGoal
+      name: Cardbox2
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 1
-        y: 1
-        z: 1
+        x: 5
+        y: 2.0
+        z: 3
     - !Item
       colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: Cardbox1
+      name: Cardbox2
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: 4
-        y: 3
+        y: 2.0
         z: 5
     - !Item
       colors: []
-      name: Cardbox1
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 3
-        y: 5
-        z: 3
-    - !Item
-      colors: []
-      name: LObject2
+      name: UObject
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: -1
         y: -1
-        z: 4.0
-    - !Item
-      colors: []
-      name: LObject2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: -1
-        y: -1
-        z: 8.0
+        z: 9.0
     t: 500

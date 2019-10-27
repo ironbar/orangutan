@@ -8,356 +8,86 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 8.0
+        x: 10.0
         y: 0
-        z: 8.0
+        z: 10.0
       - !Vector3
-        x: 8.0
-        y: 0
-        z: 16.0
-      - !Vector3
-        x: 8.0
-        y: 0
-        z: 24.0
-      - !Vector3
-        x: 8.0
-        y: 0
-        z: 32.0
-      - !Vector3
-        x: 16.0
-        y: 0
-        z: 8.0
-      - !Vector3
-        x: 16.0
-        y: 0
-        z: 16.0
-      - !Vector3
-        x: 16.0
-        y: 0
-        z: 24.0
-      - !Vector3
-        x: 16.0
-        y: 0
-        z: 32.0
-      - !Vector3
-        x: 24.0
-        y: 0
-        z: 8.0
-      - !Vector3
-        x: 24.0
-        y: 0
-        z: 16.0
-      - !Vector3
-        x: 24.0
-        y: 0
-        z: 24.0
-      - !Vector3
-        x: 24.0
-        y: 0
-        z: 32.0
-      - !Vector3
-        x: 32.0
-        y: 0
-        z: 8.0
-      - !Vector3
-        x: 32.0
-        y: 0
-        z: 16.0
-      - !Vector3
-        x: 32.0
-        y: 0
-        z: 24.0
-      - !Vector3
-        x: 32.0
-        y: 0
-        z: 32.0
-      rotations:
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 12.0
-        y: 0
-        z: 8.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 20.0
-        y: 0
-        z: 8.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 28.0
-        y: 0
-        z: 8.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 3.0
-        y: 0
-        z: 16.0
-      - !Vector3
-        x: 8.0
-        y: 0
-        z: 12.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.0
-        y: 5
-        z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4.0
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 12.0
-        y: 0
-        z: 16.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 20.0
-        y: 0
-        z: 16.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 32.0
-        y: 0
-        z: 12.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4
-        y: 5
-        z: 4.0
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 3.0
-        y: 0
-        z: 24.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 6.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 20.0
-        y: 0
-        z: 24.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
-        y: 5
-        z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 28.0
-        y: 0
-        z: 24.0
-      - !Vector3
-        x: 32.0
+        x: 10.0
         y: 0
         z: 20.0
+      - !Vector3
+        x: 10.0
+        y: 0
+        z: 30.0
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 10.0
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 20.0
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 30.0
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 10.0
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 20.0
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 30.0
       rotations:
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
+      - 0
       - 0
       - 0
       sizes:
       - !Vector3
-        x: 4.0
+        x: 4
         y: 5
         z: 4
       - !Vector3
         x: 4
         y: 5
-        z: 4.0
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
+        z: 4
       - !Vector3
-        x: 12.0
-        y: 0
-        z: 32.0
-      - !Vector3
-        x: 16.0
-        y: 0
-        z: 28.0
-      rotations:
-      - 0
-      - 0
-      sizes:
-      - !Vector3
-        x: 4.0
+        x: 4
         y: 5
         z: 4
       - !Vector3
         x: 4
         y: 5
-        z: 4.0
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
+        z: 4
       - !Vector3
-        x: 28.0
-        y: 0
-        z: 32.0
-      rotations:
-      - 0
-      sizes:
+        x: 4
+        y: 5
+        z: 4
       - !Vector3
-        x: 4.0
+        x: 4
+        y: 5
+        z: 4
+      - !Vector3
+        x: 4
+        y: 5
+        z: 4
+      - !Vector3
+        x: 4
+        y: 5
+        z: 4
+      - !Vector3
+        x: 4
         y: 5
         z: 4
     - !Item
@@ -365,14 +95,128 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 37.0
+        x: 10.0
         y: 0
-        z: 32.0
+        z: 4.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 5
+        z: 8.0
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 4.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 5
+        z: 8.0
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 15.0
+        y: 0
+        z: 20.0
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 15.0
+      rotations:
+      - 0
+      - 0
+      sizes:
+      - !Vector3
+        x: 6.0
+        y: 5
+        z: 4
+      - !Vector3
+        x: 4
+        y: 5
+        z: 6.0
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 30.0
+        y: 0
+        z: 15.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 5
+        z: 6.0
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 4.0
+        y: 0
+        z: 30.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 8.0
+        y: 5
+        z: 4
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 20.0
+        y: 0
+        z: 25.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 4
+        y: 5
+        z: 6.0
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 25.0
+        y: 0
+        z: 30.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 6.0
+        y: 5
+        z: 4
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 30.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 8.0
         y: 5
         z: 4
     - !Item
@@ -380,9 +224,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 23.25998997698792
+        x: 24.185048293765718
         y: 0
-        z: 19.34217305035105
+        z: 19.83652885180283
       rotations:
       - 0
       sizes:
@@ -395,9 +239,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 21.27710502720055
+        x: 7.067455144254004
         y: 0
-        z: 37.98638508124859
+        z: 16.14213089969413
       rotations:
       - 0
       sizes:
@@ -410,9 +254,9 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 12.493897192412575
+        x: 34.02064539667032
         y: 0
-        z: 1.6220588569789745
+        z: 15.50234763180844
       rotations: []
       sizes:
       - !Vector3

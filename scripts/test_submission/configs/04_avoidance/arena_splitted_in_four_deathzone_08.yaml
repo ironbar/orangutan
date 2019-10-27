@@ -14,13 +14,13 @@ arenas:
       - !Vector3
         x: 10.5
         y: 0
-        z: 15.0
+        z: 13.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 21.0
-        y: 4.0
+        y: 2.0
         z: 1.0
     - !Item
       colors:
@@ -33,13 +33,13 @@ arenas:
       - !Vector3
         x: 29.5
         y: 0
-        z: 25.0
+        z: 27.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 21.0
-        y: 4.0
+        y: 2.0
         z: 1.0
     - !Item
       colors:
@@ -50,7 +50,7 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 15.0
+        x: 13.0
         y: 0
         z: 29.5
       rotations:
@@ -58,7 +58,7 @@ arenas:
       sizes:
       - !Vector3
         x: 1.0
-        y: 2.0
+        y: 6.0
         z: 21.0
     - !Item
       colors:
@@ -69,7 +69,7 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 25.0
+        x: 27.0
         y: 0
         z: 10.5
       rotations:
@@ -77,16 +77,16 @@ arenas:
       sizes:
       - !Vector3
         x: 1.0
-        y: 2.0
+        y: 6.0
         z: 21.0
     - !Item
       colors: []
       name: Agent
       positions:
       - !Vector3
-        x: 17.32538024872452
+        x: 17.053907096968477
         y: 0
-        z: 16.992507559322014
+        z: 10.750151778636063
       rotations: []
       sizes:
       - !Vector3
@@ -98,9 +98,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 14.182761167080766
+        x: 14.827524030923577
         y: 0
-        z: 11.843809408668214
+        z: 19.855731703217316
       rotations:
       - 0
       sizes:
@@ -113,9 +113,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 38.70318516717846
+        x: 28.695887936408333
         y: 0
-        z: 28.509581719582474
+        z: 32.88014998553832
       rotations:
       - 0
       sizes:
@@ -152,56 +152,6 @@ arenas:
       - !Vector3
         x: 1
         y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: BadGoal
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 5
-        y: 5
-        z: 3
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 3
-        y: 2
         z: 1
     - !Item
       colors: []
@@ -210,9 +160,29 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 1
-        y: 1
-        z: 2
+        x: 3
+        y: 1.0
+        z: 3
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 2.0
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 1.0
+        z: 4
     - !Item
       colors: []
       name: LObject
@@ -222,5 +192,5 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 7.0
+        z: 4.0
     t: 500

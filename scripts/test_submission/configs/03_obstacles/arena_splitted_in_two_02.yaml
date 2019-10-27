@@ -12,16 +12,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 11.75
+        x: 19
         y: 0
-        z: 27
+        z: 12.75
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 23.5
-        y: 3.0
-        z: 3.0
+        x: 2.0
+        y: 7.0
+        z: 25.5
     - !Item
       colors:
       - !RGB
@@ -31,16 +31,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 34.25
+        x: 19
         y: 0
-        z: 27
+        z: 35.25
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 11.5
-        y: 7.0
-        z: 1.0
+        x: 2.0
+        y: 5.0
+        z: 9.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -118,19 +118,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 5
-        y: 4
-        z: 4
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 1
-        z: 1
+        x: 3
+        y: 2.0
+        z: 5
     - !Item
       colors: []
       name: Cardbox1
@@ -139,8 +129,18 @@ arenas:
       sizes:
       - !Vector3
         x: 4
-        y: 1
-        z: 4
+        y: 1.0
+        z: 3
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1.0
+        z: 1
     - !Item
       colors: []
       name: LObject
@@ -150,5 +150,5 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 8.0
+        z: 9.0
     t: 500

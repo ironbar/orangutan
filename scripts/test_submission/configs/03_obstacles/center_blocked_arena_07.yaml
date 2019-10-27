@@ -9,7 +9,7 @@ arenas:
         b: 153
         g: 153
         r: 153
-      name: WallTransparent
+      name: Wall
       positions:
       - !Vector3
         x: 20
@@ -18,9 +18,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 19.0
-        y: 4.0
-        z: 15.0
+        x: 21.0
+        y: 8.0
+        z: 22.0
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -63,42 +63,42 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: Cardbox1
+      name: BadGoal
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox2
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: 5
-        y: 3
-        z: 4
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 3
-        y: 2
-        z: 2
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 2
+        y: 2.0
         z: 3
     - !Item
       colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 1.0
+        z: 2
+    - !Item
+      colors: []
       name: Cardbox1
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 5
-        y: 1
-        z: 2
+        x: 4
+        y: 2.0
+        z: 1
     t: 500

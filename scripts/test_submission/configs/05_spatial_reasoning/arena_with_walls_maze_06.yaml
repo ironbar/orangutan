@@ -5,7 +5,7 @@ arenas:
     items:
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 8.0
@@ -155,25 +155,10 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
-        x: 12.0
-        y: 0
-        z: 8.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 7.0
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: Wall
-      positions:
-      - !Vector3
-        x: 24.0
+        x: 8.0
         y: 0
         z: 3.75
       rotations:
@@ -185,10 +170,25 @@ arenas:
         z: 7.5
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
-        x: 16.0
+        x: 20.0
+        y: 0
+        z: 8.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 7.0
+        y: 5
+        z: 1
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 8.0
         y: 0
         z: 12.0
       rotations:
@@ -200,7 +200,7 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 20.0
@@ -224,7 +224,7 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 32.0
@@ -239,7 +239,7 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 8.0
@@ -254,37 +254,31 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 12.0
         y: 0
         z: 24.0
-      rotations:
-      - 0
-      sizes:
       - !Vector3
-        x: 7.0
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: Wall
-      positions:
-      - !Vector3
-        x: 20.0
+        x: 16.0
         y: 0
-        z: 24.0
+        z: 20.0
       rotations:
+      - 0
       - 0
       sizes:
       - !Vector3
         x: 7.0
         y: 5
         z: 1
+      - !Vector3
+        x: 1
+        y: 5
+        z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
         x: 28.0
@@ -308,10 +302,25 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
-        x: 8.0
+        x: 3.75
+        y: 0
+        z: 32.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 7.5
+        y: 5
+        z: 1
+    - !Item
+      colors: []
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 16.0
         y: 0
         z: 28.0
       rotations:
@@ -323,52 +332,37 @@ arenas:
         z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
       positions:
       - !Vector3
-        x: 20.0
+        x: 24.0
         y: 0
-        z: 32.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 7.0
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: Wall
-      positions:
-      - !Vector3
-        x: 28.0
-        y: 0
-        z: 32.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 7.0
-        y: 5
-        z: 1
-    - !Item
-      colors: []
-      name: Wall
-      positions:
-      - !Vector3
-        x: 8.0
-        y: 0
-        z: 36.25
+        z: 28.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 1
         y: 5
-        z: 7.5
+        z: 7.0
     - !Item
       colors: []
-      name: Wall
+      name: WallTransparent
+      positions:
+      - !Vector3
+        x: 32.0
+        y: 0
+        z: 28.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 1
+        y: 5
+        z: 7.0
+    - !Item
+      colors: []
+      name: WallTransparent
       positions:
       - !Vector3
         x: 24.0

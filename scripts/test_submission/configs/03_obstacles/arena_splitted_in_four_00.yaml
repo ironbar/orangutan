@@ -12,15 +12,15 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 9.5
+        x: 10.5
         y: 0
-        z: 15.0
+        z: 14.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 19.0
-        y: 9.0
+        x: 21.0
+        y: 5.0
         z: 1.0
     - !Item
       colors:
@@ -31,15 +31,15 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 30.5
+        x: 29.5
         y: 0
-        z: 25.0
+        z: 26.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 19.0
-        y: 9.0
+        x: 21.0
+        y: 5.0
         z: 1.0
     - !Item
       colors:
@@ -50,16 +50,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 15.0
+        x: 14.0
         y: 0
-        z: 30.5
+        z: 29.5
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 1.0
-        y: 7.0
-        z: 19.0
+        y: 4.0
+        z: 21.0
     - !Item
       colors:
       - !RGB
@@ -69,16 +69,16 @@ arenas:
       name: Wall
       positions:
       - !Vector3
-        x: 25.0
+        x: 26.0
         y: 0
-        z: 9.5
+        z: 10.5
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 1.0
-        y: 7.0
-        z: 19.0
+        y: 4.0
+        z: 21.0
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -141,14 +141,34 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: Cardbox2
+      name: BadGoal
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 3
-        y: 3
-        z: 4
+        x: 1
+        y: 1
+        z: 1
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 4
+        y: 1.0
+        z: 2
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 1
+        y: 2.0
+        z: 1
     - !Item
       colors: []
       name: Cardbox1
@@ -157,8 +177,8 @@ arenas:
       sizes:
       - !Vector3
         x: 3
-        y: 2
-        z: 3
+        y: 1.0
+        z: 2
     - !Item
       colors: []
       name: UObject
@@ -168,15 +188,15 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 8.0
+        z: 5.0
     - !Item
       colors: []
-      name: UObject
+      name: LObject2
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: -1
         y: -1
-        z: 6.0
+        z: 9.0
     t: 500

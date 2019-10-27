@@ -12,16 +12,16 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 12.0
+        x: 8.5
         y: 0
-        z: 10
+        z: 27
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 24.0
-        y: 6.0
-        z: 3.0
+        x: 17.0
+        y: 9.0
+        z: 1.0
     - !Item
       colors:
       - !RGB
@@ -31,24 +31,24 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 34.0
+        x: 30.5
         y: 0
-        z: 10
+        z: 27
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 12.0
-        y: 4.0
-        z: 4.0
+        x: 19.0
+        y: 5.0
+        z: 1.0
     - !Item
       colors: []
       name: Agent
       positions:
       - !Vector3
-        x: 9.495135258807023
+        x: 21.43762036510326
         y: 0
-        z: 24.910977969836303
+        z: 3.979173846260421
       rotations: []
       sizes:
       - !Vector3
@@ -60,9 +60,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 7.603087374232191
+        x: 33.344011016098435
         y: 0
-        z: 33.301752109922035
+        z: 36.11951381946253
       rotations:
       - 0
       sizes:
@@ -75,9 +75,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 13.803167406603803
+        x: 8.689948535712343
         y: 0
-        z: 22.899889285387804
+        z: 31.5888312103868
       rotations:
       - 0
       sizes:
@@ -132,19 +132,39 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 3
-        y: 4
+        x: 4
+        y: 1.0
         z: 4
     - !Item
       colors: []
-      name: Cardbox2
+      name: Cardbox1
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 1
-        y: 4
+        x: 3
+        y: 1.0
         z: 5
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 5
+        y: 2.0
+        z: 4
+    - !Item
+      colors: []
+      name: UObject
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 4.0
     - !Item
       colors: []
       name: LObject2
@@ -154,5 +174,5 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 5.0
+        z: 4.0
     t: 500

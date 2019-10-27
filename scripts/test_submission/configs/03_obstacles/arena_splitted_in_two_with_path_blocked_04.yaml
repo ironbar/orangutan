@@ -12,16 +12,16 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 28
+        x: 15
         y: 0
-        z: 6.0
+        z: 7.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 2.0
-        y: 6.0
-        z: 12.0
+        x: 1.0
+        y: 7.0
+        z: 14.0
     - !Item
       colors:
       - !RGB
@@ -31,31 +31,31 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 28
+        x: 15
         y: 0
         z: 28.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 2.0
-        y: 5.0
+        x: 1.0
+        y: 3.0
         z: 24.0
     - !Item
       colors: []
-      name: Cardbox2
+      name: Cardbox1
       positions:
       - !Vector3
-        x: 28
+        x: 15
         y: 0
-        z: 14.0
+        z: 15.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 2
-        y: 3
-        z: 3.5
+        x: 4
+        y: 2.0
+        z: 1.5
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -134,46 +134,36 @@ arenas:
       sizes:
       - !Vector3
         x: 3
-        y: 3
-        z: 4
-    - !Item
-      colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 2
+        y: 1.0
         z: 2
     - !Item
       colors: []
-      name: Cardbox2
+      name: Cardbox1
       positions: []
       rotations: []
       sizes:
       - !Vector3
-        x: 3
-        y: 5
+        x: 2
+        y: 1.0
+        z: 2
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 4
+        y: 1.0
         z: 4
     - !Item
       colors: []
-      name: UObject
+      name: LObject2
       positions: []
       rotations: []
       sizes:
       - !Vector3
         x: -1
         y: -1
-        z: 9.0
-    - !Item
-      colors: []
-      name: LObject
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: -1
-        y: -1
-        z: 5.0
+        z: 6.0
     t: 500

@@ -95,16 +95,31 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 20.0
+        x: 15.0
         y: 0
-        z: 4.0
+        z: 10.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 4
+        x: 6.0
         y: 5
-        z: 8.0
+        z: 4
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 25.0
+        y: 0
+        z: 10.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 6.0
+        y: 5
+        z: 4
     - !Item
       colors: []
       name: DeathZone
@@ -120,21 +135,6 @@ arenas:
         x: 8.0
         y: 5
         z: 4
-    - !Item
-      colors: []
-      name: DeathZone
-      positions:
-      - !Vector3
-        x: 10.0
-        y: 0
-        z: 15.0
-      rotations:
-      - 0
-      sizes:
-      - !Vector3
-        x: 4
-        y: 5
-        z: 6.0
     - !Item
       colors: []
       name: DeathZone
@@ -158,22 +158,13 @@ arenas:
         x: 25.0
         y: 0
         z: 20.0
-      - !Vector3
-        x: 30.0
-        y: 0
-        z: 15.0
       rotations:
-      - 0
       - 0
       sizes:
       - !Vector3
         x: 6.0
         y: 5
         z: 4
-      - !Vector3
-        x: 4
-        y: 5
-        z: 6.0
     - !Item
       colors: []
       name: DeathZone
@@ -209,24 +200,39 @@ arenas:
       name: DeathZone
       positions:
       - !Vector3
-        x: 30.0
+        x: 25.0
         y: 0
-        z: 36.0
+        z: 30.0
       rotations:
       - 0
       sizes:
       - !Vector3
-        x: 4
+        x: 6.0
         y: 5
-        z: 8.0
+        z: 4
+    - !Item
+      colors: []
+      name: DeathZone
+      positions:
+      - !Vector3
+        x: 36.0
+        y: 0
+        z: 30.0
+      rotations:
+      - 0
+      sizes:
+      - !Vector3
+        x: 8.0
+        y: 5
+        z: 4
     - !Item
       colors: []
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 27.412718617916862
+        x: 3.9402283814117345
         y: 0
-        z: 5.815671239917454
+        z: 2.1920036271599805
       rotations:
       - 0
       sizes:
@@ -239,9 +245,9 @@ arenas:
       name: GoodGoalMulti
       positions:
       - !Vector3
-        x: 25.34422619169326
+        x: 7.755757010578419
         y: 0
-        z: 25.44498079729844
+        z: 6.208980137224318
       rotations:
       - 0
       sizes:
@@ -254,9 +260,9 @@ arenas:
       name: Agent
       positions:
       - !Vector3
-        x: 33.51337705331112
+        x: 33.907956293013356
         y: 0
-        z: 17.729480326357617
+        z: 16.680713077947637
       rotations: []
       sizes:
       - !Vector3

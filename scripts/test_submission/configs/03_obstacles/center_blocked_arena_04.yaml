@@ -18,9 +18,9 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 15.0
+        x: 20.0
         y: 8.0
-        z: 17.0
+        z: 16.0
     - !Item
       colors: []
       name: GoodGoalMulti
@@ -88,8 +88,8 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
-        x: 2
-        y: 2
+        x: 3
+        y: 1.0
         z: 2
     - !Item
       colors: []
@@ -99,6 +99,16 @@ arenas:
       sizes:
       - !Vector3
         x: 2
-        y: 4
+        y: 1.0
+        z: 3
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 3
+        y: 2.0
         z: 5
     t: 500

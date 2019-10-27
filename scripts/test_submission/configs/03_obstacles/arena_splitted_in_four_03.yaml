@@ -14,13 +14,13 @@ arenas:
       - !Vector3
         x: 10.5
         y: 0
-        z: 13.0
+        z: 15.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 21.0
-        y: 9.0
+        y: 3.0
         z: 1.0
     - !Item
       colors:
@@ -33,13 +33,13 @@ arenas:
       - !Vector3
         x: 29.5
         y: 0
-        z: 27.0
+        z: 25.0
       rotations:
       - 0
       sizes:
       - !Vector3
         x: 21.0
-        y: 9.0
+        y: 3.0
         z: 1.0
     - !Item
       colors:
@@ -50,7 +50,7 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 13.0
+        x: 15.0
         y: 0
         z: 29.5
       rotations:
@@ -58,7 +58,7 @@ arenas:
       sizes:
       - !Vector3
         x: 1.0
-        y: 2.0
+        y: 8.0
         z: 21.0
     - !Item
       colors:
@@ -69,7 +69,7 @@ arenas:
       name: WallTransparent
       positions:
       - !Vector3
-        x: 27.0
+        x: 25.0
         y: 0
         z: 10.5
       rotations:
@@ -77,7 +77,7 @@ arenas:
       sizes:
       - !Vector3
         x: 1.0
-        y: 2.0
+        y: 8.0
         z: 21.0
     - !Item
       colors: []
@@ -131,17 +131,7 @@ arenas:
         z: 1
     - !Item
       colors: []
-      name: Cardbox2
-      positions: []
-      rotations: []
-      sizes:
-      - !Vector3
-        x: 1
-        y: 3
-        z: 4
-    - !Item
-      colors: []
-      name: Cardbox2
+      name: BadGoal
       positions: []
       rotations: []
       sizes:
@@ -156,9 +146,39 @@ arenas:
       rotations: []
       sizes:
       - !Vector3
+        x: 1
+        y: 1.0
+        z: 4
+    - !Item
+      colors: []
+      name: Cardbox1
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
         x: 4
-        y: 2
-        z: 2
+        y: 2.0
+        z: 5
+    - !Item
+      colors: []
+      name: Cardbox2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: 2
+        y: 1.0
+        z: 1
+    - !Item
+      colors: []
+      name: LObject2
+      positions: []
+      rotations: []
+      sizes:
+      - !Vector3
+        x: -1
+        y: -1
+        z: 5.0
     - !Item
       colors: []
       name: LObject
@@ -168,5 +188,5 @@ arenas:
       - !Vector3
         x: -1
         y: -1
-        z: 6.0
+        z: 5.0
     t: 500
