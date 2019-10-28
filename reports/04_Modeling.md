@@ -2152,6 +2152,11 @@ internal score and I have been able to do it with a memory without recurrent con
 On the final model I have designed an architecture for the wba_prize. It uses memory and residual connections
 on the mlp. It is a deeper network than the map architecture.
 
+**130_ultratrain_wba_prize**: LB 36.33, internal 0.667
+
+The results both on LB and on internal score are very promising considering that only one train has been done.
+Hopefully retraining will improve the results.
+
 <!---
 
 ## Iteration n. Iteration_title
