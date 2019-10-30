@@ -39,7 +39,8 @@ from orangutan.arenas.food import (
     create_arena_with_5_badgoalbounce_labyrinth,
     create_arena_with_10_badgoalbounce_labyrinth,
     create_arena_with_15_badgoalbounce_labyrinth,
-    create_arena_with_small_goal
+    create_arena_with_small_goal,
+    create_arena_with_bouncing_goal
 )
 from orangutan.arenas.preferences import (
     create_arena_with_different_sizes_green_goal_in_front_of_agent,
@@ -83,7 +84,8 @@ FOOD_FUNC_WEIGHTS = [
         (create_arena_with_5_badgoalbounce_labyrinth, 4),
         (create_arena_with_10_badgoalbounce_labyrinth, 4),
         (create_arena_with_15_badgoalbounce_labyrinth, 4),
-        (create_arena_with_small_goal, 4),
+        (create_arena_with_small_goal, 8),
+        (create_arena_with_bouncing_goal, 8),
     ]
 
 PREFERENCES_FUNC_WEIGHTS = [

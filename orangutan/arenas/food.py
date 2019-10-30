@@ -87,6 +87,15 @@ def create_arena_with_small_goal(t):
         arena.items.append(Item(name='GoodGoal', sizes=[Vector3(0.5, 0.5, 0.5)]))
     return arena
 
+def create_arena_with_bouncing_goal(t):
+    arena = Arena(t=t, items=[])
+    size = float(np.random.choice([0.5, 1]))
+    if np.random.randint(0, 2):
+        arena.items.append(Item(name='GoodGoalMultiBounce', sizes=[Vector3(size, size, size)]))
+    else:
+        arena.items.append(Item(name='GoodGoalBounce', sizes=[Vector3(size, size, size)]))
+    return arena
+
 def _create_agent_looking_center_at_random_position():
     x, z = get_random_position()
     angle = get_angle_looking_center(x, z)

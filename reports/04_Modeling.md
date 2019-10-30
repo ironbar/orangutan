@@ -2176,6 +2176,10 @@ Analysis of the problems of this model:
 * Does not know how to navigate on platform mazes of multiple colors, it does very well on blue platforms.
 * Navigation does not seem to be very intelligent, sometimes a goal is seen but ignored.
 
+Actions:
+* Duplicate weight of arena with small goal
+* Created level create_arena_with_bouncing_goal
+
 <!---
 
 ## Iteration n. Iteration_title
