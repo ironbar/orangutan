@@ -2180,6 +2180,11 @@ Actions:
 * Duplicate weight of arena with small goal
 * Created level create_arena_with_bouncing_goal
 
+The other problems are solvable, but I don't think there is enought time to do that. Probably a train
+from zero is needed to solve them. I'm going to take the learning rate of 131_ultratrain_wba_prize_retrain
+at epoch 800k -> 6e-5. That is 6 times bigger than the last train. I will let beta as it is. The number
+of training steps will be huge so learning rate is not modified.
+
 <!---
 
 ## Iteration n. Iteration_title
