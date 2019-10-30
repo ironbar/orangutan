@@ -2157,6 +2157,16 @@ on the mlp. It is a deeper network than the map architecture.
 The results both on LB and on internal score are very promising considering that only one train has been done.
 Hopefully retraining will improve the results.
 
+**131_ultratrain_wba_prize_retrain** LB 39.33, internal 0.705
+
+The result on LB is the best since a long time and internal score is the best of all.
+I'm going to try to improve this model even more until the end of the challenge.
+
+Now I'm goint to launch a shorter train (700k) with smaller lr and beta. Later
+in the afternoon I will analize the mistakes of the model an maybe create new data for it.
+
+**132_ultratrain_wba_prize_retrain**
+
 <!---
 
 ## Iteration n. Iteration_title
