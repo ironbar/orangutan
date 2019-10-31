@@ -2185,6 +2185,11 @@ from zero is needed to solve them. I'm going to take the learning rate of 131_ul
 at epoch 800k -> 6e-5. That is 6 times bigger than the last train. I will let beta as it is. The number
 of training steps will be huge so learning rate is not modified.
 
+**133_ultratrain_wba_prize_retrain**: LB 40, internal 0.696
+
+After 11 hours of training the metrics are very plain. I have decided to stop the training and launching
+another one in same conditions as start training.
+
 <!---
 
 ## Iteration n. Iteration_title
