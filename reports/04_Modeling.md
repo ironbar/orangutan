@@ -1100,6 +1100,9 @@ I'm going to create a new ensemble using models from 049 only.
 I have submitted a ensemble of 7 agents and the evaluating time was 2500 seconds instead of 7000, so we can see
 that many time is not used for creating the predictions. The score on LB was 40 so there is no improvement.
 
+I will be ensembling just models with wba_prize architecture which are the best on internal score. This simplifies
+the implementation.
+
 ## Iteration 8. Curriculum learning
 
 ### Goal
@@ -2077,6 +2080,15 @@ At the end there is an LSTM, so maybe that is a good practice.
 
 They pass the positions of the objects directly to the agent, so that is easier than our problem.
 
+#### Ensembling
+
+Today is the last day of the competition and I would like to try again the idea of ensembling. My goal is to
+maximize the internal validation score. However one possible advantage is that an ensemble should be more
+robust than a single agent and produce more reliable scores.
+
+I have prepared a naive ensemble with all the models from wba_prize trainings and a more selected one.
+I would also like to train with a bigger number of models.
+
 ### Results
 
 I have trained two non-recurrent models that are allowed to move backwards.
@@ -2188,7 +2200,32 @@ of training steps will be huge so learning rate is not modified.
 **133_ultratrain_wba_prize_retrain**: LB 40, internal 0.696
 
 After 11 hours of training the metrics are very plain. I have decided to stop the training and launching
-another one in same conditions as start training.
+another one in same conditions as start training. Hopefully that will introduce some randomness and
+allow to improve navigation.
+
+
+## Thoughts before the end of the challenge
+
+This has been a challenge charaterized by uncertainty. There was uncertainty everywhere:
+* Input of the model
+* Architecture of the model
+* Size of the model (number of parameters)
+* Training algorithm. It was my first time using PPO and even now I don't think I fully understand the
+dynamics. Also training metrics were very missleading.
+* Training parameters (there are a lot). Learning rate, beta, number of steps, buffer size, batch size...
+* Training data. All levels with same reward? Number of steps for the levels? Curriculum? Random levels?
+* Evaluation data. Clearly we were not measuring the same as LB because correlation was poor
+* Test data. Scores were very volatile even between models of the same training separated by few epochs.
+
+This creates an enormous tree of options to explore. And training is slow so it's very difficult to optimize
+the problem.
+
+By looking at how the agent plays I'm not satisfied with the result. It shows some level of intelligence but
+it is clearly below human play. I would like to continue working on the challenge to better understand
+how can we solve human or animal intelligence.
+
+I did not had time to make planet approach work. Also I have the feeling that with more training time
+the model could behave better, I had little patience during the challenge.
 
 <!---
 
