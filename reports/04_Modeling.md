@@ -2087,7 +2087,13 @@ maximize the internal validation score. However one possible advantage is that a
 robust than a single agent and produce more reliable scores.
 
 I have prepared a naive ensemble with all the models from wba_prize trainings and a more selected one.
-I would also like to train with a bigger number of models.
+I would also like to train with a bigger number of models. Strangely the naive approach works better, they do
+not get a better score than the better model. So it seems this is not the way.
+
+#### Greedy action
+
+Ensemble has not worked, let's try using greedy action selection instead of random one.
+The score is worse however 0.70 vs 0.71.
 
 ### Results
 
