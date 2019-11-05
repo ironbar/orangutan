@@ -2233,6 +2233,28 @@ how can we solve human or animal intelligence.
 I did not had time to make planet approach work. Also I have the feeling that with more training time
 the model could behave better, I had little patience during the challenge.
 
+## Next steps
+
+I don't know if I'm going to continue working on this challenge but I want to define what my next steps will be.
+
+### Whith current implementation
+
+* Train for longer, what would have happened If I have trained for 10M steps the same model
+* More capacity for the model, does it improve scores?
+* Better understanding of PPO algorithm and its parameters
+
+I have not used AWS credits yet, it would be great to use them for this experiments.
+
+### PlaNet Approach
+
+I would like to explore the PlaNet with my own implementation. I have the feeling that it is the correct
+way of solving the problem.
+
+* I would like to see that it is creating good predictions about the future, it would be nice to try
+to play using the agent's imaginations
+* Understand why my attempts with PlaNet were unsuccessfull
+* Can a model train this way improve the results of PPO
+
 <!---
 
 ## Iteration n. Iteration_title
