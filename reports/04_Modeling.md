@@ -2255,6 +2255,39 @@ to play using the agent's imaginations
 * Understand why my attempts with PlaNet were unsuccessfull
 * Can a model train this way improve the results of PPO
 
+## Iteration 15. More training steps and more capacity
+
+### Goal
+
+The goal is to test if using more training steps or using more capacity in the model improves
+the scores. Also to better understand PPO algorithm and its parameters.
+
+### Development
+
+#### Training on AWS
+
+Probably the best instance is p2.xlarge, which has a gpu and 61 GB of RAM and a cost of 0.9$/hour.
+m5a.4xlarge	does not have gpu but has 16 cores instead of 4 and is cheaper (~0.7/hour)
+This implies that I could train for around 500 hours which is 20 days.
+
+I have already redeemed my 500$ credit and I have to learn how to train.
+
+https://github.com/beyretb/AnimalAI-Olympics/blob/master/documentation/cloudTraining.md
+
+It is possible to train using docker or just like on my computer. I have to find if training on docker
+is slower.
+
+#### Simulation speed
+
+One thing that bothers me is that the simulation never used all the cores in training. I want to
+find if that was caused by the agent or by the simulation. If I can improve that I could double
+the training speed.
+
+
+
+### Results
+
+
 <!---
 
 ## Iteration n. Iteration_title
