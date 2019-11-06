@@ -2283,7 +2283,21 @@ One thing that bothers me is that the simulation never used all the cores in tra
 find if that was caused by the agent or by the simulation. If I can improve that I could double
 the training speed.
 
+| n_envs 	| 2k steps time 	| steps/second 	|
+|--------	|---------------	|--------------	|
+| 32     	| 88.8          	| 720          	|
+| 16     	| 41.5          	| 770          	|
+| 8      	| 21.8          	| 733          	|
+| 4      	| 13.5          	| 592          	|
+| 2      	| 9.7           	| 411          	|
 
+Even when using 32 environments the cpu usage is around 70%. The same cpu usage
+holds for 8 and 16 environments. It seems that if the number of environments is
+bigger than 8 then the environment runs at full speed.
+So it seems that the simulation is not able to use all the cpu power.
+
+With this number a training with 16 environment of 2M steps should take around 11 hours. Instead
+it took around 34 hours. That extra time is added by training the model.
 
 ### Results
 
