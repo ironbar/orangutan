@@ -2270,12 +2270,55 @@ Probably the best instance is p2.xlarge, which has a gpu and 61 GB of RAM and a 
 m5a.4xlarge	does not have gpu but has 16 cores instead of 4 and is cheaper (~0.7/hour)
 This implies that I could train for around 500 hours which is 20 days.
 
-I have already redeemed my 500$ credit and I have to learn how to train.
+I have already redeemed my 500$ credit and I have to learn how to train. To check how many of the
+credits have been used click on this [link](https://console.aws.amazon.com/billing/home?#/credits).
 
-https://github.com/beyretb/AnimalAI-Olympics/blob/master/documentation/cloudTraining.md
 
+There is a guide on [animalai github](https://github.com/beyretb/AnimalAI-Olympics/blob/master/documentation/cloudTraining.md)
+to train a model on the cloud.
 It is possible to train using docker or just like on my computer. I have to find if training on docker
-is slower.
+is slower. However I don't want to waste time on this so I will try using conda and if it works I will
+do it that way.
+
+I will be using [us-east-1 region](https://console.aws.amazon.com/ec2/home?region=us-east-1#Instances:sort=instanceId) for
+the aws instance because it already has a preconfigured image for ml-agents ami-016ff5559334f8619.
+However after launching it I have found that it is using an old ubuntu 16 and old driver. I think is better
+to use a more recent image. I have decided to use a Deep Learning image with ubuntu 18 and the driver is 418
+which is more recent than 390. Good thing is that it already has conda.
+
+```
+ssh -i "animalai.pem" ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com
+scp -r -i animalai.pem /media/guillermo/Data/MEGA/AI/31_animalai /* ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com:/home/ubuntu
+
+mkdir animalai
+cd animalai
+git clone https://github.com/ironbar/orangutan
+git clone https://github.com/ironbar/AnimalAI-Olympics
+```
+
+To create the conda environment I'm going to copy instructions from above.
+
+```bash
+conda create -n animal -c conda-forge python=3.6 jupyter ipywidgets pytest rope pylint tqdm pandas scikit-learn ipython ipykernel autopep8 matplotlib tensorflow-gpu opencv==4.1.0 cudatoolkit==10.0.130 numpy==1.14.5 -y
+conda activate animal
+#Install animalai, animalai_train and orangutan with develop mode: "python setup.py develop"
+```
+
+I have to enable x server using this [guide](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)
+
+I'm going to train for 20M of steps.
+
+```bash
+scp -r -i animalai.pem /media/guillermo/Data/Kaggle/animalai/agents/139_ultratrain_wba_prize_long_train/aws ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com:/home/ubuntu/animalai
+scp -i animalai.pem /media/guillermo/Data/MEGA/AI/31_animalai/AnimalAI-Olympics/env/env_linux_v1.0.0.zip ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com:/home/ubuntu/animalai/AnimalAI-Olympics/env
+
+
+python trainMLAgents.py /home/ubuntu/animalai/139_ultratrain_wba_prize_long_train/train_019_all /home/ubuntu/animalai/139_ultratrain_wba_prize_long_train/trainer_config.yaml --n_envs 16 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
+```
+
+I had problems with tensorflow detecting the gpu that were solved by removing tensorflow and installing it again. It seems that tensorflow-base was not a gpu version.
+
+It is training, now we just have to wait.
 
 #### Simulation speed
 
