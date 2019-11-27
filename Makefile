@@ -1,5 +1,5 @@
 
-TEST_SUBMISSION_PATH=/media/guillermo/Data/Dropbox/02 Inteligencia Artificial/31_animalai/orangutan/scripts/test_submission
+TEST_SUBMISSION_PATH=/media/guillermo/Data/MEGA/AI/31_animalai/orangutan/scripts/test_submission
 SAVED_GAMES_PATH=/media/guillermo/Data/Kaggle/animalai/gameplay
 VIDEOS_PATH=/media/guillermo/Data/Kaggle/animalai/videos
 DOCKER_TAG=$(shell python -c "import os;print(os.getenv('DOCKER_IMAGE').split(':')[-1])")

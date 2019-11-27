@@ -2314,6 +2314,11 @@ scp -i animalai.pem /media/guillermo/Data/MEGA/AI/31_animalai/AnimalAI-Olympics/
 
 
 python trainMLAgents.py /home/ubuntu/animalai/139_ultratrain_wba_prize_long_train/train_019_all /home/ubuntu/animalai/139_ultratrain_wba_prize_long_train/trainer_config.yaml --n_envs 16 --n_arenas 1 --save_freq 20000 --keep_checkpoints 50
+
+ scp -r -i animalai.pem ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com:/home/ubuntu/animalai/AnimalAI-Olympics/examples/models/animalai/* /media/guillermo/Data/Kaggle/animalai/models/139_ultratrain_wba_prize_long_train
+
+ scp -r -i animalai.pem ubuntu@ec2-52-2-161-7.compute-1.amazonaws.com:/home/ubuntu/animalai/AnimalAI-Olympics/examples/summaries/animalai-1_Learner/* /media/guillermo/Data/Kaggle/animalai/summaries/139_ultratrain_wba_prize_long_train
+
 ```
 
 I had problems with tensorflow detecting the gpu that were solved by removing tensorflow and installing it again. It seems that tensorflow-base was not a gpu version.
