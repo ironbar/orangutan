@@ -2349,6 +2349,8 @@ it took around 34 hours. That extra time is added by training the model.
 
 ### Results
 
+I have trained a model for 20M steps. It has taken around a month. My internal validation scores have
+improve from 0.75 to 0.83. I cannot submit the model so I don't know public score.
 
 <!---
 
